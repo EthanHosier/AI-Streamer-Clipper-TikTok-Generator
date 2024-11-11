@@ -19,10 +19,7 @@ func NewCaptionsClient() *CaptionsClient {
 	return &CaptionsClient{}
 }
 
-func (c *CaptionsClient) CaptionsFrom(url string, typ CaptionsType) (string, error) {
-	if typ != CaptionsASS {
-		return "", fmt.Errorf("unsupported captions type")
-	}
+func (c *CaptionsClient) CaptionsFrom(url string, CaptionsType CaptionsType) (string, error) {
 
 	// Fetch the captions file from the URL
 	resp, err := http.Get(url)
@@ -62,6 +59,14 @@ Style: Default,Arial,24,&H00FFFFFF,&H00FFFF00,&H00000000,&H64000000,-1,0,0,0,100
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 `
 
+	if CaptionsType != CaptionsSingleWord {
+		return "", fmt.Errorf("error: unsupported captions type")
+	}
+
+	return header + "\n" + singleWordCaptionsFrom(captions), nil
+}
+
+func singleWordCaptionsFrom(captions Captions) string {
 	ret := ""
 
 	for i, event := range captions.Events {
@@ -69,27 +74,27 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 			continue
 		}
 
-		endTime := event.TStartMs + event.DDurationMs
+		for j, s := range event.Segs {
+			var endTime int
 
-		if i < len(captions.Events)-1 {
-			endTime = captions.Events[i+1].TStartMs - event.TStartMs - 1
-		}
-
-		dialogue := fmt.Sprintf("Dialogue: 0,%s,%s,Default,,0,0,0,,", msToASSTime(event.TStartMs), msToASSTime(endTime))
-		for i, s := range event.Segs {
-			if i == len(event.Segs)-1 {
-				wordDuration := endTime / 10
-				dialogue += fmt.Sprintf("{\\k%d}%s ", wordDuration, strings.TrimSpace(s.UTF8))
+			if j == len(event.Segs)-1 {
+				if i == len(captions.Events)-1 {
+					endTime = event.TStartMs + event.DDurationMs
+				} else {
+					endTime = captions.Events[i+1].TStartMs - 1
+				}
 			} else {
-				wordDuration := (event.Segs[i+1].TOffsetMs - s.TOffsetMs) / 10
-				dialogue += fmt.Sprintf("{\\k%d}%s ", wordDuration, strings.TrimSpace(s.UTF8))
+				endTime = event.TStartMs + event.Segs[j+1].TOffsetMs - 1
 			}
-		}
 
-		ret += dialogue + "\n"
+			dialogue := fmt.Sprintf("Dialogue: 0,%s,%s,Default,,0,0,0,,", msToASSTime(event.TStartMs+s.TOffsetMs), msToASSTime(endTime))
+			dialogue += strings.TrimSpace(s.UTF8)
+
+			ret += dialogue + "\n"
+		}
 	}
 
-	return header + "\n" + ret, nil
+	return ret
 }
 
 func msToASSTime(ms int) string {

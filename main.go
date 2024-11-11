@@ -24,10 +24,10 @@ func main() {
 		return
 	}
 
-	// fmt.Printf("vid: %+v\n", vid)
+	fmt.Println(vid.CaptionTrackURL)
 
 	c := captions.NewCaptionsClient()
-	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsASS)
+	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsSingleWord)
 	if err != nil {
 		fmt.Printf("error getting captions: %v\n", err)
 		return

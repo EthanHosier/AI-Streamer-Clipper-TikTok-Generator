@@ -11,345 +11,2549 @@ Style: Default,Arial,24,&H00FFFFFF,&H00FFFF00,&H00000000,&H64000000,-1,0,0,0,100
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.19,0:00:01.22,Default,,0,0,0,,{\k16}what's {\k20}up {\k15}guys {\k32}Nathan {\k12}here {\k20}today {\k122}I'm 
-Dialogue: 0,0:00:01.43,0:00:01.79,Default,,0,0,0,,{\k8}going {\k4}to {\k12}give {\k12}you {\k24}the {\k35}five {\k40}poker {\k179}betting 
-Dialogue: 0,0:00:03.24,0:00:02.70,Default,,0,0,0,,{\k32}tips {\k15}that {\k48}all {\k68}beginners {\k20}need {\k19}to {\k52}know {\k270}you 
-Dialogue: 0,0:00:05.96,0:00:01.94,Default,,0,0,0,,{\k12}are {\k8}going {\k11}to {\k36}learn {\k15}how {\k20}much {\k20}to {\k36}raise {\k194}pre 
-Dialogue: 0,0:00:07.91,0:00:02.87,Default,,0,0,0,,{\k48}flop {\k15}how {\k20}much {\k40}to {\k76}Rea {\k32}pre {\k31}flop {\k8}how {\k287}much 
-Dialogue: 0,0:00:10.80,0:00:02.78,Default,,0,0,0,,{\k16}to {\k28}bet {\k20}on {\k15}the {\k40}Flop {\k12}how {\k16}much {\k23}to {\k84}raise {\k278}and 
-Dialogue: 0,0:00:13.59,0:00:02.55,Default,,0,0,0,,{\k16}at {\k24}the {\k32}very {\k35}end {\k16}I'm {\k20}going {\k20}to {\k27}show {\k24}you {\k255}my 
-Dialogue: 0,0:00:16.16,0:00:03.22,Default,,0,0,0,,{\k87}secret {\k64}thin {\k48}value {\k32}bet {\k55}sizing {\k12}that {\k8}I {\k322}have 
-Dialogue: 0,0:00:19.40,0:00:01.98,Default,,0,0,0,,{\k52}used {\k11}as {\k24}a {\k44}professional {\k28}poker {\k27}player {\k198}when 
-Dialogue: 0,0:00:21.40,0:00:01.38,Default,,0,0,0,,{\k11}I {\k20}have {\k24}top {\k15}pair {\k12}in {\k8}the {\k24}river {\k12}and {\k138}they 
-Dialogue: 0,0:00:22.80,0:00:01.74,Default,,0,0,0,,{\k12}have {\k27}middle {\k28}pair {\k20}let's {\k24}jump {\k24}into {\k27}it {\k174}all 
-Dialogue: 0,0:00:24.56,0:00:01.98,Default,,0,0,0,,{\k20}right {\k20}guys {\k28}counting {\k19}down {\k24}from {\k24}5 {\k19}to {\k198}1 
-Dialogue: 0,0:00:26.56,0:00:02.26,Default,,0,0,0,,{\k11}these {\k16}are {\k16}the {\k40}top {\k36}bet {\k48}sizing {\k226}strategies 
-Dialogue: 0,0:00:28.84,0:00:02.14,Default,,0,0,0,,{\k16}that {\k35}all {\k28}poker {\k52}begin {\k16}need {\k11}to {\k40}know {\k214}all 
-Dialogue: 0,0:00:31.00,0:00:01.86,Default,,0,0,0,,{\k24}right {\k16}guys {\k27}so {\k24}tip {\k35}number {\k32}five {\k186}first 
-Dialogue: 0,0:00:32.88,0:00:02.18,Default,,0,0,0,,{\k28}things {\k23}first {\k16}you {\k20}need {\k20}to {\k20}buy {\k28}in {\k52}full {\k218}now 
-Dialogue: 0,0:00:35.07,0:00:01.67,Default,,0,0,0,,{\k12}what {\k8}do {\k11}I {\k16}mean {\k16}by {\k28}buying {\k16}in {\k39}full {\k167}I'm 
-Dialogue: 0,0:00:36.76,0:00:02.82,Default,,0,0,0,,{\k31}talking {\k28}about {\k32}buying {\k28}in {\k27}for {\k100}exactly {\k282}100 
-Dialogue: 0,0:00:39.60,0:00:02.50,Default,,0,0,0,,{\k24}big {\k76}blinds {\k11}which {\k28}is {\k68}typically {\k250}the 
-Dialogue: 0,0:00:42.12,0:00:01.94,Default,,0,0,0,,{\k48}maximum {\k56}starting {\k32}amount {\k12}that {\k8}you {\k19}can {\k194}buy 
-Dialogue: 0,0:00:44.07,0:00:02.67,Default,,0,0,0,,{\k20}in {\k27}for {\k20}in {\k36}most {\k56}online {\k39}and {\k36}live {\k267}cash 
-Dialogue: 0,0:00:46.76,0:00:02.02,Default,,0,0,0,,{\k56}camps {\k23}and {\k28}also {\k12}at {\k16}the {\k43}beginning {\k202}of 
-Dialogue: 0,0:00:48.80,0:00:01.82,Default,,0,0,0,,{\k84}tournaments {\k36}usually {\k16}you're {\k16}going {\k12}to {\k182}have 
-Dialogue: 0,0:00:50.64,0:00:02.02,Default,,0,0,0,,{\k39}around {\k20}this {\k36}amount {\k16}as {\k31}well {\k20}now {\k11}in {\k202}terms 
-Dialogue: 0,0:00:52.68,0:00:02.02,Default,,0,0,0,,{\k19}of {\k36}actual {\k36}dollar {\k63}value {\k12}if {\k16}you're {\k202}playing 
-Dialogue: 0,0:00:54.71,0:00:02.95,Default,,0,0,0,,{\k4}a {\k40}$1 {\k55}$2 {\k28}cash {\k44}game {\k27}the {\k20}big {\k40}blind {\k16}in {\k295}that 
-Dialogue: 0,0:00:57.68,0:00:03.38,Default,,0,0,0,,{\k19}game {\k8}is {\k88}$2 {\k39}so {\k76}time100 {\k39}100 {\k16}100 {\k16}big {\k338}blinds 
-Dialogue: 0,0:01:01.07,0:00:02.46,Default,,0,0,0,,{\k12}would {\k44}be {\k100}$200 {\k20}now {\k12}why {\k16}do {\k11}I {\k246}suggest 
-Dialogue: 0,0:01:03.55,0:00:02.67,Default,,0,0,0,,{\k24}buying {\k12}in {\k8}for {\k92}$200 {\k23}well {\k24}number {\k36}one {\k267}guys 
-Dialogue: 0,0:01:06.24,0:00:02.74,Default,,0,0,0,,{\k8}I {\k11}am {\k20}a {\k40}firm {\k48}believer {\k36}in {\k48}always {\k274}having 
-Dialogue: 0,0:01:09.00,0:00:02.70,Default,,0,0,0,,{\k56}zero {\k44}limit {\k15}on {\k28}your {\k48}upside {\k28}in {\k270}poker 
-Dialogue: 0,0:01:11.72,0:00:01.82,Default,,0,0,0,,{\k39}anytime {\k12}I {\k19}sit {\k16}down {\k12}in {\k12}a {\k31}poker {\k32}game {\k182}I 
-Dialogue: 0,0:01:13.56,0:00:01.70,Default,,0,0,0,,{\k12}want {\k16}to {\k20}find {\k20}out {\k12}what {\k16}is {\k20}the {\k24}most {\k170}money 
-Dialogue: 0,0:01:15.28,0:00:02.10,Default,,0,0,0,,{\k12}I {\k12}can {\k12}put {\k11}on {\k20}the {\k36}table {\k15}so {\k16}that {\k8}I {\k24}can {\k210}win 
-Dialogue: 0,0:01:17.40,0:00:02.70,Default,,0,0,0,,{\k20}the {\k87}most {\k20}of {\k47}course {\k36}right {\k12}I {\k20}don't {\k12}want {\k270}to 
-Dialogue: 0,0:01:20.11,0:00:02.02,Default,,0,0,0,,{\k28}ever {\k35}limit {\k32}my {\k44}winnings {\k20}and {\k12}this {\k16}is {\k202}why 
-Dialogue: 0,0:01:22.15,0:00:02.83,Default,,0,0,0,,{\k40}short {\k36}stack {\k60}strategies {\k36}are {\k40}deeply {\k283}flawed 
-Dialogue: 0,0:01:25.00,0:00:02.58,Default,,0,0,0,,{\k28}because {\k28}they {\k28}place {\k31}an {\k80}artificial {\k258}ceiling 
-Dialogue: 0,0:01:27.60,0:00:01.78,Default,,0,0,0,,{\k12}on {\k16}your {\k44}winnings {\k11}if {\k16}you {\k24}only {\k23}buy {\k12}in {\k178}for 
-Dialogue: 0,0:01:29.40,0:00:02.46,Default,,0,0,0,,{\k24}30 {\k40}B {\k60}blinds {\k8}if {\k24}you {\k15}go {\k20}all {\k28}in {\k12}you {\k246}can 
-Dialogue: 0,0:01:31.88,0:00:02.14,Default,,0,0,0,,{\k19}only {\k20}win {\k28}30 {\k16}big {\k39}blinds {\k28}so {\k28}guys {\k214}anytime 
-Dialogue: 0,0:01:34.04,0:00:01.74,Default,,0,0,0,,{\k16}you {\k16}sit {\k16}down {\k12}at {\k11}a {\k28}poker {\k32}table {\k7}you {\k174}should 
-Dialogue: 0,0:01:35.79,0:00:01.87,Default,,0,0,0,,{\k44}always {\k51}know {\k16}in {\k23}your {\k24}heart {\k12}that {\k187}you're 
-Dialogue: 0,0:01:37.68,0:00:01.54,Default,,0,0,0,,{\k20}the {\k19}best {\k36}player {\k32}there {\k20}you're {\k11}there {\k154}to 
-Dialogue: 0,0:01:39.24,0:00:02.46,Default,,0,0,0,,{\k23}run {\k12}the {\k44}show {\k24}and {\k36}get {\k60}everyone's {\k246}chips 
-Dialogue: 0,0:01:41.72,0:00:01.22,Default,,0,0,0,,{\k43}otherwise {\k8}why {\k12}are {\k7}you {\k24}sitting {\k11}at {\k122}that 
-Dialogue: 0,0:01:42.96,0:00:02.22,Default,,0,0,0,,{\k32}poker {\k40}table {\k36}right {\k24}so {\k15}of {\k40}course {\k20}guys {\k222}you 
-Dialogue: 0,0:01:45.20,0:00:01.94,Default,,0,0,0,,{\k23}want {\k24}to {\k24}have {\k28}the {\k40}maximum {\k19}amount {\k8}of {\k194}chips 
-Dialogue: 0,0:01:47.15,0:00:02.15,Default,,0,0,0,,{\k12}in {\k15}front {\k12}of {\k12}you {\k24}so {\k12}you {\k16}can {\k40}win {\k19}the {\k215}most 
-Dialogue: 0,0:01:49.32,0:00:01.54,Default,,0,0,0,,{\k20}and {\k16}all {\k11}of {\k16}the {\k24}math {\k23}and {\k28}everything {\k154}in 
-Dialogue: 0,0:01:50.88,0:00:01.98,Default,,0,0,0,,{\k16}this {\k52}video {\k15}is {\k20}going {\k12}to {\k20}be {\k44}dependent {\k198}on 
-Dialogue: 0,0:01:52.88,0:00:01.70,Default,,0,0,0,,{\k16}you {\k28}buying {\k11}it {\k24}for {\k20}100 {\k16}big {\k48}blinds {\k170}all 
-Dialogue: 0,0:01:54.60,0:00:01.46,Default,,0,0,0,,{\k15}right {\k16}so {\k15}let's {\k12}get {\k19}into {\k16}the {\k23}actual {\k146}bet 
-Dialogue: 0,0:01:56.07,0:00:02.43,Default,,0,0,0,,{\k40}sizing {\k32}now {\k16}guys {\k24}so {\k36}tip {\k32}number {\k243}four 
-Dialogue: 0,0:01:58.52,0:00:01.86,Default,,0,0,0,,{\k40}betting {\k19}tip {\k16}for {\k64}beginners {\k11}that {\k8}is {\k186}to 
-Dialogue: 0,0:02:00.39,0:00:01.95,Default,,0,0,0,,{\k40}always {\k52}raise {\k32}pre {\k24}flop {\k15}and {\k20}let's {\k195}talk 
-Dialogue: 0,0:02:02.36,0:00:02.14,Default,,0,0,0,,{\k20}about {\k19}the {\k36}actual {\k44}amount {\k40}now {\k19}now {\k8}I {\k214}would 
-Dialogue: 0,0:02:04.52,0:00:03.06,Default,,0,0,0,,{\k87}recommend {\k44}raising {\k27}it {\k44}to {\k47}three {\k40}times {\k306}the 
-Dialogue: 0,0:02:07.60,0:00:02.46,Default,,0,0,0,,{\k24}big {\k36}blind {\k32}pre {\k28}flop {\k20}so {\k23}once {\k52}again {\k12}as {\k246}an 
-Dialogue: 0,0:02:10.08,0:00:02.18,Default,,0,0,0,,{\k36}example {\k15}you've {\k20}got {\k28}Ace {\k23}King {\k32}off {\k44}suit {\k218}Ace 
-Dialogue: 0,0:02:12.28,0:00:02.70,Default,,0,0,0,,{\k16}of {\k48}Hearts {\k20}King {\k16}of {\k28}Clubs {\k12}and {\k4}a {\k36}$1 {\k60}$2 {\k270}cash 
-Dialogue: 0,0:02:15.00,0:00:03.10,Default,,0,0,0,,{\k31}game {\k12}you {\k20}should {\k28}raise {\k12}it {\k60}to {\k100}$6 {\k23}now {\k310}guys 
-Dialogue: 0,0:02:18.12,0:00:01.82,Default,,0,0,0,,{\k11}as {\k20}I've {\k36}mentioned {\k28}before {\k32}you {\k32}always {\k182}want 
-Dialogue: 0,0:02:19.95,0:00:02.31,Default,,0,0,0,,{\k12}to {\k15}be {\k40}taken {\k52}control {\k40}before {\k12}the {\k36}flop {\k231}in 
-Dialogue: 0,0:02:22.28,0:00:01.90,Default,,0,0,0,,{\k40}poker {\k8}this {\k16}is {\k16}going {\k20}to {\k12}make {\k40}it {\k190}much 
-Dialogue: 0,0:02:24.20,0:00:02.42,Default,,0,0,0,,{\k67}easier {\k12}for {\k12}you {\k16}to {\k23}win {\k16}the {\k36}poker {\k47}hand {\k242}as 
-Dialogue: 0,0:02:26.64,0:00:01.42,Default,,0,0,0,,{\k16}we're {\k12}going {\k16}to {\k36}discuss {\k7}in {\k20}a {\k23}second {\k142}on 
-Dialogue: 0,0:02:28.08,0:00:02.82,Default,,0,0,0,,{\k8}the {\k28}Flop {\k20}turn {\k16}and {\k56}river {\k51}and {\k60}also {\k11}you {\k282}can 
-Dialogue: 0,0:02:30.92,0:00:02.26,Default,,0,0,0,,{\k36}take {\k44}advantage {\k15}of {\k16}the {\k44}weak {\k47}players {\k226}who 
-Dialogue: 0,0:02:33.20,0:00:01.98,Default,,0,0,0,,{\k44}limp {\k12}in {\k16}a {\k56}situation {\k24}like {\k32}this {\k198}and 
-Dialogue: 0,0:02:35.20,0:00:02.18,Default,,0,0,0,,{\k44}limping {\k12}by {\k11}the {\k16}way {\k19}is {\k24}just {\k60}calling {\k218}pre 
-Dialogue: 0,0:02:37.40,0:00:02.70,Default,,0,0,0,,{\k40}flop {\k15}which {\k24}I {\k75}absolutely {\k32}do {\k40}not {\k270}suggest 
-Dialogue: 0,0:02:40.12,0:00:02.70,Default,,0,0,0,,{\k19}you {\k44}do {\k19}guys {\k40}you {\k48}always {\k36}want {\k31}to {\k270}take 
-Dialogue: 0,0:02:42.84,0:00:02.14,Default,,0,0,0,,{\k60}control {\k15}now {\k12}I {\k20}want {\k23}to {\k24}point {\k24}out {\k16}that {\k214}the 
-Dialogue: 0,0:02:45.00,0:00:02.70,Default,,0,0,0,,{\k51}ideal {\k88}situation {\k16}when {\k20}you {\k36}raise {\k36}pre {\k270}flop 
-Dialogue: 0,0:02:47.72,0:00:02.54,Default,,0,0,0,,{\k12}is {\k11}that {\k20}you {\k36}get {\k44}one {\k76}color {\k12}if {\k20}you {\k254}find 
-Dialogue: 0,0:02:50.28,0:00:01.94,Default,,0,0,0,,{\k12}that {\k8}you {\k20}are {\k44}getting {\k88}significantly {\k194}more 
-Dialogue: 0,0:02:52.23,0:00:02.15,Default,,0,0,0,,{\k16}than {\k24}one {\k31}color {\k24}say {\k24}2 {\k20}3 {\k36}4 {\k20}five {\k11}or {\k215}the 
-Dialogue: 0,0:02:54.40,0:00:01.82,Default,,0,0,0,,{\k19}whole {\k24}table {\k31}calls {\k40}you {\k20}don't {\k28}use {\k182}three 
-Dialogue: 0,0:02:56.23,0:00:01.87,Default,,0,0,0,,{\k24}times {\k11}the {\k16}big {\k36}blind {\k16}raise {\k16}it {\k15}up {\k24}more {\k187}try 
-Dialogue: 0,0:02:58.12,0:00:02.06,Default,,0,0,0,,{\k28}four {\k24}times {\k12}the {\k16}big {\k48}blind {\k47}five {\k20}times {\k206}the 
-Dialogue: 0,0:03:00.20,0:00:02.02,Default,,0,0,0,,{\k16}big {\k48}blind {\k8}if {\k23}you're {\k28}playing {\k12}in {\k20}a {\k202}game 
-Dialogue: 0,0:03:02.23,0:00:02.54,Default,,0,0,0,,{\k36}versus {\k16}a {\k24}bunch {\k23}of {\k48}drunk {\k43}loose {\k254}Maniacs 
-Dialogue: 0,0:03:04.79,0:00:03.11,Default,,0,0,0,,{\k44}try {\k44}10 {\k27}times {\k16}the {\k16}big {\k51}blind {\k48}guys {\k311}whatever 
-Dialogue: 0,0:03:07.92,0:00:02.90,Default,,0,0,0,,{\k23}is {\k28}going {\k28}to {\k20}get {\k39}you {\k36}one {\k83}color {\k20}that's {\k290}the 
-Dialogue: 0,0:03:10.84,0:00:01.62,Default,,0,0,0,,{\k31}correct {\k28}amount {\k15}in {\k24}your {\k31}game {\k12}and {\k12}on {\k162}the 
-Dialogue: 0,0:03:12.48,0:00:01.78,Default,,0,0,0,,{\k31}flip {\k20}side {\k8}if {\k20}you're {\k36}playing {\k15}in {\k20}a {\k178}high 
-Dialogue: 0,0:03:14.28,0:00:01.98,Default,,0,0,0,,{\k72}stakes {\k23}game {\k24}full {\k24}of {\k28}world {\k198}class 
-Dialogue: 0,0:03:16.28,0:00:01.50,Default,,0,0,0,,{\k59}professionals {\k36}perhaps {\k24}three {\k20}times {\k150}the 
-Dialogue: 0,0:03:17.79,0:00:01.50,Default,,0,0,0,,{\k32}blind {\k16}is {\k20}too {\k24}much {\k12}and {\k8}you {\k20}should {\k150}try 
-Dialogue: 0,0:03:19.31,0:00:02.18,Default,,0,0,0,,{\k28}making {\k20}it {\k20}just {\k28}two {\k23}times {\k12}the {\k56}blind {\k218}guys 
-Dialogue: 0,0:03:21.51,0:00:02.11,Default,,0,0,0,,{\k36}bottom {\k40}line {\k28}three {\k28}times {\k11}the {\k36}blind {\k8}is {\k211}a 
-Dialogue: 0,0:03:23.64,0:00:02.78,Default,,0,0,0,,{\k56}default {\k64}raise {\k64}strategy {\k31}before {\k12}the {\k278}Flom 
-Dialogue: 0,0:03:26.44,0:00:01.54,Default,,0,0,0,,{\k12}that {\k16}I've {\k36}found {\k36}works {\k24}well {\k8}but {\k11}you {\k154}need 
-Dialogue: 0,0:03:28.00,0:00:02.14,Default,,0,0,0,,{\k23}to {\k36}tailor {\k16}it {\k16}for {\k16}the {\k32}specific {\k47}po {\k214}games 
-Dialogue: 0,0:03:30.15,0:00:01.51,Default,,0,0,0,,{\k12}you {\k15}are {\k28}playing {\k36}in {\k12}all {\k16}right {\k15}guys {\k151}let's 
-Dialogue: 0,0:03:31.68,0:00:01.78,Default,,0,0,0,,{\k16}move {\k8}on {\k20}to {\k31}betting {\k36}tip {\k28}number {\k23}three {\k178}for 
-Dialogue: 0,0:03:33.48,0:00:01.70,Default,,0,0,0,,{\k39}beginners {\k16}and {\k16}now {\k20}let's {\k16}talk {\k31}about {\k170}re 
-Dialogue: 0,0:03:35.20,0:00:02.22,Default,,0,0,0,,{\k48}raising {\k32}before {\k12}the {\k47}Flop {\k36}now {\k16}I {\k222}didn't 
-Dialogue: 0,0:03:37.43,0:00:02.67,Default,,0,0,0,,{\k56}mention {\k12}in {\k24}the {\k51}previous {\k56}example {\k40}that {\k267}the 
-Dialogue: 0,0:03:40.12,0:00:01.70,Default,,0,0,0,,{\k44}actual {\k36}hands {\k8}that {\k12}you {\k19}should {\k20}be {\k170}playing 
-Dialogue: 0,0:03:41.84,0:00:01.62,Default,,0,0,0,,{\k16}and {\k43}raising {\k20}with {\k31}pre {\k24}flop {\k8}I'm {\k12}not {\k162}going 
-Dialogue: 0,0:03:43.48,0:00:01.86,Default,,0,0,0,,{\k16}to {\k20}get {\k28}into {\k19}that {\k16}in {\k20}this {\k52}video {\k186}because 
-Dialogue: 0,0:03:45.36,0:00:02.14,Default,,0,0,0,,{\k12}I've {\k31}covered {\k32}it {\k28}in {\k44}detail {\k20}in {\k24}many {\k214}other 
-Dialogue: 0,0:03:47.51,0:00:01.75,Default,,0,0,0,,{\k48}videos {\k20}and {\k11}if {\k12}you {\k12}want {\k16}to {\k20}know {\k23}all {\k175}the 
-Dialogue: 0,0:03:49.28,0:00:01.62,Default,,0,0,0,,{\k28}hands {\k12}that {\k16}I {\k24}actually {\k35}suggest {\k32}playing {\k162}as 
-Dialogue: 0,0:03:50.92,0:00:02.10,Default,,0,0,0,,{\k39}well {\k12}there {\k20}are {\k36}charts {\k20}and {\k56}diagrams {\k11}in {\k210}my 
-Dialogue: 0,0:03:53.04,0:00:01.54,Default,,0,0,0,,{\k27}free {\k20}poker {\k28}cheat {\k28}sheet {\k12}and {\k16}I'll {\k154}link 
-Dialogue: 0,0:03:54.59,0:00:01.82,Default,,0,0,0,,{\k16}that {\k19}up {\k12}in {\k16}the {\k44}description {\k36}below {\k19}but {\k182}now 
-Dialogue: 0,0:03:56.43,0:00:02.31,Default,,0,0,0,,{\k24}let's {\k19}talk {\k32}about {\k48}premium {\k63}hands {\k20}you {\k231}guys 
-Dialogue: 0,0:03:58.76,0:00:01.38,Default,,0,0,0,,{\k24}already {\k23}know {\k44}we're {\k32}definitely {\k7}going {\k138}to 
-Dialogue: 0,0:04:00.15,0:00:01.42,Default,,0,0,0,,{\k12}be {\k31}playing {\k20}these {\k28}hands {\k12}I'm {\k20}talking {\k142}about 
-Dialogue: 0,0:04:01.59,0:00:02.31,Default,,0,0,0,,{\k28}pocket {\k44}aces {\k32}pocket {\k56}kings {\k28}pocket {\k231}Queens 
-Dialogue: 0,0:04:03.92,0:00:01.70,Default,,0,0,0,,{\k28}pocket {\k28}Jacks {\k20}and {\k32}Ace {\k36}King {\k12}these {\k170}are 
-Dialogue: 0,0:04:05.64,0:00:01.82,Default,,0,0,0,,{\k31}referred {\k16}to {\k11}as {\k32}premium {\k20}hands {\k19}and {\k182}poker 
-Dialogue: 0,0:04:07.48,0:00:01.62,Default,,0,0,0,,{\k28}and {\k52}typically {\k15}not {\k16}only {\k12}do {\k7}you {\k12}want {\k8}to {\k162}be 
-Dialogue: 0,0:04:09.12,0:00:01.90,Default,,0,0,0,,{\k44}raising {\k16}with {\k23}these {\k36}hands {\k12}but {\k16}you {\k20}want {\k190}to 
-Dialogue: 0,0:04:11.04,0:00:02.74,Default,,0,0,0,,{\k36}be {\k44}re {\k47}raising {\k20}if {\k36}somebody {\k32}has {\k274}already 
-Dialogue: 0,0:04:13.79,0:00:02.42,Default,,0,0,0,,{\k28}come {\k28}into {\k20}the {\k36}pot {\k31}for {\k20}a {\k48}raise {\k12}this {\k242}is 
-Dialogue: 0,0:04:16.23,0:00:01.50,Default,,0,0,0,,{\k24}also {\k20}called {\k11}a {\k32}three {\k28}bet {\k11}by {\k8}the {\k150}way 
-Dialogue: 0,0:04:17.75,0:00:01.98,Default,,0,0,0,,{\k24}before {\k12}the {\k60}Flop {\k23}once {\k32}again {\k23}guys {\k198}two 
-Dialogue: 0,0:04:19.75,0:00:02.39,Default,,0,0,0,,{\k32}things {\k32}here {\k16}you {\k16}want {\k28}to {\k32}take {\k68}charge {\k239}and 
-Dialogue: 0,0:04:22.16,0:00:03.10,Default,,0,0,0,,{\k36}you {\k52}also {\k28}want {\k31}to {\k40}start {\k52}building {\k24}the {\k310}pot 
-Dialogue: 0,0:04:25.28,0:00:01.42,Default,,0,0,0,,{\k12}guys {\k16}you {\k16}need {\k19}to {\k28}always {\k32}remember {\k142}that 
-Dialogue: 0,0:04:26.72,0:00:02.14,Default,,0,0,0,,{\k47}aggressive {\k32}poker {\k11}is {\k40}winning {\k59}poker {\k214}and 
-Dialogue: 0,0:04:28.88,0:00:02.18,Default,,0,0,0,,{\k24}not {\k48}only {\k12}am {\k19}I {\k32}always {\k32}looking {\k24}to {\k218}come 
-Dialogue: 0,0:04:31.08,0:00:02.42,Default,,0,0,0,,{\k36}into {\k16}the {\k20}pot {\k11}with {\k16}a {\k39}raise {\k16}but {\k36}I'm {\k242}also 
-Dialogue: 0,0:04:33.52,0:00:03.10,Default,,0,0,0,,{\k48}looking {\k32}for {\k48}Clear {\k64}situations {\k31}to {\k32}R {\k36}ra {\k310}as 
-Dialogue: 0,0:04:36.63,0:00:01.59,Default,,0,0,0,,{\k24}well {\k24}to {\k20}let {\k31}people {\k20}know {\k19}that {\k12}I'm {\k159}going 
-Dialogue: 0,0:04:38.24,0:00:01.58,Default,,0,0,0,,{\k12}to {\k11}be {\k12}in {\k20}charge {\k11}of {\k16}the {\k44}hand {\k158}and 
-Dialogue: 0,0:04:39.84,0:00:01.46,Default,,0,0,0,,{\k40}definitely {\k16}want {\k16}I {\k12}have {\k12}one {\k16}of {\k146}these 
-Dialogue: 0,0:04:41.32,0:00:02.26,Default,,0,0,0,,{\k87}insanely {\k20}strong {\k32}hands {\k16}like {\k40}Aces {\k226}kings 
-Dialogue: 0,0:04:43.60,0:00:02.34,Default,,0,0,0,,{\k40}queens {\k47}jacks {\k24}or {\k31}Ace {\k28}King {\k15}now {\k20}what {\k234}amount 
-Dialogue: 0,0:04:45.96,0:00:01.86,Default,,0,0,0,,{\k12}are {\k16}we {\k36}using {\k36}here {\k23}once {\k32}again {\k20}guys {\k186}I 
-Dialogue: 0,0:04:47.84,0:00:02.90,Default,,0,0,0,,{\k24}think {\k24}a {\k40}good {\k64}default {\k39}three {\k28}betat {\k36}or {\k290}re 
-Dialogue: 0,0:04:50.75,0:00:02.67,Default,,0,0,0,,{\k56}raising {\k71}size {\k20}in {\k12}a {\k16}lot {\k16}of {\k32}small {\k267}Stakes 
-Dialogue: 0,0:04:53.44,0:00:03.30,Default,,0,0,0,,{\k40}games {\k24}is {\k32}three {\k60}times {\k44}their {\k68}raise {\k51}so {\k330}as 
-Dialogue: 0,0:04:56.75,0:00:02.11,Default,,0,0,0,,{\k24}an {\k44}example {\k24}you've {\k20}got {\k24}two {\k24}red {\k211}Queens 
-Dialogue: 0,0:04:58.88,0:00:01.14,Default,,0,0,0,,{\k20}Queen {\k11}of {\k24}Hearts {\k12}and {\k12}and {\k20}queen {\k114}of 
-Dialogue: 0,0:05:00.03,0:00:02.14,Default,,0,0,0,,{\k36}diamonds {\k12}in {\k4}a {\k44}$1 {\k52}$2 {\k23}cash {\k24}game {\k214}and 
-Dialogue: 0,0:05:02.19,0:00:02.70,Default,,0,0,0,,{\k36}somebody {\k19}has {\k28}already {\k36}raised {\k12}it {\k20}to {\k100}$6 {\k270}so 
-Dialogue: 0,0:05:04.91,0:00:01.47,Default,,0,0,0,,{\k16}what {\k11}you {\k12}want {\k15}to {\k24}do {\k19}here {\k12}is {\k12}you {\k8}want {\k147}to 
-Dialogue: 0,0:05:06.40,0:00:02.50,Default,,0,0,0,,{\k16}make {\k32}it {\k40}three {\k63}times {\k28}their {\k44}raise {\k16}so {\k250}that 
-Dialogue: 0,0:05:08.91,0:00:03.26,Default,,0,0,0,,{\k12}would {\k64}be {\k100}$18 {\k23}now {\k28}once {\k52}again {\k24}just {\k326}like 
-Dialogue: 0,0:05:12.19,0:00:02.03,Default,,0,0,0,,{\k44}before {\k32}guys {\k20}you {\k24}need {\k23}to {\k44}tailor {\k203}the 
-Dialogue: 0,0:05:14.24,0:00:02.22,Default,,0,0,0,,{\k39}amount {\k16}here {\k20}to {\k24}the {\k79}specific {\k32}games {\k222}that 
-Dialogue: 0,0:05:16.47,0:00:02.19,Default,,0,0,0,,{\k20}you're {\k28}playing {\k32}in {\k12}if {\k12}you {\k20}make {\k8}it {\k219}$18 
-Dialogue: 0,0:05:18.68,0:00:01.74,Default,,0,0,0,,{\k16}here {\k12}and {\k20}you're {\k59}routinely {\k36}getting {\k174}five 
-Dialogue: 0,0:05:20.44,0:00:03.14,Default,,0,0,0,,{\k68}colors {\k19}don't {\k16}make {\k8}it {\k91}$18 {\k16}make {\k8}it {\k314}$30 
-Dialogue: 0,0:05:23.60,0:00:02.98,Default,,0,0,0,,{\k15}make {\k12}it {\k100}$50 {\k15}make {\k28}it {\k52}whatever {\k40}amount {\k298}is 
-Dialogue: 0,0:05:26.60,0:00:02.94,Default,,0,0,0,,{\k43}again {\k20}going {\k20}to {\k16}get {\k43}you {\k48}one {\k64}callar {\k294}and 
-Dialogue: 0,0:05:29.56,0:00:01.14,Default,,0,0,0,,{\k16}once {\k16}again {\k8}if {\k12}you're {\k23}playing {\k8}in {\k12}a {\k114}high 
-Dialogue: 0,0:05:30.72,0:00:02.06,Default,,0,0,0,,{\k40}stakes {\k19}game {\k32}versus {\k8}a {\k16}lot {\k15}of {\k206}worldclass 
-Dialogue: 0,0:05:32.80,0:00:02.06,Default,,0,0,0,,{\k80}professionals {\k43}perhaps {\k32}three {\k27}times {\k206}their 
-Dialogue: 0,0:05:34.88,0:00:02.38,Default,,0,0,0,,{\k52}raise {\k23}is {\k28}too {\k64}much {\k19}maybe {\k12}you {\k8}want {\k12}to {\k238}try 
-Dialogue: 0,0:05:37.28,0:00:03.22,Default,,0,0,0,,{\k32}making {\k12}at {\k100}$15 {\k31}or {\k36}even {\k56}less {\k20}find {\k20}out {\k322}the 
-Dialogue: 0,0:05:40.52,0:00:01.90,Default,,0,0,0,,{\k23}amount {\k12}that {\k31}works {\k12}the {\k32}best {\k16}in {\k28}your {\k190}games 
-Dialogue: 0,0:05:42.44,0:00:02.78,Default,,0,0,0,,{\k19}but {\k16}as {\k36}a {\k36}rough {\k36}rule {\k24}of {\k51}thumb {\k16}you {\k20}want {\k278}to 
-Dialogue: 0,0:05:45.24,0:00:03.30,Default,,0,0,0,,{\k32}look {\k28}to {\k84}Rea {\k60}three {\k47}times {\k16}the {\k36}amount {\k330}that 
-Dialogue: 0,0:05:48.56,0:00:02.02,Default,,0,0,0,,{\k32}they {\k40}raised {\k35}it {\k12}all {\k24}right {\k24}guys {\k20}let's {\k202}get 
-Dialogue: 0,0:05:50.60,0:00:02.34,Default,,0,0,0,,{\k20}into {\k16}the {\k23}bread {\k16}and {\k36}butter {\k36}now {\k48}tip {\k234}number 
-Dialogue: 0,0:05:52.96,0:00:02.18,Default,,0,0,0,,{\k32}two {\k32}for {\k43}betting {\k16}that {\k32}all {\k44}beginners {\k218}need 
-Dialogue: 0,0:05:55.16,0:00:02.02,Default,,0,0,0,,{\k20}to {\k48}know {\k12}and {\k12}this {\k16}is {\k12}the {\k27}real {\k20}heart {\k16}of {\k202}my 
-Dialogue: 0,0:05:57.19,0:00:03.87,Default,,0,0,0,,{\k48}strategy {\k23}now {\k12}which {\k12}is {\k31}the {\k112}5075 {\k80}75 {\k387}rule 
-Dialogue: 0,0:06:01.08,0:00:01.82,Default,,0,0,0,,{\k11}all {\k16}right {\k24}so {\k8}what {\k20}does {\k28}this {\k44}exactly {\k182}mean 
-Dialogue: 0,0:06:02.91,0:00:02.43,Default,,0,0,0,,{\k12}well {\k12}it {\k24}means {\k20}you {\k28}bet {\k52}50% {\k12}of {\k16}the {\k48}pot {\k243}on 
-Dialogue: 0,0:06:05.36,0:00:03.38,Default,,0,0,0,,{\k16}the {\k44}Flop {\k12}and {\k16}you {\k79}bet {\k100}75% {\k12}of {\k15}the {\k32}pot {\k338}on 
-Dialogue: 0,0:06:08.75,0:00:01.95,Default,,0,0,0,,{\k16}the {\k36}turn {\k24}and {\k60}river {\k12}and {\k12}I'm {\k11}going {\k195}to 
-Dialogue: 0,0:06:10.72,0:00:02.86,Default,,0,0,0,,{\k75}explain {\k56}why {\k24}right {\k47}now {\k24}so {\k28}first {\k286}things 
-Dialogue: 0,0:06:13.59,0:00:02.39,Default,,0,0,0,,{\k44}first {\k48}guys {\k16}why {\k16}do {\k16}we {\k44}bet {\k31}Less {\k16}on {\k239}the 
-Dialogue: 0,0:06:16.00,0:00:01.86,Default,,0,0,0,,{\k36}Flop {\k16}and {\k7}by {\k8}the {\k12}way {\k11}when {\k8}I {\k28}say {\k44}50% {\k186}of 
-Dialogue: 0,0:06:17.88,0:00:02.78,Default,,0,0,0,,{\k12}the {\k47}pot {\k8}as {\k24}an {\k48}example {\k28}pot's {\k72}$10 {\k19}you {\k278}bet 
-Dialogue: 0,0:06:20.68,0:00:02.30,Default,,0,0,0,,{\k84}$5 {\k20}so {\k31}starting {\k16}on {\k8}the {\k35}Flop {\k12}guys {\k12}you {\k230}need 
-Dialogue: 0,0:06:23.00,0:00:02.34,Default,,0,0,0,,{\k12}to {\k44}realize {\k12}that {\k20}the {\k68}ranges {\k40}are {\k234}their 
-Dialogue: 0,0:06:25.36,0:00:02.10,Default,,0,0,0,,{\k55}widest {\k12}on {\k12}the {\k40}Flop {\k16}and {\k12}what {\k12}I {\k32}mean {\k210}by 
-Dialogue: 0,0:06:27.47,0:00:02.79,Default,,0,0,0,,{\k24}that {\k28}is {\k36}people {\k32}can {\k35}have {\k80}the {\k19}range {\k279}of 
-Dialogue: 0,0:06:30.28,0:00:02.14,Default,,0,0,0,,{\k40}hands {\k12}they {\k20}can {\k36}have {\k23}all {\k28}sorts {\k24}of {\k214}stuff 
-Dialogue: 0,0:06:32.44,0:00:02.78,Default,,0,0,0,,{\k19}that {\k44}doesn't {\k32}have {\k28}any {\k48}pair {\k31}any {\k44}draw {\k278}or 
-Dialogue: 0,0:06:35.24,0:00:02.22,Default,,0,0,0,,{\k76}anything {\k24}guys {\k32}two {\k12}out {\k16}of {\k28}every {\k222}three 
-Dialogue: 0,0:06:37.47,0:00:02.39,Default,,0,0,0,,{\k36}times {\k16}you {\k28}go {\k28}see {\k12}the {\k48}Flop {\k12}with {\k19}a {\k239}random 
-Dialogue: 0,0:06:39.88,0:00:01.46,Default,,0,0,0,,{\k28}hand {\k15}you're {\k8}going {\k16}to {\k19}miss {\k12}the {\k146}flop 
-Dialogue: 0,0:06:41.36,0:00:01.78,Default,,0,0,0,,{\k72}completely {\k16}you're {\k12}going {\k11}to {\k16}miss {\k12}the {\k178}flop 
-Dialogue: 0,0:06:43.16,0:00:02.02,Default,,0,0,0,,{\k20}and {\k55}also {\k16}they {\k16}are {\k12}going {\k11}to {\k20}miss {\k12}the {\k202}flop 
-Dialogue: 0,0:06:45.19,0:00:02.42,Default,,0,0,0,,{\k24}so {\k15}it {\k32}only {\k40}stands {\k24}to {\k56}reason {\k24}that {\k242}in 
-Dialogue: 0,0:06:47.63,0:00:02.10,Default,,0,0,0,,{\k68}situations {\k24}like {\k19}this {\k12}you {\k24}should {\k35}bet {\k210}less 
-Dialogue: 0,0:06:49.75,0:00:01.98,Default,,0,0,0,,{\k24}in {\k24}these {\k72}situations {\k20}because {\k24}it's {\k198}simply 
-Dialogue: 0,0:06:51.75,0:00:02.39,Default,,0,0,0,,{\k20}going {\k23}to {\k12}give {\k20}you {\k16}a {\k51}cheaper {\k40}price {\k28}to {\k239}get 
-Dialogue: 0,0:06:54.16,0:00:02.42,Default,,0,0,0,,{\k59}folds {\k20}now {\k23}I {\k24}always {\k19}need {\k24}to {\k20}point {\k39}out {\k242}as 
-Dialogue: 0,0:06:56.59,0:00:01.83,Default,,0,0,0,,{\k12}I {\k36}mentioned {\k11}in {\k24}my {\k31}first {\k24}book {\k28}crush {\k183}on 
-Dialogue: 0,0:06:58.44,0:00:02.06,Default,,0,0,0,,{\k12}the {\k31}micro {\k56}Stakes {\k24}that {\k206}versus 
-Dialogue: 0,0:07:00.52,0:00:02.66,Default,,0,0,0,,{\k88}recreational {\k56}players {\k56}AKA {\k32}are {\k266}fishy 
-Dialogue: 0,0:07:03.19,0:00:02.35,Default,,0,0,0,,{\k52}friends {\k12}who {\k16}will {\k28}call {\k19}with {\k24}any {\k44}draw {\k235}any 
-Dialogue: 0,0:07:05.56,0:00:03.18,Default,,0,0,0,,{\k60}pair {\k43}ace {\k44}high {\k52}Jack {\k28}High {\k63}anything {\k8}I {\k318}don't 
-Dialogue: 0,0:07:08.75,0:00:01.59,Default,,0,0,0,,{\k28}use {\k16}any {\k12}of {\k16}these {\k36}rules {\k28}versus {\k159}those 
-Dialogue: 0,0:07:10.36,0:00:01.26,Default,,0,0,0,,{\k32}players {\k12}when {\k7}I {\k12}have {\k12}a {\k12}Str {\k23}strong {\k126}hand 
-Dialogue: 0,0:07:11.63,0:00:02.10,Default,,0,0,0,,{\k28}versus {\k24}those {\k36}players {\k7}I {\k16}just {\k44}bet {\k44}100% {\k210}of 
-Dialogue: 0,0:07:13.75,0:00:02.10,Default,,0,0,0,,{\k16}the {\k44}pot {\k11}if {\k16}it's {\k20}some {\k28}drunk {\k60}Maniac {\k210}I'll 
-Dialogue: 0,0:07:15.87,0:00:02.11,Default,,0,0,0,,{\k12}just {\k16}go {\k15}all {\k48}in {\k11}okay {\k24}so {\k15}these {\k48}rules {\k211}do 
-Dialogue: 0,0:07:18.00,0:00:02.58,Default,,0,0,0,,{\k40}not {\k35}apply {\k24}to {\k56}fishy {\k40}poker {\k44}players {\k258}I'm 
-Dialogue: 0,0:07:20.59,0:00:02.30,Default,,0,0,0,,{\k32}talking {\k56}about {\k52}decent {\k47}players {\k24}in {\k230}this 
-Dialogue: 0,0:07:22.91,0:00:02.94,Default,,0,0,0,,{\k76}video {\k32}so {\k19}I {\k20}like {\k40}to {\k64}standardize {\k15}my {\k294}beted 
-Dialogue: 0,0:07:25.87,0:00:02.51,Default,,0,0,0,,{\k40}sizing {\k12}on {\k12}the {\k44}Flop {\k48}50% {\k12}of {\k16}the {\k251}P 
-Dialogue: 0,0:07:28.40,0:00:01.62,Default,,0,0,0,,{\k63}mathematically {\k40}you {\k12}only {\k16}need {\k12}to {\k7}get {\k162}them 
-Dialogue: 0,0:07:30.03,0:00:01.91,Default,,0,0,0,,{\k12}to {\k31}fold {\k36}around {\k19}one {\k16}out {\k16}of {\k23}three {\k28}times {\k191}in 
-Dialogue: 0,0:07:31.96,0:00:02.22,Default,,0,0,0,,{\k23}order {\k20}to {\k35}show {\k28}a {\k32}profit {\k11}in {\k20}a {\k222}situation 
-Dialogue: 0,0:07:34.19,0:00:01.82,Default,,0,0,0,,{\k16}like {\k32}this {\k16}as {\k40}mentioned {\k12}we {\k27}already {\k182}know 
-Dialogue: 0,0:07:36.03,0:00:01.35,Default,,0,0,0,,{\k16}that {\k16}two {\k11}out {\k16}of {\k20}three {\k19}times {\k12}they {\k135}didn't 
-Dialogue: 0,0:07:37.40,0:00:02.02,Default,,0,0,0,,{\k16}even {\k16}hit {\k12}the {\k32}Flop {\k15}so {\k8}this {\k16}is {\k31}a {\k202}perfect 
-Dialogue: 0,0:07:39.44,0:00:02.34,Default,,0,0,0,,{\k68}amount {\k35}to {\k56}maximize {\k24}your {\k31}success {\k234}and 
-Dialogue: 0,0:07:41.80,0:00:01.70,Default,,0,0,0,,{\k20}getting {\k16}them {\k12}to {\k40}fold {\k23}but {\k32}also {\k170}getting 
-Dialogue: 0,0:07:43.52,0:00:02.10,Default,,0,0,0,,{\k16}you {\k40}some {\k48}value {\k12}if {\k16}you {\k19}do {\k32}manage {\k16}to {\k210}hit 
-Dialogue: 0,0:07:45.63,0:00:02.50,Default,,0,0,0,,{\k12}the {\k56}Flop {\k20}like {\k16}we {\k32}do {\k28}in {\k28}this {\k47}example {\k250}so 
-Dialogue: 0,0:07:48.15,0:00:01.86,Default,,0,0,0,,{\k16}you {\k20}have {\k28}Ace {\k28}queen {\k28}off {\k32}suit {\k19}ace {\k186}of 
-Dialogue: 0,0:07:50.03,0:00:01.82,Default,,0,0,0,,{\k40}hearts {\k15}and {\k28}Queen {\k16}of {\k32}Clubs {\k11}and {\k8}the {\k182}Flop 
-Dialogue: 0,0:07:51.87,0:00:01.58,Default,,0,0,0,,{\k28}comes {\k16}down {\k12}with {\k12}the {\k19}ace {\k16}of {\k158}diamonds 
-Dialogue: 0,0:07:53.47,0:00:02.19,Default,,0,0,0,,{\k28}seven {\k16}of {\k44}Spades {\k16}and {\k23}two {\k16}of {\k52}Hearts {\k219}so 
-Dialogue: 0,0:07:55.68,0:00:01.46,Default,,0,0,0,,{\k23}guys {\k12}this {\k16}is {\k12}one {\k8}of {\k16}the {\k24}times {\k16}when {\k146}we 
-Dialogue: 0,0:07:57.15,0:00:01.67,Default,,0,0,0,,{\k20}did {\k16}hit {\k11}the {\k28}Flop {\k16}so {\k11}we're {\k36}betting {\k167}for 
-Dialogue: 0,0:07:58.84,0:00:02.38,Default,,0,0,0,,{\k56}value {\k12}in {\k20}this {\k72}situation {\k24}so {\k32}versus {\k238}a 
-Dialogue: 0,0:08:01.24,0:00:02.22,Default,,0,0,0,,{\k39}decent {\k68}player {\k28}once {\k32}again {\k12}on {\k12}the {\k222}Flop 
-Dialogue: 0,0:08:03.47,0:00:03.31,Default,,0,0,0,,{\k12}here {\k12}you {\k19}want {\k24}about {\k76}$5 {\k64}into {\k100}$10 {\k12}and {\k331}I 
-Dialogue: 0,0:08:06.80,0:00:02.02,Default,,0,0,0,,{\k11}want {\k12}to {\k24}be {\k31}clear {\k40}here {\k15}if {\k12}we {\k19}had {\k202}totally 
-Dialogue: 0,0:08:08.84,0:00:01.90,Default,,0,0,0,,{\k35}missed {\k12}this {\k40}flop {\k12}if {\k16}it {\k19}came {\k44}instead {\k190}with 
-Dialogue: 0,0:08:10.75,0:00:02.26,Default,,0,0,0,,{\k12}a {\k92}885 {\k16}or {\k35}something {\k16}we {\k16}have {\k28}nothing {\k226}at 
-Dialogue: 0,0:08:13.03,0:00:03.58,Default,,0,0,0,,{\k40}all {\k8}I {\k32}would {\k31}also {\k20}be {\k36}betting {\k72}$5 {\k24}into {\k358}$10 
-Dialogue: 0,0:08:16.63,0:00:02.19,Default,,0,0,0,,{\k12}it {\k32}is {\k36}very {\k28}very {\k56}important {\k19}guys {\k219}to 
-Dialogue: 0,0:08:18.84,0:00:02.78,Default,,0,0,0,,{\k84}standardize {\k28}your {\k40}bet {\k60}sizing {\k40}here {\k278}whether 
-Dialogue: 0,0:08:21.63,0:00:02.59,Default,,0,0,0,,{\k32}you {\k51}have {\k32}the {\k23}strong {\k32}top {\k39}pair {\k36}here {\k259}like 
-Dialogue: 0,0:08:24.24,0:00:01.78,Default,,0,0,0,,{\k16}we {\k16}do {\k16}in {\k15}this {\k60}situation {\k20}or {\k19}you {\k178}have 
-Dialogue: 0,0:08:26.03,0:00:01.75,Default,,0,0,0,,{\k32}nothing {\k8}at {\k43}all {\k12}all {\k15}right {\k16}so {\k20}let's {\k11}go {\k175}to 
-Dialogue: 0,0:08:27.80,0:00:02.02,Default,,0,0,0,,{\k16}the {\k44}turn {\k40}now {\k11}it {\k52}honest {\k24}doesn't {\k202}really 
-Dialogue: 0,0:08:29.84,0:00:01.70,Default,,0,0,0,,{\k24}matter {\k11}what {\k12}the {\k32}turn {\k28}card {\k28}is {\k16}in {\k170}this 
-Dialogue: 0,0:08:31.56,0:00:02.30,Default,,0,0,0,,{\k47}example {\k16}we {\k39}have {\k28}top {\k44}pair {\k15}with {\k16}one {\k12}of {\k230}the 
-Dialogue: 0,0:08:33.88,0:00:02.54,Default,,0,0,0,,{\k24}best {\k64}kickers {\k32}so {\k7}I {\k24}am {\k20}going {\k20}to {\k20}be {\k254}laying 
-Dialogue: 0,0:08:36.44,0:00:02.54,Default,,0,0,0,,{\k20}the {\k39}hammer {\k36}down {\k12}on {\k16}the {\k27}turn {\k20}and {\k254}betting 
-Dialogue: 0,0:08:39.00,0:00:03.58,Default,,0,0,0,,{\k100}$15 {\k83}into {\k12}what {\k16}will {\k15}be {\k4}a {\k71}$20 {\k28}pot {\k12}on {\k358}the 
-Dialogue: 0,0:08:42.59,0:00:03.51,Default,,0,0,0,,{\k60}turn {\k16}which {\k64}is {\k100}75% {\k24}of {\k12}the {\k36}pot {\k8}and {\k20}now {\k351}let 
-Dialogue: 0,0:08:46.12,0:00:01.94,Default,,0,0,0,,{\k15}me {\k40}break {\k15}that {\k24}down {\k19}for {\k20}you {\k24}guys {\k8}why {\k15}do {\k194}I 
-Dialogue: 0,0:08:48.08,0:00:02.70,Default,,0,0,0,,{\k24}bet {\k80}75% {\k8}of {\k16}the {\k20}pot {\k12}on {\k15}the {\k52}turn {\k32}and {\k270}I'm 
-Dialogue: 0,0:08:50.80,0:00:01.58,Default,,0,0,0,,{\k8}going {\k12}to {\k12}do {\k12}that {\k12}on {\k12}the {\k32}river {\k15}as {\k158}well 
-Dialogue: 0,0:08:52.39,0:00:01.79,Default,,0,0,0,,{\k20}guys {\k20}the {\k36}reason {\k28}why {\k20}is {\k31}because {\k179}when 
-Dialogue: 0,0:08:54.20,0:00:01.66,Default,,0,0,0,,{\k36}somebody {\k24}calls {\k15}you {\k12}on {\k16}the {\k44}Flop {\k166}it 
-Dialogue: 0,0:08:55.88,0:00:02.18,Default,,0,0,0,,{\k51}Narrows {\k20}their {\k44}range {\k79}tremendously {\k218}they 
-Dialogue: 0,0:08:58.07,0:00:01.98,Default,,0,0,0,,{\k48}basically {\k24}told {\k15}you {\k28}that {\k15}they {\k28}have {\k198}either 
-Dialogue: 0,0:09:00.07,0:00:01.83,Default,,0,0,0,,{\k16}some {\k15}sort {\k12}of {\k36}pair {\k19}or {\k16}some {\k15}sort {\k12}of {\k183}draw 
-Dialogue: 0,0:09:01.92,0:00:01.38,Default,,0,0,0,,{\k20}there's {\k15}not {\k20}really {\k20}any {\k36}draws {\k16}on {\k138}this 
-Dialogue: 0,0:09:03.32,0:00:02.14,Default,,0,0,0,,{\k32}flop {\k12}but {\k12}the {\k51}A7 {\k40}Deuce {\k15}there's {\k16}no {\k214}flush 
-Dialogue: 0,0:09:05.48,0:00:02.30,Default,,0,0,0,,{\k68}draw {\k28}and {\k39}there's {\k32}really {\k20}no {\k230}conceivable 
-Dialogue: 0,0:09:07.80,0:00:01.86,Default,,0,0,0,,{\k27}straight {\k52}draws {\k35}either {\k44}so {\k186}they're 
-Dialogue: 0,0:09:09.68,0:00:01.70,Default,,0,0,0,,{\k48}basically {\k40}telling {\k16}us {\k20}that {\k20}they {\k170}have 
-Dialogue: 0,0:09:11.39,0:00:02.95,Default,,0,0,0,,{\k36}something {\k16}like {\k15}a {\k32}ace {\k48}Jack {\k24}Ace {\k39}10 {\k28}Ace {\k295}9 
-Dialogue: 0,0:09:14.36,0:00:01.62,Default,,0,0,0,,{\k24}or {\k35}perhaps {\k20}they {\k11}have {\k12}some {\k16}sort {\k8}of {\k162}middle 
-Dialogue: 0,0:09:16.00,0:00:02.42,Default,,0,0,0,,{\k27}pocket {\k36}pair {\k8}like {\k16}a {\k24}pocket {\k39}10 {\k32}pocket {\k242}9es 
-Dialogue: 0,0:09:18.44,0:00:01.30,Default,,0,0,0,,{\k20}maybe {\k12}they {\k16}got {\k24}something {\k16}like {\k12}a {\k130}king 
-Dialogue: 0,0:09:19.76,0:00:02.02,Default,,0,0,0,,{\k40}seven {\k11}that {\k24}doesn't {\k12}want {\k12}to {\k19}go {\k56}away {\k202}so 
-Dialogue: 0,0:09:21.80,0:00:02.58,Default,,0,0,0,,{\k36}they {\k56}have {\k64}something {\k24}they're {\k32}not {\k258}calling 
-Dialogue: 0,0:09:24.39,0:00:03.07,Default,,0,0,0,,{\k44}here {\k84}randomly {\k32}with {\k27}Jack {\k36}10 {\k19}for {\k307}example 
-Dialogue: 0,0:09:27.48,0:00:02.02,Default,,0,0,0,,{\k16}they {\k24}do {\k16}have {\k60}something {\k28}so {\k28}guys {\k16}is {\k202}you 
-Dialogue: 0,0:09:29.51,0:00:02.47,Default,,0,0,0,,{\k36}want {\k28}to {\k48}charge {\k28}them {\k35}on {\k12}the {\k36}turn {\k247}and 
-Dialogue: 0,0:09:32.00,0:00:01.70,Default,,0,0,0,,{\k39}River {\k12}you {\k20}want {\k20}to {\k15}let {\k20}them {\k32}know {\k170}that 
-Dialogue: 0,0:09:33.72,0:00:02.42,Default,,0,0,0,,{\k35}you're {\k64}serious {\k28}and {\k32}once {\k36}again {\k24}I'm {\k242}going 
-Dialogue: 0,0:09:36.16,0:00:02.98,Default,,0,0,0,,{\k16}to {\k19}be {\k36}doing {\k48}this {\k36}both {\k28}with {\k48}value {\k298}hands 
-Dialogue: 0,0:09:39.16,0:00:02.58,Default,,0,0,0,,{\k40}and {\k24}with {\k52}Bluffs {\k7}it {\k36}is {\k258}unbelievably 
-Dialogue: 0,0:09:41.76,0:00:02.38,Default,,0,0,0,,{\k60}important {\k40}guys {\k12}that {\k24}you {\k44}balance {\k24}your {\k238}B 
-Dialogue: 0,0:09:44.16,0:00:02.86,Default,,0,0,0,,{\k60}sizing {\k51}in {\k20}both {\k20}of {\k24}these {\k96}situations {\k286}so 
-Dialogue: 0,0:09:47.04,0:00:01.58,Default,,0,0,0,,{\k16}that {\k12}they {\k19}can {\k28}never {\k52}tell {\k12}if {\k158}you're 
-Dialogue: 0,0:09:48.64,0:00:02.02,Default,,0,0,0,,{\k56}bluffing {\k16}or {\k12}if {\k12}you {\k23}really {\k20}have {\k28}top {\k202}pair 
-Dialogue: 0,0:09:50.68,0:00:02.90,Default,,0,0,0,,{\k27}like {\k48}this {\k28}and {\k20}what {\k28}this {\k80}75% {\k16}of {\k16}the {\k290}pot 
-Dialogue: 0,0:09:53.60,0:00:02.10,Default,,0,0,0,,{\k20}does {\k12}is {\k15}it {\k44}draws {\k20}a {\k23}Line {\k16}in {\k15}the {\k28}Sand {\k210}and 
-Dialogue: 0,0:09:55.72,0:00:02.50,Default,,0,0,0,,{\k44}says {\k35}Hey {\k44}look {\k20}it's {\k16}going {\k16}to {\k28}be {\k24}very {\k250}very 
-Dialogue: 0,0:09:58.24,0:00:01.58,Default,,0,0,0,,{\k36}expensive {\k12}for {\k11}you {\k32}to {\k20}find {\k20}out {\k12}if {\k158}I'm 
-Dialogue: 0,0:09:59.83,0:00:02.54,Default,,0,0,0,,{\k64}bluffing {\k28}or {\k19}to {\k20}find {\k20}out {\k12}if {\k24}I {\k35}really {\k254}do 
-Dialogue: 0,0:10:02.39,0:00:02.27,Default,,0,0,0,,{\k12}have {\k24}it {\k16}we {\k20}do {\k12}have {\k15}it {\k16}in {\k24}this {\k59}hand {\k227}but 
-Dialogue: 0,0:10:04.68,0:00:02.38,Default,,0,0,0,,{\k27}once {\k28}again {\k12}I'm {\k8}going {\k12}to {\k12}be {\k39}betting {\k238}75% 
-Dialogue: 0,0:10:07.07,0:00:02.98,Default,,0,0,0,,{\k16}of {\k15}the {\k56}pot {\k44}even {\k16}if {\k20}I'm {\k68}bluffing {\k20}as {\k298}well 
-Dialogue: 0,0:10:10.07,0:00:01.74,Default,,0,0,0,,{\k12}all {\k19}right {\k16}guys {\k20}let's {\k28}move {\k16}on {\k24}to {\k174}betting 
-Dialogue: 0,0:10:11.83,0:00:02.27,Default,,0,0,0,,{\k48}tip {\k32}number {\k36}one {\k24}now {\k20}and {\k12}this {\k20}is {\k16}going {\k227}to 
-Dialogue: 0,0:10:14.12,0:00:04.42,Default,,0,0,0,,{\k39}be {\k40}my {\k100}50% {\k15}of {\k20}the {\k76}river {\k52}value {\k442}bet 
-Dialogue: 0,0:10:18.56,0:00:01.98,Default,,0,0,0,,{\k48}sometimes {\k47}versus {\k40}decent {\k40}players {\k12}so {\k198}we 
-Dialogue: 0,0:10:20.56,0:00:01.46,Default,,0,0,0,,{\k16}just {\k28}talked {\k27}about {\k12}how {\k20}we're {\k16}going {\k16}to {\k146}be 
-Dialogue: 0,0:10:22.04,0:00:02.34,Default,,0,0,0,,{\k35}betting {\k80}75% {\k12}of {\k12}the {\k24}pot {\k12}on {\k12}the {\k28}turn {\k234}and 
-Dialogue: 0,0:10:24.39,0:00:02.95,Default,,0,0,0,,{\k44}river {\k32}in {\k40}most {\k95}situations {\k16}but {\k24}there {\k295}is 
-Dialogue: 0,0:10:27.36,0:00:02.22,Default,,0,0,0,,{\k52}one {\k48}clear {\k52}exception {\k24}at {\k12}and {\k8}that {\k16}is {\k222}when 
-Dialogue: 0,0:10:29.60,0:00:02.58,Default,,0,0,0,,{\k12}you {\k16}are {\k51}making {\k28}a {\k48}thin {\k40}value {\k27}beted {\k16}on {\k258}the 
-Dialogue: 0,0:10:32.20,0:00:02.54,Default,,0,0,0,,{\k56}river {\k16}but {\k12}let {\k23}me {\k48}quickly {\k48}explain {\k254}first 
-Dialogue: 0,0:10:34.76,0:00:02.30,Default,,0,0,0,,{\k19}what {\k16}a {\k27}thin {\k32}value {\k28}bed {\k24}is {\k15}a {\k28}thin {\k230}value 
-Dialogue: 0,0:10:37.07,0:00:01.86,Default,,0,0,0,,{\k28}bet {\k12}is {\k12}when {\k12}you {\k16}have {\k36}a {\k24}strong {\k186}suspicion 
-Dialogue: 0,0:10:38.95,0:00:02.39,Default,,0,0,0,,{\k12}that {\k24}you {\k19}have {\k16}the {\k27}best {\k48}hand {\k16}and {\k32}you {\k239}also 
-Dialogue: 0,0:10:41.36,0:00:02.34,Default,,0,0,0,,{\k24}have {\k40}a {\k27}strong {\k60}suspicion {\k16}that {\k16}they {\k24}have {\k234}a 
-Dialogue: 0,0:10:43.72,0:00:02.66,Default,,0,0,0,,{\k35}pretty {\k48}good {\k56}second {\k32}best {\k48}hand {\k24}such {\k266}as 
-Dialogue: 0,0:10:46.39,0:00:02.22,Default,,0,0,0,,{\k36}middle {\k51}pair {\k24}so {\k16}in {\k20}the {\k44}example {\k16}here {\k222}you 
-Dialogue: 0,0:10:48.63,0:00:02.03,Default,,0,0,0,,{\k24}raise {\k12}it {\k20}up {\k16}with {\k32}Queen {\k32}Jack {\k24}of {\k203}Hearts 
-Dialogue: 0,0:10:50.68,0:00:02.06,Default,,0,0,0,,{\k20}and {\k19}by {\k16}the {\k44}river {\k12}the {\k36}board {\k40}reads {\k206}the 
-Dialogue: 0,0:10:52.76,0:00:03.66,Default,,0,0,0,,{\k87}queen {\k100}1074 {\k72}Deuce {\k12}there {\k28}were {\k24}two {\k366}diamonds 
-Dialogue: 0,0:10:56.44,0:00:02.26,Default,,0,0,0,,{\k16}on {\k12}the {\k48}Flop {\k19}but {\k16}that {\k36}draw {\k28}has {\k40}missed {\k226}by 
-Dialogue: 0,0:10:58.72,0:00:02.30,Default,,0,0,0,,{\k32}the {\k47}River {\k16}the {\k36}straight {\k44}draws {\k28}have {\k230}also 
-Dialogue: 0,0:11:01.04,0:00:01.82,Default,,0,0,0,,{\k44}missed {\k32}the {\k40}prominent {\k28}straight {\k28}draw {\k182}on 
-Dialogue: 0,0:11:02.88,0:00:02.42,Default,,0,0,0,,{\k7}the {\k48}Flop {\k24}was {\k20}a {\k32}hand {\k28}like {\k24}King {\k35}Jack {\k242}or 
-Dialogue: 0,0:11:05.32,0:00:01.70,Default,,0,0,0,,{\k31}Jack {\k36}n {\k12}which {\k20}were {\k19}both {\k170}open-ended 
-Dialogue: 0,0:11:07.04,0:00:02.54,Default,,0,0,0,,{\k28}straight {\k72}draws {\k32}both {\k27}of {\k32}those {\k36}hands {\k254}have 
-Dialogue: 0,0:11:09.60,0:00:01.74,Default,,0,0,0,,{\k47}absolutely {\k24}nothing {\k16}on {\k12}the {\k35}river {\k24}but {\k174}guys 
-Dialogue: 0,0:11:11.36,0:00:03.22,Default,,0,0,0,,{\k15}there {\k24}are {\k31}a {\k44}whole {\k64}host {\k35}of {\k56}good {\k322}second 
-Dialogue: 0,0:11:14.60,0:00:01.94,Default,,0,0,0,,{\k40}best {\k39}hands {\k16}we've {\k16}got {\k20}top {\k24}pair {\k11}of {\k194}course 
-Dialogue: 0,0:11:16.56,0:00:01.70,Default,,0,0,0,,{\k12}so {\k12}we {\k20}are {\k39}assuming {\k12}that {\k44}we're {\k20}going {\k170}to 
-Dialogue: 0,0:11:18.27,0:00:01.31,Default,,0,0,0,,{\k16}have {\k12}the {\k20}best {\k19}hand {\k16}here {\k15}most {\k8}of {\k12}the {\k131}time 
-Dialogue: 0,0:11:19.60,0:00:02.34,Default,,0,0,0,,{\k12}but {\k8}there {\k15}are {\k20}a {\k35}whole {\k60}host {\k20}of {\k24}very {\k234}good 
-Dialogue: 0,0:11:21.95,0:00:02.07,Default,,0,0,0,,{\k40}second {\k27}best {\k36}hands {\k16}that {\k16}this {\k44}player {\k207}could 
-Dialogue: 0,0:11:24.04,0:00:03.54,Default,,0,0,0,,{\k56}potentially {\k47}have {\k36}such {\k60}as {\k28}Ace {\k48}10 {\k27}King {\k354}10 
-Dialogue: 0,0:11:27.60,0:00:04.74,Default,,0,0,0,,{\k32}Jack {\k44}10 {\k36}10 {\k72}n {\k36}pocket {\k52}Jacks {\k84}ace7 {\k96}ace4 {\k474}so 
-Dialogue: 0,0:11:32.36,0:00:01.42,Default,,0,0,0,,{\k24}guys {\k8}what {\k15}do {\k12}we {\k24}know {\k19}about {\k20}all {\k142}these 
-Dialogue: 0,0:11:33.80,0:00:01.74,Default,,0,0,0,,{\k32}hands {\k36}here {\k24}well {\k20}one {\k20}thing {\k15}we {\k20}know {\k174}is 
-Dialogue: 0,0:11:35.56,0:00:01.70,Default,,0,0,0,,{\k16}that {\k11}these {\k36}are {\k43}decent {\k40}hands {\k16}but {\k170}these 
-Dialogue: 0,0:11:37.27,0:00:02.43,Default,,0,0,0,,{\k20}are {\k28}hands {\k12}that {\k32}are {\k75}unlikely {\k24}to {\k31}call {\k243}a 
-Dialogue: 0,0:11:39.72,0:00:02.42,Default,,0,0,0,,{\k23}big {\k40}bet {\k36}a {\k44}strong {\k44}decent {\k28}player {\k242}who's 
-Dialogue: 0,0:11:42.16,0:00:02.38,Default,,0,0,0,,{\k35}watching {\k40}videos {\k24}like {\k52}this {\k15}who {\k28}is {\k238}even 
-Dialogue: 0,0:11:44.56,0:00:02.18,Default,,0,0,0,,{\k83}somewhat {\k72}disciplined {\k15}is {\k12}going {\k12}to {\k8}be {\k218}able 
-Dialogue: 0,0:11:46.76,0:00:02.02,Default,,0,0,0,,{\k12}to {\k28}lay {\k23}down {\k20}many {\k16}of {\k24}these {\k202}hands 
-Dialogue: 0,0:11:48.80,0:00:02.90,Default,,0,0,0,,{\k47}especially {\k12}if {\k16}we {\k27}make {\k24}a {\k24}big {\k31}bet {\k28}like {\k290}75% 
-Dialogue: 0,0:11:51.72,0:00:01.90,Default,,0,0,0,,{\k8}of {\k15}the {\k60}pot {\k20}however {\k12}if {\k16}we {\k16}were {\k16}to {\k190}only 
-Dialogue: 0,0:11:53.63,0:00:02.62,Default,,0,0,0,,{\k32}bet {\k40}something {\k36}tiny {\k20}like {\k52}20% {\k16}or {\k60}30% {\k262}well 
-Dialogue: 0,0:11:56.27,0:00:01.47,Default,,0,0,0,,{\k16}they're {\k7}just {\k12}going {\k8}to {\k32}call {\k16}right {\k147}away 
-Dialogue: 0,0:11:57.76,0:00:02.06,Default,,0,0,0,,{\k16}but {\k28}we're {\k43}missing {\k52}value {\k32}because {\k206}often 
-Dialogue: 0,0:11:59.83,0:00:03.66,Default,,0,0,0,,{\k24}these {\k48}hands {\k32}would {\k28}have {\k52}called {\k36}a {\k100}50% {\k366}or 
-Dialogue: 0,0:12:03.51,0:00:02.59,Default,,0,0,0,,{\k32}half {\k36}pot {\k40}bet {\k16}so {\k28}I've {\k40}often {\k39}found {\k259}that 
-Dialogue: 0,0:12:06.12,0:00:02.62,Default,,0,0,0,,{\k64}50% {\k16}of {\k15}the {\k32}pot {\k12}is {\k36}an {\k56}excellent {\k262}bet 
-Dialogue: 0,0:12:08.76,0:00:02.30,Default,,0,0,0,,{\k51}sizing {\k16}when {\k68}you're {\k36}making {\k12}one {\k20}of {\k230}these 
-Dialogue: 0,0:12:11.07,0:00:01.98,Default,,0,0,0,,{\k32}thin {\k40}value {\k27}bets {\k16}on {\k15}the {\k36}River {\k16}where {\k198}you 
-Dialogue: 0,0:12:13.07,0:00:01.35,Default,,0,0,0,,{\k24}think {\k16}that {\k12}they {\k23}have {\k135}something 
-Dialogue: 0,0:12:14.44,0:00:02.46,Default,,0,0,0,,{\k72}relatively {\k40}decent {\k20}but {\k24}not {\k51}super {\k246}strong 
-Dialogue: 0,0:12:16.92,0:00:01.98,Default,,0,0,0,,{\k20}where {\k12}it {\k24}is {\k35}likely {\k16}that {\k16}they {\k32}will {\k198}not 
-Dialogue: 0,0:12:18.92,0:00:02.94,Default,,0,0,0,,{\k56}call {\k20}a {\k32}really {\k27}big {\k48}bat {\k24}but {\k19}a {\k28}really {\k294}small 
-Dialogue: 0,0:12:21.88,0:00:02.98,Default,,0,0,0,,{\k36}bat {\k24}is {\k28}not {\k75}maximizing {\k32}our {\k44}profit {\k28}so {\k298}half 
-Dialogue: 0,0:12:24.88,0:00:02.58,Default,,0,0,0,,{\k31}pot {\k32}often {\k40}Works {\k12}in {\k20}a {\k59}situation {\k20}like {\k258}this 
-Dialogue: 0,0:12:27.48,0:00:01.42,Default,,0,0,0,,{\k15}all {\k20}right {\k16}guys {\k12}I {\k15}hope {\k12}that {\k8}some {\k12}of {\k142}these 
-Dialogue: 0,0:12:28.92,0:00:01.70,Default,,0,0,0,,{\k20}getting {\k27}tips {\k40}helped {\k20}like {\k24}And {\k170}subscribe 
-Dialogue: 0,0:12:30.63,0:00:01.39,Default,,0,0,0,,{\k12}if {\k16}you {\k27}found {\k16}this {\k20}video {\k32}helpful {\k7}and {\k139}if 
-Dialogue: 0,0:12:32.04,0:00:02.26,Default,,0,0,0,,{\k8}you {\k7}want {\k8}to {\k16}know {\k24}my {\k64}entire {\k80}strategy {\k226}to 
-Dialogue: 0,0:12:34.32,0:00:02.10,Default,,0,0,0,,{\k31}beat {\k16}the {\k36}small {\k16}and {\k28}mid {\k32}Stakes {\k40}games {\k210}make 
-Dialogue: 0,0:12:36.44,0:00:01.34,Default,,0,0,0,,{\k12}sure {\k7}you {\k24}grab {\k7}a {\k20}copy {\k8}of {\k8}my {\k19}free {\k134}poer 
-Dialogue: 0,0:12:37.80,0:00:01.38,Default,,0,0,0,,{\k20}cheat {\k24}sheet {\k20}that'll {\k7}be {\k12}the {\k32}top {\k16}Link {\k138}in 
-Dialogue: 0,0:12:39.19,0:00:01.39,Default,,0,0,0,,{\k12}the {\k36}description {\k36}below {\k20}thanks {\k8}a {\k16}lot {\k139}for 
-Dialogue: 0,0:12:40.60,0:12:44.51,Default,,0,0,0,,{\k32}watching {\k20}guys {\k7}I {\k20}will {\k16}catch {\k27}you {\k24}next {\k76451}time 
+
+Dialogue: 0,0:00:01.08,0:00:26.78,Default,,0,0,0,,[Music]
+Dialogue: 0,0:00:26.80,0:00:27.15,Default,,0,0,0,,oh
+Dialogue: 0,0:00:27.16,0:00:27.27,Default,,0,0,0,,this
+Dialogue: 0,0:00:27.27,0:00:27.67,Default,,0,0,0,,is
+Dialogue: 0,0:00:27.67,0:00:28.07,Default,,0,0,0,,very
+Dialogue: 0,0:00:28.08,0:00:28.91,Default,,0,0,0,,nice
+Dialogue: 0,0:00:28.92,0:00:29.27,Default,,0,0,0,,hello
+Dialogue: 0,0:00:29.27,0:00:29.43,Default,,0,0,0,,one
+Dialogue: 0,0:00:29.43,0:00:29.55,Default,,0,0,0,,and
+Dialogue: 0,0:00:29.56,0:00:29.98,Default,,0,0,0,,all
+Dialogue: 0,0:00:30.00,0:00:30.19,Default,,0,0,0,,welcome
+Dialogue: 0,0:00:30.19,0:00:30.31,Default,,0,0,0,,to
+Dialogue: 0,0:00:30.32,0:00:30.63,Default,,0,0,0,,scene
+Dialogue: 0,0:00:30.64,0:00:30.91,Default,,0,0,0,,through
+Dialogue: 0,0:00:30.92,0:00:31.55,Default,,0,0,0,,glass
+Dialogue: 0,0:00:31.56,0:00:31.86,Default,,0,0,0,,welcome
+Dialogue: 0,0:00:31.88,0:00:32.27,Default,,0,0,0,,to
+Dialogue: 0,0:00:32.27,0:00:32.99,Default,,0,0,0,,a
+Dialogue: 0,0:00:33.00,0:00:33.99,Default,,0,0,0,,pdk
+Dialogue: 0,0:00:34.00,0:00:34.83,Default,,0,0,0,,Porsche
+Dialogue: 0,0:00:34.84,0:00:35.83,Default,,0,0,0,,GT4
+Dialogue: 0,0:00:35.84,0:00:36.23,Default,,0,0,0,,obviously
+Dialogue: 0,0:00:36.23,0:00:36.42,Default,,0,0,0,,the
+Dialogue: 0,0:00:36.44,0:00:36.75,Default,,0,0,0,,second
+Dialogue: 0,0:00:36.76,0:00:37.23,Default,,0,0,0,,generation
+Dialogue: 0,0:00:37.23,0:00:37.35,Default,,0,0,0,,of
+Dialogue: 0,0:00:37.36,0:00:37.43,Default,,0,0,0,,the
+Dialogue: 0,0:00:37.44,0:00:38.03,Default,,0,0,0,,GT4
+Dialogue: 0,0:00:38.04,0:00:38.23,Default,,0,0,0,,but
+Dialogue: 0,0:00:38.23,0:00:38.46,Default,,0,0,0,,the
+Dialogue: 0,0:00:38.48,0:00:38.79,Default,,0,0,0,,first
+Dialogue: 0,0:00:38.80,0:00:38.99,Default,,0,0,0,,time
+Dialogue: 0,0:00:39.00,0:00:39.23,Default,,0,0,0,,they've
+Dialogue: 0,0:00:39.23,0:00:39.55,Default,,0,0,0,,offered
+Dialogue: 0,0:00:39.55,0:00:40.07,Default,,0,0,0,,it
+Dialogue: 0,0:00:40.07,0:00:40.27,Default,,0,0,0,,with
+Dialogue: 0,0:00:40.28,0:00:40.46,Default,,0,0,0,,an
+Dialogue: 0,0:00:40.48,0:00:40.99,Default,,0,0,0,,automatic
+Dialogue: 0,0:00:41.00,0:00:41.71,Default,,0,0,0,,gearbox
+Dialogue: 0,0:00:41.71,0:00:41.95,Default,,0,0,0,,and
+Dialogue: 0,0:00:41.96,0:00:42.35,Default,,0,0,0,,Porsche
+Dialogue: 0,0:00:42.36,0:00:42.74,Default,,0,0,0,,purist
+Dialogue: 0,0:00:42.76,0:00:42.99,Default,,0,0,0,,don't
+Dialogue: 0,0:00:43.00,0:00:43.19,Default,,0,0,0,,come
+Dialogue: 0,0:00:43.20,0:00:43.39,Default,,0,0,0,,after
+Dialogue: 0,0:00:43.39,0:00:43.51,Default,,0,0,0,,me
+Dialogue: 0,0:00:43.52,0:00:43.59,Default,,0,0,0,,in
+Dialogue: 0,0:00:43.60,0:00:43.71,Default,,0,0,0,,the
+Dialogue: 0,0:00:43.71,0:00:44.02,Default,,0,0,0,,comments
+Dialogue: 0,0:00:44.03,0:00:44.63,Default,,0,0,0,,section
+Dialogue: 0,0:00:44.64,0:00:44.75,Default,,0,0,0,,but
+Dialogue: 0,0:00:44.76,0:00:44.91,Default,,0,0,0,,I'm
+Dialogue: 0,0:00:44.92,0:00:45.31,Default,,0,0,0,,wondering
+Dialogue: 0,0:00:45.32,0:00:45.71,Default,,0,0,0,,whether
+Dialogue: 0,0:00:45.71,0:00:46.18,Default,,0,0,0,,this
+Dialogue: 0,0:00:46.19,0:00:46.39,Default,,0,0,0,,might
+Dialogue: 0,0:00:46.39,0:00:46.59,Default,,0,0,0,,be
+Dialogue: 0,0:00:46.60,0:00:46.71,Default,,0,0,0,,the
+Dialogue: 0,0:00:46.71,0:00:46.99,Default,,0,0,0,,better
+Dialogue: 0,0:00:47.00,0:00:47.63,Default,,0,0,0,,option
+Dialogue: 0,0:00:47.64,0:00:47.87,Default,,0,0,0,,for
+Dialogue: 0,0:00:47.87,0:00:48.07,Default,,0,0,0,,this
+Dialogue: 0,0:00:48.07,0:00:48.30,Default,,0,0,0,,car
+Dialogue: 0,0:00:48.32,0:00:48.43,Default,,0,0,0,,I'm
+Dialogue: 0,0:00:48.44,0:00:48.83,Default,,0,0,0,,whispering
+Dialogue: 0,0:00:48.84,0:00:48.95,Default,,0,0,0,,cuz
+Dialogue: 0,0:00:48.96,0:00:49.07,Default,,0,0,0,,that's
+Dialogue: 0,0:00:49.07,0:00:49.18,Default,,0,0,0,,a
+Dialogue: 0,0:00:49.19,0:00:50.15,Default,,0,0,0,,controversial
+Dialogue: 0,0:00:50.16,0:00:50.55,Default,,0,0,0,,statement
+Dialogue: 0,0:00:50.55,0:00:50.71,Default,,0,0,0,,we'll
+Dialogue: 0,0:00:50.71,0:00:50.87,Default,,0,0,0,,come
+Dialogue: 0,0:00:50.87,0:00:50.98,Default,,0,0,0,,back
+Dialogue: 0,0:00:51.00,0:00:51.11,Default,,0,0,0,,to
+Dialogue: 0,0:00:51.12,0:00:51.27,Default,,0,0,0,,it
+Dialogue: 0,0:00:51.28,0:00:51.59,Default,,0,0,0,,later
+Dialogue: 0,0:00:51.60,0:00:51.87,Default,,0,0,0,,because
+Dialogue: 0,0:00:51.87,0:00:52.15,Default,,0,0,0,,first
+Dialogue: 0,0:00:52.16,0:00:52.51,Default,,0,0,0,,up
+Dialogue: 0,0:00:52.52,0:00:52.67,Default,,0,0,0,,I'm
+Dialogue: 0,0:00:52.68,0:00:52.90,Default,,0,0,0,,headed
+Dialogue: 0,0:00:52.92,0:00:53.19,Default,,0,0,0,,to
+Dialogue: 0,0:00:53.19,0:00:53.63,Default,,0,0,0,,Podium
+Dialogue: 0,0:00:53.64,0:00:54.03,Default,,0,0,0,,place
+Dialogue: 0,0:00:54.03,0:00:54.19,Default,,0,0,0,,in
+Dialogue: 0,0:00:54.19,0:00:55.07,Default,,0,0,0,,newbry
+Dialogue: 0,0:00:55.07,0:00:55.39,Default,,0,0,0,,home
+Dialogue: 0,0:00:55.39,0:00:55.67,Default,,0,0,0,,of
+Dialogue: 0,0:00:55.68,0:00:56.10,Default,,0,0,0,,pea
+Dialogue: 0,0:00:56.12,0:00:56.71,Default,,0,0,0,,specialty
+Dialogue: 0,0:00:56.71,0:00:56.99,Default,,0,0,0,,Coffee
+Dialogue: 0,0:00:57.00,0:00:57.71,Default,,0,0,0,,Roasters
+Dialogue: 0,0:00:57.71,0:00:57.83,Default,,0,0,0,,uh
+Dialogue: 0,0:00:57.84,0:00:57.95,Default,,0,0,0,,the
+Dialogue: 0,0:00:57.96,0:00:58.26,Default,,0,0,0,,amazing
+Dialogue: 0,0:00:58.28,0:00:58.51,Default,,0,0,0,,team
+Dialogue: 0,0:00:58.51,0:00:58.63,Default,,0,0,0,,that
+Dialogue: 0,0:00:58.64,0:00:58.83,Default,,0,0,0,,make
+Dialogue: 0,0:00:58.84,0:00:58.99,Default,,0,0,0,,the
+Dialogue: 0,0:00:59.00,0:00:59.35,Default,,0,0,0,,scen
+Dialogue: 0,0:00:59.35,0:00:59.51,Default,,0,0,0,,through
+Dialogue: 0,0:00:59.51,0:00:59.98,Default,,0,0,0,,glass
+Dialogue: 0,0:01:00.00,0:01:00.39,Default,,0,0,0,,blend
+Dialogue: 0,0:01:00.39,0:01:01.07,Default,,0,0,0,,STG
+Dialogue: 0,0:01:01.07,0:01:01.67,Default,,0,0,0,,coffee
+Dialogue: 0,0:01:01.68,0:01:01.79,Default,,0,0,0,,I
+Dialogue: 0,0:01:01.80,0:01:01.91,Default,,0,0,0,,need
+Dialogue: 0,0:01:01.92,0:01:02.03,Default,,0,0,0,,to
+Dialogue: 0,0:01:02.03,0:01:02.15,Default,,0,0,0,,pick
+Dialogue: 0,0:01:02.16,0:01:02.27,Default,,0,0,0,,up
+Dialogue: 0,0:01:02.28,0:01:02.34,Default,,0,0,0,,a
+Dialogue: 0,0:01:02.35,0:01:02.55,Default,,0,0,0,,couple
+Dialogue: 0,0:01:02.55,0:01:02.67,Default,,0,0,0,,of
+Dialogue: 0,0:01:02.68,0:01:03.07,Default,,0,0,0,,bags
+Dialogue: 0,0:01:03.07,0:01:03.27,Default,,0,0,0,,of
+Dialogue: 0,0:01:03.28,0:01:03.63,Default,,0,0,0,,beans
+Dialogue: 0,0:01:03.64,0:01:03.79,Default,,0,0,0,,For
+Dialogue: 0,0:01:03.80,0:01:03.91,Default,,0,0,0,,an
+Dialogue: 0,0:01:03.92,0:01:04.42,Default,,0,0,0,,upcoming
+Dialogue: 0,0:01:04.43,0:01:04.99,Default,,0,0,0,,live
+Dialogue: 0,0:01:05.00,0:01:05.47,Default,,0,0,0,,podcast
+Dialogue: 0,0:01:05.47,0:01:05.91,Default,,0,0,0,,event
+Dialogue: 0,0:01:05.92,0:01:06.03,Default,,0,0,0,,want
+Dialogue: 0,0:01:06.04,0:01:06.11,Default,,0,0,0,,to
+Dialogue: 0,0:01:06.11,0:01:06.19,Default,,0,0,0,,be
+Dialogue: 0,0:01:06.20,0:01:06.35,Default,,0,0,0,,able
+Dialogue: 0,0:01:06.36,0:01:06.42,Default,,0,0,0,,to
+Dialogue: 0,0:01:06.43,0:01:06.71,Default,,0,0,0,,serve
+Dialogue: 0,0:01:06.72,0:01:07.19,Default,,0,0,0,,STG
+Dialogue: 0,0:01:07.20,0:01:07.43,Default,,0,0,0,,coffee
+Dialogue: 0,0:01:07.43,0:01:07.51,Default,,0,0,0,,to
+Dialogue: 0,0:01:07.52,0:01:07.63,Default,,0,0,0,,all
+Dialogue: 0,0:01:07.64,0:01:07.79,Default,,0,0,0,,those
+Dialogue: 0,0:01:07.79,0:01:08.02,Default,,0,0,0,,that
+Dialogue: 0,0:01:08.04,0:01:08.59,Default,,0,0,0,,attend
+Dialogue: 0,0:01:08.60,0:01:08.71,Default,,0,0,0,,and
+Dialogue: 0,0:01:08.72,0:01:08.79,Default,,0,0,0,,I
+Dialogue: 0,0:01:08.79,0:01:08.99,Default,,0,0,0,,also
+Dialogue: 0,0:01:09.00,0:01:09.15,Default,,0,0,0,,need
+Dialogue: 0,0:01:09.15,0:01:09.27,Default,,0,0,0,,to
+Dialogue: 0,0:01:09.28,0:01:09.43,Default,,0,0,0,,get
+Dialogue: 0,0:01:09.43,0:01:09.59,Default,,0,0,0,,a
+Dialogue: 0,0:01:09.60,0:01:09.94,Default,,0,0,0,,sample
+Dialogue: 0,0:01:09.96,0:01:10.11,Default,,0,0,0,,bag
+Dialogue: 0,0:01:10.11,0:01:10.23,Default,,0,0,0,,of
+Dialogue: 0,0:01:10.24,0:01:10.55,Default,,0,0,0,,coffee
+Dialogue: 0,0:01:10.56,0:01:11.07,Default,,0,0,0,,for
+Dialogue: 0,0:01:11.08,0:01:11.47,Default,,0,0,0,,Henry's
+Dialogue: 0,0:01:11.47,0:01:11.91,Default,,0,0,0,,carb
+Dialogue: 0,0:01:11.92,0:01:12.03,Default,,0,0,0,,a
+Dialogue: 0,0:01:12.04,0:01:12.18,Default,,0,0,0,,new
+Dialogue: 0,0:01:12.20,0:01:12.31,Default,,0,0,0,,kind
+Dialogue: 0,0:01:12.32,0:01:12.71,Default,,0,0,0,,of
+Dialogue: 0,0:01:12.72,0:01:13.19,Default,,0,0,0,,members
+Dialogue: 0,0:01:13.20,0:01:14.19,Default,,0,0,0,,club/
+Dialogue: 0,0:01:14.20,0:01:14.71,Default,,0,0,0,,exclusive
+Dialogue: 0,0:01:14.72,0:01:15.06,Default,,0,0,0,,event
+Dialogue: 0,0:01:15.08,0:01:15.39,Default,,0,0,0,,space
+Dialogue: 0,0:01:15.40,0:01:15.55,Default,,0,0,0,,who
+Dialogue: 0,0:01:15.56,0:01:15.71,Default,,0,0,0,,are
+Dialogue: 0,0:01:15.72,0:01:16.03,Default,,0,0,0,,thinking
+Dialogue: 0,0:01:16.04,0:01:16.15,Default,,0,0,0,,of
+Dialogue: 0,0:01:16.15,0:01:16.55,Default,,0,0,0,,serving
+Dialogue: 0,0:01:16.56,0:01:17.06,Default,,0,0,0,,STG
+Dialogue: 0,0:01:17.08,0:01:17.67,Default,,0,0,0,,coffee
+Dialogue: 0,0:01:17.68,0:01:17.95,Default,,0,0,0,,from
+Dialogue: 0,0:01:17.96,0:01:18.15,Default,,0,0,0,,their
+Dialogue: 0,0:01:18.15,0:01:18.43,Default,,0,0,0,,bar
+Dialogue: 0,0:01:18.43,0:01:18.51,Default,,0,0,0,,which
+Dialogue: 0,0:01:18.52,0:01:18.63,Default,,0,0,0,,would
+Dialogue: 0,0:01:18.64,0:01:18.74,Default,,0,0,0,,be
+Dialogue: 0,0:01:18.75,0:01:19.19,Default,,0,0,0,,amazingly
+Dialogue: 0,0:01:19.20,0:01:19.59,Default,,0,0,0,,cool
+Dialogue: 0,0:01:19.60,0:01:19.75,Default,,0,0,0,,so
+Dialogue: 0,0:01:19.75,0:01:19.87,Default,,0,0,0,,it's
+Dialogue: 0,0:01:19.88,0:01:20.11,Default,,0,0,0,,a
+Dialogue: 0,0:01:20.11,0:01:20.31,Default,,0,0,0,,very
+Dialogue: 0,0:01:20.32,0:01:20.63,Default,,0,0,0,,busy
+Dialogue: 0,0:01:20.64,0:01:21.02,Default,,0,0,0,,day
+Dialogue: 0,0:01:21.04,0:01:21.23,Default,,0,0,0,,full
+Dialogue: 0,0:01:21.24,0:01:21.43,Default,,0,0,0,,of
+Dialogue: 0,0:01:21.43,0:01:22.03,Default,,0,0,0,,coffee
+Dialogue: 0,0:01:22.04,0:01:22.19,Default,,0,0,0,,and
+Dialogue: 0,0:01:22.20,0:01:22.35,Default,,0,0,0,,full
+Dialogue: 0,0:01:22.36,0:01:22.55,Default,,0,0,0,,of
+Dialogue: 0,0:01:22.56,0:01:22.71,Default,,0,0,0,,very
+Dialogue: 0,0:01:22.72,0:01:23.14,Default,,0,0,0,,cool
+Dialogue: 0,0:01:23.15,0:01:24.15,Default,,0,0,0,,Porsches
+Dialogue: 0,0:01:24.15,0:01:24.39,Default,,0,0,0,,like
+Dialogue: 0,0:01:24.40,0:01:24.55,Default,,0,0,0,,that
+Dialogue: 0,0:01:24.56,0:01:25.11,Default,,0,0,0,,one
+Dialogue: 0,0:01:25.11,0:01:25.31,Default,,0,0,0,,right
+Dialogue: 0,0:01:25.32,0:01:25.95,Default,,0,0,0,,there
+Dialogue: 0,0:01:25.96,0:01:26.06,Default,,0,0,0,,the
+Dialogue: 0,0:01:26.07,0:01:26.23,Default,,0,0,0,,new
+Dialogue: 0,0:01:26.24,0:01:26.75,Default,,0,0,0,,GT3
+Dialogue: 0,0:01:26.75,0:01:27.03,Default,,0,0,0,,tour
+Dialogue: 0,0:01:27.04,0:01:27.51,Default,,0,0,0,,wi
+Dialogue: 0,0:01:27.52,0:01:27.67,Default,,0,0,0,,oh
+Dialogue: 0,0:01:27.68,0:01:27.95,Default,,0,0,0,,that's
+Dialogue: 0,0:01:27.96,0:01:28.27,Default,,0,0,0,,lovely
+Dialogue: 0,0:01:28.28,0:01:28.54,Default,,0,0,0,,but
+Dialogue: 0,0:01:28.56,0:01:28.67,Default,,0,0,0,,we're
+Dialogue: 0,0:01:28.68,0:01:28.75,Default,,0,0,0,,going
+Dialogue: 0,0:01:28.75,0:01:28.83,Default,,0,0,0,,to
+Dialogue: 0,0:01:28.84,0:01:28.99,Default,,0,0,0,,come
+Dialogue: 0,0:01:29.00,0:01:29.11,Default,,0,0,0,,back
+Dialogue: 0,0:01:29.11,0:01:29.27,Default,,0,0,0,,for
+Dialogue: 0,0:01:29.28,0:01:29.58,Default,,0,0,0,,that
+Dialogue: 0,0:01:29.60,0:01:30.15,Default,,0,0,0,,another
+Dialogue: 0,0:01:30.15,0:01:31.15,Default,,0,0,0,,day
+Dialogue: 0,0:01:31.15,0:01:31.31,Default,,0,0,0,,I
+Dialogue: 0,0:01:31.32,0:01:31.51,Default,,0,0,0,,love
+Dialogue: 0,0:01:31.52,0:01:42.47,Default,,0,0,0,,it
+Dialogue: 0,0:01:42.49,0:01:49.91,Default,,0,0,0,,[Music]
+Dialogue: 0,0:01:49.93,0:01:54.98,Default,,0,0,0,,[Applause]
+Dialogue: 0,0:01:55.00,0:01:55.99,Default,,0,0,0,,though
+Dialogue: 0,0:01:56.00,0:01:56.15,Default,,0,0,0,,hey
+Dialogue: 0,0:01:56.15,0:01:56.27,Default,,0,0,0,,how
+Dialogue: 0,0:01:56.28,0:01:56.43,Default,,0,0,0,,you
+Dialogue: 0,0:01:56.43,0:01:56.87,Default,,0,0,0,,doing
+Dialogue: 0,0:01:56.88,0:01:57.03,Default,,0,0,0,,could
+Dialogue: 0,0:01:57.03,0:01:57.19,Default,,0,0,0,,I
+Dialogue: 0,0:01:57.20,0:01:57.43,Default,,0,0,0,,have
+Dialogue: 0,0:01:57.43,0:01:57.78,Default,,0,0,0,,a
+Dialogue: 0,0:01:57.79,0:01:58.35,Default,,0,0,0,,STG
+Dialogue: 0,0:01:58.36,0:01:58.79,Default,,0,0,0,,blend
+Dialogue: 0,0:01:58.79,0:01:59.11,Default,,0,0,0,,flat
+Dialogue: 0,0:01:59.11,0:01:59.31,Default,,0,0,0,,white
+Dialogue: 0,0:01:59.32,0:01:59.47,Default,,0,0,0,,with
+Dialogue: 0,0:01:59.47,0:02:00.19,Default,,0,0,0,,oat
+Dialogue: 0,0:02:00.20,0:02:00.91,Default,,0,0,0,,no
+Dialogue: 0,0:02:00.92,0:02:01.26,Default,,0,0,0,,you
+Dialogue: 0,0:02:01.28,0:02:02.27,Default,,0,0,0,,refuse
+Dialogue: 0,0:02:02.28,0:02:02.47,Default,,0,0,0,,of
+Dialogue: 0,0:02:02.47,0:02:02.67,Default,,0,0,0,,course
+Dialogue: 0,0:02:02.68,0:02:02.91,Default,,0,0,0,,you
+Dialogue: 0,0:02:02.92,0:02:03.51,Default,,0,0,0,,can
+Dialogue: 0,0:02:03.52,0:02:03.63,Default,,0,0,0,,thank
+Dialogue: 0,0:02:03.64,0:02:03.79,Default,,0,0,0,,you
+Dialogue: 0,0:02:03.79,0:02:03.98,Default,,0,0,0,,so
+Dialogue: 0,0:02:04.00,0:02:04.59,Default,,0,0,0,,much
+Dialogue: 0,0:02:04.60,0:02:05.59,Default,,0,0,0,,uh
+Dialogue: 0,0:02:05.60,0:02:05.67,Default,,0,0,0,,I
+Dialogue: 0,0:02:05.68,0:02:05.83,Default,,0,0,0,,mean
+Dialogue: 0,0:02:05.84,0:02:05.95,Default,,0,0,0,,I'm
+Dialogue: 0,0:02:05.96,0:02:06.27,Default,,0,0,0,,tempted
+Dialogue: 0,0:02:06.28,0:02:06.39,Default,,0,0,0,,by
+Dialogue: 0,0:02:06.39,0:02:06.51,Default,,0,0,0,,one
+Dialogue: 0,0:02:06.52,0:02:06.62,Default,,0,0,0,,of
+Dialogue: 0,0:02:06.64,0:02:06.83,Default,,0,0,0,,these
+Dialogue: 0,0:02:06.84,0:02:06.95,Default,,0,0,0,,but
+Dialogue: 0,0:02:06.96,0:02:07.03,Default,,0,0,0,,I'm
+Dialogue: 0,0:02:07.03,0:02:07.15,Default,,0,0,0,,not
+Dialogue: 0,0:02:07.15,0:02:07.35,Default,,0,0,0,,supposed
+Dialogue: 0,0:02:07.36,0:02:07.43,Default,,0,0,0,,to
+Dialogue: 0,0:02:07.43,0:02:07.51,Default,,0,0,0,,be
+Dialogue: 0,0:02:07.52,0:02:07.86,Default,,0,0,0,,eating
+Dialogue: 0,0:02:07.88,0:02:08.31,Default,,0,0,0,,cakey
+Dialogue: 0,0:02:08.31,0:02:09.07,Default,,0,0,0,,things
+Dialogue: 0,0:02:09.08,0:02:09.23,Default,,0,0,0,,yeah
+Dialogue: 0,0:02:09.23,0:02:09.55,Default,,0,0,0,,just
+Dialogue: 0,0:02:09.56,0:02:09.67,Default,,0,0,0,,just
+Dialogue: 0,0:02:09.67,0:02:09.83,Default,,0,0,0,,the
+Dialogue: 0,0:02:09.84,0:02:10.15,Default,,0,0,0,,C
+Dialogue: 0,0:02:10.16,0:02:10.26,Default,,0,0,0,,just
+Dialogue: 0,0:02:10.28,0:02:10.39,Default,,0,0,0,,the
+Dialogue: 0,0:02:10.39,0:02:10.75,Default,,0,0,0,,C
+Dialogue: 0,0:02:10.75,0:02:25.58,Default,,0,0,0,,thank
+Dialogue: 0,0:02:25.59,0:02:26.59,Default,,0,0,0,,you
+Dialogue: 0,0:02:26.59,0:02:26.83,Default,,0,0,0,,so
+Dialogue: 0,0:02:26.84,0:02:26.95,Default,,0,0,0,,yeah
+Dialogue: 0,0:02:26.95,0:02:27.03,Default,,0,0,0,,if
+Dialogue: 0,0:02:27.04,0:02:27.15,Default,,0,0,0,,you
+Dialogue: 0,0:02:27.16,0:02:27.31,Default,,0,0,0,,haven't
+Dialogue: 0,0:02:27.31,0:02:27.47,Default,,0,0,0,,seen
+Dialogue: 0,0:02:27.48,0:02:27.59,Default,,0,0,0,,any
+Dialogue: 0,0:02:27.59,0:02:27.70,Default,,0,0,0,,of
+Dialogue: 0,0:02:27.72,0:02:27.83,Default,,0,0,0,,my
+Dialogue: 0,0:02:27.84,0:02:28.07,Default,,0,0,0,,videos
+Dialogue: 0,0:02:28.08,0:02:28.27,Default,,0,0,0,,from
+Dialogue: 0,0:02:28.28,0:02:28.39,Default,,0,0,0,,here
+Dialogue: 0,0:02:28.40,0:02:28.67,Default,,0,0,0,,before
+Dialogue: 0,0:02:28.68,0:02:28.75,Default,,0,0,0,,this
+Dialogue: 0,0:02:28.76,0:02:28.94,Default,,0,0,0,,is
+Dialogue: 0,0:02:28.95,0:02:29.39,Default,,0,0,0,,podium
+Dialogue: 0,0:02:29.40,0:02:29.95,Default,,0,0,0,,Cafe
+Dialogue: 0,0:02:29.95,0:02:30.15,Default,,0,0,0,,C
+Dialogue: 0,0:02:30.16,0:02:30.31,Default,,0,0,0,,in
+Dialogue: 0,0:02:30.31,0:02:30.59,Default,,0,0,0,,place
+Dialogue: 0,0:02:30.59,0:02:30.79,Default,,0,0,0,,and
+Dialogue: 0,0:02:30.80,0:02:31.18,Default,,0,0,0,,super
+Dialogue: 0,0:02:31.20,0:02:31.83,Default,,0,0,0,,coincidentally
+Dialogue: 0,0:02:31.84,0:02:31.95,Default,,0,0,0,,this
+Dialogue: 0,0:02:31.95,0:02:32.11,Default,,0,0,0,,was
+Dialogue: 0,0:02:32.12,0:02:32.35,Default,,0,0,0,,not
+Dialogue: 0,0:02:32.36,0:02:33.02,Default,,0,0,0,,planned
+Dialogue: 0,0:02:33.04,0:02:33.19,Default,,0,0,0,,there's
+Dialogue: 0,0:02:33.20,0:02:33.39,Default,,0,0,0,,a
+Dialogue: 0,0:02:33.40,0:02:33.75,Default,,0,0,0,,previous
+Dialogue: 0,0:02:33.76,0:02:34.19,Default,,0,0,0,,generation
+Dialogue: 0,0:02:34.20,0:02:34.83,Default,,0,0,0,,981
+Dialogue: 0,0:02:34.84,0:02:35.82,Default,,0,0,0,,GT4
+Dialogue: 0,0:02:35.84,0:02:36.11,Default,,0,0,0,,right
+Dialogue: 0,0:02:36.12,0:02:36.31,Default,,0,0,0,,here
+Dialogue: 0,0:02:36.31,0:02:36.51,Default,,0,0,0,,and
+Dialogue: 0,0:02:36.51,0:02:36.79,Default,,0,0,0,,obviously
+Dialogue: 0,0:02:36.80,0:02:36.91,Default,,0,0,0,,that
+Dialogue: 0,0:02:36.92,0:02:37.07,Default,,0,0,0,,was
+Dialogue: 0,0:02:37.08,0:02:37.46,Default,,0,0,0,,manual
+Dialogue: 0,0:02:37.48,0:02:38.19,Default,,0,0,0,,only
+Dialogue: 0,0:02:38.20,0:02:38.39,Default,,0,0,0,,but
+Dialogue: 0,0:02:38.40,0:02:38.63,Default,,0,0,0,,still
+Dialogue: 0,0:02:38.64,0:02:38.99,Default,,0,0,0,,super
+Dialogue: 0,0:02:39.00,0:02:39.47,Default,,0,0,0,,attractive
+Dialogue: 0,0:02:39.48,0:02:39.59,Default,,0,0,0,,I
+Dialogue: 0,0:02:39.59,0:02:39.78,Default,,0,0,0,,think
+Dialogue: 0,0:02:39.80,0:02:39.95,Default,,0,0,0,,it
+Dialogue: 0,0:02:39.95,0:02:40.15,Default,,0,0,0,,still
+Dialogue: 0,0:02:40.15,0:02:40.47,Default,,0,0,0,,looks
+Dialogue: 0,0:02:40.48,0:02:41.03,Default,,0,0,0,,fantastic
+Dialogue: 0,0:02:41.04,0:02:41.59,Default,,0,0,0,,and
+Dialogue: 0,0:02:41.59,0:02:41.87,Default,,0,0,0,,about
+Dialogue: 0,0:02:41.87,0:02:42.22,Default,,0,0,0,,20
+Dialogue: 0,0:02:42.23,0:02:42.59,Default,,0,0,0,,grand
+Dialogue: 0,0:02:42.59,0:02:42.95,Default,,0,0,0,,cheaper
+Dialogue: 0,0:02:42.95,0:02:43.07,Default,,0,0,0,,than
+Dialogue: 0,0:02:43.08,0:02:43.35,Default,,0,0,0,,a
+Dialogue: 0,0:02:43.36,0:02:43.83,Default,,0,0,0,,modern
+Dialogue: 0,0:02:43.84,0:02:44.83,Default,,0,0,0,,718
+Dialogue: 0,0:02:44.84,0:02:45.55,Default,,0,0,0,,GT4
+Dialogue: 0,0:02:45.56,0:02:45.98,Default,,0,0,0,,and
+Dialogue: 0,0:02:46.00,0:02:46.07,Default,,0,0,0,,what
+Dialogue: 0,0:02:46.08,0:02:46.15,Default,,0,0,0,,are
+Dialogue: 0,0:02:46.15,0:02:46.31,Default,,0,0,0,,you
+Dialogue: 0,0:02:46.31,0:02:46.43,Default,,0,0,0,,being
+Dialogue: 0,0:02:46.44,0:02:46.55,Default,,0,0,0,,a
+Dialogue: 0,0:02:46.56,0:02:46.87,Default,,0,0,0,,bit
+Dialogue: 0,0:02:46.87,0:02:47.03,Default,,0,0,0,,being
+Dialogue: 0,0:02:47.04,0:02:47.11,Default,,0,0,0,,a
+Dialogue: 0,0:02:47.12,0:02:47.30,Default,,0,0,0,,bit
+Dialogue: 0,0:02:47.31,0:02:48.31,Default,,0,0,0,,needy
+Dialogue: 0,0:02:48.31,0:02:48.43,Default,,0,0,0,,yeah
+Dialogue: 0,0:02:48.44,0:02:48.63,Default,,0,0,0,,she's
+Dialogue: 0,0:02:48.64,0:02:48.79,Default,,0,0,0,,being
+Dialogue: 0,0:02:48.80,0:02:48.87,Default,,0,0,0,,a
+Dialogue: 0,0:02:48.87,0:02:49.03,Default,,0,0,0,,little
+Dialogue: 0,0:02:49.04,0:02:49.14,Default,,0,0,0,,bit
+Dialogue: 0,0:02:49.15,0:02:49.95,Default,,0,0,0,,needy
+Dialogue: 0,0:02:49.95,0:02:50.11,Default,,0,0,0,,um
+Dialogue: 0,0:02:50.12,0:02:50.39,Default,,0,0,0,,anyway
+Dialogue: 0,0:02:50.40,0:02:50.47,Default,,0,0,0,,so
+Dialogue: 0,0:02:50.48,0:02:50.55,Default,,0,0,0,,yeah
+Dialogue: 0,0:02:50.56,0:02:50.63,Default,,0,0,0,,I'm
+Dialogue: 0,0:02:50.64,0:02:50.71,Default,,0,0,0,,going
+Dialogue: 0,0:02:50.72,0:02:50.79,Default,,0,0,0,,to
+Dialogue: 0,0:02:50.80,0:02:50.98,Default,,0,0,0,,sit
+Dialogue: 0,0:02:51.00,0:02:51.23,Default,,0,0,0,,here
+Dialogue: 0,0:02:51.23,0:02:51.91,Default,,0,0,0,,enjoy
+Dialogue: 0,0:02:51.92,0:02:52.11,Default,,0,0,0,,my
+Dialogue: 0,0:02:52.12,0:02:52.43,Default,,0,0,0,,coffee
+Dialogue: 0,0:02:52.44,0:02:52.59,Default,,0,0,0,,and
+Dialogue: 0,0:02:52.59,0:02:52.71,Default,,0,0,0,,the
+Dialogue: 0,0:02:52.72,0:02:53.07,Default,,0,0,0,,view
+Dialogue: 0,0:02:53.08,0:02:53.22,Default,,0,0,0,,I've
+Dialogue: 0,0:02:53.23,0:02:53.43,Default,,0,0,0,,now
+Dialogue: 0,0:02:53.44,0:02:53.55,Default,,0,0,0,,as
+Dialogue: 0,0:02:53.56,0:02:53.71,Default,,0,0,0,,to
+Dialogue: 0,0:02:53.72,0:02:54.11,Default,,0,0,0,,say
+Dialogue: 0,0:02:54.12,0:02:54.35,Default,,0,0,0,,picked
+Dialogue: 0,0:02:54.36,0:02:54.51,Default,,0,0,0,,up
+Dialogue: 0,0:02:54.51,0:02:54.71,Default,,0,0,0,,my
+Dialogue: 0,0:02:54.72,0:02:55.07,Default,,0,0,0,,beans
+Dialogue: 0,0:02:55.08,0:02:55.14,Default,,0,0,0,,which
+Dialogue: 0,0:02:55.15,0:02:55.27,Default,,0,0,0,,is
+Dialogue: 0,0:02:55.28,0:02:55.35,Default,,0,0,0,,what
+Dialogue: 0,0:02:55.36,0:02:55.47,Default,,0,0,0,,I
+Dialogue: 0,0:02:55.48,0:02:55.67,Default,,0,0,0,,came
+Dialogue: 0,0:02:55.68,0:02:56.11,Default,,0,0,0,,for
+Dialogue: 0,0:02:56.12,0:02:56.23,Default,,0,0,0,,there
+Dialogue: 0,0:02:56.23,0:02:56.35,Default,,0,0,0,,was
+Dialogue: 0,0:02:56.36,0:02:56.54,Default,,0,0,0,,another
+Dialogue: 0,0:02:56.56,0:02:56.75,Default,,0,0,0,,reason
+Dialogue: 0,0:02:56.76,0:02:56.87,Default,,0,0,0,,I
+Dialogue: 0,0:02:56.87,0:02:57.07,Default,,0,0,0,,came
+Dialogue: 0,0:02:57.08,0:02:57.27,Default,,0,0,0,,down
+Dialogue: 0,0:02:57.28,0:02:57.55,Default,,0,0,0,,here
+Dialogue: 0,0:02:57.56,0:02:58.15,Default,,0,0,0,,because
+Dialogue: 0,0:02:58.15,0:02:58.30,Default,,0,0,0,,they've
+Dialogue: 0,0:02:58.31,0:02:58.47,Default,,0,0,0,,set
+Dialogue: 0,0:02:58.48,0:02:58.63,Default,,0,0,0,,up
+Dialogue: 0,0:02:58.64,0:02:58.79,Default,,0,0,0,,a
+Dialogue: 0,0:02:58.80,0:02:59.15,Default,,0,0,0,,full
+Dialogue: 0,0:02:59.15,0:02:59.51,Default,,0,0,0,,motion
+Dialogue: 0,0:02:59.51,0:03:00.27,Default,,0,0,0,,oper
+Dialogue: 0,0:03:00.28,0:03:00.59,Default,,0,0,0,,Sim
+Dialogue: 0,0:03:00.59,0:03:00.91,Default,,0,0,0,,rig
+Dialogue: 0,0:03:00.92,0:03:01.11,Default,,0,0,0,,with
+Dialogue: 0,0:03:01.12,0:03:01.22,Default,,0,0,0,,a
+Dialogue: 0,0:03:01.23,0:03:01.39,Default,,0,0,0,,sort
+Dialogue: 0,0:03:01.40,0:03:01.55,Default,,0,0,0,,of
+Dialogue: 0,0:03:01.56,0:03:01.99,Default,,0,0,0,,hotlap
+Dialogue: 0,0:03:02.00,0:03:02.35,Default,,0,0,0,,challenge
+Dialogue: 0,0:03:02.36,0:03:02.79,Default,,0,0,0,,element
+Dialogue: 0,0:03:02.80,0:03:03.23,Default,,0,0,0,,so
+Dialogue: 0,0:03:03.23,0:03:03.62,Default,,0,0,0,,yeah
+Dialogue: 0,0:03:03.64,0:03:03.75,Default,,0,0,0,,the
+Dialogue: 0,0:03:03.76,0:03:04.27,Default,,0,0,0,,competitive
+Dialogue: 0,0:03:04.28,0:03:04.43,Default,,0,0,0,,part
+Dialogue: 0,0:03:04.44,0:03:04.59,Default,,0,0,0,,of
+Dialogue: 0,0:03:04.59,0:03:05.07,Default,,0,0,0,,me
+Dialogue: 0,0:03:05.08,0:03:05.27,Default,,0,0,0,,has
+Dialogue: 0,0:03:05.28,0:03:05.47,Default,,0,0,0,,said
+Dialogue: 0,0:03:05.48,0:03:05.54,Default,,0,0,0,,that
+Dialogue: 0,0:03:05.56,0:03:05.63,Default,,0,0,0,,I
+Dialogue: 0,0:03:05.64,0:03:05.75,Default,,0,0,0,,need
+Dialogue: 0,0:03:05.76,0:03:05.87,Default,,0,0,0,,to
+Dialogue: 0,0:03:05.87,0:03:05.95,Default,,0,0,0,,have
+Dialogue: 0,0:03:05.95,0:03:06.03,Default,,0,0,0,,a
+Dialogue: 0,0:03:06.04,0:03:06.19,Default,,0,0,0,,go
+Dialogue: 0,0:03:06.20,0:03:06.35,Default,,0,0,0,,at
+Dialogue: 0,0:03:06.36,0:03:06.55,Default,,0,0,0,,that
+Dialogue: 0,0:03:06.56,0:03:06.94,Default,,0,0,0,,before
+Dialogue: 0,0:03:06.95,0:03:07.11,Default,,0,0,0,,before
+Dialogue: 0,0:03:07.12,0:03:07.27,Default,,0,0,0,,I
+Dialogue: 0,0:03:07.28,0:03:07.63,Default,,0,0,0,,leave
+Dialogue: 0,0:03:07.64,0:03:07.95,Default,,0,0,0,,anyway
+Dialogue: 0,0:03:07.95,0:03:08.11,Default,,0,0,0,,for
+Dialogue: 0,0:03:08.12,0:03:10.22,Default,,0,0,0,,now
+Dialogue: 0,0:03:10.23,0:03:11.23,Default,,0,0,0,,coffee
+Dialogue: 0,0:03:11.23,0:03:11.67,Default,,0,0,0,,so
+Dialogue: 0,0:03:11.68,0:03:11.87,Default,,0,0,0,,here
+Dialogue: 0,0:03:11.87,0:03:12.07,Default,,0,0,0,,we
+Dialogue: 0,0:03:12.08,0:03:12.39,Default,,0,0,0,,go
+Dialogue: 0,0:03:12.40,0:03:12.83,Default,,0,0,0,,then
+Dialogue: 0,0:03:12.84,0:03:13.03,Default,,0,0,0,,look
+Dialogue: 0,0:03:13.04,0:03:13.27,Default,,0,0,0,,at
+Dialogue: 0,0:03:13.28,0:03:13.54,Default,,0,0,0,,this
+Dialogue: 0,0:03:13.56,0:03:14.11,Default,,0,0,0,,puts
+Dialogue: 0,0:03:14.12,0:03:14.27,Default,,0,0,0,,the
+Dialogue: 0,0:03:14.28,0:03:14.59,Default,,0,0,0,,St
+Dialogue: 0,0:03:14.59,0:03:15.19,Default,,0,0,0,,GQ
+Dialogue: 0,0:03:15.20,0:03:15.79,Default,,0,0,0,,siman
+Dialogue: 0,0:03:15.79,0:03:16.15,Default,,0,0,0,,to
+Dialogue: 0,0:03:16.15,0:03:16.59,Default,,0,0,0,,well
+Dialogue: 0,0:03:16.59,0:03:16.75,Default,,0,0,0,,bit
+Dialogue: 0,0:03:16.76,0:03:16.86,Default,,0,0,0,,of
+Dialogue: 0,0:03:16.87,0:03:17.15,Default,,0,0,0,,Shame
+Dialogue: 0,0:03:17.15,0:03:17.35,Default,,0,0,0,,doesn't
+Dialogue: 0,0:03:17.36,0:03:17.83,Default,,0,0,0,,it
+Dialogue: 0,0:03:17.84,0:03:17.95,Default,,0,0,0,,this
+Dialogue: 0,0:03:17.95,0:03:18.11,Default,,0,0,0,,thing
+Dialogue: 0,0:03:18.12,0:03:18.26,Default,,0,0,0,,is
+Dialogue: 0,0:03:18.28,0:03:18.79,Default,,0,0,0,,outrageous
+Dialogue: 0,0:03:18.79,0:03:19.03,Default,,0,0,0,,and
+Dialogue: 0,0:03:19.04,0:03:19.19,Default,,0,0,0,,here
+Dialogue: 0,0:03:19.20,0:03:19.75,Default,,0,0,0,,is
+Dialogue: 0,0:03:19.76,0:03:19.95,Default,,0,0,0,,the
+Dialogue: 0,0:03:19.95,0:03:20.38,Default,,0,0,0,,new
+Dialogue: 0,0:03:20.40,0:03:21.07,Default,,0,0,0,,leaderboard
+Dialogue: 0,0:03:21.08,0:03:21.23,Default,,0,0,0,,not
+Dialogue: 0,0:03:21.23,0:03:21.39,Default,,0,0,0,,many
+Dialogue: 0,0:03:21.40,0:03:21.55,Default,,0,0,0,,times
+Dialogue: 0,0:03:21.56,0:03:21.71,Default,,0,0,0,,so
+Dialogue: 0,0:03:21.72,0:03:21.83,Default,,0,0,0,,on
+Dialogue: 0,0:03:21.84,0:03:21.91,Default,,0,0,0,,it
+Dialogue: 0,0:03:21.92,0:03:21.98,Default,,0,0,0,,cuz
+Dialogue: 0,0:03:22.00,0:03:22.07,Default,,0,0,0,,they
+Dialogue: 0,0:03:22.08,0:03:22.27,Default,,0,0,0,,literally
+Dialogue: 0,0:03:22.28,0:03:22.35,Default,,0,0,0,,just
+Dialogue: 0,0:03:22.36,0:03:22.63,Default,,0,0,0,,launched
+Dialogue: 0,0:03:22.64,0:03:23.03,Default,,0,0,0,,it
+Dialogue: 0,0:03:23.04,0:03:23.18,Default,,0,0,0,,this
+Dialogue: 0,0:03:23.20,0:03:23.43,Default,,0,0,0,,week
+Dialogue: 0,0:03:23.44,0:03:23.59,Default,,0,0,0,,so
+Dialogue: 0,0:03:23.59,0:03:23.91,Default,,0,0,0,,I'm
+Dialogue: 0,0:03:23.92,0:03:24.23,Default,,0,0,0,,really
+Dialogue: 0,0:03:24.23,0:03:24.59,Default,,0,0,0,,hoping
+Dialogue: 0,0:03:24.59,0:03:24.95,Default,,0,0,0,,to
+Dialogue: 0,0:03:24.95,0:03:25.31,Default,,0,0,0,,well
+Dialogue: 0,0:03:25.31,0:03:25.38,Default,,0,0,0,,I
+Dialogue: 0,0:03:25.40,0:03:25.51,Default,,0,0,0,,think
+Dialogue: 0,0:03:25.51,0:03:25.59,Default,,0,0,0,,I
+Dialogue: 0,0:03:25.59,0:03:25.75,Default,,0,0,0,,can
+Dialogue: 0,0:03:25.76,0:03:25.83,Default,,0,0,0,,at
+Dialogue: 0,0:03:25.84,0:03:25.95,Default,,0,0,0,,least
+Dialogue: 0,0:03:25.95,0:03:26.07,Default,,0,0,0,,be
+Dialogue: 0,0:03:26.08,0:03:26.19,Default,,0,0,0,,in
+Dialogue: 0,0:03:26.20,0:03:26.31,Default,,0,0,0,,the
+Dialogue: 0,0:03:26.31,0:03:26.47,Default,,0,0,0,,top
+Dialogue: 0,0:03:26.48,0:03:27.02,Default,,0,0,0,,three
+Dialogue: 0,0:03:27.04,0:03:28.19,Default,,0,0,0,,right
+Dialogue: 0,0:03:28.20,0:03:29.19,Default,,0,0,0,,yeah
+Dialogue: 0,0:03:29.20,0:03:29.31,Default,,0,0,0,,but
+Dialogue: 0,0:03:29.31,0:03:30.11,Default,,0,0,0,,it's
+Dialogue: 0,0:03:30.12,0:03:31.11,Default,,0,0,0,,57.2
+Dialogue: 0,0:03:31.12,0:03:31.27,Default,,0,0,0,,they
+Dialogue: 0,0:03:31.28,0:03:31.39,Default,,0,0,0,,got
+Dialogue: 0,0:03:31.40,0:03:31.51,Default,,0,0,0,,a
+Dialogue: 0,0:03:31.51,0:03:32.06,Default,,0,0,0,,beat
+Dialogue: 0,0:03:32.08,0:03:32.19,Default,,0,0,0,,uh
+Dialogue: 0,0:03:32.20,0:03:32.39,Default,,0,0,0,,it's
+Dialogue: 0,0:03:32.40,0:03:32.75,Default,,0,0,0,,a
+Dialogue: 0,0:03:32.76,0:03:32.95,Default,,0,0,0,,around
+Dialogue: 0,0:03:32.95,0:03:33.23,Default,,0,0,0,,silver
+Dialogue: 0,0:03:33.23,0:03:33.43,Default,,0,0,0,,cent
+Dialogue: 0,0:03:33.43,0:03:33.55,Default,,0,0,0,,in
+Dialogue: 0,0:03:33.56,0:03:33.70,Default,,0,0,0,,a
+Dialogue: 0,0:03:33.72,0:03:34.47,Default,,0,0,0,,radical
+Dialogue: 0,0:03:34.48,0:03:34.63,Default,,0,0,0,,this
+Dialogue: 0,0:03:34.64,0:03:34.75,Default,,0,0,0,,thing
+Dialogue: 0,0:03:34.76,0:03:34.91,Default,,0,0,0,,is
+Dialogue: 0,0:03:34.92,0:03:35.23,Default,,0,0,0,,insane
+Dialogue: 0,0:03:35.23,0:03:35.39,Default,,0,0,0,,so
+Dialogue: 0,0:03:35.40,0:03:35.51,Default,,0,0,0,,once
+Dialogue: 0,0:03:35.51,0:03:35.62,Default,,0,0,0,,I
+Dialogue: 0,0:03:35.64,0:03:35.87,Default,,0,0,0,,get
+Dialogue: 0,0:03:35.87,0:03:36.27,Default,,0,0,0,,S
+Dialogue: 0,0:03:36.28,0:03:36.63,Default,,0,0,0,,seated
+Dialogue: 0,0:03:36.64,0:03:36.75,Default,,0,0,0,,in
+Dialogue: 0,0:03:36.76,0:03:37.15,Default,,0,0,0,,it
+Dialogue: 0,0:03:37.15,0:03:37.31,Default,,0,0,0,,whole
+Dialogue: 0,0:03:37.31,0:03:37.43,Default,,0,0,0,,thing
+Dialogue: 0,0:03:37.43,0:03:37.79,Default,,0,0,0,,lifts
+Dialogue: 0,0:03:37.79,0:03:37.94,Default,,0,0,0,,up
+Dialogue: 0,0:03:37.95,0:03:38.07,Default,,0,0,0,,and
+Dialogue: 0,0:03:38.08,0:03:38.39,Default,,0,0,0,,moves
+Dialogue: 0,0:03:38.40,0:03:38.51,Default,,0,0,0,,and
+Dialogue: 0,0:03:38.51,0:03:39.19,Default,,0,0,0,,tilts
+Dialogue: 0,0:03:39.20,0:03:39.31,Default,,0,0,0,,as
+Dialogue: 0,0:03:39.31,0:03:39.47,Default,,0,0,0,,I
+Dialogue: 0,0:03:39.48,0:03:39.71,Default,,0,0,0,,drive
+Dialogue: 0,0:03:39.72,0:03:39.90,Default,,0,0,0,,around
+Dialogue: 0,0:03:39.92,0:03:40.03,Default,,0,0,0,,the
+Dialogue: 0,0:03:40.04,0:03:40.39,Default,,0,0,0,,circuit
+Dialogue: 0,0:03:40.40,0:03:40.59,Default,,0,0,0,,so
+Dialogue: 0,0:03:40.59,0:03:40.87,Default,,0,0,0,,yeah
+Dialogue: 0,0:03:40.87,0:03:40.95,Default,,0,0,0,,not
+Dialogue: 0,0:03:40.95,0:03:41.15,Default,,0,0,0,,sure
+Dialogue: 0,0:03:41.15,0:03:41.27,Default,,0,0,0,,I'm
+Dialogue: 0,0:03:41.28,0:03:41.42,Default,,0,0,0,,ready
+Dialogue: 0,0:03:41.43,0:03:41.51,Default,,0,0,0,,for
+Dialogue: 0,0:03:41.51,0:03:41.63,Default,,0,0,0,,this
+Dialogue: 0,0:03:41.64,0:03:42.23,Default,,0,0,0,,Twiggy
+Dialogue: 0,0:03:42.23,0:03:42.59,Default,,0,0,0,,Twiggy
+Dialogue: 0,0:03:42.59,0:03:42.63,Default,,0,0,0,,do
+Dialogue: 0,0:03:42.64,0:03:42.71,Default,,0,0,0,,you
+Dialogue: 0,0:03:42.72,0:03:42.79,Default,,0,0,0,,want
+Dialogue: 0,0:03:42.79,0:03:42.86,Default,,0,0,0,,to
+Dialogue: 0,0:03:42.87,0:03:42.99,Default,,0,0,0,,have
+Dialogue: 0,0:03:43.00,0:03:43.27,Default,,0,0,0,,a
+Dialogue: 0,0:03:43.28,0:03:43.43,Default,,0,0,0,,no
+Dialogue: 0,0:03:43.43,0:03:43.83,Default,,0,0,0,,she's
+Dialogue: 0,0:03:43.84,0:03:44.15,Default,,0,0,0,,she's
+Dialogue: 0,0:03:44.15,0:03:44.51,Default,,0,0,0,,definitely
+Dialogue: 0,0:03:44.51,0:03:44.78,Default,,0,0,0,,lost
+Dialogue: 0,0:03:44.79,0:03:45.55,Default,,0,0,0,,interest
+Dialogue: 0,0:03:45.56,0:03:45.75,Default,,0,0,0,,right
+Dialogue: 0,0:03:45.76,0:03:45.91,Default,,0,0,0,,wish
+Dialogue: 0,0:03:45.92,0:03:46.03,Default,,0,0,0,,me
+Dialogue: 0,0:03:46.04,0:03:46.27,Default,,0,0,0,,luck
+Dialogue: 0,0:03:46.28,0:04:06.46,Default,,0,0,0,,people
+Dialogue: 0,0:04:06.48,0:04:06.59,Default,,0,0,0,,I
+Dialogue: 0,0:04:06.59,0:04:06.71,Default,,0,0,0,,mean
+Dialogue: 0,0:04:06.72,0:04:06.83,Default,,0,0,0,,I'm
+Dialogue: 0,0:04:06.84,0:04:07.19,Default,,0,0,0,,not
+Dialogue: 0,0:04:07.20,0:04:08.19,Default,,0,0,0,,lck
+Dialogue: 0,0:04:08.20,0:04:08.31,Default,,0,0,0,,but
+Dialogue: 0,0:04:08.31,0:04:08.43,Default,,0,0,0,,I
+Dialogue: 0,0:04:08.43,0:04:08.63,Default,,0,0,0,,could
+Dialogue: 0,0:04:08.64,0:04:08.83,Default,,0,0,0,,only
+Dialogue: 0,0:04:08.84,0:04:08.98,Default,,0,0,0,,have
+Dialogue: 0,0:04:09.00,0:04:09.27,Default,,0,0,0,,been
+Dialogue: 0,0:04:09.28,0:04:09.63,Default,,0,0,0,,third
+Dialogue: 0,0:04:09.64,0:04:09.79,Default,,0,0,0,,which
+Dialogue: 0,0:04:09.79,0:04:09.95,Default,,0,0,0,,would
+Dialogue: 0,0:04:09.95,0:04:10.07,Default,,0,0,0,,have
+Dialogue: 0,0:04:10.07,0:04:10.19,Default,,0,0,0,,been
+Dialogue: 0,0:04:10.20,0:04:10.31,Default,,0,0,0,,the
+Dialogue: 0,0:04:10.31,0:04:10.42,Default,,0,0,0,,end
+Dialogue: 0,0:04:10.43,0:04:10.55,Default,,0,0,0,,of
+Dialogue: 0,0:04:10.56,0:04:10.71,Default,,0,0,0,,the
+Dialogue: 0,0:04:10.72,0:04:11.15,Default,,0,0,0,,world
+Dialogue: 0,0:04:11.15,0:04:11.83,Default,,0,0,0,,so
+Dialogue: 0,0:04:11.84,0:04:11.99,Default,,0,0,0,,but
+Dialogue: 0,0:04:12.00,0:04:12.19,Default,,0,0,0,,I'll
+Dialogue: 0,0:04:12.20,0:04:12.47,Default,,0,0,0,,take
+Dialogue: 0,0:04:12.48,0:04:12.90,Default,,0,0,0,,second
+Dialogue: 0,0:04:12.92,0:04:13.11,Default,,0,0,0,,I'll
+Dialogue: 0,0:04:13.12,0:04:13.31,Default,,0,0,0,,take
+Dialogue: 0,0:04:13.31,0:04:13.67,Default,,0,0,0,,second
+Dialogue: 0,0:04:13.68,0:04:13.95,Default,,0,0,0,,and
+Dialogue: 0,0:04:13.95,0:04:14.39,Default,,0,0,0,,considering
+Dialogue: 0,0:04:14.40,0:04:14.51,Default,,0,0,0,,I
+Dialogue: 0,0:04:14.51,0:04:14.70,Default,,0,0,0,,know
+Dialogue: 0,0:04:14.72,0:04:15.03,Default,,0,0,0,,John
+Dialogue: 0,0:04:15.04,0:04:15.27,Default,,0,0,0,,does
+Dialogue: 0,0:04:15.28,0:04:15.35,Default,,0,0,0,,well
+Dialogue: 0,0:04:15.36,0:04:15.47,Default,,0,0,0,,he's
+Dialogue: 0,0:04:15.48,0:04:15.59,Default,,0,0,0,,done
+Dialogue: 0,0:04:15.59,0:04:15.79,Default,,0,0,0,,about
+Dialogue: 0,0:04:15.79,0:04:16.23,Default,,0,0,0,,400
+Dialogue: 0,0:04:16.23,0:04:16.66,Default,,0,0,0,,laps
+Dialogue: 0,0:04:16.68,0:04:16.75,Default,,0,0,0,,I
+Dialogue: 0,0:04:16.75,0:04:17.27,Default,,0,0,0,,think
+Dialogue: 0,0:04:17.28,0:04:17.35,Default,,0,0,0,,I
+Dialogue: 0,0:04:17.35,0:04:17.51,Default,,0,0,0,,think
+Dialogue: 0,0:04:17.51,0:04:17.75,Default,,0,0,0,,my
+Dialogue: 0,0:04:17.75,0:04:17.95,Default,,0,0,0,,two
+Dialogue: 0,0:04:17.95,0:04:18.07,Default,,0,0,0,,and
+Dialogue: 0,0:04:18.07,0:04:18.27,Default,,0,0,0,,a
+Dialogue: 0,0:04:18.28,0:04:19.11,Default,,0,0,0,,half
+Dialogue: 0,0:04:19.12,0:04:19.30,Default,,0,0,0,,are
+Dialogue: 0,0:04:19.32,0:04:19.67,Default,,0,0,0,,fairly
+Dialogue: 0,0:04:19.68,0:04:20.07,Default,,0,0,0,,decent
+Dialogue: 0,0:04:20.07,0:04:20.31,Default,,0,0,0,,so
+Dialogue: 0,0:04:20.32,0:04:20.71,Default,,0,0,0,,yeah
+Dialogue: 0,0:04:20.72,0:04:21.03,Default,,0,0,0,,everyone
+Dialogue: 0,0:04:21.04,0:04:21.19,Default,,0,0,0,,come
+Dialogue: 0,0:04:21.19,0:04:21.38,Default,,0,0,0,,on
+Dialogue: 0,0:04:21.40,0:04:21.87,Default,,0,0,0,,down
+Dialogue: 0,0:04:21.88,0:04:22.35,Default,,0,0,0,,Podium
+Dialogue: 0,0:04:22.36,0:04:22.47,Default,,0,0,0,,have
+Dialogue: 0,0:04:22.47,0:04:22.59,Default,,0,0,0,,a
+Dialogue: 0,0:04:22.60,0:04:22.83,Default,,0,0,0,,go
+Dialogue: 0,0:04:22.84,0:04:22.99,Default,,0,0,0,,see
+Dialogue: 0,0:04:23.00,0:04:23.07,Default,,0,0,0,,if
+Dialogue: 0,0:04:23.08,0:04:23.19,Default,,0,0,0,,you
+Dialogue: 0,0:04:23.19,0:04:23.30,Default,,0,0,0,,can
+Dialogue: 0,0:04:23.32,0:04:23.55,Default,,0,0,0,,beat
+Dialogue: 0,0:04:23.56,0:04:23.83,Default,,0,0,0,,my
+Dialogue: 0,0:04:23.84,0:04:24.31,Default,,0,0,0,,time
+Dialogue: 0,0:04:24.32,0:04:24.39,Default,,0,0,0,,I
+Dialogue: 0,0:04:24.40,0:04:24.59,Default,,0,0,0,,feel
+Dialogue: 0,0:04:24.60,0:04:24.75,Default,,0,0,0,,like
+Dialogue: 0,0:04:24.75,0:04:24.87,Default,,0,0,0,,quite
+Dialogue: 0,0:04:24.88,0:04:24.95,Default,,0,0,0,,a
+Dialogue: 0,0:04:24.96,0:04:25.11,Default,,0,0,0,,few
+Dialogue: 0,0:04:25.12,0:04:25.18,Default,,0,0,0,,of
+Dialogue: 0,0:04:25.19,0:04:25.39,Default,,0,0,0,,you
+Dialogue: 0,0:04:25.40,0:04:25.83,Default,,0,0,0,,will
+Dialogue: 0,0:04:25.84,0:04:25.99,Default,,0,0,0,,at
+Dialogue: 0,0:04:26.00,0:04:26.15,Default,,0,0,0,,which
+Dialogue: 0,0:04:26.16,0:04:26.71,Default,,0,0,0,,point
+Dialogue: 0,0:04:26.72,0:04:26.83,Default,,0,0,0,,I
+Dialogue: 0,0:04:26.84,0:04:27.03,Default,,0,0,0,,will
+Dialogue: 0,0:04:27.04,0:04:27.23,Default,,0,0,0,,be
+Dialogue: 0,0:04:27.24,0:04:27.54,Default,,0,0,0,,back
+Dialogue: 0,0:04:27.56,0:04:27.75,Default,,0,0,0,,for
+Dialogue: 0,0:04:27.75,0:04:27.87,Default,,0,0,0,,a
+Dialogue: 0,0:04:27.88,0:04:28.07,Default,,0,0,0,,lot
+Dialogue: 0,0:04:28.08,0:04:28.31,Default,,0,0,0,,more
+Dialogue: 0,0:04:28.32,0:04:28.59,Default,,0,0,0,,time
+Dialogue: 0,0:04:28.60,0:04:28.79,Default,,0,0,0,,on
+Dialogue: 0,0:04:28.80,0:04:28.99,Default,,0,0,0,,this
+Dialogue: 0,0:04:29.00,0:04:29.31,Default,,0,0,0,,thing
+Dialogue: 0,0:04:29.32,0:04:29.42,Default,,0,0,0,,and
+Dialogue: 0,0:04:29.44,0:04:29.75,Default,,0,0,0,,maybe
+Dialogue: 0,0:04:29.75,0:04:29.91,Default,,0,0,0,,four
+Dialogue: 0,0:04:29.91,0:04:30.07,Default,,0,0,0,,or
+Dialogue: 0,0:04:30.08,0:04:30.27,Default,,0,0,0,,five
+Dialogue: 0,0:04:30.28,0:04:30.47,Default,,0,0,0,,more
+Dialogue: 0,0:04:30.47,0:04:30.91,Default,,0,0,0,,coffees
+Dialogue: 0,0:04:30.91,0:04:31.03,Default,,0,0,0,,to
+Dialogue: 0,0:04:31.03,0:04:31.14,Default,,0,0,0,,make
+Dialogue: 0,0:04:31.16,0:04:31.31,Default,,0,0,0,,sure
+Dialogue: 0,0:04:31.32,0:04:31.43,Default,,0,0,0,,I'm
+Dialogue: 0,0:04:31.44,0:04:31.55,Default,,0,0,0,,on
+Dialogue: 0,0:04:31.56,0:04:35.46,Default,,0,0,0,,my
+Dialogue: 0,0:04:35.48,0:04:42.26,Default,,0,0,0,,[Applause]
+Dialogue: 0,0:04:42.28,0:04:43.27,Default,,0,0,0,,again
+Dialogue: 0,0:04:43.28,0:04:43.47,Default,,0,0,0,,such
+Dialogue: 0,0:04:43.47,0:04:43.63,Default,,0,0,0,,an
+Dialogue: 0,0:04:43.63,0:04:43.99,Default,,0,0,0,,easy
+Dialogue: 0,0:04:44.00,0:04:44.23,Default,,0,0,0,,place
+Dialogue: 0,0:04:44.24,0:04:44.43,Default,,0,0,0,,to
+Dialogue: 0,0:04:44.44,0:04:44.67,Default,,0,0,0,,waste
+Dialogue: 0,0:04:44.68,0:04:44.83,Default,,0,0,0,,a
+Dialogue: 0,0:04:44.84,0:04:44.94,Default,,0,0,0,,lot
+Dialogue: 0,0:04:44.96,0:04:45.11,Default,,0,0,0,,of
+Dialogue: 0,0:04:45.12,0:04:45.31,Default,,0,0,0,,time
+Dialogue: 0,0:04:45.32,0:04:45.51,Default,,0,0,0,,first
+Dialogue: 0,0:04:45.52,0:04:45.67,Default,,0,0,0,,it
+Dialogue: 0,0:04:45.68,0:04:45.83,Default,,0,0,0,,just
+Dialogue: 0,0:04:45.84,0:04:46.11,Default,,0,0,0,,catching
+Dialogue: 0,0:04:46.12,0:04:46.35,Default,,0,0,0,,up
+Dialogue: 0,0:04:46.36,0:04:46.54,Default,,0,0,0,,with
+Dialogue: 0,0:04:46.56,0:04:46.75,Default,,0,0,0,,the
+Dialogue: 0,0:04:46.75,0:04:47.23,Default,,0,0,0,,Pea
+Dialogue: 0,0:04:47.24,0:04:48.03,Default,,0,0,0,,team
+Dialogue: 0,0:04:48.03,0:04:48.15,Default,,0,0,0,,um
+Dialogue: 0,0:04:48.16,0:04:48.27,Default,,0,0,0,,but
+Dialogue: 0,0:04:48.28,0:04:48.39,Default,,0,0,0,,then
+Dialogue: 0,0:04:48.40,0:04:48.59,Default,,0,0,0,,getting
+Dialogue: 0,0:04:48.60,0:04:48.79,Default,,0,0,0,,on
+Dialogue: 0,0:04:48.80,0:04:49.02,Default,,0,0,0,,that
+Dialogue: 0,0:04:49.03,0:04:49.39,Default,,0,0,0,,Sim
+Dialogue: 0,0:04:49.40,0:04:49.75,Default,,0,0,0,,rig
+Dialogue: 0,0:04:49.75,0:04:49.99,Default,,0,0,0,,and
+Dialogue: 0,0:04:50.00,0:04:50.15,Default,,0,0,0,,yeah
+Dialogue: 0,0:04:50.16,0:04:50.23,Default,,0,0,0,,I
+Dialogue: 0,0:04:50.24,0:04:50.39,Default,,0,0,0,,was
+Dialogue: 0,0:04:50.40,0:04:50.63,Default,,0,0,0,,supposed
+Dialogue: 0,0:04:50.63,0:04:50.71,Default,,0,0,0,,to
+Dialogue: 0,0:04:50.72,0:04:51.38,Default,,0,0,0,,leave
+Dialogue: 0,0:04:51.40,0:04:51.55,Default,,0,0,0,,about
+Dialogue: 0,0:04:51.56,0:04:51.95,Default,,0,0,0,,45
+Dialogue: 0,0:04:51.96,0:04:52.19,Default,,0,0,0,,minutes
+Dialogue: 0,0:04:52.19,0:04:52.71,Default,,0,0,0,,ago
+Dialogue: 0,0:04:52.72,0:04:52.87,Default,,0,0,0,,um
+Dialogue: 0,0:04:52.88,0:04:52.99,Default,,0,0,0,,I'm
+Dialogue: 0,0:04:53.00,0:04:53.11,Default,,0,0,0,,now
+Dialogue: 0,0:04:53.12,0:04:53.19,Default,,0,0,0,,going
+Dialogue: 0,0:04:53.19,0:04:53.26,Default,,0,0,0,,to
+Dialogue: 0,0:04:53.28,0:04:53.39,Default,,0,0,0,,be
+Dialogue: 0,0:04:53.40,0:04:53.67,Default,,0,0,0,,late
+Dialogue: 0,0:04:53.68,0:04:53.75,Default,,0,0,0,,for
+Dialogue: 0,0:04:53.75,0:04:53.87,Default,,0,0,0,,my
+Dialogue: 0,0:04:53.88,0:04:54.23,Default,,0,0,0,,meeting
+Dialogue: 0,0:04:54.24,0:04:54.55,Default,,0,0,0,,at
+Dialogue: 0,0:04:54.56,0:04:55.03,Default,,0,0,0,,Henry's
+Dialogue: 0,0:04:55.03,0:04:55.34,Default,,0,0,0,,carb
+Dialogue: 0,0:04:55.36,0:04:55.59,Default,,0,0,0,,bar
+Dialogue: 0,0:04:55.60,0:04:55.71,Default,,0,0,0,,which
+Dialogue: 0,0:04:55.72,0:04:55.87,Default,,0,0,0,,is
+Dialogue: 0,0:04:55.88,0:04:56.43,Default,,0,0,0,,about
+Dialogue: 0,0:04:56.44,0:04:56.59,Default,,0,0,0,,an
+Dialogue: 0,0:04:56.60,0:04:56.79,Default,,0,0,0,,hour
+Dialogue: 0,0:04:56.80,0:04:56.87,Default,,0,0,0,,and
+Dialogue: 0,0:04:56.88,0:04:57.03,Default,,0,0,0,,a
+Dialogue: 0,0:04:57.03,0:04:57.30,Default,,0,0,0,,half
+Dialogue: 0,0:04:57.32,0:04:57.59,Default,,0,0,0,,north
+Dialogue: 0,0:04:57.60,0:04:57.79,Default,,0,0,0,,of
+Dialogue: 0,0:04:57.80,0:04:57.99,Default,,0,0,0,,here
+Dialogue: 0,0:04:58.00,0:04:58.11,Default,,0,0,0,,I
+Dialogue: 0,0:04:58.12,0:04:58.71,Default,,0,0,0,,think
+Dialogue: 0,0:04:58.72,0:04:58.83,Default,,0,0,0,,but
+Dialogue: 0,0:04:58.84,0:04:58.95,Default,,0,0,0,,the
+Dialogue: 0,0:04:58.96,0:04:59.22,Default,,0,0,0,,decent
+Dialogue: 0,0:04:59.24,0:04:59.39,Default,,0,0,0,,thing
+Dialogue: 0,0:04:59.40,0:04:59.71,Default,,0,0,0,,is
+Dialogue: 0,0:04:59.72,0:04:59.83,Default,,0,0,0,,they
+Dialogue: 0,0:04:59.84,0:04:59.95,Default,,0,0,0,,got
+Dialogue: 0,0:04:59.96,0:05:00.11,Default,,0,0,0,,some
+Dialogue: 0,0:05:00.12,0:05:00.55,Default,,0,0,0,,properly
+Dialogue: 0,0:05:00.56,0:05:00.86,Default,,0,0,0,,good
+Dialogue: 0,0:05:00.88,0:05:01.27,Default,,0,0,0,,driving
+Dialogue: 0,0:05:01.28,0:05:01.67,Default,,0,0,0,,roads
+Dialogue: 0,0:05:01.68,0:05:01.83,Default,,0,0,0,,to
+Dialogue: 0,0:05:01.84,0:05:02.03,Default,,0,0,0,,get
+Dialogue: 0,0:05:02.03,0:05:02.19,Default,,0,0,0,,there
+Dialogue: 0,0:05:02.19,0:05:02.31,Default,,0,0,0,,and
+Dialogue: 0,0:05:02.32,0:05:02.47,Default,,0,0,0,,a
+Dialogue: 0,0:05:02.47,0:05:02.90,Default,,0,0,0,,chance
+Dialogue: 0,0:05:02.91,0:05:03.79,Default,,0,0,0,,to
+Dialogue: 0,0:05:03.80,0:05:04.11,Default,,0,0,0,,start
+Dialogue: 0,0:05:04.12,0:05:04.55,Default,,0,0,0,,to
+Dialogue: 0,0:05:04.56,0:05:05.11,Default,,0,0,0,,experience
+Dialogue: 0,0:05:05.12,0:05:05.31,Default,,0,0,0,,this
+Dialogue: 0,0:05:05.32,0:05:05.79,Default,,0,0,0,,car
+Dialogue: 0,0:05:05.80,0:05:06.62,Default,,0,0,0,,properly
+Dialogue: 0,0:05:06.63,0:05:24.58,Default,,0,0,0,,let's
+Dialogue: 0,0:05:24.60,0:05:25.59,Default,,0,0,0,,go
+Dialogue: 0,0:05:25.60,0:05:25.79,Default,,0,0,0,,now
+Dialogue: 0,0:05:25.80,0:05:25.91,Default,,0,0,0,,you
+Dialogue: 0,0:05:25.91,0:05:26.15,Default,,0,0,0,,might
+Dialogue: 0,0:05:26.16,0:05:26.43,Default,,0,0,0,,not
+Dialogue: 0,0:05:26.44,0:05:26.75,Default,,0,0,0,,care
+Dialogue: 0,0:05:26.75,0:05:26.95,Default,,0,0,0,,but
+Dialogue: 0,0:05:26.96,0:05:27.19,Default,,0,0,0,,I
+Dialogue: 0,0:05:27.19,0:05:27.31,Default,,0,0,0,,have
+Dialogue: 0,0:05:27.31,0:05:27.42,Default,,0,0,0,,to
+Dialogue: 0,0:05:27.44,0:05:27.55,Default,,0,0,0,,get
+Dialogue: 0,0:05:27.56,0:05:27.67,Default,,0,0,0,,it
+Dialogue: 0,0:05:27.68,0:05:27.87,Default,,0,0,0,,off
+Dialogue: 0,0:05:27.88,0:05:28.11,Default,,0,0,0,,my
+Dialogue: 0,0:05:28.12,0:05:28.51,Default,,0,0,0,,chest
+Dialogue: 0,0:05:28.52,0:05:28.87,Default,,0,0,0,,today's
+Dialogue: 0,0:05:28.88,0:05:29.07,Default,,0,0,0,,not
+Dialogue: 0,0:05:29.08,0:05:29.42,Default,,0,0,0,,exactly
+Dialogue: 0,0:05:29.44,0:05:29.79,Default,,0,0,0,,going
+Dialogue: 0,0:05:29.80,0:05:29.99,Default,,0,0,0,,to
+Dialogue: 0,0:05:30.00,0:05:30.87,Default,,0,0,0,,plan
+Dialogue: 0,0:05:30.88,0:05:31.11,Default,,0,0,0,,you
+Dialogue: 0,0:05:31.12,0:05:31.27,Default,,0,0,0,,may
+Dialogue: 0,0:05:31.28,0:05:31.47,Default,,0,0,0,,have
+Dialogue: 0,0:05:31.47,0:05:32.19,Default,,0,0,0,,noticed
+Dialogue: 0,0:05:32.19,0:05:32.35,Default,,0,0,0,,as
+Dialogue: 0,0:05:32.36,0:05:32.42,Default,,0,0,0,,I
+Dialogue: 0,0:05:32.44,0:05:32.55,Default,,0,0,0,,was
+Dialogue: 0,0:05:32.56,0:05:32.91,Default,,0,0,0,,leaving
+Dialogue: 0,0:05:32.91,0:05:33.31,Default,,0,0,0,,Podium
+Dialogue: 0,0:05:33.31,0:05:33.39,Default,,0,0,0,,I
+Dialogue: 0,0:05:33.40,0:05:33.51,Default,,0,0,0,,was
+Dialogue: 0,0:05:33.52,0:05:33.91,Default,,0,0,0,,pouring
+Dialogue: 0,0:05:33.91,0:05:34.06,Default,,0,0,0,,with
+Dialogue: 0,0:05:34.08,0:05:34.39,Default,,0,0,0,,sweat
+Dialogue: 0,0:05:34.40,0:05:34.55,Default,,0,0,0,,and
+Dialogue: 0,0:05:34.56,0:05:34.67,Default,,0,0,0,,I
+Dialogue: 0,0:05:34.68,0:05:35.03,Default,,0,0,0,,mentioned
+Dialogue: 0,0:05:35.03,0:05:35.19,Default,,0,0,0,,then
+Dialogue: 0,0:05:35.19,0:05:35.31,Default,,0,0,0,,that
+Dialogue: 0,0:05:35.31,0:05:35.43,Default,,0,0,0,,I
+Dialogue: 0,0:05:35.44,0:05:35.54,Default,,0,0,0,,was
+Dialogue: 0,0:05:35.56,0:05:36.07,Default,,0,0,0,,about
+Dialogue: 0,0:05:36.08,0:05:36.63,Default,,0,0,0,,45
+Dialogue: 0,0:05:36.63,0:05:36.99,Default,,0,0,0,,minutes
+Dialogue: 0,0:05:37.00,0:05:37.31,Default,,0,0,0,,late
+Dialogue: 0,0:05:37.31,0:05:37.51,Default,,0,0,0,,while
+Dialogue: 0,0:05:37.52,0:05:37.67,Default,,0,0,0,,I'm
+Dialogue: 0,0:05:37.68,0:05:37.86,Default,,0,0,0,,now
+Dialogue: 0,0:05:37.88,0:05:38.43,Default,,0,0,0,,about
+Dialogue: 0,0:05:38.44,0:05:38.71,Default,,0,0,0,,2
+Dialogue: 0,0:05:38.72,0:05:38.99,Default,,0,0,0,,hours
+Dialogue: 0,0:05:39.00,0:05:39.19,Default,,0,0,0,,late
+Dialogue: 0,0:05:39.19,0:05:39.31,Default,,0,0,0,,for
+Dialogue: 0,0:05:39.31,0:05:39.39,Default,,0,0,0,,my
+Dialogue: 0,0:05:39.40,0:05:39.63,Default,,0,0,0,,meeting
+Dialogue: 0,0:05:39.63,0:05:39.78,Default,,0,0,0,,at
+Dialogue: 0,0:05:39.80,0:05:40.11,Default,,0,0,0,,Henry's
+Dialogue: 0,0:05:40.12,0:05:40.31,Default,,0,0,0,,Car
+Dialogue: 0,0:05:40.31,0:05:40.63,Default,,0,0,0,,Bar
+Dialogue: 0,0:05:40.63,0:05:41.27,Default,,0,0,0,,because
+Dialogue: 0,0:05:41.28,0:05:41.47,Default,,0,0,0,,oh
+Dialogue: 0,0:05:41.47,0:05:41.63,Default,,0,0,0,,my
+Dialogue: 0,0:05:41.63,0:05:41.79,Default,,0,0,0,,god
+Dialogue: 0,0:05:41.80,0:05:41.90,Default,,0,0,0,,I've
+Dialogue: 0,0:05:41.91,0:05:42.03,Default,,0,0,0,,just
+Dialogue: 0,0:05:42.03,0:05:42.31,Default,,0,0,0,,been
+Dialogue: 0,0:05:42.31,0:05:42.59,Default,,0,0,0,,so
+Dialogue: 0,0:05:42.60,0:05:43.39,Default,,0,0,0,,frustrated
+Dialogue: 0,0:05:43.40,0:05:43.55,Default,,0,0,0,,you
+Dialogue: 0,0:05:43.56,0:05:43.67,Default,,0,0,0,,know
+Dialogue: 0,0:05:43.68,0:05:43.87,Default,,0,0,0,,me
+Dialogue: 0,0:05:43.88,0:05:43.94,Default,,0,0,0,,I
+Dialogue: 0,0:05:43.96,0:05:44.11,Default,,0,0,0,,always
+Dialogue: 0,0:05:44.12,0:05:44.27,Default,,0,0,0,,like
+Dialogue: 0,0:05:44.28,0:05:44.35,Default,,0,0,0,,to
+Dialogue: 0,0:05:44.36,0:05:44.51,Default,,0,0,0,,sort
+Dialogue: 0,0:05:44.52,0:05:44.67,Default,,0,0,0,,of
+Dialogue: 0,0:05:44.68,0:05:44.99,Default,,0,0,0,,over
+Dialogue: 0,0:05:45.00,0:05:45.19,Default,,0,0,0,,film
+Dialogue: 0,0:05:45.19,0:05:45.35,Default,,0,0,0,,for
+Dialogue: 0,0:05:45.36,0:05:45.46,Default,,0,0,0,,my
+Dialogue: 0,0:05:45.47,0:05:45.91,Default,,0,0,0,,videos
+Dialogue: 0,0:05:45.91,0:05:46.63,Default,,0,0,0,,flybys
+Dialogue: 0,0:05:46.63,0:05:46.87,Default,,0,0,0,,drone
+Dialogue: 0,0:05:46.88,0:05:47.27,Default,,0,0,0,,shots
+Dialogue: 0,0:05:47.28,0:05:47.63,Default,,0,0,0,,multiple
+Dialogue: 0,0:05:47.63,0:05:47.98,Default,,0,0,0,,GoPro
+Dialogue: 0,0:05:48.00,0:05:48.63,Default,,0,0,0,,angles
+Dialogue: 0,0:05:48.63,0:05:49.47,Default,,0,0,0,,Etc
+Dialogue: 0,0:05:49.47,0:05:49.63,Default,,0,0,0,,every
+Dialogue: 0,0:05:49.63,0:05:49.79,Default,,0,0,0,,time
+Dialogue: 0,0:05:49.80,0:05:49.95,Default,,0,0,0,,I've
+Dialogue: 0,0:05:49.96,0:05:50.19,Default,,0,0,0,,tried
+Dialogue: 0,0:05:50.19,0:05:50.31,Default,,0,0,0,,to
+Dialogue: 0,0:05:50.31,0:05:50.50,Default,,0,0,0,,do
+Dialogue: 0,0:05:50.52,0:05:50.67,Default,,0,0,0,,that
+Dialogue: 0,0:05:50.68,0:05:51.19,Default,,0,0,0,,today
+Dialogue: 0,0:05:51.19,0:05:51.35,Default,,0,0,0,,I've
+Dialogue: 0,0:05:51.36,0:05:51.99,Default,,0,0,0,,encountered
+Dialogue: 0,0:05:52.00,0:05:52.62,Default,,0,0,0,,insane
+Dialogue: 0,0:05:52.63,0:05:53.07,Default,,0,0,0,,traffic
+Dialogue: 0,0:05:53.08,0:05:53.27,Default,,0,0,0,,or
+Dialogue: 0,0:05:53.28,0:05:53.39,Default,,0,0,0,,a
+Dialogue: 0,0:05:53.40,0:05:53.75,Default,,0,0,0,,road
+Dialogue: 0,0:05:53.75,0:05:54.15,Default,,0,0,0,,closure
+Dialogue: 0,0:05:54.16,0:05:54.27,Default,,0,0,0,,or
+Dialogue: 0,0:05:54.28,0:05:54.43,Default,,0,0,0,,a
+Dialogue: 0,0:05:54.44,0:05:55.02,Default,,0,0,0,,diversion
+Dialogue: 0,0:05:55.03,0:05:55.47,Default,,0,0,0,,or
+Dialogue: 0,0:05:55.47,0:05:55.59,Default,,0,0,0,,a
+Dialogue: 0,0:05:55.60,0:05:55.87,Default,,0,0,0,,small
+Dialogue: 0,0:05:55.88,0:05:56.11,Default,,0,0,0,,Country
+Dialogue: 0,0:05:56.12,0:05:56.43,Default,,0,0,0,,Lane
+Dialogue: 0,0:05:56.44,0:05:56.55,Default,,0,0,0,,where
+Dialogue: 0,0:05:56.56,0:05:56.63,Default,,0,0,0,,all
+Dialogue: 0,0:05:56.63,0:05:56.74,Default,,0,0,0,,the
+Dialogue: 0,0:05:56.75,0:05:57.03,Default,,0,0,0,,hedges
+Dialogue: 0,0:05:57.03,0:05:57.15,Default,,0,0,0,,have
+Dialogue: 0,0:05:57.16,0:05:57.59,Default,,0,0,0,,overgrown
+Dialogue: 0,0:05:57.60,0:05:57.67,Default,,0,0,0,,and
+Dialogue: 0,0:05:57.68,0:05:57.75,Default,,0,0,0,,I
+Dialogue: 0,0:05:57.75,0:05:57.91,Default,,0,0,0,,can't
+Dialogue: 0,0:05:57.91,0:05:58.10,Default,,0,0,0,,really
+Dialogue: 0,0:05:58.12,0:05:58.63,Default,,0,0,0,,see
+Dialogue: 0,0:05:58.63,0:05:58.87,Default,,0,0,0,,around
+Dialogue: 0,0:05:58.88,0:05:58.99,Default,,0,0,0,,the
+Dialogue: 0,0:05:59.00,0:05:59.31,Default,,0,0,0,,corners
+Dialogue: 0,0:05:59.31,0:05:59.47,Default,,0,0,0,,it's
+Dialogue: 0,0:05:59.47,0:05:59.87,Default,,0,0,0,,just
+Dialogue: 0,0:05:59.88,0:06:00.02,Default,,0,0,0,,it's
+Dialogue: 0,0:06:00.03,0:06:00.19,Default,,0,0,0,,been
+Dialogue: 0,0:06:00.19,0:06:00.35,Default,,0,0,0,,a
+Dialogue: 0,0:06:00.36,0:06:00.71,Default,,0,0,0,,nightmare
+Dialogue: 0,0:06:00.72,0:06:00.79,Default,,0,0,0,,and
+Dialogue: 0,0:06:00.80,0:06:00.95,Default,,0,0,0,,then
+Dialogue: 0,0:06:00.96,0:06:01.15,Default,,0,0,0,,this
+Dialogue: 0,0:06:01.16,0:06:01.59,Default,,0,0,0,,GoPro
+Dialogue: 0,0:06:01.60,0:06:01.66,Default,,0,0,0,,has
+Dialogue: 0,0:06:01.68,0:06:01.83,Default,,0,0,0,,been
+Dialogue: 0,0:06:01.84,0:06:02.11,Default,,0,0,0,,playing
+Dialogue: 0,0:06:02.12,0:06:02.55,Default,,0,0,0,,up
+Dialogue: 0,0:06:02.56,0:06:02.91,Default,,0,0,0,,essentially
+Dialogue: 0,0:06:02.91,0:06:02.99,Default,,0,0,0,,this
+Dialogue: 0,0:06:03.00,0:06:03.19,Default,,0,0,0,,is
+Dialogue: 0,0:06:03.19,0:06:03.26,Default,,0,0,0,,this
+Dialogue: 0,0:06:03.28,0:06:03.39,Default,,0,0,0,,is
+Dialogue: 0,0:06:03.40,0:06:03.63,Default,,0,0,0,,my
+Dialogue: 0,0:06:03.63,0:06:03.99,Default,,0,0,0,,last
+Dialogue: 0,0:06:04.00,0:06:04.71,Default,,0,0,0,,attempt
+Dialogue: 0,0:06:04.72,0:06:04.91,Default,,0,0,0,,to
+Dialogue: 0,0:06:04.91,0:06:05.15,Default,,0,0,0,,talk
+Dialogue: 0,0:06:05.16,0:06:05.43,Default,,0,0,0,,about
+Dialogue: 0,0:06:05.44,0:06:05.62,Default,,0,0,0,,this
+Dialogue: 0,0:06:05.63,0:06:06.23,Default,,0,0,0,,car
+Dialogue: 0,0:06:06.24,0:06:06.35,Default,,0,0,0,,and
+Dialogue: 0,0:06:06.36,0:06:06.51,Default,,0,0,0,,I
+Dialogue: 0,0:06:06.52,0:06:06.75,Default,,0,0,0,,really
+Dialogue: 0,0:06:06.75,0:06:06.91,Default,,0,0,0,,want
+Dialogue: 0,0:06:06.91,0:06:07.11,Default,,0,0,0,,to
+Dialogue: 0,0:06:07.12,0:06:07.31,Default,,0,0,0,,talk
+Dialogue: 0,0:06:07.31,0:06:07.59,Default,,0,0,0,,about
+Dialogue: 0,0:06:07.59,0:06:07.74,Default,,0,0,0,,this
+Dialogue: 0,0:06:07.75,0:06:08.03,Default,,0,0,0,,car
+Dialogue: 0,0:06:08.03,0:06:08.83,Default,,0,0,0,,because
+Dialogue: 0,0:06:08.84,0:06:09.03,Default,,0,0,0,,I
+Dialogue: 0,0:06:09.03,0:06:09.39,Default,,0,0,0,,really
+Dialogue: 0,0:06:09.40,0:06:09.71,Default,,0,0,0,,like
+Dialogue: 0,0:06:09.72,0:06:10.39,Default,,0,0,0,,it
+Dialogue: 0,0:06:10.40,0:06:10.67,Default,,0,0,0,,no
+Dialogue: 0,0:06:10.68,0:06:11.18,Default,,0,0,0,,surprise
+Dialogue: 0,0:06:11.19,0:06:11.39,Default,,0,0,0,,there
+Dialogue: 0,0:06:11.40,0:06:11.51,Default,,0,0,0,,is
+Dialogue: 0,0:06:11.52,0:06:11.71,Default,,0,0,0,,it
+Dialogue: 0,0:06:11.72,0:06:11.79,Default,,0,0,0,,I
+Dialogue: 0,0:06:11.80,0:06:12.55,Default,,0,0,0,,mean
+Dialogue: 0,0:06:12.56,0:06:12.67,Default,,0,0,0,,it's
+Dialogue: 0,0:06:12.68,0:06:12.83,Default,,0,0,0,,a
+Dialogue: 0,0:06:12.84,0:06:13.59,Default,,0,0,0,,Porsche
+Dialogue: 0,0:06:13.59,0:06:13.71,Default,,0,0,0,,it's
+Dialogue: 0,0:06:13.72,0:06:13.86,Default,,0,0,0,,a
+Dialogue: 0,0:06:13.88,0:06:14.39,Default,,0,0,0,,GT
+Dialogue: 0,0:06:14.40,0:06:14.83,Default,,0,0,0,,product
+Dialogue: 0,0:06:14.84,0:06:15.35,Default,,0,0,0,,and
+Dialogue: 0,0:06:15.36,0:06:15.63,Default,,0,0,0,,well
+Dialogue: 0,0:06:15.63,0:06:15.79,Default,,0,0,0,,yeah
+Dialogue: 0,0:06:15.80,0:06:15.91,Default,,0,0,0,,I
+Dialogue: 0,0:06:15.91,0:06:16.31,Default,,0,0,0,,just
+Dialogue: 0,0:06:16.31,0:06:16.83,Default,,0,0,0,,well
+Dialogue: 0,0:06:16.84,0:06:16.94,Default,,0,0,0,,it
+Dialogue: 0,0:06:16.96,0:06:17.07,Default,,0,0,0,,was
+Dialogue: 0,0:06:17.08,0:06:17.27,Default,,0,0,0,,always
+Dialogue: 0,0:06:17.28,0:06:17.39,Default,,0,0,0,,going
+Dialogue: 0,0:06:17.40,0:06:17.51,Default,,0,0,0,,to
+Dialogue: 0,0:06:17.52,0:06:17.67,Default,,0,0,0,,be
+Dialogue: 0,0:06:17.68,0:06:17.99,Default,,0,0,0,,great
+Dialogue: 0,0:06:18.00,0:06:18.35,Default,,0,0,0,,wasn't
+Dialogue: 0,0:06:18.36,0:06:19.02,Default,,0,0,0,,it
+Dialogue: 0,0:06:19.03,0:06:19.31,Default,,0,0,0,,but
+Dialogue: 0,0:06:19.31,0:06:19.63,Default,,0,0,0,,actually
+Dialogue: 0,0:06:19.63,0:06:19.87,Default,,0,0,0,,having
+Dialogue: 0,0:06:19.88,0:06:20.15,Default,,0,0,0,,said
+Dialogue: 0,0:06:20.16,0:06:20.35,Default,,0,0,0,,that
+Dialogue: 0,0:06:20.36,0:06:20.47,Default,,0,0,0,,I
+Dialogue: 0,0:06:20.47,0:06:20.74,Default,,0,0,0,,didn't
+Dialogue: 0,0:06:20.75,0:06:21.07,Default,,0,0,0,,know
+Dialogue: 0,0:06:21.08,0:06:21.23,Default,,0,0,0,,that
+Dialogue: 0,0:06:21.24,0:06:21.31,Default,,0,0,0,,it
+Dialogue: 0,0:06:21.31,0:06:21.47,Default,,0,0,0,,would
+Dialogue: 0,0:06:21.47,0:06:21.79,Default,,0,0,0,,definitely
+Dialogue: 0,0:06:21.80,0:06:21.95,Default,,0,0,0,,be
+Dialogue: 0,0:06:21.96,0:06:22.34,Default,,0,0,0,,great
+Dialogue: 0,0:06:22.36,0:06:22.71,Default,,0,0,0,,because
+Dialogue: 0,0:06:22.72,0:06:22.87,Default,,0,0,0,,do
+Dialogue: 0,0:06:22.88,0:06:23.03,Default,,0,0,0,,you
+Dialogue: 0,0:06:23.03,0:06:24.03,Default,,0,0,0,,remember
+Dialogue: 0,0:06:24.03,0:06:24.35,Default,,0,0,0,,last
+Dialogue: 0,0:06:24.36,0:06:24.59,Default,,0,0,0,,year
+Dialogue: 0,0:06:24.59,0:06:24.70,Default,,0,0,0,,I
+Dialogue: 0,0:06:24.72,0:06:25.11,Default,,0,0,0,,drove
+Dialogue: 0,0:06:25.12,0:06:25.35,Default,,0,0,0,,the
+Dialogue: 0,0:06:25.36,0:06:26.23,Default,,0,0,0,,718
+Dialogue: 0,0:06:26.24,0:06:26.79,Default,,0,0,0,,spyer
+Dialogue: 0,0:06:26.80,0:06:26.91,Default,,0,0,0,,which
+Dialogue: 0,0:06:26.91,0:06:27.19,Default,,0,0,0,,is
+Dialogue: 0,0:06:27.19,0:06:28.18,Default,,0,0,0,,essentially
+Dialogue: 0,0:06:28.19,0:06:28.39,Default,,0,0,0,,a
+Dialogue: 0,0:06:28.40,0:06:29.23,Default,,0,0,0,,convertible
+Dialogue: 0,0:06:29.24,0:06:29.59,Default,,0,0,0,,Je
+Dialogue: 0,0:06:29.59,0:06:30.19,Default,,0,0,0,,T4
+Dialogue: 0,0:06:30.19,0:06:30.47,Default,,0,0,0,,okay
+Dialogue: 0,0:06:30.47,0:06:30.71,Default,,0,0,0,,fine
+Dialogue: 0,0:06:30.72,0:06:30.87,Default,,0,0,0,,there's
+Dialogue: 0,0:06:30.88,0:06:31.06,Default,,0,0,0,,a
+Dialogue: 0,0:06:31.08,0:06:31.31,Default,,0,0,0,,few
+Dialogue: 0,0:06:31.31,0:06:31.75,Default,,0,0,0,,differences
+Dialogue: 0,0:06:31.75,0:06:32.03,Default,,0,0,0,,but
+Dialogue: 0,0:06:32.03,0:06:33.03,Default,,0,0,0,,fundamentally
+Dialogue: 0,0:06:33.03,0:06:33.30,Default,,0,0,0,,it's
+Dialogue: 0,0:06:33.31,0:06:33.47,Default,,0,0,0,,the
+Dialogue: 0,0:06:33.47,0:06:33.91,Default,,0,0,0,,same
+Dialogue: 0,0:06:33.91,0:06:34.63,Default,,0,0,0,,thing
+Dialogue: 0,0:06:34.63,0:06:34.91,Default,,0,0,0,,and
+Dialogue: 0,0:06:34.91,0:06:35.03,Default,,0,0,0,,as
+Dialogue: 0,0:06:35.03,0:06:35.15,Default,,0,0,0,,much
+Dialogue: 0,0:06:35.16,0:06:35.23,Default,,0,0,0,,as
+Dialogue: 0,0:06:35.24,0:06:35.35,Default,,0,0,0,,I
+Dialogue: 0,0:06:35.36,0:06:35.59,Default,,0,0,0,,love
+Dialogue: 0,0:06:35.59,0:06:35.70,Default,,0,0,0,,the
+Dialogue: 0,0:06:35.72,0:06:36.03,Default,,0,0,0,,idea
+Dialogue: 0,0:06:36.03,0:06:36.19,Default,,0,0,0,,of
+Dialogue: 0,0:06:36.19,0:06:36.39,Default,,0,0,0,,that
+Dialogue: 0,0:06:36.40,0:06:36.59,Default,,0,0,0,,car
+Dialogue: 0,0:06:36.59,0:06:36.71,Default,,0,0,0,,and
+Dialogue: 0,0:06:36.72,0:06:36.83,Default,,0,0,0,,I
+Dialogue: 0,0:06:36.84,0:06:37.03,Default,,0,0,0,,still
+Dialogue: 0,0:06:37.03,0:06:37.39,Default,,0,0,0,,lost
+Dialogue: 0,0:06:37.40,0:06:37.66,Default,,0,0,0,,after
+Dialogue: 0,0:06:37.68,0:06:37.83,Default,,0,0,0,,one
+Dialogue: 0,0:06:37.84,0:06:38.03,Default,,0,0,0,,sort
+Dialogue: 0,0:06:38.03,0:06:38.63,Default,,0,0,0,,of
+Dialogue: 0,0:06:38.63,0:06:39.15,Default,,0,0,0,,aesthetically
+Dialogue: 0,0:06:39.16,0:06:39.50,Default,,0,0,0,,look
+Dialogue: 0,0:06:39.52,0:06:40.51,Default,,0,0,0,,cosmetically
+Dialogue: 0,0:06:40.52,0:06:40.63,Default,,0,0,0,,I
+Dialogue: 0,0:06:40.63,0:06:40.75,Default,,0,0,0,,don't
+Dialogue: 0,0:06:40.75,0:06:40.91,Default,,0,0,0,,know
+Dialogue: 0,0:06:40.91,0:06:40.99,Default,,0,0,0,,I
+Dialogue: 0,0:06:41.00,0:06:41.15,Default,,0,0,0,,found
+Dialogue: 0,0:06:41.16,0:06:41.26,Default,,0,0,0,,the
+Dialogue: 0,0:06:41.28,0:06:41.55,Default,,0,0,0,,engine
+Dialogue: 0,0:06:41.56,0:06:41.63,Default,,0,0,0,,a
+Dialogue: 0,0:06:41.63,0:06:41.91,Default,,0,0,0,,bit
+Dialogue: 0,0:06:41.91,0:06:42.71,Default,,0,0,0,,uninspiring
+Dialogue: 0,0:06:42.72,0:06:42.79,Default,,0,0,0,,a
+Dialogue: 0,0:06:42.80,0:06:42.95,Default,,0,0,0,,bit
+Dialogue: 0,0:06:42.96,0:06:43.07,Default,,0,0,0,,sort
+Dialogue: 0,0:06:43.08,0:06:43.26,Default,,0,0,0,,of
+Dialogue: 0,0:06:43.28,0:06:44.07,Default,,0,0,0,,durgy
+Dialogue: 0,0:06:44.08,0:06:44.51,Default,,0,0,0,,and
+Dialogue: 0,0:06:44.52,0:06:44.63,Default,,0,0,0,,sort
+Dialogue: 0,0:06:44.63,0:06:44.75,Default,,0,0,0,,of
+Dialogue: 0,0:06:44.75,0:06:44.91,Default,,0,0,0,,said
+Dialogue: 0,0:06:44.91,0:06:44.99,Default,,0,0,0,,that
+Dialogue: 0,0:06:45.00,0:06:45.07,Default,,0,0,0,,you
+Dialogue: 0,0:06:45.08,0:06:45.19,Default,,0,0,0,,know
+Dialogue: 0,0:06:45.19,0:06:45.30,Default,,0,0,0,,to
+Dialogue: 0,0:06:45.31,0:06:45.55,Default,,0,0,0,,really
+Dialogue: 0,0:06:45.56,0:06:45.67,Default,,0,0,0,,get
+Dialogue: 0,0:06:45.68,0:06:45.95,Default,,0,0,0,,any
+Dialogue: 0,0:06:45.96,0:06:46.35,Default,,0,0,0,,character
+Dialogue: 0,0:06:46.36,0:06:46.51,Default,,0,0,0,,or
+Dialogue: 0,0:06:46.52,0:06:46.87,Default,,0,0,0,,Persona
+Dialogue: 0,0:06:46.88,0:06:47.02,Default,,0,0,0,,from
+Dialogue: 0,0:06:47.03,0:06:47.19,Default,,0,0,0,,that
+Dialogue: 0,0:06:47.19,0:06:47.67,Default,,0,0,0,,car
+Dialogue: 0,0:06:47.68,0:06:47.99,Default,,0,0,0,,You'
+Dialogue: 0,0:06:48.00,0:06:48.31,Default,,0,0,0,,really
+Dialogue: 0,0:06:48.31,0:06:48.47,Default,,0,0,0,,got
+Dialogue: 0,0:06:48.47,0:06:48.59,Default,,0,0,0,,to
+Dialogue: 0,0:06:48.59,0:06:48.87,Default,,0,0,0,,rev
+Dialogue: 0,0:06:48.88,0:06:48.99,Default,,0,0,0,,it
+Dialogue: 0,0:06:49.00,0:06:49.30,Default,,0,0,0,,out
+Dialogue: 0,0:06:49.31,0:06:49.47,Default,,0,0,0,,and
+Dialogue: 0,0:06:49.47,0:06:49.63,Default,,0,0,0,,that's
+Dialogue: 0,0:06:49.63,0:06:49.79,Default,,0,0,0,,a
+Dialogue: 0,0:06:49.80,0:06:49.99,Default,,0,0,0,,hard
+Dialogue: 0,0:06:50.00,0:06:50.11,Default,,0,0,0,,thing
+Dialogue: 0,0:06:50.12,0:06:50.27,Default,,0,0,0,,to
+Dialogue: 0,0:06:50.28,0:06:50.59,Default,,0,0,0,,do
+Dialogue: 0,0:06:50.59,0:06:51.10,Default,,0,0,0,,because
+Dialogue: 0,0:06:51.12,0:06:51.31,Default,,0,0,0,,like
+Dialogue: 0,0:06:51.31,0:06:51.43,Default,,0,0,0,,I'm
+Dialogue: 0,0:06:51.44,0:06:51.59,Default,,0,0,0,,sure
+Dialogue: 0,0:06:51.59,0:06:51.67,Default,,0,0,0,,you
+Dialogue: 0,0:06:51.68,0:06:51.79,Default,,0,0,0,,would
+Dialogue: 0,0:06:51.80,0:06:51.91,Default,,0,0,0,,have
+Dialogue: 0,0:06:51.91,0:06:52.22,Default,,0,0,0,,heard
+Dialogue: 0,0:06:52.24,0:06:52.95,Default,,0,0,0,,before
+Dialogue: 0,0:06:52.96,0:06:53.07,Default,,0,0,0,,the
+Dialogue: 0,0:06:53.08,0:06:53.79,Default,,0,0,0,,GT4
+Dialogue: 0,0:06:53.80,0:06:53.95,Default,,0,0,0,,and
+Dialogue: 0,0:06:53.96,0:06:54.03,Default,,0,0,0,,the
+Dialogue: 0,0:06:54.03,0:06:54.35,Default,,0,0,0,,spider
+Dialogue: 0,0:06:54.36,0:06:54.50,Default,,0,0,0,,has
+Dialogue: 0,0:06:54.52,0:06:54.95,Default,,0,0,0,,incredibly
+Dialogue: 0,0:06:54.96,0:06:55.35,Default,,0,0,0,,long
+Dialogue: 0,0:06:55.36,0:06:56.07,Default,,0,0,0,,gearing
+Dialogue: 0,0:06:56.08,0:06:56.19,Default,,0,0,0,,you
+Dialogue: 0,0:06:56.19,0:06:56.31,Default,,0,0,0,,can
+Dialogue: 0,0:06:56.31,0:06:56.67,Default,,0,0,0,,do
+Dialogue: 0,0:06:56.68,0:06:56.94,Default,,0,0,0,,over
+Dialogue: 0,0:06:56.96,0:06:57.27,Default,,0,0,0,,80
+Dialogue: 0,0:06:57.28,0:06:58.11,Default,,0,0,0,,mph
+Dialogue: 0,0:06:58.12,0:06:58.39,Default,,0,0,0,,in
+Dialogue: 0,0:06:58.40,0:06:58.83,Default,,0,0,0,,second
+Dialogue: 0,0:06:58.84,0:06:59.11,Default,,0,0,0,,gear
+Dialogue: 0,0:06:59.12,0:06:59.27,Default,,0,0,0,,which
+Dialogue: 0,0:06:59.28,0:06:59.67,Default,,0,0,0,,means
+Dialogue: 0,0:06:59.68,0:06:59.79,Default,,0,0,0,,all
+Dialogue: 0,0:06:59.80,0:06:59.94,Default,,0,0,0,,of
+Dialogue: 0,0:06:59.96,0:07:00.03,Default,,0,0,0,,the
+Dialogue: 0,0:07:00.03,0:07:00.47,Default,,0,0,0,,UK
+Dialogue: 0,0:07:00.47,0:07:00.59,Default,,0,0,0,,can
+Dialogue: 0,0:07:00.59,0:07:00.71,Default,,0,0,0,,be
+Dialogue: 0,0:07:00.72,0:07:00.99,Default,,0,0,0,,done
+Dialogue: 0,0:07:01.00,0:07:01.59,Default,,0,0,0,,in
+Dialogue: 0,0:07:01.59,0:07:02.11,Default,,0,0,0,,second
+Dialogue: 0,0:07:02.12,0:07:02.51,Default,,0,0,0,,gear
+Dialogue: 0,0:07:02.52,0:07:02.70,Default,,0,0,0,,and
+Dialogue: 0,0:07:02.72,0:07:02.83,Default,,0,0,0,,and
+Dialogue: 0,0:07:02.84,0:07:03.19,Default,,0,0,0,,lower
+Dialogue: 0,0:07:03.19,0:07:03.31,Default,,0,0,0,,down
+Dialogue: 0,0:07:03.31,0:07:03.43,Default,,0,0,0,,in
+Dialogue: 0,0:07:03.44,0:07:04.22,Default,,0,0,0,,the
+Dialogue: 0,0:07:04.24,0:07:05.23,Default,,0,0,0,,r
+Dialogue: 0,0:07:05.24,0:07:05.39,Default,,0,0,0,,it's
+Dialogue: 0,0:07:05.40,0:07:05.67,Default,,0,0,0,,not
+Dialogue: 0,0:07:05.68,0:07:05.83,Default,,0,0,0,,just
+Dialogue: 0,0:07:05.84,0:07:05.95,Default,,0,0,0,,the
+Dialogue: 0,0:07:05.96,0:07:06.07,Default,,0,0,0,,fact
+Dialogue: 0,0:07:06.08,0:07:06.15,Default,,0,0,0,,that
+Dialogue: 0,0:07:06.16,0:07:06.27,Default,,0,0,0,,it's
+Dialogue: 0,0:07:06.28,0:07:06.34,Default,,0,0,0,,a
+Dialogue: 0,0:07:06.36,0:07:06.67,Default,,0,0,0,,naturally
+Dialogue: 0,0:07:06.68,0:07:07.11,Default,,0,0,0,,aspirated
+Dialogue: 0,0:07:07.12,0:07:07.35,Default,,0,0,0,,engine
+Dialogue: 0,0:07:07.36,0:07:07.55,Default,,0,0,0,,and
+Dialogue: 0,0:07:07.56,0:07:07.94,Default,,0,0,0,,therefore
+Dialogue: 0,0:07:07.96,0:07:08.07,Default,,0,0,0,,you
+Dialogue: 0,0:07:08.08,0:07:08.19,Default,,0,0,0,,know
+Dialogue: 0,0:07:08.19,0:07:08.23,Default,,0,0,0,,a
+Dialogue: 0,0:07:08.24,0:07:08.35,Default,,0,0,0,,lot
+Dialogue: 0,0:07:08.36,0:07:08.47,Default,,0,0,0,,of
+Dialogue: 0,0:07:08.47,0:07:08.59,Default,,0,0,0,,the
+Dialogue: 0,0:07:08.59,0:07:08.83,Default,,0,0,0,,power
+Dialogue: 0,0:07:08.84,0:07:09.15,Default,,0,0,0,,is
+Dialogue: 0,0:07:09.16,0:07:09.43,Default,,0,0,0,,higher
+Dialogue: 0,0:07:09.44,0:07:09.54,Default,,0,0,0,,up
+Dialogue: 0,0:07:09.56,0:07:09.63,Default,,0,0,0,,in
+Dialogue: 0,0:07:09.63,0:07:09.71,Default,,0,0,0,,the
+Dialogue: 0,0:07:09.72,0:07:09.95,Default,,0,0,0,,Rev
+Dialogue: 0,0:07:09.96,0:07:10.19,Default,,0,0,0,,range
+Dialogue: 0,0:07:10.19,0:07:10.35,Default,,0,0,0,,it's
+Dialogue: 0,0:07:10.36,0:07:10.59,Default,,0,0,0,,just
+Dialogue: 0,0:07:10.59,0:07:10.67,Default,,0,0,0,,I
+Dialogue: 0,0:07:10.68,0:07:10.83,Default,,0,0,0,,don't
+Dialogue: 0,0:07:10.84,0:07:10.98,Default,,0,0,0,,know
+Dialogue: 0,0:07:11.00,0:07:11.15,Default,,0,0,0,,it's
+Dialogue: 0,0:07:11.16,0:07:11.27,Default,,0,0,0,,just
+Dialogue: 0,0:07:11.28,0:07:11.35,Default,,0,0,0,,a
+Dialogue: 0,0:07:11.36,0:07:12.06,Default,,0,0,0,,bit
+Dialogue: 0,0:07:12.08,0:07:13.07,Default,,0,0,0,,unemo
+Dialogue: 0,0:07:13.08,0:07:13.75,Default,,0,0,0,,however
+Dialogue: 0,0:07:13.75,0:07:13.95,Default,,0,0,0,,as
+Dialogue: 0,0:07:13.96,0:07:14.23,Default,,0,0,0,,I
+Dialogue: 0,0:07:14.24,0:07:14.71,Default,,0,0,0,,suspected
+Dialogue: 0,0:07:14.72,0:07:14.91,Default,,0,0,0,,might
+Dialogue: 0,0:07:14.91,0:07:15.06,Default,,0,0,0,,be
+Dialogue: 0,0:07:15.08,0:07:15.23,Default,,0,0,0,,the
+Dialogue: 0,0:07:15.24,0:07:15.99,Default,,0,0,0,,case
+Dialogue: 0,0:07:16.00,0:07:16.23,Default,,0,0,0,,this
+Dialogue: 0,0:07:16.24,0:07:16.79,Default,,0,0,0,,pdk
+Dialogue: 0,0:07:16.80,0:07:17.43,Default,,0,0,0,,gearbox
+Dialogue: 0,0:07:17.44,0:07:17.95,Default,,0,0,0,,has
+Dialogue: 0,0:07:17.96,0:07:18.94,Default,,0,0,0,,awoken
+Dialogue: 0,0:07:18.96,0:07:19.19,Default,,0,0,0,,this
+Dialogue: 0,0:07:19.19,0:07:19.79,Default,,0,0,0,,engine
+Dialogue: 0,0:07:19.80,0:07:20.07,Default,,0,0,0,,and
+Dialogue: 0,0:07:20.08,0:07:20.35,Default,,0,0,0,,this
+Dialogue: 0,0:07:20.36,0:07:21.11,Default,,0,0,0,,car
+Dialogue: 0,0:07:21.12,0:07:21.35,Default,,0,0,0,,in
+Dialogue: 0,0:07:21.36,0:07:21.67,Default,,0,0,0,,my
+Dialogue: 0,0:07:21.68,0:07:22.67,Default,,0,0,0,,mind
+Dialogue: 0,0:07:22.68,0:07:22.78,Default,,0,0,0,,I
+Dialogue: 0,0:07:22.80,0:07:23.11,Default,,0,0,0,,would
+Dialogue: 0,0:07:23.12,0:07:23.63,Default,,0,0,0,,only
+Dialogue: 0,0:07:23.63,0:07:23.91,Default,,0,0,0,,now
+Dialogue: 0,0:07:23.91,0:07:24.47,Default,,0,0,0,,choose
+Dialogue: 0,0:07:24.47,0:07:24.99,Default,,0,0,0,,a
+Dialogue: 0,0:07:25.00,0:07:25.99,Default,,0,0,0,,GT4
+Dialogue: 0,0:07:26.00,0:07:26.15,Default,,0,0,0,,with
+Dialogue: 0,0:07:26.16,0:07:26.43,Default,,0,0,0,,the
+Dialogue: 0,0:07:26.44,0:07:27.42,Default,,0,0,0,,pdk
+Dialogue: 0,0:07:27.44,0:07:27.59,Default,,0,0,0,,it's
+Dialogue: 0,0:07:27.59,0:07:27.79,Default,,0,0,0,,a
+Dialogue: 0,0:07:27.80,0:07:28.11,Default,,0,0,0,,mad
+Dialogue: 0,0:07:28.12,0:07:28.31,Default,,0,0,0,,thing
+Dialogue: 0,0:07:28.31,0:07:28.47,Default,,0,0,0,,for
+Dialogue: 0,0:07:28.47,0:07:28.63,Default,,0,0,0,,me
+Dialogue: 0,0:07:28.63,0:07:28.79,Default,,0,0,0,,to
+Dialogue: 0,0:07:28.80,0:07:29.07,Default,,0,0,0,,say
+Dialogue: 0,0:07:29.08,0:07:29.31,Default,,0,0,0,,into
+Dialogue: 0,0:07:29.31,0:07:29.62,Default,,0,0,0,,it
+Dialogue: 0,0:07:29.63,0:07:30.07,Default,,0,0,0,,me
+Dialogue: 0,0:07:30.08,0:07:30.23,Default,,0,0,0,,and
+Dialogue: 0,0:07:30.24,0:07:30.35,Default,,0,0,0,,I'm
+Dialogue: 0,0:07:30.36,0:07:30.55,Default,,0,0,0,,sure
+Dialogue: 0,0:07:30.56,0:07:30.67,Default,,0,0,0,,I'm
+Dialogue: 0,0:07:30.68,0:07:30.79,Default,,0,0,0,,going
+Dialogue: 0,0:07:30.80,0:07:31.59,Default,,0,0,0,,to
+Dialogue: 0,0:07:31.59,0:07:32.55,Default,,0,0,0,,enrage
+Dialogue: 0,0:07:32.56,0:07:32.86,Default,,0,0,0,,many
+Dialogue: 0,0:07:32.87,0:07:33.07,Default,,0,0,0,,of
+Dialogue: 0,0:07:33.08,0:07:33.51,Default,,0,0,0,,Porsche
+Dialogue: 0,0:07:33.52,0:07:34.31,Default,,0,0,0,,Enthusiast
+Dialogue: 0,0:07:34.31,0:07:34.79,Default,,0,0,0,,but
+Dialogue: 0,0:07:34.80,0:07:34.91,Default,,0,0,0,,let
+Dialogue: 0,0:07:34.91,0:07:35.11,Default,,0,0,0,,me
+Dialogue: 0,0:07:35.12,0:07:35.62,Default,,0,0,0,,explain
+Dialogue: 0,0:07:35.63,0:07:35.79,Default,,0,0,0,,why
+Dialogue: 0,0:07:35.80,0:07:35.95,Default,,0,0,0,,I
+Dialogue: 0,0:07:35.96,0:07:36.15,Default,,0,0,0,,like
+Dialogue: 0,0:07:36.16,0:07:36.35,Default,,0,0,0,,it
+Dialogue: 0,0:07:36.36,0:07:36.59,Default,,0,0,0,,so
+Dialogue: 0,0:07:36.59,0:07:37.15,Default,,0,0,0,,much
+Dialogue: 0,0:07:37.16,0:07:37.31,Default,,0,0,0,,uh
+Dialogue: 0,0:07:37.31,0:07:37.79,Default,,0,0,0,,firstly
+Dialogue: 0,0:07:37.80,0:07:37.95,Default,,0,0,0,,sort
+Dialogue: 0,0:07:37.96,0:07:38.02,Default,,0,0,0,,of
+Dialogue: 0,0:07:38.03,0:07:38.11,Default,,0,0,0,,you
+Dialogue: 0,0:07:38.12,0:07:38.23,Default,,0,0,0,,know
+Dialogue: 0,0:07:38.24,0:07:38.35,Default,,0,0,0,,the
+Dialogue: 0,0:07:38.36,0:07:38.55,Default,,0,0,0,,pros
+Dialogue: 0,0:07:38.56,0:07:38.71,Default,,0,0,0,,and
+Dialogue: 0,0:07:38.72,0:07:38.91,Default,,0,0,0,,cons
+Dialogue: 0,0:07:38.91,0:07:38.99,Default,,0,0,0,,or
+Dialogue: 0,0:07:39.00,0:07:39.07,Default,,0,0,0,,at
+Dialogue: 0,0:07:39.08,0:07:39.22,Default,,0,0,0,,least
+Dialogue: 0,0:07:39.24,0:07:39.35,Default,,0,0,0,,the
+Dialogue: 0,0:07:39.36,0:07:39.63,Default,,0,0,0,,facts
+Dialogue: 0,0:07:39.63,0:07:39.87,Default,,0,0,0,,and
+Dialogue: 0,0:07:39.87,0:07:40.55,Default,,0,0,0,,stats
+Dialogue: 0,0:07:40.56,0:07:40.71,Default,,0,0,0,,of
+Dialogue: 0,0:07:40.72,0:07:40.87,Default,,0,0,0,,the
+Dialogue: 0,0:07:40.87,0:07:41.47,Default,,0,0,0,,pdk
+Dialogue: 0,0:07:41.47,0:07:41.82,Default,,0,0,0,,versus
+Dialogue: 0,0:07:41.84,0:07:41.99,Default,,0,0,0,,the
+Dialogue: 0,0:07:42.00,0:07:42.71,Default,,0,0,0,,manual
+Dialogue: 0,0:07:42.72,0:07:42.83,Default,,0,0,0,,here
+Dialogue: 0,0:07:42.84,0:07:42.95,Default,,0,0,0,,in
+Dialogue: 0,0:07:42.96,0:07:43.07,Default,,0,0,0,,the
+Dialogue: 0,0:07:43.08,0:07:43.39,Default,,0,0,0,,UK
+Dialogue: 0,0:07:43.40,0:07:43.47,Default,,0,0,0,,it's
+Dialogue: 0,0:07:43.47,0:07:43.63,Default,,0,0,0,,a
+Dialogue: 0,0:07:43.63,0:07:44.50,Default,,0,0,0,,2,000
+Dialogue: 0,0:07:44.52,0:07:44.75,Default,,0,0,0,,option
+Dialogue: 0,0:07:44.75,0:07:44.87,Default,,0,0,0,,to
+Dialogue: 0,0:07:44.87,0:07:44.99,Default,,0,0,0,,have
+Dialogue: 0,0:07:45.00,0:07:45.11,Default,,0,0,0,,the
+Dialogue: 0,0:07:45.12,0:07:45.91,Default,,0,0,0,,automatic
+Dialogue: 0,0:07:45.91,0:07:46.39,Default,,0,0,0,,box
+Dialogue: 0,0:07:46.40,0:07:46.59,Default,,0,0,0,,it
+Dialogue: 0,0:07:46.59,0:07:47.14,Default,,0,0,0,,adds
+Dialogue: 0,0:07:47.15,0:07:47.75,Default,,0,0,0,,30
+Dialogue: 0,0:07:47.75,0:07:48.43,Default,,0,0,0,,kilos
+Dialogue: 0,0:07:48.44,0:07:48.59,Default,,0,0,0,,to
+Dialogue: 0,0:07:48.59,0:07:48.79,Default,,0,0,0,,the
+Dialogue: 0,0:07:48.80,0:07:49.23,Default,,0,0,0,,overall
+Dialogue: 0,0:07:49.24,0:07:49.51,Default,,0,0,0,,weight
+Dialogue: 0,0:07:49.52,0:07:49.63,Default,,0,0,0,,of
+Dialogue: 0,0:07:49.63,0:07:49.78,Default,,0,0,0,,the
+Dialogue: 0,0:07:49.80,0:07:50.47,Default,,0,0,0,,car
+Dialogue: 0,0:07:50.47,0:07:50.71,Default,,0,0,0,,but
+Dialogue: 0,0:07:50.72,0:07:50.87,Default,,0,0,0,,it
+Dialogue: 0,0:07:50.87,0:07:51.27,Default,,0,0,0,,reduces
+Dialogue: 0,0:07:51.28,0:07:51.35,Default,,0,0,0,,the
+Dialogue: 0,0:07:51.36,0:07:51.71,Default,,0,0,0,,NAU
+Dialogue: 0,0:07:51.72,0:07:52.03,Default,,0,0,0,,60
+Dialogue: 0,0:07:52.03,0:07:52.51,Default,,0,0,0,,time
+Dialogue: 0,0:07:52.52,0:07:52.90,Default,,0,0,0,,by
+Dialogue: 0,0:07:52.91,0:07:53.15,Default,,0,0,0,,half
+Dialogue: 0,0:07:53.15,0:07:53.31,Default,,0,0,0,,a
+Dialogue: 0,0:07:53.31,0:07:53.67,Default,,0,0,0,,second
+Dialogue: 0,0:07:53.68,0:07:54.03,Default,,0,0,0,,Porsche
+Dialogue: 0,0:07:54.03,0:07:54.63,Default,,0,0,0,,claim
+Dialogue: 0,0:07:54.63,0:07:55.35,Default,,0,0,0,,3.9
+Dialogue: 0,0:07:55.36,0:07:55.58,Default,,0,0,0,,seconds
+Dialogue: 0,0:07:55.59,0:07:55.71,Default,,0,0,0,,for
+Dialogue: 0,0:07:55.72,0:07:55.87,Default,,0,0,0,,a
+Dialogue: 0,0:07:55.87,0:07:56.35,Default,,0,0,0,,pdk
+Dialogue: 0,0:07:56.36,0:07:57.15,Default,,0,0,0,,GT4
+Dialogue: 0,0:07:57.15,0:07:57.31,Default,,0,0,0,,and
+Dialogue: 0,0:07:57.31,0:07:57.55,Default,,0,0,0,,around
+Dialogue: 0,0:07:57.56,0:07:57.75,Default,,0,0,0,,4
+Dialogue: 0,0:07:57.75,0:07:57.83,Default,,0,0,0,,and
+Dialogue: 0,0:07:57.84,0:07:58.10,Default,,0,0,0,,1/2
+Dialogue: 0,0:07:58.12,0:07:58.47,Default,,0,0,0,,seconds
+Dialogue: 0,0:07:58.47,0:07:58.67,Default,,0,0,0,,from
+Dialogue: 0,0:07:58.68,0:07:58.87,Default,,0,0,0,,a
+Dialogue: 0,0:07:58.87,0:07:59.75,Default,,0,0,0,,manual
+Dialogue: 0,0:07:59.75,0:08:00.75,Default,,0,0,0,,GT4
+Dialogue: 0,0:08:00.75,0:08:01.26,Default,,0,0,0,,supposedly
+Dialogue: 0,0:08:01.28,0:08:01.51,Default,,0,0,0,,also
+Dialogue: 0,0:08:01.52,0:08:01.63,Default,,0,0,0,,a
+Dialogue: 0,0:08:01.63,0:08:01.99,Default,,0,0,0,,bit
+Dialogue: 0,0:08:02.00,0:08:02.39,Default,,0,0,0,,cleaner
+Dialogue: 0,0:08:02.40,0:08:02.55,Default,,0,0,0,,and
+Dialogue: 0,0:08:02.56,0:08:02.67,Default,,0,0,0,,a
+Dialogue: 0,0:08:02.68,0:08:03.27,Default,,0,0,0,,bit
+Dialogue: 0,0:08:03.28,0:08:03.62,Default,,0,0,0,,more
+Dialogue: 0,0:08:03.63,0:08:04.51,Default,,0,0,0,,economical
+Dialogue: 0,0:08:04.52,0:08:04.87,Default,,0,0,0,,so
+Dialogue: 0,0:08:04.87,0:08:05.11,Default,,0,0,0,,better
+Dialogue: 0,0:08:05.12,0:08:05.23,Default,,0,0,0,,on
+Dialogue: 0,0:08:05.24,0:08:05.35,Default,,0,0,0,,the
+Dialogue: 0,0:08:05.36,0:08:05.86,Default,,0,0,0,,CO2
+Dialogue: 0,0:08:05.87,0:08:06.31,Default,,0,0,0,,emissions
+Dialogue: 0,0:08:06.31,0:08:06.91,Default,,0,0,0,,and
+Dialogue: 0,0:08:06.91,0:08:07.15,Default,,0,0,0,,tiny
+Dialogue: 0,0:08:07.15,0:08:07.31,Default,,0,0,0,,bit
+Dialogue: 0,0:08:07.31,0:08:07.55,Default,,0,0,0,,better
+Dialogue: 0,0:08:07.56,0:08:07.67,Default,,0,0,0,,on
+Dialogue: 0,0:08:07.68,0:08:08.07,Default,,0,0,0,,the
+Dialogue: 0,0:08:08.08,0:08:09.06,Default,,0,0,0,,mpg
+Dialogue: 0,0:08:09.08,0:08:09.39,Default,,0,0,0,,but
+Dialogue: 0,0:08:09.40,0:08:09.71,Default,,0,0,0,,most
+Dialogue: 0,0:08:09.72,0:08:10.19,Default,,0,0,0,,importantly
+Dialogue: 0,0:08:10.19,0:08:10.27,Default,,0,0,0,,I
+Dialogue: 0,0:08:10.28,0:08:10.43,Default,,0,0,0,,would
+Dialogue: 0,0:08:10.44,0:08:10.67,Default,,0,0,0,,say
+Dialogue: 0,0:08:10.68,0:08:10.95,Default,,0,0,0,,are
+Dialogue: 0,0:08:10.96,0:08:11.34,Default,,0,0,0,,two
+Dialogue: 0,0:08:11.36,0:08:12.35,Default,,0,0,0,,things
+Dialogue: 0,0:08:12.36,0:08:13.15,Default,,0,0,0,,firstly
+Dialogue: 0,0:08:13.15,0:08:13.27,Default,,0,0,0,,the
+Dialogue: 0,0:08:13.28,0:08:13.43,Default,,0,0,0,,fact
+Dialogue: 0,0:08:13.44,0:08:13.55,Default,,0,0,0,,that
+Dialogue: 0,0:08:13.56,0:08:13.67,Default,,0,0,0,,you
+Dialogue: 0,0:08:13.68,0:08:13.87,Default,,0,0,0,,get
+Dialogue: 0,0:08:13.87,0:08:14.18,Default,,0,0,0,,an
+Dialogue: 0,0:08:14.19,0:08:14.75,Default,,0,0,0,,extra
+Dialogue: 0,0:08:14.75,0:08:15.47,Default,,0,0,0,,gear
+Dialogue: 0,0:08:15.47,0:08:15.59,Default,,0,0,0,,this
+Dialogue: 0,0:08:15.59,0:08:15.71,Default,,0,0,0,,is
+Dialogue: 0,0:08:15.72,0:08:15.91,Default,,0,0,0,,a
+Dialogue: 0,0:08:15.91,0:08:16.75,Default,,0,0,0,,seven-speed
+Dialogue: 0,0:08:16.75,0:08:17.50,Default,,0,0,0,,pdk
+Dialogue: 0,0:08:17.52,0:08:17.87,Default,,0,0,0,,compared
+Dialogue: 0,0:08:17.87,0:08:18.03,Default,,0,0,0,,to
+Dialogue: 0,0:08:18.03,0:08:18.23,Default,,0,0,0,,this
+Dialogue: 0,0:08:18.24,0:08:19.19,Default,,0,0,0,,six-speed
+Dialogue: 0,0:08:19.19,0:08:20.19,Default,,0,0,0,,manual
+Dialogue: 0,0:08:20.19,0:08:20.82,Default,,0,0,0,,and
+Dialogue: 0,0:08:20.84,0:08:20.99,Default,,0,0,0,,you
+Dialogue: 0,0:08:21.00,0:08:21.39,Default,,0,0,0,,get
+Dialogue: 0,0:08:21.40,0:08:21.95,Default,,0,0,0,,10
+Dialogue: 0,0:08:21.96,0:08:22.71,Default,,0,0,0,,extra
+Dialogue: 0,0:08:22.72,0:08:23.15,Default,,0,0,0,,newton
+Dialogue: 0,0:08:23.15,0:08:23.51,Default,,0,0,0,,meters
+Dialogue: 0,0:08:23.52,0:08:23.67,Default,,0,0,0,,of
+Dialogue: 0,0:08:23.68,0:08:24.42,Default,,0,0,0,,torque
+Dialogue: 0,0:08:24.44,0:08:24.83,Default,,0,0,0,,doesn't
+Dialogue: 0,0:08:24.84,0:08:25.15,Default,,0,0,0,,sound
+Dialogue: 0,0:08:25.15,0:08:25.39,Default,,0,0,0,,like
+Dialogue: 0,0:08:25.40,0:08:26.11,Default,,0,0,0,,much
+Dialogue: 0,0:08:26.12,0:08:26.39,Default,,0,0,0,,but
+Dialogue: 0,0:08:26.40,0:08:27.22,Default,,0,0,0,,actually
+Dialogue: 0,0:08:27.24,0:08:27.47,Default,,0,0,0,,makes
+Dialogue: 0,0:08:27.47,0:08:27.79,Default,,0,0,0,,a
+Dialogue: 0,0:08:27.80,0:08:28.23,Default,,0,0,0,,huge
+Dialogue: 0,0:08:28.24,0:08:28.79,Default,,0,0,0,,difference
+Dialogue: 0,0:08:28.80,0:08:30.78,Default,,0,0,0,,and
+Dialogue: 0,0:08:30.80,0:08:30.95,Default,,0,0,0,,there
+Dialogue: 0,0:08:30.96,0:08:31.15,Default,,0,0,0,,we
+Dialogue: 0,0:08:31.15,0:08:31.63,Default,,0,0,0,,go
+Dialogue: 0,0:08:31.63,0:08:31.91,Default,,0,0,0,,proof
+Dialogue: 0,0:08:31.91,0:08:32.07,Default,,0,0,0,,is
+Dialogue: 0,0:08:32.08,0:08:32.19,Default,,0,0,0,,in
+Dialogue: 0,0:08:32.20,0:08:32.35,Default,,0,0,0,,the
+Dialogue: 0,0:08:32.36,0:08:33.03,Default,,0,0,0,,pudding
+Dialogue: 0,0:08:33.03,0:08:33.14,Default,,0,0,0,,I
+Dialogue: 0,0:08:33.15,0:08:33.31,Default,,0,0,0,,just
+Dialogue: 0,0:08:33.32,0:08:33.59,Default,,0,0,0,,overt
+Dialogue: 0,0:08:33.59,0:08:33.75,Default,,0,0,0,,took
+Dialogue: 0,0:08:33.76,0:08:33.99,Default,,0,0,0,,three
+Dialogue: 0,0:08:34.00,0:08:34.23,Default,,0,0,0,,cars
+Dialogue: 0,0:08:34.24,0:08:34.43,Default,,0,0,0,,in
+Dialogue: 0,0:08:34.44,0:08:35.42,Default,,0,0,0,,one
+Dialogue: 0,0:08:35.44,0:08:36.59,Default,,0,0,0,,go
+Dialogue: 0,0:08:36.59,0:08:37.59,Default,,0,0,0,,brilliant
+Dialogue: 0,0:08:37.59,0:08:37.91,Default,,0,0,0,,so
+Dialogue: 0,0:08:37.91,0:08:38.27,Default,,0,0,0,,yes
+Dialogue: 0,0:08:38.27,0:08:38.91,Default,,0,0,0,,that
+Dialogue: 0,0:08:38.91,0:08:39.55,Default,,0,0,0,,additional
+Dialogue: 0,0:08:39.56,0:08:39.90,Default,,0,0,0,,gear
+Dialogue: 0,0:08:39.91,0:08:40.11,Default,,0,0,0,,that
+Dialogue: 0,0:08:40.12,0:08:40.59,Default,,0,0,0,,additional
+Dialogue: 0,0:08:40.59,0:08:41.51,Default,,0,0,0,,ratio
+Dialogue: 0,0:08:41.51,0:08:41.79,Default,,0,0,0,,and
+Dialogue: 0,0:08:41.80,0:08:42.03,Default,,0,0,0,,that
+Dialogue: 0,0:08:42.03,0:08:42.34,Default,,0,0,0,,tiny
+Dialogue: 0,0:08:42.36,0:08:42.55,Default,,0,0,0,,little
+Dialogue: 0,0:08:42.56,0:08:42.71,Default,,0,0,0,,bit
+Dialogue: 0,0:08:42.71,0:08:42.95,Default,,0,0,0,,more
+Dialogue: 0,0:08:42.95,0:08:43.91,Default,,0,0,0,,torque
+Dialogue: 0,0:08:43.91,0:08:44.07,Default,,0,0,0,,just
+Dialogue: 0,0:08:44.08,0:08:44.39,Default,,0,0,0,,means
+Dialogue: 0,0:08:44.39,0:08:44.54,Default,,0,0,0,,that
+Dialogue: 0,0:08:44.56,0:08:44.75,Default,,0,0,0,,this
+Dialogue: 0,0:08:44.76,0:08:45.03,Default,,0,0,0,,car
+Dialogue: 0,0:08:45.04,0:08:45.47,Default,,0,0,0,,always
+Dialogue: 0,0:08:45.48,0:08:46.07,Default,,0,0,0,,feels
+Dialogue: 0,0:08:46.08,0:08:46.23,Default,,0,0,0,,a
+Dialogue: 0,0:08:46.24,0:08:46.43,Default,,0,0,0,,lot
+Dialogue: 0,0:08:46.44,0:08:46.78,Default,,0,0,0,,more
+Dialogue: 0,0:08:46.80,0:08:47.71,Default,,0,0,0,,responsive
+Dialogue: 0,0:08:47.72,0:08:47.87,Default,,0,0,0,,than
+Dialogue: 0,0:08:47.88,0:08:48.03,Default,,0,0,0,,the
+Dialogue: 0,0:08:48.04,0:08:48.47,Default,,0,0,0,,manual
+Dialogue: 0,0:08:48.48,0:08:48.99,Default,,0,0,0,,spider
+Dialogue: 0,0:08:49.00,0:08:49.14,Default,,0,0,0,,I
+Dialogue: 0,0:08:49.16,0:08:49.91,Default,,0,0,0,,drove
+Dialogue: 0,0:08:49.92,0:08:50.23,Default,,0,0,0,,last
+Dialogue: 0,0:08:50.24,0:08:50.55,Default,,0,0,0,,year
+Dialogue: 0,0:08:50.56,0:08:50.95,Default,,0,0,0,,was
+Dialogue: 0,0:08:50.95,0:08:51.07,Default,,0,0,0,,it's
+Dialogue: 0,0:08:51.08,0:08:51.19,Default,,0,0,0,,just
+Dialogue: 0,0:08:51.20,0:08:51.31,Default,,0,0,0,,a
+Dialogue: 0,0:08:51.32,0:08:51.47,Default,,0,0,0,,bit
+Dialogue: 0,0:08:51.48,0:08:51.78,Default,,0,0,0,,more
+Dialogue: 0,0:08:51.80,0:08:52.35,Default,,0,0,0,,urgent
+Dialogue: 0,0:08:52.36,0:08:52.59,Default,,0,0,0,,it
+Dialogue: 0,0:08:52.60,0:08:52.87,Default,,0,0,0,,puts
+Dialogue: 0,0:08:52.88,0:08:53.35,Default,,0,0,0,,you
+Dialogue: 0,0:08:53.36,0:08:53.63,Default,,0,0,0,,in
+Dialogue: 0,0:08:53.64,0:08:53.91,Default,,0,0,0,,that
+Dialogue: 0,0:08:53.92,0:08:54.27,Default,,0,0,0,,good
+Dialogue: 0,0:08:54.27,0:08:54.46,Default,,0,0,0,,that
+Dialogue: 0,0:08:54.48,0:08:54.91,Default,,0,0,0,,sweet
+Dialogue: 0,0:08:54.92,0:08:55.43,Default,,0,0,0,,spot
+Dialogue: 0,0:08:55.44,0:08:55.63,Default,,0,0,0,,of
+Dialogue: 0,0:08:55.64,0:08:55.75,Default,,0,0,0,,the
+Dialogue: 0,0:08:55.76,0:08:56.03,Default,,0,0,0,,Rev
+Dialogue: 0,0:08:56.04,0:08:56.87,Default,,0,0,0,,range
+Dialogue: 0,0:08:56.88,0:08:57.11,Default,,0,0,0,,way
+Dialogue: 0,0:08:57.12,0:08:57.38,Default,,0,0,0,,more
+Dialogue: 0,0:08:57.39,0:08:58.11,Default,,0,0,0,,often
+Dialogue: 0,0:08:58.12,0:08:58.47,Default,,0,0,0,,meaning
+Dialogue: 0,0:08:58.48,0:08:58.63,Default,,0,0,0,,the
+Dialogue: 0,0:08:58.64,0:08:58.99,Default,,0,0,0,,car
+Dialogue: 0,0:08:59.00,0:08:59.71,Default,,0,0,0,,just
+Dialogue: 0,0:08:59.72,0:08:59.83,Default,,0,0,0,,why
+Dialogue: 0,0:08:59.83,0:08:59.99,Default,,0,0,0,,it's
+Dialogue: 0,0:09:00.00,0:09:00.18,Default,,0,0,0,,so
+Dialogue: 0,0:09:00.20,0:09:00.35,Default,,0,0,0,,much
+Dialogue: 0,0:09:00.36,0:09:00.63,Default,,0,0,0,,more
+Dialogue: 0,0:09:00.64,0:09:00.95,Default,,0,0,0,,fun
+Dialogue: 0,0:09:00.95,0:09:22.86,Default,,0,0,0,,to
+Dialogue: 0,0:09:22.88,0:09:23.87,Default,,0,0,0,,try
+Dialogue: 0,0:09:23.88,0:09:23.99,Default,,0,0,0,,I
+Dialogue: 0,0:09:24.00,0:09:24.19,Default,,0,0,0,,have
+Dialogue: 0,0:09:24.20,0:09:24.43,Default,,0,0,0,,no
+Dialogue: 0,0:09:24.44,0:09:24.71,Default,,0,0,0,,idea
+Dialogue: 0,0:09:24.72,0:09:24.83,Default,,0,0,0,,how
+Dialogue: 0,0:09:24.83,0:09:24.99,Default,,0,0,0,,much
+Dialogue: 0,0:09:25.00,0:09:25.11,Default,,0,0,0,,of
+Dialogue: 0,0:09:25.12,0:09:25.23,Default,,0,0,0,,the
+Dialogue: 0,0:09:25.24,0:09:25.34,Default,,0,0,0,,sort
+Dialogue: 0,0:09:25.36,0:09:25.55,Default,,0,0,0,,of
+Dialogue: 0,0:09:25.56,0:09:25.87,Default,,0,0,0,,last
+Dialogue: 0,0:09:25.88,0:09:26.63,Default,,0,0,0,,segment
+Dialogue: 0,0:09:26.64,0:09:26.87,Default,,0,0,0,,you
+Dialogue: 0,0:09:26.88,0:09:27.15,Default,,0,0,0,,guys
+Dialogue: 0,0:09:27.16,0:09:27.59,Default,,0,0,0,,heard
+Dialogue: 0,0:09:27.60,0:09:27.86,Default,,0,0,0,,because
+Dialogue: 0,0:09:27.88,0:09:27.99,Default,,0,0,0,,as
+Dialogue: 0,0:09:28.00,0:09:28.15,Default,,0,0,0,,I
+Dialogue: 0,0:09:28.16,0:09:28.55,Default,,0,0,0,,arrived
+Dialogue: 0,0:09:28.56,0:09:28.71,Default,,0,0,0,,here
+Dialogue: 0,0:09:28.72,0:09:28.87,Default,,0,0,0,,at
+Dialogue: 0,0:09:28.88,0:09:29.59,Default,,0,0,0,,Henry's
+Dialogue: 0,0:09:29.60,0:09:29.91,Default,,0,0,0,,on
+Dialogue: 0,0:09:29.92,0:09:30.03,Default,,0,0,0,,I
+Dialogue: 0,0:09:30.04,0:09:30.11,Default,,0,0,0,,got
+Dialogue: 0,0:09:30.12,0:09:30.22,Default,,0,0,0,,an
+Dialogue: 0,0:09:30.24,0:09:30.43,Default,,0,0,0,,error
+Dialogue: 0,0:09:30.44,0:09:30.63,Default,,0,0,0,,message
+Dialogue: 0,0:09:30.64,0:09:30.75,Default,,0,0,0,,on
+Dialogue: 0,0:09:30.76,0:09:30.87,Default,,0,0,0,,my
+Dialogue: 0,0:09:30.88,0:09:31.23,Default,,0,0,0,,GoPro
+Dialogue: 0,0:09:31.24,0:09:31.39,Default,,0,0,0,,so
+Dialogue: 0,0:09:31.39,0:09:31.50,Default,,0,0,0,,yeah
+Dialogue: 0,0:09:31.51,0:09:31.75,Default,,0,0,0,,today's
+Dialogue: 0,0:09:31.76,0:09:31.87,Default,,0,0,0,,just
+Dialogue: 0,0:09:31.88,0:09:31.99,Default,,0,0,0,,been
+Dialogue: 0,0:09:32.00,0:09:32.03,Default,,0,0,0,,a
+Dialogue: 0,0:09:32.04,0:09:32.15,Default,,0,0,0,,bit
+Dialogue: 0,0:09:32.16,0:09:32.19,Default,,0,0,0,,of
+Dialogue: 0,0:09:32.20,0:09:32.27,Default,,0,0,0,,a
+Dialogue: 0,0:09:32.27,0:09:32.55,Default,,0,0,0,,fail
+Dialogue: 0,0:09:32.56,0:09:32.66,Default,,0,0,0,,but
+Dialogue: 0,0:09:32.68,0:09:32.91,Default,,0,0,0,,anyway
+Dialogue: 0,0:09:32.92,0:09:33.03,Default,,0,0,0,,some
+Dialogue: 0,0:09:33.04,0:09:33.11,Default,,0,0,0,,of
+Dialogue: 0,0:09:33.12,0:09:33.19,Default,,0,0,0,,you
+Dialogue: 0,0:09:33.20,0:09:33.31,Default,,0,0,0,,may
+Dialogue: 0,0:09:33.32,0:09:33.71,Default,,0,0,0,,recognize
+Dialogue: 0,0:09:33.72,0:09:33.86,Default,,0,0,0,,this
+Dialogue: 0,0:09:33.88,0:09:34.19,Default,,0,0,0,,place
+Dialogue: 0,0:09:34.20,0:09:34.83,Default,,0,0,0,,because
+Dialogue: 0,0:09:34.83,0:09:34.99,Default,,0,0,0,,when
+Dialogue: 0,0:09:35.00,0:09:35.15,Default,,0,0,0,,I
+Dialogue: 0,0:09:35.16,0:09:35.63,Default,,0,0,0,,revealed
+Dialogue: 0,0:09:35.64,0:09:35.95,Default,,0,0,0,,the
+Dialogue: 0,0:09:35.95,0:09:36.22,Default,,0,0,0,,color
+Dialogue: 0,0:09:36.24,0:09:36.71,Default,,0,0,0,,change
+Dialogue: 0,0:09:36.72,0:09:36.91,Default,,0,0,0,,on
+Dialogue: 0,0:09:36.92,0:09:37.11,Default,,0,0,0,,my
+Dialogue: 0,0:09:37.12,0:09:37.67,Default,,0,0,0,,abath
+Dialogue: 0,0:09:37.68,0:09:38.19,Default,,0,0,0,,project
+Dialogue: 0,0:09:38.20,0:09:39.19,Default,,0,0,0,,biposto
+Dialogue: 0,0:09:39.20,0:09:39.30,Default,,0,0,0,,it
+Dialogue: 0,0:09:39.32,0:09:39.55,Default,,0,0,0,,was
+Dialogue: 0,0:09:39.56,0:09:39.75,Default,,0,0,0,,here
+Dialogue: 0,0:09:39.76,0:09:39.95,Default,,0,0,0,,because
+Dialogue: 0,0:09:39.95,0:09:40.11,Default,,0,0,0,,in
+Dialogue: 0,0:09:40.12,0:09:40.23,Default,,0,0,0,,that
+Dialogue: 0,0:09:40.24,0:09:40.63,Default,,0,0,0,,unit
+Dialogue: 0,0:09:40.64,0:09:40.78,Default,,0,0,0,,right
+Dialogue: 0,0:09:40.80,0:09:41.07,Default,,0,0,0,,behind
+Dialogue: 0,0:09:41.07,0:09:41.47,Default,,0,0,0,,me
+Dialogue: 0,0:09:41.48,0:09:41.67,Default,,0,0,0,,is
+Dialogue: 0,0:09:41.68,0:09:41.99,Default,,0,0,0,,where
+Dialogue: 0,0:09:42.00,0:09:42.71,Default,,0,0,0,,logic
+Dialogue: 0,0:09:42.72,0:09:43.07,Default,,0,0,0,,based
+Dialogue: 0,0:09:43.07,0:09:43.14,Default,,0,0,0,,the
+Dialogue: 0,0:09:43.16,0:09:43.51,Default,,0,0,0,,absolute
+Dialogue: 0,0:09:43.51,0:09:43.91,Default,,0,0,0,,genius
+Dialogue: 0,0:09:43.92,0:09:44.27,Default,,0,0,0,,is
+Dialogue: 0,0:09:44.27,0:09:44.39,Default,,0,0,0,,who
+Dialogue: 0,0:09:44.39,0:09:44.59,Default,,0,0,0,,did
+Dialogue: 0,0:09:44.60,0:09:44.75,Default,,0,0,0,,the
+Dialogue: 0,0:09:44.76,0:09:45.18,Default,,0,0,0,,peelable
+Dialogue: 0,0:09:45.20,0:09:45.63,Default,,0,0,0,,pain
+Dialogue: 0,0:09:45.64,0:09:45.83,Default,,0,0,0,,for
+Dialogue: 0,0:09:45.83,0:09:45.95,Default,,0,0,0,,my
+Dialogue: 0,0:09:45.95,0:09:46.87,Default,,0,0,0,,albath
+Dialogue: 0,0:09:46.88,0:09:47.27,Default,,0,0,0,,however
+Dialogue: 0,0:09:47.27,0:09:47.43,Default,,0,0,0,,the
+Dialogue: 0,0:09:47.44,0:09:48.19,Default,,0,0,0,,actual
+Dialogue: 0,0:09:48.20,0:09:48.30,Default,,0,0,0,,uh
+Dialogue: 0,0:09:48.32,0:09:48.67,Default,,0,0,0,,Henry's
+Dialogue: 0,0:09:48.68,0:09:49.07,Default,,0,0,0,,carbon
+Dialogue: 0,0:09:49.07,0:09:49.39,Default,,0,0,0,,element
+Dialogue: 0,0:09:49.39,0:09:49.79,Default,,0,0,0,,of
+Dialogue: 0,0:09:49.80,0:09:50.11,Default,,0,0,0,,Henry's
+Dialogue: 0,0:09:50.12,0:09:50.94,Default,,0,0,0,,carbon
+Dialogue: 0,0:09:50.95,0:09:51.11,Default,,0,0,0,,has
+Dialogue: 0,0:09:51.12,0:09:51.27,Default,,0,0,0,,gone
+Dialogue: 0,0:09:51.27,0:09:51.39,Default,,0,0,0,,through
+Dialogue: 0,0:09:51.39,0:09:51.51,Default,,0,0,0,,some
+Dialogue: 0,0:09:51.51,0:09:52.27,Default,,0,0,0,,changes
+Dialogue: 0,0:09:52.27,0:09:52.47,Default,,0,0,0,,last
+Dialogue: 0,0:09:52.48,0:09:52.74,Default,,0,0,0,,year
+Dialogue: 0,0:09:52.76,0:09:53.11,Default,,0,0,0,,so
+Dialogue: 0,0:09:53.12,0:09:53.35,Default,,0,0,0,,let's
+Dialogue: 0,0:09:53.36,0:09:53.47,Default,,0,0,0,,head
+Dialogue: 0,0:09:53.48,0:09:53.99,Default,,0,0,0,,inside
+Dialogue: 0,0:09:54.00,0:09:54.15,Default,,0,0,0,,and
+Dialogue: 0,0:09:54.16,0:09:54.31,Default,,0,0,0,,check
+Dialogue: 0,0:09:54.32,0:09:55.10,Default,,0,0,0,,it
+Dialogue: 0,0:09:55.12,0:09:56.11,Default,,0,0,0,,out
+Dialogue: 0,0:09:56.12,0:09:56.95,Default,,0,0,0,,guys
+Dialogue: 0,0:09:56.95,0:09:57.11,Default,,0,0,0,,how
+Dialogue: 0,0:09:57.12,0:09:57.27,Default,,0,0,0,,you
+Dialogue: 0,0:09:57.27,0:09:57.67,Default,,0,0,0,,doing
+Dialogue: 0,0:09:57.68,0:09:58.67,Default,,0,0,0,,hello
+Dialogue: 0,0:09:58.68,0:09:58.83,Default,,0,0,0,,this
+Dialogue: 0,0:09:58.83,0:09:59.38,Default,,0,0,0,,place
+Dialogue: 0,0:09:59.39,0:09:59.99,Default,,0,0,0,,looks
+Dialogue: 0,0:10:00.00,0:10:00.71,Default,,0,0,0,,unreal
+Dialogue: 0,0:10:00.72,0:10:00.79,Default,,0,0,0,,a
+Dialogue: 0,0:10:00.80,0:10:00.95,Default,,0,0,0,,bit
+Dialogue: 0,0:10:00.95,0:10:01.15,Default,,0,0,0,,better
+Dialogue: 0,0:10:01.16,0:10:01.35,Default,,0,0,0,,than
+Dialogue: 0,0:10:01.36,0:10:01.47,Default,,0,0,0,,last
+Dialogue: 0,0:10:01.48,0:10:01.74,Default,,0,0,0,,time
+Dialogue: 0,0:10:01.76,0:10:01.83,Default,,0,0,0,,I
+Dialogue: 0,0:10:01.83,0:10:02.11,Default,,0,0,0,,mean
+Dialogue: 0,0:10:02.12,0:10:02.15,Default,,0,0,0,,I
+Dialogue: 0,0:10:02.16,0:10:02.27,Default,,0,0,0,,mean
+Dialogue: 0,0:10:02.27,0:10:02.39,Default,,0,0,0,,it
+Dialogue: 0,0:10:02.39,0:10:02.67,Default,,0,0,0,,looked
+Dialogue: 0,0:10:02.68,0:10:02.95,Default,,0,0,0,,good
+Dialogue: 0,0:10:02.95,0:10:03.19,Default,,0,0,0,,last
+Dialogue: 0,0:10:03.20,0:10:03.50,Default,,0,0,0,,time
+Dialogue: 0,0:10:03.51,0:10:03.67,Default,,0,0,0,,but
+Dialogue: 0,0:10:03.68,0:10:03.79,Default,,0,0,0,,now
+Dialogue: 0,0:10:03.80,0:10:03.99,Default,,0,0,0,,it's
+Dialogue: 0,0:10:04.00,0:10:04.43,Default,,0,0,0,,looking
+Dialogue: 0,0:10:04.44,0:10:04.67,Default,,0,0,0,,really
+Dialogue: 0,0:10:04.68,0:10:04.95,Default,,0,0,0,,good
+Dialogue: 0,0:10:04.95,0:10:05.18,Default,,0,0,0,,nearly
+Dialogue: 0,0:10:05.20,0:10:05.43,Default,,0,0,0,,nearly
+Dialogue: 0,0:10:05.44,0:10:05.79,Default,,0,0,0,,nearly
+Dialogue: 0,0:10:05.80,0:10:05.91,Default,,0,0,0,,well
+Dialogue: 0,0:10:05.92,0:10:06.19,Default,,0,0,0,,I
+Dialogue: 0,0:10:06.20,0:10:06.35,Default,,0,0,0,,like
+Dialogue: 0,0:10:06.36,0:10:06.55,Default,,0,0,0,,say
+Dialogue: 0,0:10:06.56,0:10:07.66,Default,,0,0,0,,finished
+Dialogue: 0,0:10:07.68,0:10:08.67,Default,,0,0,0,,congratulations
+Dialogue: 0,0:10:08.68,0:10:08.79,Default,,0,0,0,,I
+Dialogue: 0,0:10:08.80,0:10:08.91,Default,,0,0,0,,bought
+Dialogue: 0,0:10:08.92,0:10:08.99,Default,,0,0,0,,you
+Dialogue: 0,0:10:09.00,0:10:09.11,Default,,0,0,0,,a
+Dialogue: 0,0:10:09.12,0:10:09.50,Default,,0,0,0,,special
+Dialogue: 0,0:10:09.51,0:10:09.63,Default,,0,0,0,,well
+Dialogue: 0,0:10:09.64,0:10:09.67,Default,,0,0,0,,I
+Dialogue: 0,0:10:09.68,0:10:09.83,Default,,0,0,0,,bought
+Dialogue: 0,0:10:09.83,0:10:09.95,Default,,0,0,0,,you
+Dialogue: 0,0:10:09.95,0:10:10.39,Default,,0,0,0,,twigy
+Dialogue: 0,0:10:10.39,0:10:10.47,Default,,0,0,0,,but
+Dialogue: 0,0:10:10.48,0:10:10.59,Default,,0,0,0,,I
+Dialogue: 0,0:10:10.60,0:10:10.74,Default,,0,0,0,,also
+Dialogue: 0,0:10:10.76,0:10:10.99,Default,,0,0,0,,bought
+Dialogue: 0,0:10:11.00,0:10:11.75,Default,,0,0,0,,you
+Dialogue: 0,0:10:11.76,0:10:12.75,Default,,0,0,0,,coffee
+Dialogue: 0,0:10:12.76,0:10:12.99,Default,,0,0,0,,good
+Dialogue: 0,0:10:13.00,0:10:13.51,Default,,0,0,0,,coffee
+Dialogue: 0,0:10:13.51,0:10:13.63,Default,,0,0,0,,thank
+Dialogue: 0,0:10:13.64,0:10:13.82,Default,,0,0,0,,you
+Dialogue: 0,0:10:13.83,0:10:14.39,Default,,0,0,0,,very
+Dialogue: 0,0:10:14.39,0:10:14.47,Default,,0,0,0,,well
+Dialogue: 0,0:10:14.48,0:10:14.55,Default,,0,0,0,,I
+Dialogue: 0,0:10:14.56,0:10:14.67,Default,,0,0,0,,hope
+Dialogue: 0,0:10:14.68,0:10:14.83,Default,,0,0,0,,it's
+Dialogue: 0,0:10:14.83,0:10:14.95,Default,,0,0,0,,good
+Dialogue: 0,0:10:14.95,0:10:15.15,Default,,0,0,0,,coffee
+Dialogue: 0,0:10:15.16,0:10:15.22,Default,,0,0,0,,you
+Dialogue: 0,0:10:15.24,0:10:15.31,Default,,0,0,0,,have
+Dialogue: 0,0:10:15.32,0:10:15.39,Default,,0,0,0,,to
+Dialogue: 0,0:10:15.39,0:10:15.47,Default,,0,0,0,,let
+Dialogue: 0,0:10:15.48,0:10:15.55,Default,,0,0,0,,me
+Dialogue: 0,0:10:15.56,0:10:15.63,Default,,0,0,0,,know
+Dialogue: 0,0:10:15.64,0:10:15.71,Default,,0,0,0,,what
+Dialogue: 0,0:10:15.72,0:10:15.79,Default,,0,0,0,,you
+Dialogue: 0,0:10:15.80,0:10:16.71,Default,,0,0,0,,think
+Dialogue: 0,0:10:16.72,0:10:16.86,Default,,0,0,0,,yeah
+Dialogue: 0,0:10:16.88,0:10:17.11,Default,,0,0,0,,exactly
+Dialogue: 0,0:10:17.12,0:10:17.27,Default,,0,0,0,,send
+Dialogue: 0,0:10:17.27,0:10:17.39,Default,,0,0,0,,me
+Dialogue: 0,0:10:17.39,0:10:17.55,Default,,0,0,0,,the
+Dialogue: 0,0:10:17.56,0:10:18.03,Default,,0,0,0,,feedback
+Dialogue: 0,0:10:18.04,0:10:18.91,Default,,0,0,0,,but
+Dialogue: 0,0:10:18.92,0:10:19.11,Default,,0,0,0,,play
+Dialogue: 0,0:10:19.12,0:10:19.38,Default,,0,0,0,,is
+Dialogue: 0,0:10:19.39,0:10:19.99,Default,,0,0,0,,Ace
+Dialogue: 0,0:10:20.00,0:10:20.07,Default,,0,0,0,,look
+Dialogue: 0,0:10:20.07,0:10:20.15,Default,,0,0,0,,at
+Dialogue: 0,0:10:20.16,0:10:20.23,Default,,0,0,0,,all
+Dialogue: 0,0:10:20.24,0:10:20.31,Default,,0,0,0,,the
+Dialogue: 0,0:10:20.32,0:10:20.63,Default,,0,0,0,,posters
+Dialogue: 0,0:10:20.64,0:10:20.75,Default,,0,0,0,,at
+Dialogue: 0,0:10:20.76,0:10:20.83,Default,,0,0,0,,the
+Dialogue: 0,0:10:20.83,0:10:21.06,Default,,0,0,0,,back
+Dialogue: 0,0:10:21.07,0:10:21.27,Default,,0,0,0,,I'm
+Dialogue: 0,0:10:21.27,0:10:21.59,Default,,0,0,0,,good
+Dialogue: 0,0:10:21.60,0:10:21.71,Default,,0,0,0,,I'm
+Dialogue: 0,0:10:21.72,0:10:21.87,Default,,0,0,0,,good
+Dialogue: 0,0:10:21.88,0:10:21.95,Default,,0,0,0,,but
+Dialogue: 0,0:10:21.95,0:10:22.03,Default,,0,0,0,,I'm
+Dialogue: 0,0:10:22.04,0:10:22.15,Default,,0,0,0,,just
+Dialogue: 0,0:10:22.16,0:10:22.31,Default,,0,0,0,,like
+Dialogue: 0,0:10:22.32,0:10:22.78,Default,,0,0,0,,in
+Dialogue: 0,0:10:22.80,0:10:22.95,Default,,0,0,0,,I'm
+Dialogue: 0,0:10:22.95,0:10:23.23,Default,,0,0,0,,jaw
+Dialogue: 0,0:10:23.24,0:10:23.51,Default,,0,0,0,,Dro
+Dialogue: 0,0:10:23.51,0:10:23.83,Default,,0,0,0,,to
+Dialogue: 0,0:10:23.83,0:10:24.07,Default,,0,0,0,,everything
+Dialogue: 0,0:10:24.07,0:10:24.23,Default,,0,0,0,,that's
+Dialogue: 0,0:10:24.24,0:10:24.38,Default,,0,0,0,,going
+Dialogue: 0,0:10:24.39,0:10:24.55,Default,,0,0,0,,on
+Dialogue: 0,0:10:24.56,0:10:24.75,Default,,0,0,0,,in
+Dialogue: 0,0:10:24.76,0:10:25.51,Default,,0,0,0,,here
+Dialogue: 0,0:10:25.51,0:10:25.91,Default,,0,0,0,,I
+Dialogue: 0,0:10:25.92,0:10:26.31,Default,,0,0,0,,earlier
+Dialogue: 0,0:10:26.32,0:10:26.39,Default,,0,0,0,,I
+Dialogue: 0,0:10:26.39,0:10:26.55,Default,,0,0,0,,said
+Dialogue: 0,0:10:26.56,0:10:26.83,Default,,0,0,0,,to
+Dialogue: 0,0:10:26.83,0:10:27.06,Default,,0,0,0,,everyone
+Dialogue: 0,0:10:27.07,0:10:27.11,Default,,0,0,0,,I
+Dialogue: 0,0:10:27.12,0:10:27.23,Default,,0,0,0,,was
+Dialogue: 0,0:10:27.24,0:10:27.55,Default,,0,0,0,,like
+Dialogue: 0,0:10:27.56,0:10:27.67,Default,,0,0,0,,it's
+Dialogue: 0,0:10:27.68,0:10:27.79,Default,,0,0,0,,like
+Dialogue: 0,0:10:27.80,0:10:28.07,Default,,0,0,0,,a
+Dialogue: 0,0:10:28.07,0:10:28.47,Default,,0,0,0,,members
+Dialogue: 0,0:10:28.48,0:10:28.98,Default,,0,0,0,,club/
+Dialogue: 0,0:10:29.00,0:10:29.59,Default,,0,0,0,,exclus
+Dialogue: 0,0:10:29.60,0:10:30.15,Default,,0,0,0,,events
+Dialogue: 0,0:10:30.16,0:10:30.27,Default,,0,0,0,,is
+Dialogue: 0,0:10:30.27,0:10:30.43,Default,,0,0,0,,that
+Dialogue: 0,0:10:30.44,0:10:30.51,Default,,0,0,0,,a
+Dialogue: 0,0:10:30.51,0:10:30.79,Default,,0,0,0,,good
+Dialogue: 0,0:10:30.80,0:10:30.87,Default,,0,0,0,,it's
+Dialogue: 0,0:10:30.88,0:10:30.98,Default,,0,0,0,,going
+Dialogue: 0,0:10:31.00,0:10:31.07,Default,,0,0,0,,to
+Dialogue: 0,0:10:31.07,0:10:31.79,Default,,0,0,0,,be
+Dialogue: 0,0:10:31.80,0:10:31.87,Default,,0,0,0,,a
+Dialogue: 0,0:10:31.88,0:10:32.15,Default,,0,0,0,,launch
+Dialogue: 0,0:10:32.16,0:10:32.47,Default,,0,0,0,,space
+Dialogue: 0,0:10:32.48,0:10:32.75,Default,,0,0,0,,for
+Dialogue: 0,0:10:32.76,0:10:32.94,Default,,0,0,0,,car
+Dialogue: 0,0:10:32.95,0:10:33.75,Default,,0,0,0,,manufacturers
+Dialogue: 0,0:10:33.76,0:10:34.19,Default,,0,0,0,,and
+Dialogue: 0,0:10:34.20,0:10:34.51,Default,,0,0,0,,uh
+Dialogue: 0,0:10:34.51,0:10:34.99,Default,,0,0,0,,and
+Dialogue: 0,0:10:35.00,0:10:35.31,Default,,0,0,0,,private
+Dialogue: 0,0:10:35.32,0:10:35.63,Default,,0,0,0,,hire
+Dialogue: 0,0:10:35.63,0:10:35.74,Default,,0,0,0,,as
+Dialogue: 0,0:10:35.76,0:10:35.99,Default,,0,0,0,,well
+Dialogue: 0,0:10:36.00,0:10:36.11,Default,,0,0,0,,but
+Dialogue: 0,0:10:36.12,0:10:36.51,Default,,0,0,0,,mainly
+Dialogue: 0,0:10:36.51,0:10:36.71,Default,,0,0,0,,and
+Dialogue: 0,0:10:36.72,0:10:37.03,Default,,0,0,0,,also
+Dialogue: 0,0:10:37.04,0:10:37.87,Default,,0,0,0,,a
+Dialogue: 0,0:10:37.88,0:10:38.27,Default,,0,0,0,,uh
+Dialogue: 0,0:10:38.27,0:10:38.43,Default,,0,0,0,,a
+Dialogue: 0,0:10:38.44,0:10:38.70,Default,,0,0,0,,private
+Dialogue: 0,0:10:38.72,0:10:38.91,Default,,0,0,0,,high
+Dialogue: 0,0:10:38.92,0:10:39.11,Default,,0,0,0,,space
+Dialogue: 0,0:10:39.12,0:10:39.27,Default,,0,0,0,,as
+Dialogue: 0,0:10:39.27,0:10:39.67,Default,,0,0,0,,well
+Dialogue: 0,0:10:39.68,0:10:40.15,Default,,0,0,0,,for
+Dialogue: 0,0:10:40.16,0:10:40.43,Default,,0,0,0,,for
+Dialogue: 0,0:10:40.44,0:10:40.59,Default,,0,0,0,,for
+Dialogue: 0,0:10:40.60,0:10:40.71,Default,,0,0,0,,a
+Dialogue: 0,0:10:40.72,0:10:40.90,Default,,0,0,0,,private
+Dialogue: 0,0:10:40.92,0:10:41.19,Default,,0,0,0,,members
+Dialogue: 0,0:10:41.20,0:10:41.71,Default,,0,0,0,,Club
+Dialogue: 0,0:10:41.72,0:10:42.55,Default,,0,0,0,,okay
+Dialogue: 0,0:10:42.56,0:10:43.55,Default,,0,0,0,,essentially
+Dialogue: 0,0:10:43.56,0:10:44.70,Default,,0,0,0,,and
+Dialogue: 0,0:10:44.72,0:10:45.71,Default,,0,0,0,,uh
+Dialogue: 0,0:10:45.72,0:10:46.03,Default,,0,0,0,,I
+Dialogue: 0,0:10:46.04,0:10:46.59,Default,,0,0,0,,say
+Dialogue: 0,0:10:46.60,0:10:47.11,Default,,0,0,0,,of
+Dialogue: 0,0:10:47.12,0:10:47.23,Default,,0,0,0,,and
+Dialogue: 0,0:10:47.24,0:10:47.35,Default,,0,0,0,,not
+Dialogue: 0,0:10:47.36,0:10:47.51,Default,,0,0,0,,just
+Dialogue: 0,0:10:47.51,0:10:47.79,Default,,0,0,0,,any
+Dialogue: 0,0:10:47.80,0:10:48.47,Default,,0,0,0,,car
+Dialogue: 0,0:10:48.48,0:10:48.58,Default,,0,0,0,,the
+Dialogue: 0,0:10:48.60,0:10:49.07,Default,,0,0,0,,bowler
+Dialogue: 0,0:10:49.07,0:10:49.15,Default,,0,0,0,,can
+Dialogue: 0,0:10:49.16,0:10:49.27,Default,,0,0,0,,you
+Dialogue: 0,0:10:49.27,0:10:49.51,Default,,0,0,0,,come
+Dialogue: 0,0:10:49.51,0:10:49.59,Default,,0,0,0,,can
+Dialogue: 0,0:10:49.60,0:10:49.67,Default,,0,0,0,,you
+Dialogue: 0,0:10:49.68,0:10:49.79,Default,,0,0,0,,come
+Dialogue: 0,0:10:49.80,0:10:49.86,Default,,0,0,0,,and
+Dialogue: 0,0:10:49.88,0:10:50.07,Default,,0,0,0,,tell
+Dialogue: 0,0:10:50.07,0:10:50.27,Default,,0,0,0,,people
+Dialogue: 0,0:10:50.27,0:10:50.51,Default,,0,0,0,,about
+Dialogue: 0,0:10:50.51,0:10:50.75,Default,,0,0,0,,this
+Dialogue: 0,0:10:50.76,0:10:51.75,Default,,0,0,0,,because
+Dialogue: 0,0:10:51.76,0:10:51.83,Default,,0,0,0,,I
+Dialogue: 0,0:10:51.83,0:10:52.06,Default,,0,0,0,,feel
+Dialogue: 0,0:10:52.07,0:10:52.23,Default,,0,0,0,,like
+Dialogue: 0,0:10:52.24,0:10:52.43,Default,,0,0,0,,if
+Dialogue: 0,0:10:52.44,0:10:52.63,Default,,0,0,0,,anyone
+Dialogue: 0,0:10:52.63,0:10:52.91,Default,,0,0,0,,follows
+Dialogue: 0,0:10:52.92,0:10:53.03,Default,,0,0,0,,you
+Dialogue: 0,0:10:53.04,0:10:53.42,Default,,0,0,0,,online
+Dialogue: 0,0:10:53.44,0:10:53.59,Default,,0,0,0,,they'll
+Dialogue: 0,0:10:53.60,0:10:53.79,Default,,0,0,0,,know
+Dialogue: 0,0:10:53.80,0:10:53.95,Default,,0,0,0,,about
+Dialogue: 0,0:10:53.95,0:10:54.19,Default,,0,0,0,,it
+Dialogue: 0,0:10:54.20,0:10:54.31,Default,,0,0,0,,this
+Dialogue: 0,0:10:54.32,0:10:54.43,Default,,0,0,0,,is
+Dialogue: 0,0:10:54.44,0:10:54.63,Default,,0,0,0,,my
+Dialogue: 0,0:10:54.63,0:10:55.35,Default,,0,0,0,,baby
+Dialogue: 0,0:10:55.36,0:10:55.66,Default,,0,0,0,,um
+Dialogue: 0,0:10:55.68,0:10:56.03,Default,,0,0,0,,this
+Dialogue: 0,0:10:56.04,0:10:56.39,Default,,0,0,0,,is
+Dialogue: 0,0:10:56.39,0:10:57.23,Default,,0,0,0,,first
+Dialogue: 0,0:10:57.24,0:10:57.31,Default,,0,0,0,,in
+Dialogue: 0,0:10:57.32,0:10:57.47,Default,,0,0,0,,the
+Dialogue: 0,0:10:57.48,0:10:57.83,Default,,0,0,0,,color
+Dialogue: 0,0:10:57.83,0:10:58.03,Default,,0,0,0,,of
+Dialogue: 0,0:10:58.04,0:10:58.27,Default,,0,0,0,,my
+Dialogue: 0,0:10:58.27,0:10:58.75,Default,,0,0,0,,Avent
+Dialogue: 0,0:10:58.76,0:10:58.94,Default,,0,0,0,,s
+Dialogue: 0,0:10:58.95,0:10:59.07,Default,,0,0,0,,which
+Dialogue: 0,0:10:59.07,0:10:59.31,Default,,0,0,0,,was
+Dialogue: 0,0:10:59.32,0:10:59.59,Default,,0,0,0,,Hydro
+Dialogue: 0,0:10:59.60,0:11:00.23,Default,,0,0,0,,Vera
+Dialogue: 0,0:11:00.24,0:11:00.31,Default,,0,0,0,,and
+Dialogue: 0,0:11:00.32,0:11:00.39,Default,,0,0,0,,it
+Dialogue: 0,0:11:00.39,0:11:00.58,Default,,0,0,0,,was
+Dialogue: 0,0:11:00.60,0:11:00.91,Default,,0,0,0,,basically
+Dialogue: 0,0:11:00.92,0:11:01.15,Default,,0,0,0,,a
+Dialogue: 0,0:11:01.16,0:11:01.59,Default,,0,0,0,,daar
+Dialogue: 0,0:11:01.60,0:11:01.91,Default,,0,0,0,,rally
+Dialogue: 0,0:11:01.92,0:11:02.19,Default,,0,0,0,,car
+Dialogue: 0,0:11:02.20,0:11:02.87,Default,,0,0,0,,for
+Dialogue: 0,0:11:02.88,0:11:03.07,Default,,0,0,0,,made
+Dialogue: 0,0:11:03.07,0:11:03.18,Default,,0,0,0,,for
+Dialogue: 0,0:11:03.20,0:11:03.27,Default,,0,0,0,,the
+Dialogue: 0,0:11:03.27,0:11:04.07,Default,,0,0,0,,T
+Dialogue: 0,0:11:04.07,0:11:04.43,Default,,0,0,0,,So
+Dialogue: 0,0:11:04.44,0:11:04.63,Default,,0,0,0,,three
+Dialogue: 0,0:11:04.63,0:11:04.99,Default,,0,0,0,,cars
+Dialogue: 0,0:11:05.00,0:11:05.19,Default,,0,0,0,,three
+Dialogue: 0,0:11:05.20,0:11:05.47,Default,,0,0,0,,R
+Dialogue: 0,0:11:05.48,0:11:05.79,Default,,0,0,0,,drive
+Dialogue: 0,0:11:05.80,0:11:06.78,Default,,0,0,0,,cars
+Dialogue: 0,0:11:06.80,0:11:07.11,Default,,0,0,0,,and
+Dialogue: 0,0:11:07.12,0:11:07.43,Default,,0,0,0,,it's
+Dialogue: 0,0:11:07.44,0:11:07.55,Default,,0,0,0,,in
+Dialogue: 0,0:11:07.56,0:11:07.75,Default,,0,0,0,,my
+Dialogue: 0,0:11:07.76,0:11:08.15,Default,,0,0,0,,green
+Dialogue: 0,0:11:08.16,0:11:08.51,Default,,0,0,0,,it's
+Dialogue: 0,0:11:08.51,0:11:08.67,Default,,0,0,0,,my
+Dialogue: 0,0:11:08.68,0:11:09.02,Default,,0,0,0,,favorite
+Dialogue: 0,0:11:09.04,0:11:09.79,Default,,0,0,0,,green
+Dialogue: 0,0:11:09.80,0:11:09.99,Default,,0,0,0,,and
+Dialogue: 0,0:11:10.00,0:11:10.35,Default,,0,0,0,,tan
+Dialogue: 0,0:11:10.36,0:11:10.51,Default,,0,0,0,,it's
+Dialogue: 0,0:11:10.51,0:11:10.67,Default,,0,0,0,,just
+Dialogue: 0,0:11:10.68,0:11:10.87,Default,,0,0,0,,it's
+Dialogue: 0,0:11:10.88,0:11:10.99,Default,,0,0,0,,the
+Dialogue: 0,0:11:11.00,0:11:11.22,Default,,0,0,0,,best
+Dialogue: 0,0:11:11.24,0:11:11.43,Default,,0,0,0,,it's
+Dialogue: 0,0:11:11.44,0:11:12.07,Default,,0,0,0,,unbelievable
+Dialogue: 0,0:11:12.07,0:11:12.15,Default,,0,0,0,,I
+Dialogue: 0,0:11:12.16,0:11:12.79,Default,,0,0,0,,mean
+Dialogue: 0,0:11:12.80,0:11:12.87,Default,,0,0,0,,the
+Dialogue: 0,0:11:12.88,0:11:13.07,Default,,0,0,0,,amount
+Dialogue: 0,0:11:13.07,0:11:13.18,Default,,0,0,0,,of
+Dialogue: 0,0:11:13.20,0:11:13.51,Default,,0,0,0,,tan
+Dialogue: 0,0:11:13.51,0:11:13.87,Default,,0,0,0,,leather
+Dialogue: 0,0:11:13.88,0:11:13.99,Default,,0,0,0,,in
+Dialogue: 0,0:11:14.00,0:11:14.27,Default,,0,0,0,,something
+Dialogue: 0,0:11:14.27,0:11:14.39,Default,,0,0,0,,that
+Dialogue: 0,0:11:14.39,0:11:14.67,Default,,0,0,0,,looks
+Dialogue: 0,0:11:14.68,0:11:14.86,Default,,0,0,0,,as
+Dialogue: 0,0:11:14.88,0:11:15.31,Default,,0,0,0,,aggressive
+Dialogue: 0,0:11:15.32,0:11:15.39,Default,,0,0,0,,as
+Dialogue: 0,0:11:15.39,0:11:15.55,Default,,0,0,0,,an
+Dialogue: 0,0:11:15.56,0:11:16.19,Default,,0,0,0,,insane
+Dialogue: 0,0:11:16.20,0:11:16.43,Default,,0,0,0,,as
+Dialogue: 0,0:11:16.44,0:11:16.59,Default,,0,0,0,,this
+Dialogue: 0,0:11:16.60,0:11:16.86,Default,,0,0,0,,thing
+Dialogue: 0,0:11:16.88,0:11:17.55,Default,,0,0,0,,does
+Dialogue: 0,0:11:17.56,0:11:17.63,Default,,0,0,0,,and
+Dialogue: 0,0:11:17.63,0:11:17.75,Default,,0,0,0,,it's
+Dialogue: 0,0:11:17.76,0:11:17.83,Default,,0,0,0,,got
+Dialogue: 0,0:11:17.83,0:11:17.95,Default,,0,0,0,,a
+Dialogue: 0,0:11:17.95,0:11:18.07,Default,,0,0,0,,big
+Dialogue: 0,0:11:18.07,0:11:18.27,Default,,0,0,0,,old
+Dialogue: 0,0:11:18.27,0:11:18.63,Default,,0,0,0,,huning
+Dialogue: 0,0:11:18.63,0:11:19.26,Default,,0,0,0,,V8
+Dialogue: 0,0:11:19.27,0:11:19.39,Default,,0,0,0,,it's
+Dialogue: 0,0:11:19.39,0:11:19.47,Default,,0,0,0,,got
+Dialogue: 0,0:11:19.48,0:11:19.55,Default,,0,0,0,,a
+Dialogue: 0,0:11:19.56,0:11:20.19,Default,,0,0,0,,Supercharged
+Dialogue: 0,0:11:20.20,0:11:21.19,Default,,0,0,0,,V8
+Dialogue: 0,0:11:21.20,0:11:21.94,Default,,0,0,0,,V8
+Dialogue: 0,0:11:21.95,0:11:22.67,Default,,0,0,0,,unbelievable
+Dialogue: 0,0:11:22.68,0:11:23.15,Default,,0,0,0,,550
+Dialogue: 0,0:11:23.16,0:11:23.43,Default,,0,0,0,,hor
+Dialogue: 0,0:11:23.44,0:11:24.07,Default,,0,0,0,,power
+Dialogue: 0,0:11:24.07,0:11:24.15,Default,,0,0,0,,uh
+Dialogue: 0,0:11:24.16,0:11:24.27,Default,,0,0,0,,and
+Dialogue: 0,0:11:24.27,0:11:24.38,Default,,0,0,0,,they
+Dialogue: 0,0:11:24.39,0:11:24.55,Default,,0,0,0,,say
+Dialogue: 0,0:11:24.56,0:11:24.79,Default,,0,0,0,,it's
+Dialogue: 0,0:11:24.80,0:11:25.59,Default,,0,0,0,,quick
+Dialogue: 0,0:11:25.60,0:11:25.71,Default,,0,0,0,,uh
+Dialogue: 0,0:11:25.72,0:11:25.95,Default,,0,0,0,,around
+Dialogue: 0,0:11:25.95,0:11:26.31,Default,,0,0,0,,silon
+Dialogue: 0,0:11:26.32,0:11:26.39,Default,,0,0,0,,as
+Dialogue: 0,0:11:26.39,0:11:26.46,Default,,0,0,0,,a
+Dialogue: 0,0:11:26.48,0:11:26.67,Default,,0,0,0,,fourth
+Dialogue: 0,0:11:26.68,0:11:26.87,Default,,0,0,0,,box
+Dialogue: 0,0:11:26.88,0:11:27.07,Default,,0,0,0,,store
+Dialogue: 0,0:11:27.07,0:11:27.19,Default,,0,0,0,,as
+Dialogue: 0,0:11:27.20,0:11:27.79,Default,,0,0,0,,well
+Dialogue: 0,0:11:27.80,0:11:27.95,Default,,0,0,0,,oh
+Dialogue: 0,0:11:27.95,0:11:28.39,Default,,0,0,0,,my
+Dialogue: 0,0:11:28.39,0:11:29.55,Default,,0,0,0,,God
+Dialogue: 0,0:11:29.56,0:11:29.74,Default,,0,0,0,,it's
+Dialogue: 0,0:11:29.76,0:11:30.31,Default,,0,0,0,,unbelievable
+Dialogue: 0,0:11:30.32,0:11:30.43,Default,,0,0,0,,it
+Dialogue: 0,0:11:30.44,0:11:30.59,Default,,0,0,0,,just
+Dialogue: 0,0:11:30.60,0:11:30.87,Default,,0,0,0,,looks
+Dialogue: 0,0:11:30.88,0:11:31.11,Default,,0,0,0,,so
+Dialogue: 0,0:11:31.12,0:11:31.31,Default,,0,0,0,,cool
+Dialogue: 0,0:11:31.32,0:11:31.42,Default,,0,0,0,,and
+Dialogue: 0,0:11:31.44,0:11:31.55,Default,,0,0,0,,in
+Dialogue: 0,0:11:31.56,0:11:31.79,Default,,0,0,0,,this
+Dialogue: 0,0:11:31.80,0:11:32.43,Default,,0,0,0,,space
+Dialogue: 0,0:11:32.44,0:11:32.55,Default,,0,0,0,,it
+Dialogue: 0,0:11:32.56,0:11:32.83,Default,,0,0,0,,looks
+Dialogue: 0,0:11:32.83,0:11:33.23,Default,,0,0,0,,absolutely
+Dialogue: 0,0:11:33.24,0:11:33.70,Default,,0,0,0,,Mega
+Dialogue: 0,0:11:33.72,0:11:33.91,Default,,0,0,0,,very
+Dialogue: 0,0:11:33.92,0:11:34.27,Default,,0,0,0,,happy
+Dialogue: 0,0:11:34.27,0:11:34.35,Default,,0,0,0,,and
+Dialogue: 0,0:11:34.36,0:11:34.47,Default,,0,0,0,,the
+Dialogue: 0,0:11:34.48,0:11:34.67,Default,,0,0,0,,Sim
+Dialogue: 0,0:11:34.68,0:11:35.07,Default,,0,0,0,,upstairs
+Dialogue: 0,0:11:35.07,0:11:35.23,Default,,0,0,0,,as
+Dialogue: 0,0:11:35.24,0:11:35.86,Default,,0,0,0,,well
+Dialogue: 0,0:11:35.88,0:11:36.03,Default,,0,0,0,,the
+Dialogue: 0,0:11:36.04,0:11:36.39,Default,,0,0,0,,blade
+Dialogue: 0,0:11:36.39,0:11:37.27,Default,,0,0,0,,upstairs
+Dialogue: 0,0:11:37.27,0:11:37.43,Default,,0,0,0,,I
+Dialogue: 0,0:11:37.44,0:11:38.07,Default,,0,0,0,,just
+Dialogue: 0,0:11:38.07,0:11:38.19,Default,,0,0,0,,one
+Dialogue: 0,0:11:38.20,0:11:38.31,Default,,0,0,0,,of
+Dialogue: 0,0:11:38.32,0:11:38.38,Default,,0,0,0,,the
+Dialogue: 0,0:11:38.39,0:11:38.67,Default,,0,0,0,,reasons
+Dialogue: 0,0:11:38.68,0:11:38.79,Default,,0,0,0,,I
+Dialogue: 0,0:11:38.80,0:11:38.91,Default,,0,0,0,,was
+Dialogue: 0,0:11:38.92,0:11:39.03,Default,,0,0,0,,so
+Dialogue: 0,0:11:39.04,0:11:39.27,Default,,0,0,0,,late
+Dialogue: 0,0:11:39.27,0:11:39.51,Default,,0,0,0,,today
+Dialogue: 0,0:11:39.51,0:11:39.67,Default,,0,0,0,,was
+Dialogue: 0,0:11:39.68,0:11:39.75,Default,,0,0,0,,I
+Dialogue: 0,0:11:39.76,0:11:39.86,Default,,0,0,0,,did
+Dialogue: 0,0:11:39.88,0:11:39.99,Default,,0,0,0,,get
+Dialogue: 0,0:11:40.00,0:11:40.03,Default,,0,0,0,,a
+Dialogue: 0,0:11:40.04,0:11:40.19,Default,,0,0,0,,bit
+Dialogue: 0,0:11:40.20,0:11:40.51,Default,,0,0,0,,distracted
+Dialogue: 0,0:11:40.51,0:11:40.55,Default,,0,0,0,,on
+Dialogue: 0,0:11:40.56,0:11:40.67,Default,,0,0,0,,a
+Dialogue: 0,0:11:40.68,0:11:40.87,Default,,0,0,0,,Sim
+Dialogue: 0,0:11:40.88,0:11:41.07,Default,,0,0,0,,at
+Dialogue: 0,0:11:41.07,0:11:41.70,Default,,0,0,0,,podium
+Dialogue: 0,0:11:41.72,0:11:42.23,Default,,0,0,0,,so
+Dialogue: 0,0:11:42.24,0:11:42.27,Default,,0,0,0,,I
+Dialogue: 0,0:11:42.27,0:11:42.47,Default,,0,0,0,,should
+Dialogue: 0,0:11:42.48,0:11:42.67,Default,,0,0,0,,probably
+Dialogue: 0,0:11:42.68,0:11:42.99,Default,,0,0,0,,steer
+Dialogue: 0,0:11:43.00,0:11:43.35,Default,,0,0,0,,clear
+Dialogue: 0,0:11:43.36,0:11:44.06,Default,,0,0,0,,that
+Dialogue: 0,0:11:44.07,0:11:44.31,Default,,0,0,0,,I'll
+Dialogue: 0,0:11:44.32,0:11:44.59,Default,,0,0,0,,never
+Dialogue: 0,0:11:44.60,0:11:44.75,Default,,0,0,0,,make
+Dialogue: 0,0:11:44.76,0:11:45.39,Default,,0,0,0,,it
+Dialogue: 0,0:11:45.39,0:11:46.39,Default,,0,0,0,,home
+Dialogue: 0,0:11:46.39,0:11:46.59,Default,,0,0,0,,um
+Dialogue: 0,0:11:46.60,0:11:46.75,Default,,0,0,0,,so
+Dialogue: 0,0:11:46.76,0:11:46.91,Default,,0,0,0,,yeah
+Dialogue: 0,0:11:46.92,0:11:47.27,Default,,0,0,0,,so
+Dialogue: 0,0:11:47.27,0:11:47.54,Default,,0,0,0,,um
+Dialogue: 0,0:11:47.56,0:11:47.75,Default,,0,0,0,,so
+Dialogue: 0,0:11:47.76,0:11:47.87,Default,,0,0,0,,the
+Dialogue: 0,0:11:47.88,0:11:48.47,Default,,0,0,0,,bar
+Dialogue: 0,0:11:48.48,0:11:48.67,Default,,0,0,0,,bar
+Dialogue: 0,0:11:48.68,0:11:48.79,Default,,0,0,0,,at
+Dialogue: 0,0:11:48.80,0:11:48.91,Default,,0,0,0,,the
+Dialogue: 0,0:11:48.92,0:11:49.51,Default,,0,0,0,,end
+Dialogue: 0,0:11:49.51,0:11:49.71,Default,,0,0,0,,big
+Dialogue: 0,0:11:49.72,0:11:50.06,Default,,0,0,0,,commercial
+Dialogue: 0,0:11:50.07,0:11:50.63,Default,,0,0,0,,P
+Dialogue: 0,0:11:50.63,0:11:50.91,Default,,0,0,0,,the
+Dialogue: 0,0:11:50.92,0:11:51.07,Default,,0,0,0,,other
+Dialogue: 0,0:11:51.07,0:11:51.47,Default,,0,0,0,,end
+Dialogue: 0,0:11:51.48,0:11:51.63,Default,,0,0,0,,and
+Dialogue: 0,0:11:51.63,0:11:51.75,Default,,0,0,0,,this
+Dialogue: 0,0:11:51.76,0:11:51.99,Default,,0,0,0,,bace
+Dialogue: 0,0:11:52.00,0:11:52.14,Default,,0,0,0,,is
+Dialogue: 0,0:11:52.16,0:11:52.39,Default,,0,0,0,,basically
+Dialogue: 0,0:11:52.39,0:11:52.51,Default,,0,0,0,,going
+Dialogue: 0,0:11:52.51,0:11:52.55,Default,,0,0,0,,to
+Dialogue: 0,0:11:52.56,0:11:52.67,Default,,0,0,0,,be
+Dialogue: 0,0:11:52.68,0:11:53.03,Default,,0,0,0,,movable
+Dialogue: 0,0:11:53.04,0:11:53.15,Default,,0,0,0,,so
+Dialogue: 0,0:11:53.16,0:11:53.27,Default,,0,0,0,,if
+Dialogue: 0,0:11:53.27,0:11:53.34,Default,,0,0,0,,you
+Dialogue: 0,0:11:53.36,0:11:53.47,Default,,0,0,0,,want
+Dialogue: 0,0:11:53.48,0:11:53.55,Default,,0,0,0,,a
+Dialogue: 0,0:11:53.56,0:11:53.83,Default,,0,0,0,,table
+Dialogue: 0,0:11:53.83,0:11:54.31,Default,,0,0,0,,of
+Dialogue: 0,0:11:54.32,0:11:54.63,Default,,0,0,0,,five
+Dialogue: 0,0:11:54.63,0:11:55.15,Default,,0,0,0,,tables
+Dialogue: 0,0:11:55.16,0:11:55.51,Default,,0,0,0,,of
+Dialogue: 0,0:11:55.51,0:11:55.83,Default,,0,0,0,,10
+Dialogue: 0,0:11:55.83,0:11:55.90,Default,,0,0,0,,you
+Dialogue: 0,0:11:55.92,0:11:56.07,Default,,0,0,0,,can
+Dialogue: 0,0:11:56.07,0:11:56.23,Default,,0,0,0,,do
+Dialogue: 0,0:11:56.24,0:11:56.35,Default,,0,0,0,,that
+Dialogue: 0,0:11:56.36,0:11:56.43,Default,,0,0,0,,if
+Dialogue: 0,0:11:56.44,0:11:56.51,Default,,0,0,0,,you
+Dialogue: 0,0:11:56.51,0:11:56.71,Default,,0,0,0,,want
+Dialogue: 0,0:11:56.72,0:11:56.87,Default,,0,0,0,,more
+Dialogue: 0,0:11:56.88,0:11:57.18,Default,,0,0,0,,sitting
+Dialogue: 0,0:11:57.20,0:11:57.95,Default,,0,0,0,,area
+Dialogue: 0,0:11:57.95,0:11:58.19,Default,,0,0,0,,so
+Dialogue: 0,0:11:58.20,0:11:58.35,Default,,0,0,0,,the
+Dialogue: 0,0:11:58.36,0:11:58.55,Default,,0,0,0,,space
+Dialogue: 0,0:11:58.56,0:11:58.63,Default,,0,0,0,,is
+Dialogue: 0,0:11:58.63,0:11:58.71,Default,,0,0,0,,going
+Dialogue: 0,0:11:58.72,0:11:58.79,Default,,0,0,0,,to
+Dialogue: 0,0:11:58.80,0:11:58.87,Default,,0,0,0,,be
+Dialogue: 0,0:11:58.88,0:11:58.99,Default,,0,0,0,,able
+Dialogue: 0,0:11:59.00,0:11:59.22,Default,,0,0,0,,to
+Dialogue: 0,0:11:59.24,0:11:59.35,Default,,0,0,0,,to
+Dialogue: 0,0:11:59.36,0:11:59.55,Default,,0,0,0,,move
+Dialogue: 0,0:11:59.56,0:11:59.99,Default,,0,0,0,,around
+Dialogue: 0,0:12:00.00,0:12:00.59,Default,,0,0,0,,unbelievable
+Dialogue: 0,0:12:00.60,0:12:00.71,Default,,0,0,0,,it
+Dialogue: 0,0:12:00.72,0:12:00.94,Default,,0,0,0,,looks
+Dialogue: 0,0:12:00.95,0:12:01.19,Default,,0,0,0,,great
+Dialogue: 0,0:12:01.20,0:12:01.59,Default,,0,0,0,,absolutely
+Dialogue: 0,0:12:01.60,0:12:01.79,Default,,0,0,0,,super
+Dialogue: 0,0:12:01.80,0:12:01.95,Default,,0,0,0,,cool
+Dialogue: 0,0:12:01.95,0:12:02.11,Default,,0,0,0,,we'll
+Dialogue: 0,0:12:02.12,0:12:02.26,Default,,0,0,0,,catch
+Dialogue: 0,0:12:02.27,0:12:02.39,Default,,0,0,0,,up
+Dialogue: 0,0:12:02.39,0:12:02.51,Default,,0,0,0,,we'll
+Dialogue: 0,0:12:02.51,0:12:02.59,Default,,0,0,0,,have
+Dialogue: 0,0:12:02.60,0:12:02.67,Default,,0,0,0,,a
+Dialogue: 0,0:12:02.68,0:12:02.79,Default,,0,0,0,,little
+Dialogue: 0,0:12:02.80,0:12:03.15,Default,,0,0,0,,chatback
+Dialogue: 0,0:12:03.16,0:12:03.38,Default,,0,0,0,,coffee
+Dialogue: 0,0:12:03.39,0:12:03.47,Default,,0,0,0,,and
+Dialogue: 0,0:12:03.48,0:12:03.55,Default,,0,0,0,,then
+Dialogue: 0,0:12:03.56,0:12:03.63,Default,,0,0,0,,I
+Dialogue: 0,0:12:03.63,0:12:03.71,Default,,0,0,0,,want
+Dialogue: 0,0:12:03.72,0:12:03.79,Default,,0,0,0,,to
+Dialogue: 0,0:12:03.80,0:12:04.03,Default,,0,0,0,,show
+Dialogue: 0,0:12:04.04,0:12:04.55,Default,,0,0,0,,people
+Dialogue: 0,0:12:04.56,0:12:04.78,Default,,0,0,0,,your
+Dialogue: 0,0:12:04.80,0:12:05.19,Default,,0,0,0,,other
+Dialogue: 0,0:12:05.20,0:12:05.91,Default,,0,0,0,,new
+Dialogue: 0,0:12:05.92,0:12:06.63,Default,,0,0,0,,acquisition
+Dialogue: 0,0:12:06.63,0:12:06.83,Default,,0,0,0,,we'll
+Dialogue: 0,0:12:06.83,0:12:06.99,Default,,0,0,0,,leave
+Dialogue: 0,0:12:07.00,0:12:07.22,Default,,0,0,0,,it
+Dialogue: 0,0:12:07.24,0:12:08.53,Default,,0,0,0,,that
+Dialogue: 0,0:12:08.55,0:12:29.34,Default,,0,0,0,,[Music]
+Dialogue: 0,0:12:29.36,0:12:29.71,Default,,0,0,0,,now
+Dialogue: 0,0:12:29.72,0:12:30.07,Default,,0,0,0,,now
+Dialogue: 0,0:12:30.07,0:12:30.43,Default,,0,0,0,,this
+Dialogue: 0,0:12:30.44,0:12:31.27,Default,,0,0,0,,is
+Dialogue: 0,0:12:31.27,0:12:31.63,Default,,0,0,0,,right
+Dialogue: 0,0:12:31.63,0:12:31.87,Default,,0,0,0,,up
+Dialogue: 0,0:12:31.88,0:12:32.11,Default,,0,0,0,,my
+Dialogue: 0,0:12:32.12,0:12:33.11,Default,,0,0,0,,street
+Dialogue: 0,0:12:33.12,0:12:33.26,Default,,0,0,0,,my
+Dialogue: 0,0:12:33.27,0:12:33.51,Default,,0,0,0,,new
+Dialogue: 0,0:12:33.51,0:12:34.03,Default,,0,0,0,,baby
+Dialogue: 0,0:12:34.04,0:12:34.11,Default,,0,0,0,,I
+Dialogue: 0,0:12:34.12,0:12:34.43,Default,,0,0,0,,mean
+Dialogue: 0,0:12:34.44,0:12:34.63,Default,,0,0,0,,I
+Dialogue: 0,0:12:34.63,0:12:34.99,Default,,0,0,0,,adore
+Dialogue: 0,0:12:35.00,0:12:35.27,Default,,0,0,0,,this
+Dialogue: 0,0:12:35.27,0:12:35.39,Default,,0,0,0,,can
+Dialogue: 0,0:12:35.39,0:12:35.51,Default,,0,0,0,,we
+Dialogue: 0,0:12:35.51,0:12:35.62,Default,,0,0,0,,just
+Dialogue: 0,0:12:35.63,0:12:35.79,Default,,0,0,0,,point
+Dialogue: 0,0:12:35.80,0:12:36.03,Default,,0,0,0,,out
+Dialogue: 0,0:12:36.04,0:12:36.19,Default,,0,0,0,,for
+Dialogue: 0,0:12:36.19,0:12:36.23,Default,,0,0,0,,I
+Dialogue: 0,0:12:36.24,0:12:36.35,Default,,0,0,0,,mean
+Dialogue: 0,0:12:36.36,0:12:36.43,Default,,0,0,0,,it's
+Dialogue: 0,0:12:36.44,0:12:36.51,Default,,0,0,0,,a
+Dialogue: 0,0:12:36.51,0:12:36.75,Default,,0,0,0,,lovely
+Dialogue: 0,0:12:36.76,0:12:36.98,Default,,0,0,0,,spec
+Dialogue: 0,0:12:37.00,0:12:37.31,Default,,0,0,0,,anyway
+Dialogue: 0,0:12:37.32,0:12:37.43,Default,,0,0,0,,but
+Dialogue: 0,0:12:37.44,0:12:37.55,Default,,0,0,0,,the
+Dialogue: 0,0:12:37.56,0:12:37.71,Default,,0,0,0,,thing
+Dialogue: 0,0:12:37.72,0:12:37.87,Default,,0,0,0,,that
+Dialogue: 0,0:12:37.88,0:12:38.11,Default,,0,0,0,,makes
+Dialogue: 0,0:12:38.12,0:12:38.43,Default,,0,0,0,,it
+Dialogue: 0,0:12:38.44,0:12:38.62,Default,,0,0,0,,for
+Dialogue: 0,0:12:38.63,0:12:38.83,Default,,0,0,0,,me
+Dialogue: 0,0:12:38.83,0:12:38.95,Default,,0,0,0,,at
+Dialogue: 0,0:12:38.95,0:12:39.39,Default,,0,0,0,,least
+Dialogue: 0,0:12:39.39,0:12:40.27,Default,,0,0,0,,silver
+Dialogue: 0,0:12:40.27,0:12:40.51,Default,,0,0,0,,well
+Dialogue: 0,0:12:40.51,0:12:40.67,Default,,0,0,0,,the
+Dialogue: 0,0:12:40.68,0:12:41.19,Default,,0,0,0,,interior
+Dialogue: 0,0:12:41.19,0:12:41.30,Default,,0,0,0,,oh
+Dialogue: 0,0:12:41.32,0:12:41.71,Default,,0,0,0,,Twiggy
+Dialogue: 0,0:12:41.72,0:12:41.95,Default,,0,0,0,,barking
+Dialogue: 0,0:12:41.95,0:12:42.07,Default,,0,0,0,,at
+Dialogue: 0,0:12:42.07,0:12:42.31,Default,,0,0,0,,something
+Dialogue: 0,0:12:42.32,0:12:42.63,Default,,0,0,0,,Twiggy
+Dialogue: 0,0:12:42.63,0:12:42.70,Default,,0,0,0,,what
+Dialogue: 0,0:12:42.72,0:12:42.87,Default,,0,0,0,,don't
+Dialogue: 0,0:12:42.88,0:12:43.03,Default,,0,0,0,,you
+Dialogue: 0,0:12:43.04,0:12:44.03,Default,,0,0,0,,like
+Dialogue: 0,0:12:44.04,0:12:44.15,Default,,0,0,0,,the
+Dialogue: 0,0:12:44.16,0:12:44.59,Default,,0,0,0,,Sheep
+Dialogue: 0,0:12:44.60,0:12:44.83,Default,,0,0,0,,she's
+Dialogue: 0,0:12:44.83,0:12:44.95,Default,,0,0,0,,like
+Dialogue: 0,0:12:44.95,0:12:45.18,Default,,0,0,0,,just
+Dialogue: 0,0:12:45.19,0:12:45.71,Default,,0,0,0,,growling
+Dialogue: 0,0:12:45.72,0:12:45.87,Default,,0,0,0,,or
+Dialogue: 0,0:12:45.88,0:12:45.99,Default,,0,0,0,,the
+Dialogue: 0,0:12:46.00,0:12:46.31,Default,,0,0,0,,pony
+Dialogue: 0,0:12:46.32,0:12:46.47,Default,,0,0,0,,or
+Dialogue: 0,0:12:46.48,0:12:46.67,Default,,0,0,0,,the
+Dialogue: 0,0:12:46.68,0:12:47.11,Default,,0,0,0,,deer
+Dialogue: 0,0:12:47.12,0:12:47.27,Default,,0,0,0,,or
+Dialogue: 0,0:12:47.27,0:12:47.62,Default,,0,0,0,,the
+Dialogue: 0,0:12:47.63,0:12:48.15,Default,,0,0,0,,car
+Dialogue: 0,0:12:48.16,0:12:48.23,Default,,0,0,0,,or
+Dialogue: 0,0:12:48.24,0:12:48.39,Default,,0,0,0,,the
+Dialogue: 0,0:12:48.39,0:12:48.67,Default,,0,0,0,,car
+Dialogue: 0,0:12:48.68,0:12:50.78,Default,,0,0,0,,trailer
+Dialogue: 0,0:12:50.80,0:12:51.79,Default,,0,0,0,,Twiggy
+Dialogue: 0,0:12:51.80,0:12:52.79,Default,,0,0,0,,okay
+Dialogue: 0,0:12:52.80,0:12:53.15,Default,,0,0,0,,cool
+Dialogue: 0,0:12:53.16,0:12:53.43,Default,,0,0,0,,cool
+Dialogue: 0,0:12:53.44,0:12:54.03,Default,,0,0,0,,mate
+Dialogue: 0,0:12:54.04,0:12:54.55,Default,,0,0,0,,um
+Dialogue: 0,0:12:54.56,0:12:54.63,Default,,0,0,0,,the
+Dialogue: 0,0:12:54.63,0:12:54.86,Default,,0,0,0,,BL
+Dialogue: 0,0:12:54.88,0:12:55.87,Default,,0,0,0,,inter
+Dialogue: 0,0:12:55.88,0:12:56.03,Default,,0,0,0,,the
+Dialogue: 0,0:12:56.04,0:12:56.63,Default,,0,0,0,,blue
+Dialogue: 0,0:12:56.63,0:12:56.83,Default,,0,0,0,,with
+Dialogue: 0,0:12:56.83,0:12:57.07,Default,,0,0,0,,the
+Dialogue: 0,0:12:57.07,0:12:57.67,Default,,0,0,0,,red
+Dialogue: 0,0:12:57.68,0:12:57.83,Default,,0,0,0,,were
+Dialogue: 0,0:12:57.83,0:12:57.98,Default,,0,0,0,,you
+Dialogue: 0,0:12:58.00,0:12:58.23,Default,,0,0,0,,waiting
+Dialogue: 0,0:12:58.24,0:12:58.39,Default,,0,0,0,,for
+Dialogue: 0,0:12:58.39,0:12:58.55,Default,,0,0,0,,a
+Dialogue: 0,0:12:58.56,0:13:01.02,Default,,0,0,0,,particular
+Dialogue: 0,0:13:01.04,0:13:01.11,Default,,0,0,0,,I'm
+Dialogue: 0,0:13:01.12,0:13:01.23,Default,,0,0,0,,a
+Dialogue: 0,0:13:01.24,0:13:01.55,Default,,0,0,0,,silver
+Dialogue: 0,0:13:01.56,0:13:01.79,Default,,0,0,0,,car
+Dialogue: 0,0:13:01.80,0:13:02.47,Default,,0,0,0,,man
+Dialogue: 0,0:13:02.48,0:13:02.59,Default,,0,0,0,,I
+Dialogue: 0,0:13:02.60,0:13:02.75,Default,,0,0,0,,don't
+Dialogue: 0,0:13:02.76,0:13:02.87,Default,,0,0,0,,like
+Dialogue: 0,0:13:02.88,0:13:02.98,Default,,0,0,0,,red
+Dialogue: 0,0:13:03.00,0:13:03.71,Default,,0,0,0,,Ferraris
+Dialogue: 0,0:13:03.72,0:13:03.99,Default,,0,0,0,,okay
+Dialogue: 0,0:13:04.00,0:13:04.79,Default,,0,0,0,,personally
+Dialogue: 0,0:13:04.80,0:13:04.91,Default,,0,0,0,,um
+Dialogue: 0,0:13:04.92,0:13:05.03,Default,,0,0,0,,I
+Dialogue: 0,0:13:05.04,0:13:05.14,Default,,0,0,0,,like
+Dialogue: 0,0:13:05.16,0:13:05.47,Default,,0,0,0,,something
+Dialogue: 0,0:13:05.48,0:13:05.59,Default,,0,0,0,,a
+Dialogue: 0,0:13:05.60,0:13:05.75,Default,,0,0,0,,little
+Dialogue: 0,0:13:05.76,0:13:05.91,Default,,0,0,0,,bit
+Dialogue: 0,0:13:05.92,0:13:06.11,Default,,0,0,0,,more
+Dialogue: 0,0:13:06.12,0:13:06.27,Default,,0,0,0,,sort
+Dialogue: 0,0:13:06.27,0:13:06.38,Default,,0,0,0,,of
+Dialogue: 0,0:13:06.39,0:13:06.67,Default,,0,0,0,,quiet
+Dialogue: 0,0:13:06.68,0:13:06.91,Default,,0,0,0,,especially
+Dialogue: 0,0:13:06.92,0:13:06.99,Default,,0,0,0,,on
+Dialogue: 0,0:13:07.00,0:13:07.07,Default,,0,0,0,,the
+Dialogue: 0,0:13:07.07,0:13:07.31,Default,,0,0,0,,big
+Dialogue: 0,0:13:07.32,0:13:08.31,Default,,0,0,0,,v12s
+Dialogue: 0,0:13:08.32,0:13:08.55,Default,,0,0,0,,so
+Dialogue: 0,0:13:08.56,0:13:08.70,Default,,0,0,0,,our
+Dialogue: 0,0:13:08.72,0:13:09.51,Default,,0,0,0,,Gentoo
+Dialogue: 0,0:13:09.51,0:13:09.63,Default,,0,0,0,,came
+Dialogue: 0,0:13:09.63,0:13:10.23,Default,,0,0,0,,up
+Dialogue: 0,0:13:10.24,0:13:10.31,Default,,0,0,0,,with
+Dialogue: 0,0:13:10.32,0:13:11.15,Default,,0,0,0,,the
+Dialogue: 0,0:13:11.16,0:13:11.27,Default,,0,0,0,,it's
+Dialogue: 0,0:13:11.27,0:13:11.35,Default,,0,0,0,,the
+Dialogue: 0,0:13:11.36,0:13:11.46,Default,,0,0,0,,same
+Dialogue: 0,0:13:11.48,0:13:11.67,Default,,0,0,0,,color
+Dialogue: 0,0:13:11.68,0:13:11.79,Default,,0,0,0,,as
+Dialogue: 0,0:13:11.80,0:13:11.91,Default,,0,0,0,,that
+Dialogue: 0,0:13:11.92,0:13:12.15,Default,,0,0,0,,Chan
+Dialogue: 0,0:13:12.16,0:13:12.55,Default,,0,0,0,,shali
+Dialogue: 0,0:13:12.56,0:13:12.63,Default,,0,0,0,,which
+Dialogue: 0,0:13:12.63,0:13:12.98,Default,,0,0,0,,was
+Dialogue: 0,0:13:13.00,0:13:13.19,Default,,0,0,0,,around
+Dialogue: 0,0:13:13.19,0:13:13.31,Default,,0,0,0,,here
+Dialogue: 0,0:13:13.32,0:13:13.39,Default,,0,0,0,,a
+Dialogue: 0,0:13:13.39,0:13:13.55,Default,,0,0,0,,while
+Dialogue: 0,0:13:13.56,0:13:13.83,Default,,0,0,0,,ago
+Dialogue: 0,0:13:13.83,0:13:14.23,Default,,0,0,0,,right
+Dialogue: 0,0:13:14.24,0:13:14.59,Default,,0,0,0,,yeah
+Dialogue: 0,0:13:14.60,0:13:14.74,Default,,0,0,0,,yeah
+Dialogue: 0,0:13:14.76,0:13:14.87,Default,,0,0,0,,and
+Dialogue: 0,0:13:14.88,0:13:15.03,Default,,0,0,0,,it's
+Dialogue: 0,0:13:15.04,0:13:15.27,Default,,0,0,0,,such
+Dialogue: 0,0:13:15.27,0:13:15.47,Default,,0,0,0,,good
+Dialogue: 0,0:13:15.48,0:13:15.91,Default,,0,0,0,,paintwork
+Dialogue: 0,0:13:15.92,0:13:15.99,Default,,0,0,0,,I
+Dialogue: 0,0:13:16.00,0:13:16.51,Default,,0,0,0,,mean
+Dialogue: 0,0:13:16.51,0:13:16.58,Default,,0,0,0,,for
+Dialogue: 0,0:13:16.60,0:13:16.75,Default,,0,0,0,,me
+Dialogue: 0,0:13:16.76,0:13:17.07,Default,,0,0,0,,FR
+Dialogue: 0,0:13:17.07,0:13:17.47,Default,,0,0,0,,paintwork
+Dialogue: 0,0:13:17.48,0:13:17.63,Default,,0,0,0,,is
+Dialogue: 0,0:13:17.63,0:13:17.79,Default,,0,0,0,,the
+Dialogue: 0,0:13:17.80,0:13:18.71,Default,,0,0,0,,best
+Dialogue: 0,0:13:18.72,0:13:18.83,Default,,0,0,0,,and
+Dialogue: 0,0:13:18.83,0:13:18.90,Default,,0,0,0,,it
+Dialogue: 0,0:13:18.92,0:13:19.11,Default,,0,0,0,,hasn't
+Dialogue: 0,0:13:19.12,0:13:19.23,Default,,0,0,0,,even
+Dialogue: 0,0:13:19.24,0:13:19.35,Default,,0,0,0,,been
+Dialogue: 0,0:13:19.36,0:13:19.71,Default,,0,0,0,,ceramic
+Dialogue: 0,0:13:19.72,0:13:20.03,Default,,0,0,0,,coated
+Dialogue: 0,0:13:20.04,0:13:20.47,Default,,0,0,0,,yet
+Dialogue: 0,0:13:20.48,0:13:20.66,Default,,0,0,0,,oh
+Dialogue: 0,0:13:20.68,0:13:20.95,Default,,0,0,0,,my
+Dialogue: 0,0:13:20.95,0:13:21.23,Default,,0,0,0,,God
+Dialogue: 0,0:13:21.24,0:13:21.35,Default,,0,0,0,,in
+Dialogue: 0,0:13:21.36,0:13:21.51,Default,,0,0,0,,the
+Dialogue: 0,0:13:21.51,0:13:21.95,Default,,0,0,0,,sunlight
+Dialogue: 0,0:13:21.95,0:13:22.19,Default,,0,0,0,,like
+Dialogue: 0,0:13:22.19,0:13:22.47,Default,,0,0,0,,this
+Dialogue: 0,0:13:22.48,0:13:23.42,Default,,0,0,0,,it
+Dialogue: 0,0:13:23.44,0:13:24.43,Default,,0,0,0,,looks
+Dialogue: 0,0:13:24.44,0:13:24.51,Default,,0,0,0,,I'm
+Dialogue: 0,0:13:24.51,0:13:24.59,Default,,0,0,0,,going
+Dialogue: 0,0:13:24.60,0:13:24.67,Default,,0,0,0,,to
+Dialogue: 0,0:13:24.68,0:13:24.75,Default,,0,0,0,,do
+Dialogue: 0,0:13:24.76,0:13:24.83,Default,,0,0,0,,a
+Dialogue: 0,0:13:24.83,0:13:24.99,Default,,0,0,0,,few
+Dialogue: 0,0:13:25.00,0:13:25.11,Default,,0,0,0,,things
+Dialogue: 0,0:13:25.12,0:13:25.27,Default,,0,0,0,,to
+Dialogue: 0,0:13:25.27,0:13:25.46,Default,,0,0,0,,it
+Dialogue: 0,0:13:25.48,0:13:25.59,Default,,0,0,0,,get
+Dialogue: 0,0:13:25.60,0:13:25.71,Default,,0,0,0,,a
+Dialogue: 0,0:13:25.72,0:13:25.91,Default,,0,0,0,,break
+Dialogue: 0,0:13:25.92,0:13:26.27,Default,,0,0,0,,calipers
+Dialogue: 0,0:13:26.27,0:13:26.35,Default,,0,0,0,,I
+Dialogue: 0,0:13:26.36,0:13:26.47,Default,,0,0,0,,think
+Dialogue: 0,0:13:26.48,0:13:26.59,Default,,0,0,0,,it
+Dialogue: 0,0:13:26.60,0:13:27.10,Default,,0,0,0,,needs
+Dialogue: 0,0:13:27.12,0:13:27.43,Default,,0,0,0,,okay
+Dialogue: 0,0:13:27.44,0:13:27.59,Default,,0,0,0,,and
+Dialogue: 0,0:13:27.60,0:13:27.91,Default,,0,0,0,,maybe
+Dialogue: 0,0:13:27.92,0:13:27.99,Default,,0,0,0,,a
+Dialogue: 0,0:13:28.00,0:13:28.11,Default,,0,0,0,,bit
+Dialogue: 0,0:13:28.12,0:13:28.23,Default,,0,0,0,,of
+Dialogue: 0,0:13:28.24,0:13:28.43,Default,,0,0,0,,a
+Dialogue: 0,0:13:28.44,0:13:28.91,Default,,0,0,0,,stripe
+Dialogue: 0,0:13:28.92,0:13:29.10,Default,,0,0,0,,Maybe
+Dialogue: 0,0:13:29.12,0:13:29.31,Default,,0,0,0,,maybe
+Dialogue: 0,0:13:29.32,0:13:29.51,Default,,0,0,0,,a
+Dialogue: 0,0:13:29.51,0:13:29.75,Default,,0,0,0,,cross
+Dialogue: 0,0:13:29.76,0:13:30.31,Default,,0,0,0,,it
+Dialogue: 0,0:13:30.32,0:13:30.43,Default,,0,0,0,,uh
+Dialogue: 0,0:13:30.44,0:13:30.99,Default,,0,0,0,,tdf
+Dialogue: 0,0:13:31.00,0:13:31.42,Default,,0,0,0,,Heritage
+Dialogue: 0,0:13:31.44,0:13:31.95,Default,,0,0,0,,delivery
+Dialogue: 0,0:13:31.95,0:13:32.11,Default,,0,0,0,,or
+Dialogue: 0,0:13:32.12,0:13:32.35,Default,,0,0,0,,maybe
+Dialogue: 0,0:13:32.36,0:13:32.51,Default,,0,0,0,,on
+Dialogue: 0,0:13:32.51,0:13:33.07,Default,,0,0,0,,top
+Dialogue: 0,0:13:33.07,0:13:33.15,Default,,0,0,0,,I
+Dialogue: 0,0:13:33.16,0:13:33.39,Default,,0,0,0,,wouldn't
+Dialogue: 0,0:13:33.39,0:13:33.54,Default,,0,0,0,,go
+Dialogue: 0,0:13:33.56,0:13:33.71,Default,,0,0,0,,on
+Dialogue: 0,0:13:33.72,0:13:33.99,Default,,0,0,0,,top
+Dialogue: 0,0:13:34.00,0:13:34.79,Default,,0,0,0,,personally
+Dialogue: 0,0:13:34.80,0:13:34.91,Default,,0,0,0,,but
+Dialogue: 0,0:13:34.92,0:13:35.03,Default,,0,0,0,,I
+Dialogue: 0,0:13:35.04,0:13:35.51,Default,,0,0,0,,think
+Dialogue: 0,0:13:35.51,0:13:36.23,Default,,0,0,0,,the
+Dialogue: 0,0:13:36.24,0:13:36.83,Default,,0,0,0,,the
+Dialogue: 0,0:13:36.83,0:13:37.50,Default,,0,0,0,,B
+Dialogue: 0,0:13:37.51,0:13:37.67,Default,,0,0,0,,keeping
+Dialogue: 0,0:13:37.68,0:13:37.75,Default,,0,0,0,,the
+Dialogue: 0,0:13:37.76,0:13:37.95,Default,,0,0,0,,wheel
+Dialogue: 0,0:13:37.95,0:13:38.23,Default,,0,0,0,,silver
+Dialogue: 0,0:13:38.24,0:13:38.35,Default,,0,0,0,,as
+Dialogue: 0,0:13:38.36,0:13:38.91,Default,,0,0,0,,well
+Dialogue: 0,0:13:38.92,0:13:39.19,Default,,0,0,0,,so
+Dialogue: 0,0:13:39.19,0:13:39.46,Default,,0,0,0,,nice
+Dialogue: 0,0:13:39.48,0:13:40.07,Default,,0,0,0,,congratulations
+Dialogue: 0,0:13:40.07,0:13:40.70,Default,,0,0,0,,that
+Dialogue: 0,0:13:40.72,0:13:41.71,Default,,0,0,0,,is
+Dialogue: 0,0:13:41.72,0:13:41.79,Default,,0,0,0,,did
+Dialogue: 0,0:13:41.80,0:13:41.87,Default,,0,0,0,,you
+Dialogue: 0,0:13:41.88,0:13:42.03,Default,,0,0,0,,have
+Dialogue: 0,0:13:42.04,0:13:42.35,Default,,0,0,0,,F12
+Dialogue: 0,0:13:42.36,0:13:42.43,Default,,0,0,0,,or
+Dialogue: 0,0:13:42.44,0:13:42.63,Default,,0,0,0,,anything
+Dialogue: 0,0:13:42.63,0:13:42.74,Default,,0,0,0,,like
+Dialogue: 0,0:13:42.76,0:13:42.87,Default,,0,0,0,,that
+Dialogue: 0,0:13:42.88,0:13:43.03,Default,,0,0,0,,did
+Dialogue: 0,0:13:43.04,0:13:43.11,Default,,0,0,0,,have
+Dialogue: 0,0:13:43.12,0:13:43.27,Default,,0,0,0,,you
+Dialogue: 0,0:13:43.27,0:13:43.35,Default,,0,0,0,,I
+Dialogue: 0,0:13:43.36,0:13:43.43,Default,,0,0,0,,had
+Dialogue: 0,0:13:43.44,0:13:43.51,Default,,0,0,0,,an
+Dialogue: 0,0:13:43.51,0:13:44.19,Default,,0,0,0,,F12
+Dialogue: 0,0:13:44.19,0:13:44.27,Default,,0,0,0,,one
+Dialogue: 0,0:13:44.27,0:13:44.34,Default,,0,0,0,,of
+Dialogue: 0,0:13:44.36,0:13:44.47,Default,,0,0,0,,those
+Dialogue: 0,0:13:44.48,0:13:44.63,Default,,0,0,0,,calls
+Dialogue: 0,0:13:44.63,0:13:44.71,Default,,0,0,0,,i
+Dialogue: 0,0:13:44.72,0:13:44.91,Default,,0,0,0,,s
+Dialogue: 0,0:13:44.92,0:13:45.15,Default,,0,0,0,,regr
+Dialogue: 0,0:13:45.16,0:13:45.23,Default,,0,0,0,,of
+Dialogue: 0,0:13:45.24,0:13:45.67,Default,,0,0,0,,selling
+Dialogue: 0,0:13:45.68,0:13:45.86,Default,,0,0,0,,yeah
+Dialogue: 0,0:13:45.88,0:13:46.31,Default,,0,0,0,,defitely
+Dialogue: 0,0:13:46.32,0:13:46.39,Default,,0,0,0,,and
+Dialogue: 0,0:13:46.39,0:13:46.43,Default,,0,0,0,,that
+Dialogue: 0,0:13:46.44,0:13:46.55,Default,,0,0,0,,was
+Dialogue: 0,0:13:46.56,0:13:46.87,Default,,0,0,0,,bergund
+Dialogue: 0,0:13:46.88,0:13:47.02,Default,,0,0,0,,de
+Dialogue: 0,0:13:47.04,0:13:47.47,Default,,0,0,0,,interior
+Dialogue: 0,0:13:47.48,0:13:47.55,Default,,0,0,0,,that
+Dialogue: 0,0:13:47.56,0:13:47.67,Default,,0,0,0,,was
+Dialogue: 0,0:13:47.68,0:13:47.83,Default,,0,0,0,,a
+Dialogue: 0,0:13:47.83,0:13:48.11,Default,,0,0,0,,really
+Dialogue: 0,0:13:48.12,0:13:48.31,Default,,0,0,0,,cool
+Dialogue: 0,0:13:48.32,0:13:48.91,Default,,0,0,0,,car
+Dialogue: 0,0:13:48.92,0:13:49.06,Default,,0,0,0,,yeah
+Dialogue: 0,0:13:49.07,0:13:49.15,Default,,0,0,0,,and
+Dialogue: 0,0:13:49.16,0:13:49.31,Default,,0,0,0,,I've
+Dialogue: 0,0:13:49.32,0:13:49.47,Default,,0,0,0,,been
+Dialogue: 0,0:13:49.48,0:13:49.91,Default,,0,0,0,,waiting
+Dialogue: 0,0:13:49.92,0:13:50.03,Default,,0,0,0,,and
+Dialogue: 0,0:13:50.04,0:13:50.30,Default,,0,0,0,,waiting
+Dialogue: 0,0:13:50.32,0:13:50.55,Default,,0,0,0,,waiting
+Dialogue: 0,0:13:50.56,0:13:50.71,Default,,0,0,0,,and
+Dialogue: 0,0:13:50.72,0:13:50.79,Default,,0,0,0,,you
+Dialogue: 0,0:13:50.80,0:13:50.95,Default,,0,0,0,,know
+Dialogue: 0,0:13:50.95,0:13:51.27,Default,,0,0,0,,they
+Dialogue: 0,0:13:51.27,0:13:51.39,Default,,0,0,0,,the
+Dialogue: 0,0:13:51.39,0:13:51.75,Default,,0,0,0,,prices
+Dialogue: 0,0:13:51.75,0:13:51.82,Default,,0,0,0,,you
+Dialogue: 0,0:13:51.83,0:13:51.99,Default,,0,0,0,,know
+Dialogue: 0,0:13:52.00,0:13:52.23,Default,,0,0,0,,they're
+Dialogue: 0,0:13:52.24,0:13:52.39,Default,,0,0,0,,they're
+Dialogue: 0,0:13:52.39,0:13:52.55,Default,,0,0,0,,quite
+Dialogue: 0,0:13:52.56,0:13:52.91,Default,,0,0,0,,similar
+Dialogue: 0,0:13:52.92,0:13:53.30,Default,,0,0,0,,AR
+Dialogue: 0,0:13:53.32,0:13:53.55,Default,,0,0,0,,yeah
+Dialogue: 0,0:13:53.56,0:13:53.67,Default,,0,0,0,,yeah
+Dialogue: 0,0:13:53.68,0:13:53.83,Default,,0,0,0,,they've
+Dialogue: 0,0:13:53.83,0:13:54.11,Default,,0,0,0,,held
+Dialogue: 0,0:13:54.12,0:13:54.79,Default,,0,0,0,,F12
+Dialogue: 0,0:13:54.80,0:13:55.30,Default,,0,0,0,,unbelievably
+Dialogue: 0,0:13:55.32,0:13:55.47,Default,,0,0,0,,well
+Dialogue: 0,0:13:55.48,0:13:55.79,Default,,0,0,0,,but
+Dialogue: 0,0:13:55.80,0:13:55.91,Default,,0,0,0,,that
+Dialogue: 0,0:13:55.92,0:13:56.11,Default,,0,0,0,,thing
+Dialogue: 0,0:13:56.12,0:13:56.55,Default,,0,0,0,,is
+Dialogue: 0,0:13:56.56,0:13:56.83,Default,,0,0,0,,is
+Dialogue: 0,0:13:56.83,0:13:57.27,Default,,0,0,0,,stunning
+Dialogue: 0,0:13:57.27,0:13:57.46,Default,,0,0,0,,so
+Dialogue: 0,0:13:57.48,0:13:57.75,Default,,0,0,0,,yeah
+Dialogue: 0,0:13:57.75,0:13:58.03,Default,,0,0,0,,huge
+Dialogue: 0,0:13:58.04,0:13:59.39,Default,,0,0,0,,congratulations
+Dialogue: 0,0:13:59.39,0:13:59.47,Default,,0,0,0,,uh
+Dialogue: 0,0:13:59.48,0:14:00.11,Default,,0,0,0,,Twiggy
+Dialogue: 0,0:14:00.12,0:14:00.26,Default,,0,0,0,,have
+Dialogue: 0,0:14:00.27,0:14:00.43,Default,,0,0,0,,you
+Dialogue: 0,0:14:00.44,0:14:00.55,Default,,0,0,0,,are
+Dialogue: 0,0:14:00.56,0:14:00.67,Default,,0,0,0,,you
+Dialogue: 0,0:14:00.68,0:14:01.07,Default,,0,0,0,,still
+Dialogue: 0,0:14:01.07,0:14:01.59,Default,,0,0,0,,unhappy
+Dialogue: 0,0:14:01.60,0:14:01.83,Default,,0,0,0,,she's
+Dialogue: 0,0:14:01.83,0:14:02.18,Default,,0,0,0,,unhappy
+Dialogue: 0,0:14:02.19,0:14:02.71,Default,,0,0,0,,about
+Dialogue: 0,0:14:02.72,0:14:02.83,Default,,0,0,0,,she
+Dialogue: 0,0:14:02.83,0:14:03.15,Default,,0,0,0,,unhappy
+Dialogue: 0,0:14:03.16,0:14:03.35,Default,,0,0,0,,about
+Dialogue: 0,0:14:03.36,0:14:04.19,Default,,0,0,0,,something
+Dialogue: 0,0:14:04.19,0:14:08.94,Default,,0,0,0,,aren't
+Dialogue: 0,0:14:08.95,0:14:09.95,Default,,0,0,0,,you
+Dialogue: 0,0:14:09.95,0:14:10.35,Default,,0,0,0,,filming
+Dialogue: 0,0:14:10.36,0:14:11.92,Default,,0,0,0,,Each
+Dialogue: 0,0:14:11.94,0:14:13.26,Default,,0,0,0,,[Music]
+Dialogue: 0,0:14:13.27,0:14:14.27,Default,,0,0,0,,Other
+Dialogue: 0,0:14:14.27,0:14:14.55,Default,,0,0,0,,Well
+Dialogue: 0,0:14:14.56,0:14:15.11,Default,,0,0,0,,arriving
+Dialogue: 0,0:14:15.12,0:14:15.39,Default,,0,0,0,,back
+Dialogue: 0,0:14:15.39,0:14:15.67,Default,,0,0,0,,at
+Dialogue: 0,0:14:15.68,0:14:16.15,Default,,0,0,0,,Porsche
+Dialogue: 0,0:14:16.16,0:14:16.46,Default,,0,0,0,,now
+Dialogue: 0,0:14:16.48,0:14:16.59,Default,,0,0,0,,what
+Dialogue: 0,0:14:16.60,0:14:16.91,Default,,0,0,0,,an
+Dialogue: 0,0:14:16.92,0:14:17.35,Default,,0,0,0,,awesome
+Dialogue: 0,0:14:17.36,0:14:17.63,Default,,0,0,0,,day
+Dialogue: 0,0:14:17.63,0:14:17.83,Default,,0,0,0,,it's
+Dialogue: 0,0:14:17.83,0:14:18.11,Default,,0,0,0,,been
+Dialogue: 0,0:14:18.12,0:14:18.31,Default,,0,0,0,,and
+Dialogue: 0,0:14:18.32,0:14:18.46,Default,,0,0,0,,what
+Dialogue: 0,0:14:18.48,0:14:18.79,Default,,0,0,0,,an
+Dialogue: 0,0:14:18.80,0:14:19.31,Default,,0,0,0,,awesome
+Dialogue: 0,0:14:19.32,0:14:20.19,Default,,0,0,0,,car
+Dialogue: 0,0:14:20.19,0:14:20.51,Default,,0,0,0,,this
+Dialogue: 0,0:14:20.51,0:14:21.43,Default,,0,0,0,,pdk
+Dialogue: 0,0:14:21.44,0:14:22.27,Default,,0,0,0,,GT4
+Dialogue: 0,0:14:22.27,0:14:22.83,Default,,0,0,0,,is
+Dialogue: 0,0:14:22.83,0:14:22.91,Default,,0,0,0,,I'm
+Dialogue: 0,0:14:22.92,0:14:23.22,Default,,0,0,0,,sure
+Dialogue: 0,0:14:23.24,0:14:23.43,Default,,0,0,0,,lots
+Dialogue: 0,0:14:23.44,0:14:23.55,Default,,0,0,0,,of
+Dialogue: 0,0:14:23.56,0:14:23.67,Default,,0,0,0,,you
+Dialogue: 0,0:14:23.68,0:14:23.87,Default,,0,0,0,,will
+Dialogue: 0,0:14:23.88,0:14:24.07,Default,,0,0,0,,know
+Dialogue: 0,0:14:24.07,0:14:24.23,Default,,0,0,0,,I've
+Dialogue: 0,0:14:24.24,0:14:24.59,Default,,0,0,0,,sadly
+Dialogue: 0,0:14:24.60,0:14:24.90,Default,,0,0,0,,decided
+Dialogue: 0,0:14:24.92,0:14:25.23,Default,,0,0,0,,to
+Dialogue: 0,0:14:25.24,0:14:26.07,Default,,0,0,0,,sell
+Dialogue: 0,0:14:26.07,0:14:26.27,Default,,0,0,0,,my
+Dialogue: 0,0:14:26.27,0:14:26.79,Default,,0,0,0,,911
+Dialogue: 0,0:14:26.80,0:14:27.23,Default,,0,0,0,,40th
+Dialogue: 0,0:14:27.24,0:14:27.79,Default,,0,0,0,,anniversary
+Dialogue: 0,0:14:27.80,0:14:28.07,Default,,0,0,0,,the
+Dialogue: 0,0:14:28.07,0:14:29.10,Default,,0,0,0,,996
+Dialogue: 0,0:14:29.12,0:14:29.27,Default,,0,0,0,,on
+Dialogue: 0,0:14:29.27,0:14:29.71,Default,,0,0,0,,collecting
+Dialogue: 0,0:14:29.72,0:14:29.95,Default,,0,0,0,,cars
+Dialogue: 0,0:14:29.95,0:14:30.03,Default,,0,0,0,,at
+Dialogue: 0,0:14:30.04,0:14:30.15,Default,,0,0,0,,the
+Dialogue: 0,0:14:30.16,0:14:30.75,Default,,0,0,0,,moment
+Dialogue: 0,0:14:30.75,0:14:30.87,Default,,0,0,0,,I
+Dialogue: 0,0:14:30.88,0:14:31.06,Default,,0,0,0,,think
+Dialogue: 0,0:14:31.07,0:14:31.23,Default,,0,0,0,,when
+Dialogue: 0,0:14:31.24,0:14:31.35,Default,,0,0,0,,this
+Dialogue: 0,0:14:31.36,0:14:31.63,Default,,0,0,0,,video
+Dialogue: 0,0:14:31.63,0:14:31.79,Default,,0,0,0,,goes
+Dialogue: 0,0:14:31.80,0:14:31.99,Default,,0,0,0,,out
+Dialogue: 0,0:14:32.00,0:14:32.15,Default,,0,0,0,,there's
+Dialogue: 0,0:14:32.16,0:14:32.30,Default,,0,0,0,,a
+Dialogue: 0,0:14:32.32,0:14:32.51,Default,,0,0,0,,couple
+Dialogue: 0,0:14:32.51,0:14:32.67,Default,,0,0,0,,of
+Dialogue: 0,0:14:32.68,0:14:32.91,Default,,0,0,0,,days
+Dialogue: 0,0:14:32.92,0:14:33.07,Default,,0,0,0,,left
+Dialogue: 0,0:14:33.07,0:14:33.31,Default,,0,0,0,,to
+Dialogue: 0,0:14:33.32,0:14:33.87,Default,,0,0,0,,go
+Dialogue: 0,0:14:33.88,0:14:34.11,Default,,0,0,0,,on
+Dialogue: 0,0:14:34.12,0:14:34.39,Default,,0,0,0,,the
+Dialogue: 0,0:14:34.39,0:14:34.98,Default,,0,0,0,,auction
+Dialogue: 0,0:14:35.00,0:14:35.43,Default,,0,0,0,,but
+Dialogue: 0,0:14:35.44,0:14:35.55,Default,,0,0,0,,I've
+Dialogue: 0,0:14:35.56,0:14:35.71,Default,,0,0,0,,said
+Dialogue: 0,0:14:35.72,0:14:35.83,Default,,0,0,0,,it
+Dialogue: 0,0:14:35.83,0:14:36.15,Default,,0,0,0,,before
+Dialogue: 0,0:14:36.16,0:14:36.51,Default,,0,0,0,,whenever
+Dialogue: 0,0:14:36.51,0:14:36.63,Default,,0,0,0,,I
+Dialogue: 0,0:14:36.63,0:14:36.86,Default,,0,0,0,,sell
+Dialogue: 0,0:14:36.88,0:14:37.07,Default,,0,0,0,,a
+Dialogue: 0,0:14:37.07,0:14:37.91,Default,,0,0,0,,Porsche
+Dialogue: 0,0:14:37.92,0:14:38.03,Default,,0,0,0,,I
+Dialogue: 0,0:14:38.04,0:14:38.43,Default,,0,0,0,,immediately
+Dialogue: 0,0:14:38.44,0:14:38.51,Default,,0,0,0,,want
+Dialogue: 0,0:14:38.51,0:14:38.67,Default,,0,0,0,,to
+Dialogue: 0,0:14:38.68,0:14:38.98,Default,,0,0,0,,buy
+Dialogue: 0,0:14:39.00,0:14:39.27,Default,,0,0,0,,another
+Dialogue: 0,0:14:39.27,0:14:39.63,Default,,0,0,0,,Porsche
+Dialogue: 0,0:14:39.63,0:14:39.75,Default,,0,0,0,,I
+Dialogue: 0,0:14:39.75,0:14:39.99,Default,,0,0,0,,always
+Dialogue: 0,0:14:40.00,0:14:40.71,Default,,0,0,0,,regret
+Dialogue: 0,0:14:40.72,0:14:41.03,Default,,0,0,0,,doing
+Dialogue: 0,0:14:41.04,0:14:41.22,Default,,0,0,0,,it
+Dialogue: 0,0:14:41.24,0:14:41.55,Default,,0,0,0,,and
+Dialogue: 0,0:14:41.56,0:14:41.91,Default,,0,0,0,,sitting
+Dialogue: 0,0:14:41.92,0:14:42.15,Default,,0,0,0,,here
+Dialogue: 0,0:14:42.16,0:14:42.31,Default,,0,0,0,,right
+Dialogue: 0,0:14:42.32,0:14:42.95,Default,,0,0,0,,now
+Dialogue: 0,0:14:42.95,0:14:43.11,Default,,0,0,0,,I
+Dialogue: 0,0:14:43.12,0:14:43.27,Default,,0,0,0,,really
+Dialogue: 0,0:14:43.27,0:14:43.38,Default,,0,0,0,,want
+Dialogue: 0,0:14:43.39,0:14:43.51,Default,,0,0,0,,to
+Dialogue: 0,0:14:43.51,0:14:43.75,Default,,0,0,0,,buy
+Dialogue: 0,0:14:43.75,0:14:43.91,Default,,0,0,0,,this
+Dialogue: 0,0:14:43.92,0:14:44.39,Default,,0,0,0,,Porsche
+Dialogue: 0,0:14:44.39,0:14:44.71,Default,,0,0,0,,it's
+Dialogue: 0,0:14:44.72,0:14:45.31,Default,,0,0,0,,just
+Dialogue: 0,0:14:45.32,0:14:45.75,Default,,0,0,0,,so
+Dialogue: 0,0:14:45.75,0:14:46.02,Default,,0,0,0,,good
+Dialogue: 0,0:14:46.04,0:14:46.19,Default,,0,0,0,,but
+Dialogue: 0,0:14:46.19,0:14:46.51,Default,,0,0,0,,I'm
+Dialogue: 0,0:14:46.51,0:14:46.63,Default,,0,0,0,,I'm
+Dialogue: 0,0:14:46.63,0:14:46.83,Default,,0,0,0,,trying
+Dialogue: 0,0:14:46.83,0:14:46.99,Default,,0,0,0,,to
+Dialogue: 0,0:14:47.00,0:14:47.23,Default,,0,0,0,,save
+Dialogue: 0,0:14:47.24,0:14:48.03,Default,,0,0,0,,money
+Dialogue: 0,0:14:48.04,0:14:48.26,Default,,0,0,0,,not
+Dialogue: 0,0:14:48.27,0:14:48.59,Default,,0,0,0,,spend
+Dialogue: 0,0:14:48.60,0:14:49.31,Default,,0,0,0,,it
+Dialogue: 0,0:14:49.32,0:14:49.47,Default,,0,0,0,,I'm
+Dialogue: 0,0:14:49.48,0:14:50.15,Default,,0,0,0,,also
+Dialogue: 0,0:14:50.16,0:14:50.39,Default,,0,0,0,,trying
+Dialogue: 0,0:14:50.39,0:14:50.51,Default,,0,0,0,,to
+Dialogue: 0,0:14:50.51,0:14:50.86,Default,,0,0,0,,concentrate
+Dialogue: 0,0:14:50.88,0:14:50.99,Default,,0,0,0,,on
+Dialogue: 0,0:14:51.00,0:14:51.27,Default,,0,0,0,,parking
+Dialogue: 0,0:14:51.27,0:14:51.43,Default,,0,0,0,,this
+Dialogue: 0,0:14:51.44,0:14:51.59,Default,,0,0,0,,car
+Dialogue: 0,0:14:51.60,0:14:51.71,Default,,0,0,0,,which
+Dialogue: 0,0:14:51.72,0:14:51.79,Default,,0,0,0,,I've
+Dialogue: 0,0:14:51.80,0:14:51.91,Default,,0,0,0,,done
+Dialogue: 0,0:14:51.92,0:14:52.02,Default,,0,0,0,,a
+Dialogue: 0,0:14:52.04,0:14:52.23,Default,,0,0,0,,very
+Dialogue: 0,0:14:52.24,0:14:52.39,Default,,0,0,0,,very
+Dialogue: 0,0:14:52.39,0:14:52.55,Default,,0,0,0,,bad
+Dialogue: 0,0:14:52.56,0:14:52.75,Default,,0,0,0,,job
+Dialogue: 0,0:14:52.75,0:14:52.95,Default,,0,0,0,,at
+Dialogue: 0,0:14:52.95,0:14:53.15,Default,,0,0,0,,so
+Dialogue: 0,0:14:53.16,0:14:53.23,Default,,0,0,0,,I'm
+Dialogue: 0,0:14:53.24,0:14:53.35,Default,,0,0,0,,going
+Dialogue: 0,0:14:53.36,0:14:53.47,Default,,0,0,0,,to
+Dialogue: 0,0:14:53.48,0:14:53.74,Default,,0,0,0,,end
+Dialogue: 0,0:14:53.75,0:14:54.47,Default,,0,0,0,,off
+Dialogue: 0,0:14:54.48,0:14:54.71,Default,,0,0,0,,this
+Dialogue: 0,0:14:54.72,0:14:55.35,Default,,0,0,0,,video
+Dialogue: 0,0:14:55.36,0:14:55.43,Default,,0,0,0,,if
+Dialogue: 0,0:14:55.44,0:14:55.63,Default,,0,0,0,,you've
+Dialogue: 0,0:14:55.63,0:14:55.91,Default,,0,0,0,,enjoyed
+Dialogue: 0,0:14:55.92,0:14:56.03,Default,,0,0,0,,it
+Dialogue: 0,0:14:56.04,0:14:56.14,Default,,0,0,0,,give
+Dialogue: 0,0:14:56.16,0:14:56.23,Default,,0,0,0,,it
+Dialogue: 0,0:14:56.24,0:14:56.39,Default,,0,0,0,,a
+Dialogue: 0,0:14:56.39,0:14:56.63,Default,,0,0,0,,thumbs
+Dialogue: 0,0:14:56.63,0:14:57.07,Default,,0,0,0,,up
+Dialogue: 0,0:14:57.07,0:14:57.23,Default,,0,0,0,,and
+Dialogue: 0,0:14:57.24,0:14:57.35,Default,,0,0,0,,make
+Dialogue: 0,0:14:57.36,0:14:57.51,Default,,0,0,0,,sure
+Dialogue: 0,0:14:57.51,0:14:57.67,Default,,0,0,0,,you
+Dialogue: 0,0:14:57.68,0:14:57.86,Default,,0,0,0,,stay
+Dialogue: 0,0:14:57.88,0:14:58.35,Default,,0,0,0,,subscribed
+Dialogue: 0,0:14:58.36,0:14:59.23,Default,,0,0,0,,because
+Dialogue: 0,0:14:59.24,0:14:59.71,Default,,0,0,0,,despite
+Dialogue: 0,0:14:59.72,0:14:59.91,Default,,0,0,0,,the
+Dialogue: 0,0:14:59.92,0:15:00.43,Default,,0,0,0,,fact
+Dialogue: 0,0:15:00.44,0:15:00.58,Default,,0,0,0,,my
+Dialogue: 0,0:15:00.60,0:15:00.99,Default,,0,0,0,,40th
+Dialogue: 0,0:15:01.00,0:15:01.55,Default,,0,0,0,,anniversary
+Dialogue: 0,0:15:01.56,0:15:01.75,Default,,0,0,0,,is
+Dialogue: 0,0:15:01.75,0:15:02.51,Default,,0,0,0,,going
+Dialogue: 0,0:15:02.51,0:15:02.75,Default,,0,0,0,,there's
+Dialogue: 0,0:15:02.75,0:15:02.90,Default,,0,0,0,,lots
+Dialogue: 0,0:15:02.92,0:15:03.07,Default,,0,0,0,,of
+Dialogue: 0,0:15:03.07,0:15:03.31,Default,,0,0,0,,very
+Dialogue: 0,0:15:03.32,0:15:03.71,Default,,0,0,0,,exciting
+Dialogue: 0,0:15:03.72,0:15:04.23,Default,,0,0,0,,Porsche
+Dialogue: 0,0:15:04.24,0:15:04.99,Default,,0,0,0,,content
+Dialogue: 0,0:15:05.00,0:15:05.22,Default,,0,0,0,,still
+Dialogue: 0,0:15:05.24,0:15:05.43,Default,,0,0,0,,to
+Dialogue: 0,0:15:05.44,0:15:07.41,Default,,0,0,0,,come
+Dialogue: 0,0:15:07.43,0:15:28.18,Default,,0,0,0,,[Music]

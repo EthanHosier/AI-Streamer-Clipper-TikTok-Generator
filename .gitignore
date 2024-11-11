@@ -1,3 +1,4 @@
 .env
 ffmpeg/temp/*
 attention-clips/satisfying
+*.mp4
