@@ -41,3 +41,66 @@ func captionsFromUrl(url string) (*Captions, error) {
 
 	return &captions, nil
 }
+
+func toSingleWordCaptions(captions Captions) []CaptionWord {
+	ret := []CaptionWord{}
+
+	for _, event := range captions.Events {
+		if event.Segs == nil {
+			continue
+		}
+
+		for _, s := range event.Segs {
+			if s.UTF8 == "\n" {
+				continue
+			}
+
+			ret = append(ret, CaptionWord{
+				Word:        s.UTF8,
+				StartTimeMs: event.TStartMs + s.TOffsetMs,
+			})
+		}
+	}
+
+	return ret
+}
+
+const (
+	wordLimit    = 3
+	charLimit    = 8
+	maxMsBetween = 1000
+)
+
+func groupCaptionWords(captionWords []CaptionWord) [][]CaptionWord {
+	ret := [][]CaptionWord{}
+	group := []CaptionWord{}
+
+	for i, c := range captionWords {
+		if len(group) == 0 {
+			group = append(group, c)
+			continue
+		}
+
+		if i == len(captionWords)-1 {
+			group = append(group, c)
+			ret = append(ret, group)
+			continue
+		}
+
+		if len(group) == wordLimit {
+			ret = append(ret, group)
+			group = []CaptionWord{c}
+			continue
+		}
+
+		if c.StartTimeMs-group[len(group)-1].StartTimeMs > maxMsBetween {
+			ret = append(ret, group)
+			group = []CaptionWord{c}
+			continue
+		}
+
+		group = append(group, c)
+	}
+
+	return ret
+}

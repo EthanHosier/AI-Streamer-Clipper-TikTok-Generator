@@ -30,7 +30,7 @@ func main() {
 	time.Sleep(5 * time.Second)
 
 	c := captions.NewCaptionsClient()
-	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsSingleWord)
+	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsHormozi)
 	if err != nil {
 		fmt.Printf("error getting captions: %v\n", err)
 		return
