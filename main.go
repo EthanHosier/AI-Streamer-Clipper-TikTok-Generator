@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 
 	"github.com/ethanhosier/clips/captions"
 	"github.com/ethanhosier/clips/youtube"
@@ -27,10 +28,15 @@ func main() {
 	fmt.Println(vid.CaptionTrackURL)
 
 	c := captions.NewCaptionsClient()
-	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsSingleWord)
+	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsHormozi)
 	if err != nil {
 		fmt.Printf("error getting captions: %v\n", err)
 		return
+	}
+
+	err = os.WriteFile("output.ass", []byte(cs), 0644)
+	if err != nil {
+		panic(err)
 	}
 
 	fmt.Printf("cs: %s\n", cs)

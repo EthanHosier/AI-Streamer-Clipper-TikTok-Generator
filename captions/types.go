@@ -44,5 +44,7 @@ type Seg struct {
 type CaptionsType string
 
 const (
-	CaptionsSingleWord CaptionsType = "single-word"
+	CaptionsSingleWord      CaptionsType = "single-word"
+	CaptionsHormozi         CaptionsType = "hormozi"
+	CaptionsBackgroundColor CaptionsType = "background-color"
 )
