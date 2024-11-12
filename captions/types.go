@@ -41,6 +41,11 @@ type Seg struct {
 	TOffsetMs int    `json:"tOffsetMs"`
 }
 
+type CaptionWord struct {
+	Word        string
+	StartTimeMs int
+}
+
 type CaptionsType string
 
 const (

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/ethanhosier/clips/captions"
 	"github.com/ethanhosier/clips/youtube"
@@ -26,9 +27,10 @@ func main() {
 	}
 
 	fmt.Println(vid.CaptionTrackURL)
+	time.Sleep(5 * time.Second)
 
 	c := captions.NewCaptionsClient()
-	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsHormozi)
+	cs, err := c.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsSingleWord)
 	if err != nil {
 		fmt.Printf("error getting captions: %v\n", err)
 		return
