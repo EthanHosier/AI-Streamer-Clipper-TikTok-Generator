@@ -1,8 +1,11 @@
 package youtube
 
 import (
+	"errors"
 	"fmt"
+	"io"
 	"net/url"
+	"os"
 	"time"
 
 	"github.com/kkdai/youtube/v2"
@@ -13,6 +16,7 @@ type YoutubeHandler interface {
 }
 
 type YoutubeClient struct {
+	client *youtube.Client
 }
 
 type Video struct {
@@ -33,13 +37,14 @@ type Video struct {
 }
 
 func NewYoutubeClient() *YoutubeClient {
-	return &YoutubeClient{}
+	return &YoutubeClient{
+		client: &youtube.Client{},
+	}
 }
 
 func (y *YoutubeClient) VideoForId(id string) (*Video, error) {
 	url := fmt.Sprintf("https://www.youtube.com/watch?v=%s", id)
-	client := youtube.Client{}
-	video, err := client.GetVideo(url)
+	video, err := y.client.GetVideo(url)
 	if err != nil {
 		return nil, fmt.Errorf("error getting video: %v\n\n", err)
 	}
@@ -78,4 +83,52 @@ func replaceWithJson3Url(originalURL string) (string, error) {
 
 	parsedURL.RawQuery = query.Encode()
 	return parsedURL.String(), nil
+}
+
+func (y *YoutubeClient) retryDownload(video *youtube.Video, format *youtube.Format, filePath string) error {
+	for i := 0; i < 3; i++ { // Retry up to 3 times
+		file, err := os.Create(filePath)
+		if err != nil {
+			return fmt.Errorf("error creating file: %w", err)
+		}
+		defer file.Close()
+
+		stream, _, err := y.client.GetStream(video, format)
+		if err != nil {
+			fmt.Printf("Attempt %d: error getting stream: %v\n", i+1, err)
+			time.Sleep(2 * time.Second) // Wait before retrying
+			continue
+		}
+
+		_, err = io.Copy(file, stream)
+		if err == nil {
+			return nil // Success
+		}
+		fmt.Printf("Attempt %d: error saving file: %v\n", i+1, err)
+		time.Sleep(2 * time.Second) // Wait before retrying
+	}
+	return errors.New("failed to download after multiple attempts")
+}
+
+func (y *YoutubeClient) DownloadVideoAndAudio(videoID, videoPath, audioPath string) error {
+	client := youtube.Client{}
+	videoURL := "https://www.youtube.com/watch?v=" + videoID
+	video, err := client.GetVideo(videoURL)
+	if err != nil {
+		return fmt.Errorf("error fetching video details: %w", err)
+	}
+
+	videoFormat := video.Formats[1]
+	audioFormat := video.Formats.WithAudioChannels()[0]
+
+	if err := y.retryDownload(video, &videoFormat, videoPath); err != nil {
+		return fmt.Errorf("error downloading video: %w", err)
+	}
+	fmt.Println("Video downloaded successfully!")
+
+	if err := y.retryDownload(video, &audioFormat, audioPath); err != nil {
+		return fmt.Errorf("error downloading audio: %w", err)
+	}
+	fmt.Println("Audio downloaded successfully!")
+	return nil
 }

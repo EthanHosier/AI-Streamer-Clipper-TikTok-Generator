@@ -53,3 +53,13 @@ const (
 	CaptionsHormozi         CaptionsType = "hormozi"
 	CaptionsBackgroundColor CaptionsType = "background-color"
 )
+
+type CaptionsColor string
+
+const (
+	CaptionsGreen  CaptionsColor = "H0033FF33"
+	CaptionsRed    CaptionsColor = "H003333FF"
+	CaptionsBlue   CaptionsColor = "H00FFFF33"
+	CaptionsWhite  CaptionsColor = "H00FFFFFF"
+	CaptionsYellow CaptionsColor = "H0001F8FC"
+)

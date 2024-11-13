@@ -56,5 +56,8 @@ func outputPathFor(inputFile string, extension FfmpegExtension) string {
 	bytes := make([]byte, 8)
 	rand.Read(bytes)
 
-	return fmt.Sprintf("ffmpeg/temp/%s-%s.%s", filepath.Base(inputFile), hex.EncodeToString(bytes), string(extension))
+	baseName := filepath.Base(inputFile)
+	nameOnly := strings.TrimSuffix(baseName, filepath.Ext(baseName))
+
+	return fmt.Sprintf("ffmpeg/temp/%s-%s.%s", nameOnly, hex.EncodeToString(bytes), string(extension))
 }
