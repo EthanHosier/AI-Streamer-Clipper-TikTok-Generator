@@ -1,30 +1,41 @@
 package main
 
 import (
-	"context"
-	"fmt"
 	"log"
 
-	"github.com/ethanhosier/clips/openai"
-
-	"github.com/joho/godotenv"
+	"github.com/ethanhosier/clips/stream_recorder"
 )
 
 const id = "JFh7vQEoqX4"
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	outputDir := "./clips"
+	streamURL := "https://www.twitch.tv/freyzplayz"
 
-	oc := openai.NewOpenaiClient()
+	recorder := stream_recorder.NewStreamRecorder()
 
-	transcription, err := oc.CreateTranscription(context.Background(), "input.mp4", openai.OpenaiAudioResponseFormatVerboseJSON)
-	if err != nil {
-		fmt.Printf(err.Error())
-	}
+	clipsCh, doneCh, errorCh := recorder.Record(streamURL, outputDir)
 
-	fmt.Printf("%+v\n", *transcription)
+	// Handle events
+	go func() {
+		for {
+			select {
+			case filename, ok := <-clipsCh:
+				if !ok {
+					return
+				}
+				log.Printf("New clip saved yeahhh: %s", filename)
+			case err, ok := <-errorCh:
+				if !ok {
+					return
+				}
+				log.Printf("Error: %v", err)
+			case <-doneCh:
+				log.Println("Stream ended.")
+				return
+			}
+		}
+	}()
 
+	<-doneCh
 }
