@@ -3,6 +3,7 @@ package clipper
 import (
 	"fmt"
 	"os"
+	"time"
 
 	attentionclips "github.com/ethanhosier/clips/attention-clips"
 	"github.com/ethanhosier/clips/captions"
@@ -27,31 +28,59 @@ func NewClipper(openaiClient *openai.OpenaiClient, ffmpegClient *ffmpeg.FfmpegCl
 	}
 }
 
-func (c *Clipper) ClipEntireYtVideo(id string) ([]string, error) {
+func (c *Clipper) ClipEntireYtVideo(id string, captionsType captions.CaptionsType) ([]string, error) {
 	vid, err := c.youtubeClient.VideoForId(id)
 	if err != nil {
 		return nil, fmt.Errorf("error getting vid: %v", err)
 	}
 
-	cs, err := c.captionsClient.CaptionsFrom(vid.CaptionTrackURL, captions.CaptionsHormozi)
+	// Get captions for the video
+	cs, err := c.captionsClient.CaptionsFrom(vid.CaptionTrackURL, captionsType)
 	if err != nil {
 		return nil, fmt.Errorf("error getting captions: %v\n", err)
 	}
 
-	filepath, err := writeTempCaptionsFile(id, cs)
+	captionsFilePath, err := writeTempCaptionsFile(id, cs)
 	if err != nil {
 		return nil, fmt.Errorf("error writing temp captions file: %v\n", err)
 	}
-	// defer deleteTempCaptionsFile(fileName)
+	defer os.Remove(captionsFilePath)
 
-	v2, err := c.ffmpegClient.ClipVideoRandomSecs(attentionclips.Slime, 40)
+	audioYtFile := fmt.Sprintf("clipper/temp/audio-%v.mp4", id)
+	videoYtFile := fmt.Sprintf("clipper/temp/video-%v.mp4", id)
 
-	_, err = c.ffmpegClient.MergeTwoVidsWithCaptions("v1.mp4", v2, "outputyeah.mp4", filepath)
-	if err != nil {
-		return nil, fmt.Errorf("error merging two vids with captions: %v\n", err)
+	if err = c.youtubeClient.DownloadVideoAndAudio(id, videoYtFile, audioYtFile); err != nil {
+		return nil, fmt.Errorf("error downloading video and audio: %v", err)
 	}
+	audioYtFile += ".mp4"
+	defer os.Remove(audioYtFile)
+	defer os.Remove(videoYtFile)
 
-	return nil, err
+	// Generate a "slime video" for merging
+	slimeVideoPath, err := c.ffmpegClient.ClipVideoRandomSecs(string(attentionclips.Slime), int(vid.Duration.Seconds()))
+	if err != nil {
+		return nil, fmt.Errorf("error generating slime video: %v\n", err)
+	}
+	defer os.Remove(slimeVideoPath)
+
+	// Merge the main video, slime video, and captions
+	editedVideoPath := fmt.Sprintf("clipper/temp/edited-%v.mp4", id)
+	_, err = c.ffmpegClient.MergeTwoVidsWithCaptions(videoYtFile, slimeVideoPath, audioYtFile, editedVideoPath, captionsFilePath)
+	if err != nil {
+		return nil, fmt.Errorf("error merging video with slime and captions: %v\n", err)
+	}
+	defer os.Remove(editedVideoPath)
+
+	outputPaths, err := c.ffmpegClient.SplitVideo(editedVideoPath, 120)
+	return outputPaths, err
+}
+
+// Helper function to format duration as HH:mm:ss
+func formatDuration(d time.Duration) string {
+	hours := int(d.Hours())
+	minutes := int(d.Minutes()) % 60
+	seconds := int(d.Seconds()) % 60
+	return fmt.Sprintf("%02d:%02d:%02d", hours, minutes, seconds)
 }
 
 func writeTempCaptionsFile(id string, cs string) (string, error) {

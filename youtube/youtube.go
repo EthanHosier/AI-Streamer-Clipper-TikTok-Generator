@@ -6,6 +6,8 @@ import (
 	"io"
 	"net/url"
 	"os"
+	"os/exec"
+	"strings"
 	"time"
 
 	"github.com/kkdai/youtube/v2"
@@ -45,6 +47,7 @@ func NewYoutubeClient() *YoutubeClient {
 func (y *YoutubeClient) VideoForId(id string) (*Video, error) {
 	url := fmt.Sprintf("https://www.youtube.com/watch?v=%s", id)
 	video, err := y.client.GetVideo(url)
+	fmt.Println(video.Duration)
 	if err != nil {
 		return nil, fmt.Errorf("error getting video: %v\n\n", err)
 	}
@@ -110,25 +113,56 @@ func (y *YoutubeClient) retryDownload(video *youtube.Video, format *youtube.Form
 	return errors.New("failed to download after multiple attempts")
 }
 
+func extractBeforeSubstring(input, substring string) (string, error) {
+	index := strings.Index(input, substring)
+	if index == -1 {
+		return "", fmt.Errorf("substring not found in input")
+	}
+	return input[:index], nil
+}
+
 func (y *YoutubeClient) DownloadVideoAndAudio(videoID, videoPath, audioPath string) error {
-	client := youtube.Client{}
+
+	return y.downloadVideoAndAudioPython(videoID, videoPath, audioPath)
+	// client := youtube.Client{}
+	// videoURL := "https://www.youtube.com/watch?v=" + videoID
+	// video, err := client.GetVideo(videoURL)
+	// if err != nil {
+	// 	return fmt.Errorf("error fetching video details: %w", err)
+	// }
+
+	// videoFormat := video.Formats[1]
+	// audioFormat := video.Formats.WithAudioChannels()[0]
+
+	// if err := y.retryDownload(video, &videoFormat, videoPath); err != nil {
+	// 	return fmt.Errorf("error downloading video: %w", err)
+	// }
+	// fmt.Println("Video downloaded successfully!")
+
+	// if err := y.retryDownload(video, &audioFormat, audioPath); err != nil {
+	// 	return fmt.Errorf("error downloading audio: %w", err)
+	// }
+	// fmt.Println("Audio downloaded successfully!")
+	// return nil
+}
+
+func (y *YoutubeClient) downloadVideoAndAudioPython(videoID, videoPath, audioPath string) error {
+	// Construct the Python script command
+	pythonScript := "youtube/download.py" // Replace with the actual script file name
 	videoURL := "https://www.youtube.com/watch?v=" + videoID
-	video, err := client.GetVideo(videoURL)
-	if err != nil {
-		return fmt.Errorf("error fetching video details: %w", err)
+
+	// Call the Python script as a subprocess
+	cmd := exec.Command("python3", pythonScript, videoURL, videoPath, audioPath)
+
+	// Connect subprocess stdout and stderr to os.Stdout and os.Stderr
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+
+	// Run the Python script
+	if err := cmd.Run(); err != nil {
+		return fmt.Errorf("error running Python script: %w", err)
 	}
 
-	videoFormat := video.Formats[1]
-	audioFormat := video.Formats.WithAudioChannels()[0]
-
-	if err := y.retryDownload(video, &videoFormat, videoPath); err != nil {
-		return fmt.Errorf("error downloading video: %w", err)
-	}
-	fmt.Println("Video downloaded successfully!")
-
-	if err := y.retryDownload(video, &audioFormat, audioPath); err != nil {
-		return fmt.Errorf("error downloading audio: %w", err)
-	}
-	fmt.Println("Audio downloaded successfully!")
+	fmt.Println("Python script completed successfully.")
 	return nil
 }

@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 	"math/rand"
+	"os"
 	"os/exec"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
-
-	attentionclips "github.com/ethanhosier/clips/attention-clips"
 )
 
 type FfmpegHandler interface {
@@ -32,8 +32,8 @@ func (ff *FfmpegClient) RemoveAudio(inputFile, outputFile string) (string, error
 	return outputFile, nil
 }
 
-func (ff *FfmpegClient) ClipVideoRandomSecs(inputFile attentionclips.AttentionClipsVideo, clipLength int) (string, error) {
-	duration, err := ff.getVideoDuration(string(inputFile))
+func (ff *FfmpegClient) ClipVideoRandomSecs(inputFile string, clipLength int) (string, error) {
+	duration, err := ff.getVideoDuration(inputFile)
 	if err != nil {
 		return "", fmt.Errorf("failed to get video duration: %v", err)
 	}
@@ -57,7 +57,7 @@ func (ff *FfmpegClient) ClipVideoRandomSecs(inputFile attentionclips.AttentionCl
 	return ff.ClipVideo(inputFile, randomStartTime, clipDuration)
 }
 
-func (ff *FfmpegClient) ClipVideo(inputFile attentionclips.AttentionClipsVideo, startTime, duration string) (string, error) {
+func (ff *FfmpegClient) ClipVideo(inputFile string, startTime, duration string) (string, error) {
 	if !isValidTime(startTime) {
 		return "", fmt.Errorf("invalid start time: %s", startTime)
 	}
@@ -66,26 +66,84 @@ func (ff *FfmpegClient) ClipVideo(inputFile attentionclips.AttentionClipsVideo, 
 		return "", fmt.Errorf("invalid duration: %s", duration)
 	}
 
-	outputPath := outputPathFor(string(inputFile), MP4)
+	outputPath := outputPathFor(inputFile, MP4)
 	fmt.Println("outputPath: ", outputPath)
 
-	cmd := exec.Command("ffmpeg", "-ss", startTime, "-i", string(inputFile), "-t", duration, "-c", "copy", outputPath)
+	cmd := exec.Command("ffmpeg", "-ss", startTime, "-i", inputFile, "-t", duration, "-c", "copy", outputPath)
 	if err := cmd.Run(); err != nil {
 		return "", err
 	}
 	return outputPath, nil
 }
 
-func (ff *FfmpegClient) MergeTwoVidsWithCaptions(vid1, vid2, output string, captions string) (string, error) {
-	cmd := fmt.Sprintf(`ffmpeg -i %s -i %s -filter_complex "\
+func (ff *FfmpegClient) SplitVideo(inputPath string, segmentTime int) ([]string, error) {
+	// Construct the output pattern for segmented files
+	outputPattern := strings.TrimSuffix(inputPath, filepath.Ext(inputPath)) + "_%03d" + filepath.Ext(inputPath)
+
+	// Convert segment time to string
+	segmentTimeStr := strconv.Itoa(segmentTime)
+
+	// FFmpeg command
+	cmd := exec.Command("ffmpeg",
+		"-i", inputPath,
+		"-c", "copy",
+		"-map", "0",
+		"-segment_time", segmentTimeStr,
+		"-f", "segment",
+		"-reset_timestamps", "1",
+		outputPattern,
+	)
+
+	// Run the command and capture any errors
+	err := cmd.Run()
+	if err != nil {
+		return nil, fmt.Errorf("error running ffmpeg: %w", err)
+	}
+
+	// Generate the list of output file paths based on the expected naming pattern
+	var outputPaths []string
+	base := strings.TrimSuffix(inputPath, filepath.Ext(inputPath))
+	ext := filepath.Ext(inputPath)
+
+	// Check for a reasonable number of expected output files
+	for i := 0; i < 1000; i++ { // Assuming no more than 1000 segments
+		outputFile := fmt.Sprintf("%s_%03d%s", base, i, ext)
+		outputPaths = append(outputPaths, outputFile)
+		// Break early if the output file doesn't exist
+		if !fileExists(outputFile) {
+			break
+		}
+	}
+
+	return outputPaths, nil
+}
+
+// fileExists checks if a file exists
+func fileExists(path string) bool {
+	_, err := exec.LookPath(path)
+	return err == nil
+}
+
+func (ff *FfmpegClient) MergeTwoVidsWithCaptions(vid1, vid2, audioFile, output, captions string) (string, error) {
+	cmd := fmt.Sprintf(`ffmpeg -i %s -i %s -i %s -filter_complex "\
 [0:v]scale=720:-1,scale=720:640:force_original_aspect_ratio=increase,crop=720:640:(iw-720)/2:(ih-640)/2[top]; \
 [1:v]scale=720:-1,scale=720:640:force_original_aspect_ratio=increase,crop=720:640:(iw-720)/2:(ih-640)/2[bottom]; \
-[top][bottom]vstack=inputs=2[combined]; \
-[combined]subtitles=%s" -r 30 -vsync 2 -c:v libx264 -c:a copy %s`, vid1, vid2, captions, output)
+[top][bottom]vstack=inputs=2[vstacked]; \
+[vstacked]subtitles=%s[final]" \
+-map "[final]" -map 2:a -r 30 -vsync 2 -c:v libx264 -c:a aac %s`, vid1, vid2, audioFile, captions, output)
 
 	execCmd := exec.Command("bash", "-c", cmd)
+
+	// Redirect stdout and stderr to the console
+	execCmd.Stdout = os.Stdout
+	execCmd.Stderr = os.Stderr
+
+	fmt.Println("Running FFmpeg command:")
+	fmt.Println(cmd)
+
+	// Run the command
 	if err := execCmd.Run(); err != nil {
-		return "", err
+		return "", fmt.Errorf("error running ffmpeg: %w", err)
 	}
 
 	return output, nil
