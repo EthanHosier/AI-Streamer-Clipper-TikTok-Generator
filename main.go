@@ -1,18 +1,16 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"log"
 
-	"github.com/ethanhosier/clips/captions"
-	"github.com/ethanhosier/clips/clipper"
-	"github.com/ethanhosier/clips/ffmpeg"
 	"github.com/ethanhosier/clips/openai"
-	"github.com/ethanhosier/clips/youtube"
+
 	"github.com/joho/godotenv"
 )
 
-const id = "vp5sSqyZ5Go"
+const id = "JFh7vQEoqX4"
 
 func main() {
 	err := godotenv.Load()
@@ -20,16 +18,13 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	clipper := clipper.NewClipper(
-		openai.NewOpenaiClient(),
-		ffmpeg.NewFfmpegClient(),
-		captions.NewCaptionsClient(),
-		youtube.NewYoutubeClient(),
-	)
+	oc := openai.NewOpenaiClient()
 
-	_, err = clipper.ClipEntireYtVideo(id, captions.CaptionsSingleWord)
+	transcription, err := oc.CreateTranscription(context.Background(), "input.mp4", openai.OpenaiAudioResponseFormatVerboseJSON)
 	if err != nil {
 		fmt.Printf(err.Error())
 	}
+
+	fmt.Printf("%+v\n", *transcription)
 
 }

@@ -148,3 +148,22 @@ func (ff *FfmpegClient) MergeTwoVidsWithCaptions(vid1, vid2, audioFile, output, 
 
 	return output, nil
 }
+
+func (ff *FfmpegClient) ClipWithBlurredBackground(inputFile, outputFile, audioFile string) (string, error) {
+	cmd := fmt.Sprintf(`ffmpeg -i %s -i %s -filter_complex "[0:v]scale=-1:1920,crop=1080:1920,boxblur=luma_radius=30:luma_power=2[blurred]; [0:v]scale=1080:-1[main]; [blurred][main]overlay=(W-w)/2:(H-h)/2[v]" -map "[v]" -map 1:a -c:v libx264 -c:a aac %s`,
+		inputFile,
+		audioFile,
+		outputFile)
+
+	execCmd := exec.Command("bash", "-c", cmd)
+
+	// Redirect stdout and stderr to the console
+	execCmd.Stdout = os.Stdout
+	execCmd.Stderr = os.Stderr
+
+	if err := execCmd.Run(); err != nil {
+		return "", fmt.Errorf("error running ffmpeg: %w", err)
+	}
+
+	return outputFile, nil
+}

@@ -3,7 +3,6 @@ package clipper
 import (
 	"fmt"
 	"os"
-	"time"
 
 	attentionclips "github.com/ethanhosier/clips/attention-clips"
 	"github.com/ethanhosier/clips/captions"
@@ -26,6 +25,39 @@ func NewClipper(openaiClient *openai.OpenaiClient, ffmpegClient *ffmpeg.FfmpegCl
 		captionsClient: captionsClient,
 		youtubeClient:  youtubeClient,
 	}
+}
+
+// TODO: Make this more generic? (to make use of the same function for all clip types)
+func (c *Clipper) ClipFromConfig(config *ClipperClipsConfig) (*ClipperClipResult, error) {
+	var clipPath string
+	var err error
+
+	switch config.ClipType {
+	case ClipTypeSplitScreen:
+		clipPath, err = c.clipSplitScreen(config)
+	case ClipTypeSingleClipBlurredBackground:
+		clipPath, err = c.clipSingleClipBlurredBackground(config)
+	default:
+		return nil, fmt.Errorf("unknown clip type: %v", config.ClipType)
+	}
+
+	if err != nil {
+		return nil, fmt.Errorf("error clipping: %v", err)
+	}
+
+	if !config.ShouldSubClip {
+		return &ClipperClipResult{
+			outputFilePaths: []string{clipPath},
+		}, nil
+	}
+
+	outputPaths, err := c.ffmpegClient.SplitVideo(clipPath, config.SubClipLengthSecs)
+	if err != nil {
+		return nil, fmt.Errorf("error splitting video: %v", err)
+	}
+	return &ClipperClipResult{
+		outputFilePaths: outputPaths,
+	}, nil
 }
 
 func (c *Clipper) ClipEntireYtVideo(id string, captionsType captions.CaptionsType) ([]string, error) {
@@ -64,31 +96,18 @@ func (c *Clipper) ClipEntireYtVideo(id string, captionsType captions.CaptionsTyp
 	defer os.Remove(slimeVideoPath)
 
 	// Merge the main video, slime video, and captions
-	editedVideoPath := fmt.Sprintf("clipper/temp/edited-%v.mp4", id)
-	_, err = c.ffmpegClient.MergeTwoVidsWithCaptions(videoYtFile, slimeVideoPath, audioYtFile, editedVideoPath, captionsFilePath)
+	twoVidsConfig := NewSplitScreenClipperClipsConfigBuilder()
+	twoVidsConfig.WithInputVideoPath(videoYtFile)
+	twoVidsConfig.WithBottomVideoPath(slimeVideoPath)
+	twoVidsConfig.WithInputAudioPath(audioYtFile)
+	twoVidsConfig.WithCaptionsFilePath(captionsFilePath)
+	twoVidsConfig.WithShouldSubClip(true)
+	twoVidsConfig.WithSubClipLengthSecs(120)
+
+	res, err := c.ClipFromConfig(twoVidsConfig.Build())
 	if err != nil {
-		return nil, fmt.Errorf("error merging video with slime and captions: %v\n", err)
+		return nil, fmt.Errorf("error clipping: %v", err)
 	}
-	defer os.Remove(editedVideoPath)
 
-	outputPaths, err := c.ffmpegClient.SplitVideo(editedVideoPath, 120)
-	return outputPaths, err
-}
-
-// Helper function to format duration as HH:mm:ss
-func formatDuration(d time.Duration) string {
-	hours := int(d.Hours())
-	minutes := int(d.Minutes()) % 60
-	seconds := int(d.Seconds()) % 60
-	return fmt.Sprintf("%02d:%02d:%02d", hours, minutes, seconds)
-}
-
-func writeTempCaptionsFile(id string, cs string) (string, error) {
-	fileName := fmt.Sprintf("clipper/temp/%v.ass", id)
-	return fileName, os.WriteFile(fileName, []byte(cs), 0644)
-
-}
-
-func deleteTempCaptionsFile(filepath string) error {
-	return os.Remove(filepath)
+	return res.outputFilePaths, nil
 }

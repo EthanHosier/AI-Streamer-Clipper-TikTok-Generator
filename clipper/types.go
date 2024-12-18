@@ -6,7 +6,12 @@ import (
 	"github.com/ethanhosier/clips/captions"
 )
 
+type ClipperClipResult struct {
+	outputFilePaths []string
+}
+
 type ClipperClipsConfig struct {
+	id       string
 	ClipType ClipType
 
 	InputVideoPath string
@@ -18,6 +23,9 @@ type ClipperClipsConfig struct {
 	CaptionsPosition ClipperCaptionsPosition
 	CaptionsColor    captions.CaptionsColor
 	CaptionsType     captions.CaptionsType
+
+	ShouldSubClip     bool
+	SubClipLengthSecs int
 }
 
 type ClipperCaptionsPosition string
@@ -102,8 +110,20 @@ func (b *ClipperClipsConfigBuilder) WithCaptionsType(captionsType captions.Capti
 	return b
 }
 
+// WithShouldSubClip sets whether to subclip the video
+func (b *ClipperClipsConfigBuilder) WithShouldSubClip(shouldSubClip bool) *ClipperClipsConfigBuilder {
+	b.config.ShouldSubClip = shouldSubClip
+	return b
+}
+
+// WithSubClipLengthSecs sets the subclip length in seconds
+func (b *ClipperClipsConfigBuilder) WithSubClipLengthSecs(lengthSecs int) *ClipperClipsConfigBuilder {
+	b.config.SubClipLengthSecs = lengthSecs
+	return b
+}
+
 // Build creates the final ClipperClipsConfig
-func (b *ClipperClipsConfigBuilder) Build() ClipperClipsConfig {
+func (b *ClipperClipsConfigBuilder) Build() *ClipperClipsConfig {
 	if b.config.ClipType == ClipTypeSplitScreen {
 		if err := b.validateSplitScreenConfig(); err != nil {
 			panic(err)
@@ -116,7 +136,7 @@ func (b *ClipperClipsConfigBuilder) Build() ClipperClipsConfig {
 		}
 	}
 
-	return b.config
+	return &b.config
 }
 
 func (b *ClipperClipsConfigBuilder) validateSplitScreenConfig() error {
