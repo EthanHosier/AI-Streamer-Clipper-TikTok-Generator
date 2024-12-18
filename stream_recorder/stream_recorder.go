@@ -15,7 +15,7 @@ func NewStreamRecorder() *StreamRecorder {
 	return &StreamRecorder{}
 }
 
-func (s *StreamRecorder) Record(streamUrl, outputDir string) (chan string, chan struct{}, chan error) {
+func (s *StreamRecorder) Record(streamUrl, outputDir string, segmentTime int) (chan string, chan struct{}, chan error) {
 	clipsCh := make(chan string)
 	doneCh := make(chan struct{})
 	errorCh := make(chan error)
@@ -25,12 +25,12 @@ func (s *StreamRecorder) Record(streamUrl, outputDir string) (chan string, chan 
 		return nil, nil, nil
 	}
 
-	go s.recordStream(streamUrl, outputDir, clipsCh, doneCh, errorCh)
+	go s.recordStream(streamUrl, outputDir, clipsCh, doneCh, errorCh, segmentTime)
 
 	return clipsCh, doneCh, errorCh
 }
 
-func (s *StreamRecorder) recordStream(streamUrl, outputDir string, clipsCh chan string, doneCh chan struct{}, errorCh chan error) {
+func (s *StreamRecorder) recordStream(streamUrl, outputDir string, clipsCh chan string, doneCh chan struct{}, errorCh chan error, segmentTime int) {
 	defer close(clipsCh)
 	defer close(doneCh)
 	defer close(errorCh)
@@ -39,7 +39,7 @@ func (s *StreamRecorder) recordStream(streamUrl, outputDir string, clipsCh chan 
 	ffmpegCmd := exec.Command("ffmpeg",
 		"-i", "pipe:0",
 		"-f", "segment",
-		"-segment_time", "12",
+		"-segment_time", fmt.Sprintf("%d", segmentTime),
 		"-reset_timestamps", "1",
 		"-c", "copy",
 		filepath.Join(outputDir, "output%03d.mp4"),

@@ -5,3 +5,6 @@ attention-clips/satisfying
 *.mp4
 
 myenv
+.terraform/.terraform
+*.tfstate
+*.tfstate.*

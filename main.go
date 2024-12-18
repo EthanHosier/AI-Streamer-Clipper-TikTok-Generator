@@ -1,41 +1,30 @@
 package main
 
 import (
+	"context"
+	"fmt"
 	"log"
+	"os"
 
-	"github.com/ethanhosier/clips/stream_recorder"
+	"github.com/ethanhosier/clips/gemini"
+	"github.com/joho/godotenv"
 )
 
-const id = "JFh7vQEoqX4"
-
 func main() {
-	outputDir := "./clips"
-	streamURL := "https://www.twitch.tv/freyzplayz"
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 
-	recorder := stream_recorder.NewStreamRecorder()
+	geminiClient, err := gemini.NewGeminiClient(context.Background(), os.Getenv("GEMINI_API_KEY"), "clips-439820-video-uploads")
+	if err != nil {
+		log.Fatalf("Error creating Gemini client: %v", err)
+	}
 
-	clipsCh, doneCh, errorCh := recorder.Record(streamURL, outputDir)
+	resp, err := geminiClient.GetChatCompletionWithVideo(context.Background(), "Give a detailed, specific analysis of the video", "clips/angryginge13/output002.mp4")
+	if err != nil {
+		log.Fatalf("Error getting chat completion: %v", err)
+	}
 
-	// Handle events
-	go func() {
-		for {
-			select {
-			case filename, ok := <-clipsCh:
-				if !ok {
-					return
-				}
-				log.Printf("New clip saved yeahhh: %s", filename)
-			case err, ok := <-errorCh:
-				if !ok {
-					return
-				}
-				log.Printf("Error: %v", err)
-			case <-doneCh:
-				log.Println("Stream ended.")
-				return
-			}
-		}
-	}()
-
-	<-doneCh
+	fmt.Println(*resp)
 }
