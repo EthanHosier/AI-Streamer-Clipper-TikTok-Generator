@@ -3,8 +3,7 @@ package gemini
 import (
 	"context"
 	"fmt"
-	"io"
-	"os"
+	"log"
 	"time"
 
 	"cloud.google.com/go/storage"
@@ -63,59 +62,58 @@ func (gc *GeminiClient) GetChatCompletion(ctx context.Context, prompt string) (*
 }
 
 func (gc *GeminiClient) GetChatCompletionWithVideo(ctx context.Context, prompt string, videoPath string) (*string, error) {
-	// Generate a unique filename (you might want to adjust this logic)
-	fileName := fmt.Sprintf("uploads/%d.mp4", time.Now().UnixNano())
-
-	// Create the bucket handle and object handle
-	bkt := gc.storageClient.Bucket(gc.bucket)
-	obj := bkt.Object(fileName)
-
-	// Create the writer
-	writer := obj.NewWriter(ctx)
-
-	// Open the local file
-	file, err := os.Open(videoPath)
+	// Upload the video file to Gemini API
+	file, err := gc.uploadFileToGemini(ctx, videoPath)
 	if err != nil {
-		return nil, fmt.Errorf("failed to open video file: %v", err)
+		return nil, fmt.Errorf("failed to upload video: %v", err)
 	}
-	defer file.Close()
+	defer func() {
+		// Clean up the uploaded file after processing
+		if err := gc.client.DeleteFile(ctx, file.Name); err != nil {
+			log.Printf("failed to delete file: %v", err)
+		}
+	}()
 
-	// Copy the file to GCS
-	if _, err := io.Copy(writer, file); err != nil {
-		return nil, fmt.Errorf("failed to copy file to GCS: %v", err)
+	// Ensure the file is fully processed before proceeding
+	for file.State == genai.FileStateProcessing {
+		log.Printf("Processing file: %s", file.Name)
+		time.Sleep(5 * time.Second)
+		if file, err = gc.client.GetFile(ctx, file.Name); err != nil {
+			return nil, fmt.Errorf("failed to check file status: %v", err)
+		}
+	}
+	if file.State != genai.FileStateActive {
+		return nil, fmt.Errorf("file is not active; state: %s", file.State)
 	}
 
-	// Close the writer
-	if err := writer.Close(); err != nil {
-		return nil, fmt.Errorf("failed to close writer: %v", err)
-	}
-
-	// Change the GCS URL to a public HTTPS URL
-	videoURL := fmt.Sprintf("https://storage.googleapis.com/%s/%s", gc.bucket, fileName)
-
+	// Use the uploaded and processed file URI in the prompt
 	model := gc.client.GenerativeModel("gemini-2.0-flash-exp")
-
-	// Create prompt parts combining text and video URL
-	parts := []genai.Part{
-		genai.FileData{URI: videoURL, MIMEType: "video/mp4"},
+	resp, err := model.GenerateContent(ctx,
+		genai.FileData{URI: file.URI, MIMEType: "video/mp4"},
 		genai.Text(prompt),
-	}
-
-	resp, err := model.GenerateContent(ctx, parts...)
+	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to generate content: %v", err)
 	}
 
-	if len(resp.Candidates) == 0 || resp.Candidates[0].Content == nil || len(resp.Candidates[0].Content.Parts) == 0 {
-		return nil, fmt.Errorf("no response parts received")
+	if len(resp.Candidates) == 0 || resp.Candidates[0].Content == nil {
+		return nil, fmt.Errorf("no response candidates received")
 	}
 
 	text, ok := resp.Candidates[0].Content.Parts[0].(genai.Text)
 	if !ok {
-		return nil, fmt.Errorf("failed to convert to text")
+		return nil, fmt.Errorf("failed to convert content to text")
 	}
 
 	strText := string(text)
-
 	return &strText, nil
+}
+
+func (gc *GeminiClient) uploadFileToGemini(ctx context.Context, videoPath string) (*genai.File, error) {
+	// Use the Gemini API's UploadFileFromPath method to upload the video
+	file, err := gc.client.UploadFileFromPath(ctx, videoPath, nil)
+	if err != nil {
+		return nil, fmt.Errorf("failed to upload file to Gemini: %v", err)
+	}
+	return file, nil
 }
