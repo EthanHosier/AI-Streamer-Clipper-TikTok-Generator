@@ -160,3 +160,40 @@ func (s *Supabase) CreateStreamEvent(streamEvent *StreamEvent) (int, error) {
 
 	return int(result[0].(map[string]interface{})["id"].(float64)), nil
 }
+
+func (s *Supabase) GetStreamContexts(streamID int) ([]StreamContext, error) {
+	result := []interface{}{}
+	err := s.Client.DB.From("stream_contexts").Select("*").OrderBy("created_at", "desc").Eq("stream_id", fmt.Sprintf("%d", streamID)).Execute(&result) // newest first
+	if err != nil {
+		return nil, err
+	}
+
+	streamContexts := []StreamContext{}
+	for _, item := range result {
+		resultMap, ok := item.(map[string]interface{})
+		if !ok {
+			return nil, fmt.Errorf("failed to convert result to map")
+		}
+		retID := int(resultMap["id"].(float64))
+		retCreatedAt := resultMap["created_at"].(string)
+		streamContexts = append(streamContexts, StreamContext{
+			ID:            &retID,
+			StreamID:      int(resultMap["stream_id"].(float64)),
+			Context:       resultMap["context"].(string),
+			StreamEventID: int(resultMap["stream_event_id"].(float64)),
+			CreatedAt:     &retCreatedAt,
+		})
+	}
+
+	return streamContexts, nil
+}
+
+func (s *Supabase) CreateStreamContext(streamContext *StreamContext) (int, error) {
+	result := []interface{}{}
+	err := s.Client.DB.From("stream_contexts").Insert(streamContext).Execute(&result)
+	if err != nil {
+		return 0, err
+	}
+
+	return int(result[0].(map[string]interface{})["id"].(float64)), nil
+}

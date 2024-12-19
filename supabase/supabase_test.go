@@ -107,7 +107,7 @@ func TestGetStreamEvents(t *testing.T) {
 func TestCreateStreamEvent(t *testing.T) {
 	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
 	streamEvent := &StreamEvent{
-		StreamID:    0,
+		StreamID:    2,
 		StartSecs:   100,
 		EndSecs:     200,
 		Description: "Test Stream Event",
@@ -117,4 +117,27 @@ func TestCreateStreamEvent(t *testing.T) {
 		t.Fatalf("Error creating stream event: %v", err)
 	}
 	t.Logf("Stream event created with ID: %d", id)
+}
+
+func TestCreateStreamContext(t *testing.T) {
+	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
+	streamContext := &StreamContext{
+		StreamID:      2,
+		Context:       "Test Stream Context",
+		StreamEventID: 3,
+	}
+	id, err := supabase.CreateStreamContext(streamContext)
+	if err != nil {
+		t.Fatalf("Error creating stream context: %v", err)
+	}
+	t.Logf("Stream context created with ID: %d", id)
+}
+
+func TestGetStreamContexts(t *testing.T) {
+	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
+	streamContexts, err := supabase.GetStreamContexts(2)
+	if err != nil {
+		t.Fatalf("Error getting stream contexts: %v", err)
+	}
+	fmt.Printf("%+v\n", streamContexts)
 }
