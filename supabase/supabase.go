@@ -140,11 +140,12 @@ func (s *Supabase) GetStreamEvents(streamID int) ([]StreamEvent, error) {
 		}
 		retID := int(resultMap["id"].(float64))
 		streamEvents = append(streamEvents, StreamEvent{
-			ID:          &retID,
-			StreamID:    int(resultMap["stream_id"].(float64)),
-			StartSecs:   int(resultMap["start_secs"].(float64)),
-			EndSecs:     int(resultMap["end_secs"].(float64)),
-			Description: resultMap["description"].(string),
+			ID:              &retID,
+			StreamID:        int(resultMap["stream_id"].(float64)),
+			StartSecs:       int(resultMap["start_secs"].(float64)),
+			EndSecs:         int(resultMap["end_secs"].(float64)),
+			Description:     resultMap["description"].(string),
+			StreamContextID: int(resultMap["stream_context_id"].(float64)),
 		})
 	}
 
@@ -192,11 +193,10 @@ func (s *Supabase) GetStreamContexts(streamID int) ([]StreamContext, error) {
 		retID := int(resultMap["id"].(float64))
 		retCreatedAt := resultMap["created_at"].(string)
 		streamContexts = append(streamContexts, StreamContext{
-			ID:            &retID,
-			StreamID:      int(resultMap["stream_id"].(float64)),
-			Context:       resultMap["context"].(string),
-			StreamEventID: int(resultMap["stream_event_id"].(float64)),
-			CreatedAt:     &retCreatedAt,
+			ID:        &retID,
+			StreamID:  int(resultMap["stream_id"].(float64)),
+			Context:   resultMap["context"].(string),
+			CreatedAt: &retCreatedAt,
 		})
 	}
 

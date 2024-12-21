@@ -14,7 +14,8 @@ import (
 
 type FfmpegHandler interface {
 	RemoveAudio(inputFile, outputFile string) (string, error)
-	ClipVideo(inputFile, outputFile, startTime, duration string) (string, error)
+	ClipVideo(inputFile, startTime, duration string) (string, error)
+	VideoDuration(inputFile string) (float64, error)
 }
 
 type FfmpegClient struct {
@@ -33,15 +34,12 @@ func (ff *FfmpegClient) RemoveAudio(inputFile, outputFile string) (string, error
 }
 
 func (ff *FfmpegClient) ClipVideoRandomSecs(inputFile string, clipLength int) (string, error) {
-	duration, err := ff.getVideoDuration(inputFile)
+	duration, err := ff.VideoDuration(inputFile)
 	if err != nil {
 		return "", fmt.Errorf("failed to get video duration: %v", err)
 	}
 
-	totalDurationSeconds, err := strconv.Atoi(strings.Split(duration, ".")[0]) // assuming duration is in seconds with decimal precision
-	if err != nil {
-		return "", fmt.Errorf("failed to parse video duration: %v", err)
-	}
+	totalDurationSeconds := int(duration) // WHY IS THIS INT?
 
 	if clipLength >= totalDurationSeconds {
 		return "", errors.New("clip length must be shorter than video duration")

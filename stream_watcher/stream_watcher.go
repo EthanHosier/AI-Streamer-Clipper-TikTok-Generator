@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/ethanhosier/clips/ffmpeg"
 	"github.com/ethanhosier/clips/gemini"
 	"github.com/ethanhosier/clips/stream_recorder"
 	"github.com/ethanhosier/clips/supabase"
@@ -21,18 +22,19 @@ type StreamWatcher struct {
 	streamRecorder *stream_recorder.StreamRecorder
 	supabaseClient *supabase.Supabase
 	geminiClient   *gemini.GeminiClient
-
-	streamID int
+	ffmpegClient   ffmpeg.FfmpegHandler
+	streamID       int
 }
 
-func NewStreamWatcher(streamRecorder *stream_recorder.StreamRecorder, supabaseClient *supabase.Supabase, geminiClient *gemini.GeminiClient, streamID int) *StreamWatcher {
-	return &StreamWatcher{streamRecorder: streamRecorder, supabaseClient: supabaseClient, geminiClient: geminiClient, streamID: streamID}
+func NewStreamWatcher(streamRecorder *stream_recorder.StreamRecorder, supabaseClient *supabase.Supabase, geminiClient *gemini.GeminiClient, ffmpegClient ffmpeg.FfmpegHandler, streamID int) *StreamWatcher {
+	return &StreamWatcher{streamRecorder: streamRecorder, supabaseClient: supabaseClient, geminiClient: geminiClient, ffmpegClient: ffmpegClient, streamID: streamID}
 }
 
 func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 	outputDir := fmt.Sprintf("%s/%s", recordedVidsDir, streamUrl)
 	clipsCh, doneCh, errorCh := s.streamRecorder.Record(streamUrl, outputDir, segmentTime)
 
+	vidPositionSecs := 0.0
 	vidContext := defaultContext
 	last20secs := defaultLast20s
 
@@ -41,12 +43,18 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 		case <-ctx.Done():
 			return nil
 		case clip := <-clipsCh:
-			clipSummary, err := s.handleWatchClipAndStoreSummary(clip, vidContext, last20secs)
+			clipSummary, err := s.handleWatchClipAndStoreSummary(clip, vidContext, last20secs, vidPositionSecs)
 			if err != nil {
 				return err
 			}
 			vidContext = clipSummary.UpdatedContext
 			last20secs = clipSummary.Last20Secs
+
+			ffmpegDuration, err := s.ffmpegClient.VideoDuration(clip)
+			if err != nil {
+				return err
+			}
+			vidPositionSecs += ffmpegDuration
 
 		case err := <-errorCh:
 			fmt.Println(err)
@@ -57,8 +65,8 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 	}
 }
 
-func (s *StreamWatcher) handleWatchClipAndStoreSummary(clip string, vidContext string, last20secs string) (*ClipSummary, error) {
-	clipSummary, err := s.handleSummariseClip(clip, vidContext, last20secs)
+func (s *StreamWatcher) handleWatchClipAndStoreSummary(clip string, vidContext string, last20secs string, streamPositionSecs float64) (*ClipSummary, error) {
+	clipSummary, err := s.handleSummariseClip(clip, vidContext, last20secs, streamPositionSecs)
 	if err != nil {
 		return nil, err
 	}

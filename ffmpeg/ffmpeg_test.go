@@ -32,3 +32,12 @@ func TestIsValidTime(t *testing.T) {
 		}
 	}
 }
+
+func TestVideoDuration(t *testing.T) {
+	ffmpeg := NewFfmpegClient()
+	duration, err := ffmpeg.VideoDuration("/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4")
+	if err != nil {
+		t.Errorf("VideoDuration() error = %v", err)
+	}
+	t.Logf("Duration: %s", duration)
+}

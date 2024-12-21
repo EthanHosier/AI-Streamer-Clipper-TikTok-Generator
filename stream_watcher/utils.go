@@ -45,7 +45,7 @@ var responseSchema = &genai.Schema{
 	Required: []string{"stream_events", "updated_context", "last_20_secs"},
 }
 
-func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, last20secs string) (*ClipSummary, error) {
+func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, last20secs string, streamPositionSecs float64) (*ClipSummary, error) {
 	prompt := `Here is a clip from a much longer live stream. Here is the context of what has happened up to this clip: ` + vidContext + `. More specifically, here is what happened just before this video was taken: ` + last20secs + `. 
 	Give a detailed, specific analysis of this video. I will be passing these descriptions to another AI Agent which will determine which parts of the video clip to make viral tiktoks, so make this as detailed as possible. You should specify each event in the video, using this format:
 	
@@ -84,8 +84,8 @@ func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, l
 			return nil, err
 		}
 		streamEvents = append(streamEvents, supabase.StreamEvent{
-			StartSecs:   startSecs,
-			EndSecs:     endSecs,
+			StartSecs:   startSecs + int(streamPositionSecs),
+			EndSecs:     endSecs + int(streamPositionSecs),
 			Description: event.Description,
 			StreamID:    s.streamID,
 		})
@@ -98,20 +98,30 @@ func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, l
 }
 
 func (s *StreamWatcher) storeClipSummaryParts(clipSummary *ClipSummary) error {
-	streamEventIDs, err := s.supabaseClient.CreateStreamEvents(clipSummary.StreamEvents)
-	if err != nil {
-		return fmt.Errorf("error creating stream events: %v", err)
-	}
-
 	streamContext := supabase.StreamContext{
-		StreamID:      s.streamID,
-		Context:       clipSummary.UpdatedContext,
-		StreamEventID: streamEventIDs[0], // Make this more logical? Rn just taking first id to match idk
+		StreamID: s.streamID,
+		Context:  clipSummary.UpdatedContext,
 	}
 
-	_, err = s.supabaseClient.CreateStreamContext(&streamContext)
+	streamContextID, err := s.supabaseClient.CreateStreamContext(&streamContext)
 	if err != nil {
 		return fmt.Errorf("error creating stream context: %v", err)
+	}
+
+	streamEvents := []supabase.StreamEvent{}
+	for _, event := range clipSummary.StreamEvents {
+		streamEvents = append(streamEvents, supabase.StreamEvent{
+			StreamContextID: streamContextID,
+			StartSecs:       event.StartSecs,
+			EndSecs:         event.EndSecs,
+			Description:     event.Description,
+			StreamID:        s.streamID,
+		})
+	}
+
+	_, err = s.supabaseClient.CreateStreamEvents(streamEvents)
+	if err != nil {
+		return fmt.Errorf("error creating stream events: %v", err)
 	}
 
 	return nil

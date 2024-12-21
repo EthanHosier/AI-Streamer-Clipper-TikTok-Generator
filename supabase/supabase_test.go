@@ -107,10 +107,11 @@ func TestGetStreamEvents(t *testing.T) {
 func TestCreateStreamEvent(t *testing.T) {
 	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
 	streamEvent := &StreamEvent{
-		StreamID:    2,
-		StartSecs:   100,
-		EndSecs:     200,
-		Description: "Test Stream Event",
+		StreamID:        2,
+		StartSecs:       100,
+		EndSecs:         200,
+		Description:     "Test Stream Event",
+		StreamContextID: 1,
 	}
 	id, err := supabase.CreateStreamEvent(streamEvent)
 	if err != nil {
@@ -122,9 +123,8 @@ func TestCreateStreamEvent(t *testing.T) {
 func TestCreateStreamContext(t *testing.T) {
 	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
 	streamContext := &StreamContext{
-		StreamID:      2,
-		Context:       "Test Stream Context",
-		StreamEventID: 3,
+		StreamID: 2,
+		Context:  "Test Stream Context",
 	}
 	id, err := supabase.CreateStreamContext(streamContext)
 	if err != nil {
