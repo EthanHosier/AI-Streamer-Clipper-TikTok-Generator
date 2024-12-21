@@ -21,7 +21,7 @@ func main() {
 		log.Fatalf("Error creating Gemini client: %v", err)
 	}
 
-	resp, err := geminiClient.GetChatCompletionWithVideo(context.Background(), "Give a detailed, specific analysis of the video", "clips/angryginge13/output002.mp4")
+	resp, err := geminiClient.GetChatCompletionWithVideo(context.Background(), "Give a detailed, specific analysis of the video", "clips/angryginge13/output002.mp4", nil)
 	if err != nil {
 		log.Fatalf("Error getting chat completion: %v", err)
 	}

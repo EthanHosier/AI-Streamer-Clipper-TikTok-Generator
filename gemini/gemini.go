@@ -6,32 +6,22 @@ import (
 	"log"
 	"time"
 
-	"cloud.google.com/go/storage"
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
 )
 
 type GeminiClient struct {
-	client        *genai.Client
-	bucket        string
-	storageClient *storage.Client
+	client *genai.Client
 }
 
-func NewGeminiClient(ctx context.Context, apiKey string, bucket string) (*GeminiClient, error) {
+func NewGeminiClient(ctx context.Context, apiKey string) (*GeminiClient, error) {
 	client, err := genai.NewClient(ctx, option.WithAPIKey(apiKey))
 	if err != nil {
 		return nil, fmt.Errorf("failed to create client: %v", err)
 	}
 
-	storageClient, err := storage.NewClient(ctx)
-	if err != nil {
-		return nil, fmt.Errorf("failed to create storage client: %v", err)
-	}
-
 	return &GeminiClient{
-		client:        client,
-		bucket:        bucket,
-		storageClient: storageClient,
+		client: client,
 	}, nil
 }
 
@@ -61,7 +51,7 @@ func (gc *GeminiClient) GetChatCompletion(ctx context.Context, prompt string) (*
 	return &strText, nil
 }
 
-func (gc *GeminiClient) GetChatCompletionWithVideo(ctx context.Context, prompt string, videoPath string) (*string, error) {
+func (gc *GeminiClient) GetChatCompletionWithVideo(ctx context.Context, prompt string, videoPath string, responseSchema *genai.Schema) (*string, error) {
 	// Upload the video file to Gemini API
 	file, err := gc.uploadFileToGemini(ctx, videoPath)
 	if err != nil {
@@ -88,6 +78,12 @@ func (gc *GeminiClient) GetChatCompletionWithVideo(ctx context.Context, prompt s
 
 	// Use the uploaded and processed file URI in the prompt
 	model := gc.client.GenerativeModel("gemini-2.0-flash-exp")
+
+	if responseSchema != nil {
+		model.ResponseMIMEType = "application/json"
+		model.ResponseSchema = responseSchema
+	}
+
 	resp, err := model.GenerateContent(ctx,
 		genai.FileData{URI: file.URI, MIMEType: "video/mp4"},
 		genai.Text(prompt),

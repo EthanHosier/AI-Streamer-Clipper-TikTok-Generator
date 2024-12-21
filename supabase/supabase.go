@@ -7,19 +7,19 @@ import (
 )
 
 type Supabase struct {
-	Client *supabase.Client
+	client *supabase.Client
 }
 
 func NewSupabase(url string, key string) *Supabase {
 	return &Supabase{
-		Client: supabase.CreateClient(url, key),
+		client: supabase.CreateClient(url, key),
 	}
 }
 
 func (s *Supabase) GetStreamer(id int) (*Streamer, error) {
 	var result []interface{}
 
-	err := s.Client.DB.From("streamers").Select("*").Eq("id", fmt.Sprintf("%d", id)).Execute(&result)
+	err := s.client.DB.From("streamers").Select("*").Eq("id", fmt.Sprintf("%d", id)).Execute(&result)
 	if err != nil {
 		return nil, err
 	}
@@ -47,7 +47,7 @@ func (s *Supabase) GetStreamer(id int) (*Streamer, error) {
 
 func (s *Supabase) CreateStreamer(streamer *Streamer) (int, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("streamers").Insert(streamer).Execute(&result)
+	err := s.client.DB.From("streamers").Insert(streamer).Execute(&result)
 	if err != nil {
 		return 0, err
 	}
@@ -57,7 +57,7 @@ func (s *Supabase) CreateStreamer(streamer *Streamer) (int, error) {
 
 func (s *Supabase) GetStreamerPlatforms(streamerID int) ([]StreamerPlatform, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("streamer_platforms").Select("*").Eq("streamer_id", fmt.Sprintf("%d", streamerID)).Execute(&result)
+	err := s.client.DB.From("streamer_platforms").Select("*").Eq("streamer_id", fmt.Sprintf("%d", streamerID)).Execute(&result)
 	if err != nil {
 		return nil, err
 	}
@@ -82,7 +82,7 @@ func (s *Supabase) GetStreamerPlatforms(streamerID int) ([]StreamerPlatform, err
 
 func (s *Supabase) CreateStreamerPlatform(streamerPlatform *StreamerPlatform) (int, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("streamer_platforms").Insert(streamerPlatform).Execute(&result)
+	err := s.client.DB.From("streamer_platforms").Insert(streamerPlatform).Execute(&result)
 	if err != nil {
 		return 0, err
 	}
@@ -92,7 +92,7 @@ func (s *Supabase) CreateStreamerPlatform(streamerPlatform *StreamerPlatform) (i
 
 func (s *Supabase) CreateStream(stream *Stream) (int, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("streams").Insert(stream).Execute(&result)
+	err := s.client.DB.From("streams").Insert(stream).Execute(&result)
 	if err != nil {
 		return 0, err
 	}
@@ -104,7 +104,7 @@ func (s *Supabase) CreateStream(stream *Stream) (int, error) {
 
 func (s *Supabase) GetStream(id int) (*Stream, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("streams").Select("*").Eq("id", fmt.Sprintf("%d", id)).Execute(&result)
+	err := s.client.DB.From("streams").Select("*").Eq("id", fmt.Sprintf("%d", id)).Execute(&result)
 	if err != nil {
 		return nil, err
 	}
@@ -127,7 +127,7 @@ func (s *Supabase) GetStream(id int) (*Stream, error) {
 
 func (s *Supabase) GetStreamEvents(streamID int) ([]StreamEvent, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("stream_events").Select("*").Eq("stream_id", fmt.Sprintf("%d", streamID)).Execute(&result)
+	err := s.client.DB.From("stream_events").Select("*").Eq("stream_id", fmt.Sprintf("%d", streamID)).Execute(&result)
 	if err != nil {
 		return nil, err
 	}
@@ -153,7 +153,7 @@ func (s *Supabase) GetStreamEvents(streamID int) ([]StreamEvent, error) {
 
 func (s *Supabase) CreateStreamEvent(streamEvent *StreamEvent) (int, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("stream_events").Insert(streamEvent).Execute(&result)
+	err := s.client.DB.From("stream_events").Insert(streamEvent).Execute(&result)
 	if err != nil {
 		return 0, err
 	}
@@ -161,9 +161,24 @@ func (s *Supabase) CreateStreamEvent(streamEvent *StreamEvent) (int, error) {
 	return int(result[0].(map[string]interface{})["id"].(float64)), nil
 }
 
+func (s *Supabase) CreateStreamEvents(streamEvents []StreamEvent) ([]int, error) {
+	result := []interface{}{}
+	err := s.client.DB.From("stream_events").Insert(streamEvents).Execute(&result)
+	if err != nil {
+		return nil, err
+	}
+
+	ids := []int{}
+	for _, item := range result {
+		ids = append(ids, int(item.(map[string]interface{})["id"].(float64)))
+	}
+
+	return ids, nil
+}
+
 func (s *Supabase) GetStreamContexts(streamID int) ([]StreamContext, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("stream_contexts").Select("*").OrderBy("created_at", "desc").Eq("stream_id", fmt.Sprintf("%d", streamID)).Execute(&result) // newest first
+	err := s.client.DB.From("stream_contexts").Select("*").OrderBy("created_at", "desc").Eq("stream_id", fmt.Sprintf("%d", streamID)).Execute(&result) // newest first
 	if err != nil {
 		return nil, err
 	}
@@ -190,7 +205,7 @@ func (s *Supabase) GetStreamContexts(streamID int) ([]StreamContext, error) {
 
 func (s *Supabase) CreateStreamContext(streamContext *StreamContext) (int, error) {
 	result := []interface{}{}
-	err := s.Client.DB.From("stream_contexts").Insert(streamContext).Execute(&result)
+	err := s.client.DB.From("stream_contexts").Insert(streamContext).Execute(&result)
 	if err != nil {
 		return 0, err
 	}
