@@ -18,7 +18,7 @@ func TestMain(m *testing.M) {
 }
 
 func TestOpenaiClient_CreateChatCompletion(t *testing.T) {
-	oc := NewOpenaiClient()
+	oc := NewOpenaiClient(os.Getenv("OPENAI_API_KEY"))
 
 	prompt := "What is the capital of France?"
 
@@ -31,7 +31,7 @@ func TestOpenaiClient_CreateChatCompletion(t *testing.T) {
 }
 
 func TestOpenaiClient_CreateChatCompletion_WithResponseFormat(t *testing.T) {
-	oc := NewOpenaiClient()
+	oc := NewOpenaiClient(os.Getenv("OPENAI_API_KEY"))
 
 	type CapitalResponse struct {
 		Capital string   `json:"capital"`

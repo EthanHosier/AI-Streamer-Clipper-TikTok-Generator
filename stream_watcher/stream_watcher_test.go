@@ -86,6 +86,7 @@ func TestStreamWatcherWatch(t *testing.T) {
 		supabaseClient     = supabase.NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
 		geminiClient, err  = gemini.NewGeminiClient(context.Background(), os.Getenv("GEMINI_API_KEY"))
 		ffmpegClient       = ffmpeg.NewFfmpegClient()
+		openaiClient       = openai.NewOpenaiClient(os.Getenv("OPENAI_KEY"))
 		streamID           = 3
 	)
 
@@ -93,7 +94,7 @@ func TestStreamWatcherWatch(t *testing.T) {
 		t.Fatalf("Error creating Gemini client: %v", err)
 	}
 
-	streamWatcher := NewStreamWatcher(fileStreamRecorder, supabaseClient, geminiClient, nil, ffmpegClient, streamID)
+	streamWatcher := NewStreamWatcher(fileStreamRecorder, supabaseClient, geminiClient, openaiClient, ffmpegClient, streamID)
 	err = streamWatcher.Watch(context.Background(), "/home/ethanh/Desktop/go/clips/stream_watcher/kc-10-mins.mp4")
 	if err != nil {
 		t.Fatalf("Error watching stream: %v", err)
@@ -101,7 +102,7 @@ func TestStreamWatcherWatch(t *testing.T) {
 }
 
 func TestStreamWatcherCheckForViralClip(t *testing.T) {
-	openaiClient := openai.NewOpenaiClient()
+	openaiClient := openai.NewOpenaiClient(os.Getenv("OPENAI_KEY"))
 	supabaseClient := supabase.NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
 	streamWatcher := NewStreamWatcher(nil, supabaseClient, nil, openaiClient, nil, 3)
 
@@ -128,8 +129,8 @@ func TestStreamWatcherGetActualClipFrom(t *testing.T) {
 	}
 
 	clip := &FoundClip{
-		StartSecs: 515,
-		EndSecs:   544,
+		StartSecs: 330,
+		EndSecs:   361,
 	}
 
 	bufferStartSecs := 20

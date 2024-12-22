@@ -3,7 +3,6 @@ package openai
 import (
 	"context"
 	"fmt"
-	"os"
 
 	"github.com/sashabaranov/go-openai"
 	"github.com/sashabaranov/go-openai/jsonschema"
@@ -15,8 +14,8 @@ type OpenaiClient struct {
 	client *openai.Client
 }
 
-func NewOpenaiClient() *OpenaiClient {
-	client := openai.NewClient(os.Getenv("OPENAI_KEY"))
+func NewOpenaiClient(apiKey string) *OpenaiClient {
+	client := openai.NewClient(apiKey)
 
 	return &OpenaiClient{client: client}
 }
