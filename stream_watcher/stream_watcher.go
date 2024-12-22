@@ -41,13 +41,36 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 	last20secs := defaultLast20s
 
 	receivedDone := false
+
+	// so that when want to add buffer to clip, we can use some of the pending clip
+	var pendingClip string
+
 	for {
 		select {
 		case <-ctx.Done():
 			return nil
+		case err := <-errorCh:
+			slog.Error("Error while processing stream", "error", err)
+			return err
+		case <-doneCh:
+			receivedDone = true
+			// Don't exit immediately, wait for remaining clips
+			continue
+
 		case clip, ok := <-clipsCh:
-			if !ok {
-				slog.Info("clips Channel closed")
+			if !ok { // Clips channel closed
+				if pendingClip != "" {
+					clipSummary, newStreamPositionSecs, err := s.processClip(pendingClip, vidContext, last20secs, vidPositionSecs)
+					if err != nil {
+						return err
+					}
+
+					vidPositionSecs = newStreamPositionSecs
+					vidContext = clipSummary.UpdatedContext
+					last20secs = clipSummary.Last20Secs
+					pendingClip = ""
+				}
+
 				// Channel is closed and no more clips
 				if receivedDone {
 					slog.Info("All clips processed, exiting")
@@ -55,32 +78,38 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 				}
 				continue
 			}
-			slog.Info("Watching clip", "clip", clip)
-			clipSummary, err := s.handleWatchClipAndStoreSummary(clip, vidContext, last20secs, vidPositionSecs)
+
+			if pendingClip == "" {
+				pendingClip = clip
+				continue
+			}
+
+			clipSummary, newStreamPositionSecs, err := s.processClip(pendingClip, vidContext, last20secs, vidPositionSecs)
 			if err != nil {
 				return err
 			}
+
+			vidPositionSecs = newStreamPositionSecs
 			vidContext = clipSummary.UpdatedContext
 			last20secs = clipSummary.Last20Secs
 
-			ffmpegDuration, err := s.ffmpegClient.VideoDuration(clip)
-			if err != nil {
-				return err
-			}
-			vidPositionSecs += ffmpegDuration
-			slog.Info("Video position", "position", vidPositionSecs)
-
-		case err := <-errorCh:
-			slog.Error("Error while processing stream", "error", err)
-			return err
-		case <-doneCh:
-			receivedDone = true
-			// Don't exit immediately, wait for remaining clips
-
-		default:
-			slog.Info("Nothing to do, waiting for clips")
+			pendingClip = clip
 		}
 	}
+}
+
+func (s *StreamWatcher) processClip(clip string, vidContext string, last20secs string, streamPositionSecs float64) (*ClipSummary, float64, error) {
+	clipSummary, err := s.handleWatchClipAndStoreSummary(clip, vidContext, last20secs, streamPositionSecs)
+	if err != nil {
+		return nil, 0, err
+	}
+
+	videoDuration, err := s.ffmpegClient.VideoDuration(clip)
+	if err != nil {
+		return nil, 0, err
+	}
+
+	return clipSummary, streamPositionSecs + videoDuration, nil
 }
 
 func (s *StreamWatcher) handleWatchClipAndStoreSummary(clip string, vidContext string, last20secs string, streamPositionSecs float64) (*ClipSummary, error) {

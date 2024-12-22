@@ -128,12 +128,12 @@ func TestStreamWatcherGetActualClipFrom(t *testing.T) {
 	}
 
 	clip := &FoundClip{
-		StartSecs: 6,
-		EndSecs:   200,
+		StartSecs: 515,
+		EndSecs:   544,
 	}
 
-	bufferStartSecs := 10
-	bufferEndSecs := 10
+	bufferStartSecs := 20
+	bufferEndSecs := 20
 
 	c, err := streamWatcher.getActualClipFrom(clip, vidFiles, bufferStartSecs, bufferEndSecs)
 	if err != nil {
