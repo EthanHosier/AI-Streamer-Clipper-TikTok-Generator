@@ -3,6 +3,7 @@ package stream_recorder
 import (
 	"context"
 	"fmt"
+	"log/slog"
 	"os"
 	"os/exec"
 	"os/signal"
@@ -67,6 +68,7 @@ func (s *StreamlinkRecorder) recordStream(ctx context.Context, streamUrl, output
 	ffmpegCmd.Stdin = stdout
 
 	cleanup := func() {
+		fmt.Println("Cleaning up")
 		if streamlinkCmd.Process != nil {
 			streamlinkCmd.Process.Kill()
 		}
@@ -109,6 +111,8 @@ func (s *StreamlinkRecorder) recordStream(ctx context.Context, streamUrl, output
 		return
 	}
 
+	slog.Info("Started recording", "streamUrl", streamUrl, "outputDir", outputDir, "segmentTime", segmentTime)
+
 	go func() {
 		processedFiles := make(map[string]bool)
 		currentFile := ""
@@ -130,6 +134,7 @@ func (s *StreamlinkRecorder) recordStream(ctx context.Context, streamUrl, output
 
 					if fullPath > currentFile {
 						if currentFile != "" && !processedFiles[currentFile] {
+							slog.Info("Sending segment clip", "clip", currentFile)
 							processedFiles[currentFile] = true
 							clipsCh <- currentFile
 						}

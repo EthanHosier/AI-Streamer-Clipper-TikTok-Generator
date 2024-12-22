@@ -38,7 +38,7 @@ func NewStreamWatcher(streamRecorder stream_recorder.StreamRecorder, supabaseCli
 }
 
 func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
-	outputDir := fmt.Sprintf("%s/%s", recordedVidsDir, streamUrl)
+	outputDir := fmt.Sprintf("%s/%d", recordedVidsDir, s.streamID)
 	clipsCh, doneCh, errorCh := s.streamRecorder.Record(streamUrl, outputDir, segmentTime)
 
 	vidPositionSecs := 0.0
