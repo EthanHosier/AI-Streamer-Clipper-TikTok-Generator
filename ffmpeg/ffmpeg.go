@@ -16,7 +16,7 @@ type FfmpegHandler interface {
 	RemoveAudio(inputFile, outputFile string) (string, error)
 	ClipVideo(inputFile, outputPath, startTime, duration string) (string, error)
 	VideoDuration(inputFile string) (float64, error)
-	SplitVideo(inputFile string, segmentTime int) ([]string, error)
+	SplitVideo(inputFile string, segmentTime int, outputFolder string) ([]string, error)
 }
 
 type FfmpegClient struct {
@@ -78,40 +78,40 @@ func (ff *FfmpegClient) ClipVideo(inputFile, outputPath, startTime, duration str
 	return outputPath, nil
 }
 
-func (ff *FfmpegClient) SplitVideo(inputPath string, segmentTime int) ([]string, error) {
-	// Construct the output pattern for segmented files
-	outputPattern := strings.TrimSuffix(inputPath, filepath.Ext(inputPath)) + "_%03d" + filepath.Ext(inputPath)
+func (ff *FfmpegClient) SplitVideo(inputPath string, segmentTime int, outputFolder string) ([]string, error) {
+	// Create output directory if it doesn't exist
+	if err := os.MkdirAll(outputFolder, 0755); err != nil {
+		return nil, fmt.Errorf("failed to create output directory: %w", err)
+	}
 
-	// Convert segment time to string
-	segmentTimeStr := strconv.Itoa(segmentTime)
+	// Get the base filename without path and extension
+	baseFileName := filepath.Base(strings.TrimSuffix(inputPath, filepath.Ext(inputPath)))
+	ext := filepath.Ext(inputPath)
+
+	// Construct the output pattern for segmented files
+	outputPattern := filepath.Join(outputFolder, baseFileName+"_%03d"+ext)
 
 	// FFmpeg command
 	cmd := exec.Command("ffmpeg",
 		"-i", inputPath,
 		"-c", "copy",
 		"-map", "0",
-		"-segment_time", segmentTimeStr,
+		"-segment_time", strconv.Itoa(segmentTime),
 		"-f", "segment",
 		"-reset_timestamps", "1",
 		outputPattern,
 	)
 
 	// Run the command and capture any errors
-	err := cmd.Run()
-	if err != nil {
+	if err := cmd.Run(); err != nil {
 		return nil, fmt.Errorf("error running ffmpeg: %w", err)
 	}
 
-	// Generate the list of output file paths based on the expected naming pattern
+	// Generate the list of output file paths
 	var outputPaths []string
-	base := strings.TrimSuffix(inputPath, filepath.Ext(inputPath))
-	ext := filepath.Ext(inputPath)
-
-	// Check for a reasonable number of expected output files
 	for i := 0; i < 1000; i++ { // Assuming no more than 1000 segments
-		outputFile := fmt.Sprintf("%s_%03d%s", base, i, ext)
+		outputFile := filepath.Join(outputFolder, fmt.Sprintf("%s_%03d%s", baseFileName, i, ext))
 
-		// Break early if the output file doesn't exist
 		if !fileExists(outputFile) {
 			break
 		}

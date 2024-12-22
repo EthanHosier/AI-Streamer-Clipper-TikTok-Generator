@@ -13,10 +13,11 @@ type StreamRecorder interface {
 }
 
 type StreamlinkRecorder struct {
+	name string
 }
 
-func NewStreamlinkRecorder() *StreamlinkRecorder {
-	return &StreamlinkRecorder{}
+func NewStreamlinkRecorder(name string) *StreamlinkRecorder {
+	return &StreamlinkRecorder{name: name}
 }
 
 func (s *StreamlinkRecorder) Record(streamUrl, outputDir string, segmentTime int) (chan string, chan struct{}, chan error) {

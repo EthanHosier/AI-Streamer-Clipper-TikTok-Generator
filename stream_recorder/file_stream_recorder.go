@@ -8,10 +8,11 @@ import (
 
 type FileStreamRecorder struct {
 	ffmpegClient ffmpeg.FfmpegHandler
+	name         string
 }
 
-func NewFileStreamRecorder(ffmpegClient ffmpeg.FfmpegHandler) *FileStreamRecorder {
-	return &FileStreamRecorder{ffmpegClient: ffmpegClient}
+func NewFileStreamRecorder(ffmpegClient ffmpeg.FfmpegHandler, name string) *FileStreamRecorder {
+	return &FileStreamRecorder{ffmpegClient: ffmpegClient, name: name}
 }
 
 func (s *FileStreamRecorder) Record(streamUrl, _ string, segmentTime int) (chan string, chan struct{}, chan error) {
@@ -19,7 +20,7 @@ func (s *FileStreamRecorder) Record(streamUrl, _ string, segmentTime int) (chan 
 	doneCh := make(chan struct{})
 	errorCh := make(chan error)
 
-	clips, err := s.ffmpegClient.SplitVideo(streamUrl, segmentTime)
+	clips, err := s.ffmpegClient.SplitVideo(streamUrl, segmentTime, fmt.Sprintf("tmp/%s/", s.name))
 	if err != nil {
 		errorCh <- fmt.Errorf("failed to split video: %v", err)
 		return nil, nil, nil

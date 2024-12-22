@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log/slog"
 	"math"
+	"math/rand"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -263,10 +264,13 @@ func (s *StreamWatcher) getActualClipFrom(c *FoundClip, vidFiles []string, buffe
 		inputFile = vidFiles[startFileIndex]
 	} else {
 		// Create temp directory if it doesn't exist
-		tempDir := "stream_watcher/ffmpeg/temp"
+
+		randomStr := strconv.Itoa(rand.Intn(1000000))
+		tempDir := fmt.Sprintf("tmp-join-clips-%s/", randomStr)
 		if err := os.MkdirAll(tempDir, 0755); err != nil {
 			return "", fmt.Errorf("failed to create temp directory: %v", err)
 		}
+		defer os.RemoveAll(tempDir)
 
 		// Need to combine multiple files
 		tempFile := fmt.Sprintf("%s/temp_merged_%d_%d.mp4", tempDir, startFileIndex, endFileIndex)
@@ -310,7 +314,7 @@ func (s *StreamWatcher) getActualClipFrom(c *FoundClip, vidFiles []string, buffe
 	startTime := secondsToTimeString(startFileOffset)
 	duration := secondsToTimeString(bufferedClip.EndSecs - bufferedClip.StartSecs)
 
-	outputFile, err := s.ffmpegClient.ClipVideo(inputFile, ffmpeg.RandomOutputPathFor(ffmpeg.MP4, "temp/", strconv.Itoa(int(c.StartSecs)), strconv.Itoa(int(c.EndSecs))), startTime, duration)
+	outputFile, err := s.ffmpegClient.ClipVideo(inputFile, ffmpeg.RandomOutputPathFor(ffmpeg.MP4, "tmp/", strconv.Itoa(int(c.StartSecs)), strconv.Itoa(int(c.EndSecs))), startTime, duration)
 	if err != nil {
 		return "", fmt.Errorf("failed to extract clip: %v", err)
 	}

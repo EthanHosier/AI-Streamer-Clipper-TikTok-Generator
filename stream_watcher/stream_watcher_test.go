@@ -82,7 +82,7 @@ func TestStreamWatcherHandleWatchClipWithOffset(t *testing.T) {
 
 func TestStreamWatcherWatch(t *testing.T) {
 	var (
-		fileStreamRecorder = stream_recorder.NewFileStreamRecorder(ffmpeg.NewFfmpegClient())
+		fileStreamRecorder = stream_recorder.NewFileStreamRecorder(ffmpeg.NewFfmpegClient(), "test-name")
 		supabaseClient     = supabase.NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
 		geminiClient, err  = gemini.NewGeminiClient(context.Background(), os.Getenv("GEMINI_API_KEY"))
 		ffmpegClient       = ffmpeg.NewFfmpegClient()
@@ -120,16 +120,16 @@ func TestStreamWatcherGetActualClipFrom(t *testing.T) {
 	streamWatcher := NewStreamWatcher(nil, nil, nil, nil, ffmpegClient, 3)
 
 	vidFiles := []string{
-		"/home/ethanh/Desktop/go/clips/stream_recorder/kc-10-mins_000.mp4",
-		"/home/ethanh/Desktop/go/clips/stream_recorder/kc-10-mins_001.mp4",
-		"/home/ethanh/Desktop/go/clips/stream_recorder/kc-10-mins_002.mp4",
-		"/home/ethanh/Desktop/go/clips/stream_recorder/kc-10-mins_003.mp4",
-		"/home/ethanh/Desktop/go/clips/stream_recorder/kc-10-mins_004.mp4",
+		"/home/ethanh/Desktop/go/clips/stream_recorder/tmp/kc-test/kc-10-mins_000.mp4",
+		"/home/ethanh/Desktop/go/clips/stream_recorder/tmp/kc-test/kc-10-mins_001.mp4",
+		"/home/ethanh/Desktop/go/clips/stream_recorder/tmp/kc-test/kc-10-mins_002.mp4",
+		"/home/ethanh/Desktop/go/clips/stream_recorder/tmp/kc-test/kc-10-mins_003.mp4",
+		"/home/ethanh/Desktop/go/clips/stream_recorder/tmp/kc-test/kc-10-mins_004.mp4",
 	}
 
 	clip := &FoundClip{
-		StartSecs: 142,
-		EndSecs:   160,
+		StartSecs: 6,
+		EndSecs:   200,
 	}
 
 	bufferStartSecs := 10

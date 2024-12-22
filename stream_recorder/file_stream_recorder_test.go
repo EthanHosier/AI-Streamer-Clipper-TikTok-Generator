@@ -8,7 +8,7 @@ import (
 
 func TestFileStreamRecorder(t *testing.T) {
 	ffmpegClient := ffmpeg.NewFfmpegClient()
-	fileStreamRecorder := NewFileStreamRecorder(ffmpegClient)
+	fileStreamRecorder := NewFileStreamRecorder(ffmpegClient, "kc-test")
 
 	fileUrl := "/home/ethanh/Desktop/go/clips/stream_recorder/kc-10-mins.mp4"
 	segmentTimeSecs := 120
