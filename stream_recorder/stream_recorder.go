@@ -1,10 +1,13 @@
 package stream_recorder
 
 import (
+	"context"
 	"fmt"
 	"os"
 	"os/exec"
+	"os/signal"
 	"path/filepath"
+	"syscall"
 	"time"
 )
 
@@ -30,18 +33,24 @@ func (s *StreamlinkRecorder) Record(streamUrl, outputDir string, segmentTime int
 		return nil, nil, nil
 	}
 
-	go s.recordStream(streamUrl, outputDir, clipsCh, doneCh, errorCh, segmentTime)
+	ctx, cancel := context.WithCancel(context.Background())
+	go func() {
+		<-doneCh
+		cancel()
+	}()
+
+	go s.recordStream(ctx, streamUrl, outputDir, clipsCh, doneCh, errorCh, segmentTime)
 
 	return clipsCh, doneCh, errorCh
 }
 
-func (s *StreamlinkRecorder) recordStream(streamUrl, outputDir string, clipsCh chan string, doneCh chan struct{}, errorCh chan error, segmentTime int) {
+func (s *StreamlinkRecorder) recordStream(ctx context.Context, streamUrl, outputDir string, clipsCh chan string, doneCh chan struct{}, errorCh chan error, segmentTime int) {
 	defer close(clipsCh)
 	defer close(doneCh)
 	defer close(errorCh)
 
-	streamlinkCmd := exec.Command("streamlink", "--stdout", streamUrl, "best")
-	ffmpegCmd := exec.Command("ffmpeg",
+	streamlinkCmd := exec.CommandContext(ctx, "streamlink", "--stdout", streamUrl, "best")
+	ffmpegCmd := exec.CommandContext(ctx, "ffmpeg",
 		"-i", "pipe:0",
 		"-f", "segment",
 		"-segment_time", fmt.Sprintf("%d", segmentTime),
@@ -57,19 +66,49 @@ func (s *StreamlinkRecorder) recordStream(streamUrl, outputDir string, clipsCh c
 	}
 	ffmpegCmd.Stdin = stdout
 
-	// Start streamlink
+	cleanup := func() {
+		if streamlinkCmd.Process != nil {
+			streamlinkCmd.Process.Kill()
+		}
+		if ffmpegCmd.Process != nil {
+			ffmpegCmd.Process.Kill()
+		}
+	}
+
+	defer cleanup()
+
+	sigChan := make(chan os.Signal, 1)
+	signal.Notify(sigChan,
+		os.Interrupt,    // SIGINT (Ctrl+C)
+		syscall.SIGTERM, // SIGTERM
+		syscall.SIGTSTP, // Ctrl+Z
+		syscall.SIGQUIT, // Ctrl+\
+		syscall.SIGHUP,  // Terminal closed
+	)
+	go func() {
+		sig := <-sigChan
+		fmt.Printf("\nReceived signal: %v\n", sig)
+		cleanup()
+
+		// If it's SIGTSTP, we need to exit explicitly since it's a stop signal
+		if sig == syscall.SIGTSTP {
+			os.Exit(0)
+		}
+
+		// For other signals
+		os.Exit(1)
+	}()
+
 	if err := streamlinkCmd.Start(); err != nil {
 		errorCh <- fmt.Errorf("failed to start streamlink: %v", err)
 		return
 	}
 
-	// Start ffmpeg
 	if err := ffmpegCmd.Start(); err != nil {
 		errorCh <- fmt.Errorf("failed to start ffmpeg: %v", err)
 		return
 	}
 
-	// Monitor output directory for completed files
 	go func() {
 		processedFiles := make(map[string]bool)
 		currentFile := ""
@@ -85,14 +124,11 @@ func (s *StreamlinkRecorder) recordStream(streamUrl, outputDir string, clipsCh c
 				if filepath.Ext(file.Name()) == ".mp4" {
 					fullPath := filepath.Join(outputDir, file.Name())
 
-					// Skip if we've already processed this file
 					if processedFiles[fullPath] {
 						continue
 					}
 
-					// If this is a new current file, update tracking
 					if fullPath > currentFile {
-						// Previous file is complete, send it if it exists
 						if currentFile != "" && !processedFiles[currentFile] {
 							processedFiles[currentFile] = true
 							clipsCh <- currentFile
@@ -106,7 +142,6 @@ func (s *StreamlinkRecorder) recordStream(streamUrl, outputDir string, clipsCh c
 		}
 	}()
 
-	// Wait for commands to complete
 	errStreamlink := streamlinkCmd.Wait()
 	if errStreamlink != nil {
 		errorCh <- fmt.Errorf("streamlink exited with error: %v", errStreamlink)
@@ -117,6 +152,5 @@ func (s *StreamlinkRecorder) recordStream(streamUrl, outputDir string, clipsCh c
 		errorCh <- fmt.Errorf("ffmpeg exited with error: %v", errFFmpeg)
 	}
 
-	// Signal completion
 	doneCh <- struct{}{}
 }
