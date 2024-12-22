@@ -39,7 +39,8 @@ var responseSchema = &genai.Schema{
 			Type: genai.TypeString,
 		},
 		"last_20_secs": {
-			Type: genai.TypeString,
+			Type:        genai.TypeString,
+			Description: "Don't include any actual timestamps here. Just describe what is happening in the last ~20 seconds of the video, as this will be used in the next clip summary.",
 		},
 	},
 	Required: []string{"stream_events", "updated_context", "last_20_secs"},
@@ -99,8 +100,9 @@ func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, l
 
 func (s *StreamWatcher) storeClipSummaryParts(clipSummary *ClipSummary) error {
 	streamContext := supabase.StreamContext{
-		StreamID: s.streamID,
-		Context:  clipSummary.UpdatedContext,
+		StreamID:   s.streamID,
+		Context:    clipSummary.UpdatedContext,
+		Last20Secs: clipSummary.Last20Secs,
 	}
 
 	streamContextID, err := s.supabaseClient.CreateStreamContext(&streamContext)

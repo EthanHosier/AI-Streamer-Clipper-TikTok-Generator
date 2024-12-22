@@ -31,11 +31,13 @@ type Stream struct {
 }
 
 type StreamContext struct {
-	ID        *int    `json:"id,omitempty"`
-	CreatedAt *string `json:"created_at,omitempty"`
-	StreamID  int     `json:"stream_id"`
-	Context   string  `json:"context"`
+	ID         *int    `json:"id,omitempty"`
+	CreatedAt  *string `json:"created_at,omitempty"`
+	StreamID   int     `json:"stream_id"`
+	Context    string  `json:"context"`
+	Last20Secs string  `json:"last_20_secs"`
 }
+
 type StreamEvent struct {
 	ID              *int   `json:"id,omitempty"`
 	StartSecs       int    `json:"start_secs"`

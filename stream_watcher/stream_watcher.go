@@ -77,7 +77,7 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 			// Don't exit immediately, wait for remaining clips
 
 		default:
-			fmt.Println("yeahhh")
+			slog.Info("Nothing to do, waiting for clips")
 		}
 	}
 }
