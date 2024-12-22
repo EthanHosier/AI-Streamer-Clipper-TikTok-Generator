@@ -64,5 +64,22 @@ func outputPathFor(inputFile string, extension FfmpegExtension) string {
 	baseName := filepath.Base(inputFile)
 	nameOnly := strings.TrimSuffix(baseName, filepath.Ext(baseName))
 
-	return fmt.Sprintf("ffmpeg/temp/%s-%s.%s", nameOnly, hex.EncodeToString(bytes), string(extension))
+	return fmt.Sprintf("/ffmpeg/temp/%s-%s.%s", nameOnly, hex.EncodeToString(bytes), string(extension))
+}
+
+func RandomOutputPathFor(extension FfmpegExtension, basePath string, params ...string) string {
+	bytes := make([]byte, 8)
+	rand.Read(bytes)
+
+	fileName := ""
+	for i, param := range params {
+		fileName += fmt.Sprintf("%s", param)
+		if i < len(params)-1 {
+			fileName += "-"
+		}
+	}
+
+	strippedPath := strings.TrimSuffix(basePath, "/")
+
+	return fmt.Sprintf("%s/%s-%s.%s", strippedPath, fileName, hex.EncodeToString(bytes), string(extension))
 }

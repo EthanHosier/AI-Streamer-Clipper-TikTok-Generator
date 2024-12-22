@@ -12,6 +12,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/ethanhosier/clips/ffmpeg"
 	"github.com/ethanhosier/clips/supabase"
 	"github.com/google/generative-ai-go/genai"
 )
@@ -206,6 +207,7 @@ func (s *StreamWatcher) findClips(windowStartSecs int, videoContext string) ([]F
 	return foundClips.FoundClips, nil
 }
 
+// TODO: Maybe clean this up?
 func (s *StreamWatcher) getActualClipFrom(c *FoundClip, vidFiles []string, bufferStartSecs, bufferEndSecs int) (string, error) {
 	// Find which files contain our clip by calculating cumulative duration
 	var cumulativeDuration float64
@@ -308,7 +310,7 @@ func (s *StreamWatcher) getActualClipFrom(c *FoundClip, vidFiles []string, buffe
 	startTime := secondsToTimeString(startFileOffset)
 	duration := secondsToTimeString(bufferedClip.EndSecs - bufferedClip.StartSecs)
 
-	outputFile, err := s.ffmpegClient.ClipVideo(inputFile, startTime, duration)
+	outputFile, err := s.ffmpegClient.ClipVideo(inputFile, ffmpeg.RandomOutputPathFor(ffmpeg.MP4, "temp/", strconv.Itoa(int(c.StartSecs)), strconv.Itoa(int(c.EndSecs))), startTime, duration)
 	if err != nil {
 		return "", fmt.Errorf("failed to extract clip: %v", err)
 	}

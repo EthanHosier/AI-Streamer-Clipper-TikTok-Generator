@@ -14,7 +14,7 @@ import (
 
 type FfmpegHandler interface {
 	RemoveAudio(inputFile, outputFile string) (string, error)
-	ClipVideo(inputFile, startTime, duration string) (string, error)
+	ClipVideo(inputFile, outputPath, startTime, duration string) (string, error)
 	VideoDuration(inputFile string) (float64, error)
 	SplitVideo(inputFile string, segmentTime int) ([]string, error)
 }
@@ -34,7 +34,7 @@ func (ff *FfmpegClient) RemoveAudio(inputFile, outputFile string) (string, error
 	return outputFile, nil
 }
 
-func (ff *FfmpegClient) ClipVideoRandomSecs(inputFile string, clipLength int) (string, error) {
+func (ff *FfmpegClient) ClipVideoRandomSecs(inputFile string, clipLength int, outputPath string) (string, error) {
 	duration, err := ff.VideoDuration(inputFile)
 	if err != nil {
 		return "", fmt.Errorf("failed to get video duration: %v", err)
@@ -53,10 +53,10 @@ func (ff *FfmpegClient) ClipVideoRandomSecs(inputFile string, clipLength int) (s
 	randomStartTime := secondsToTimeString(randomStartSeconds)
 	clipDuration := secondsToTimeString(clipLength)
 
-	return ff.ClipVideo(inputFile, randomStartTime, clipDuration)
+	return ff.ClipVideo(inputFile, outputPath, randomStartTime, clipDuration)
 }
 
-func (ff *FfmpegClient) ClipVideo(inputFile string, startTime, duration string) (string, error) {
+func (ff *FfmpegClient) ClipVideo(inputFile, outputPath, startTime, duration string) (string, error) {
 	if !isValidTime(startTime) {
 		return "", fmt.Errorf("invalid start time: %s", startTime)
 	}
@@ -64,9 +64,6 @@ func (ff *FfmpegClient) ClipVideo(inputFile string, startTime, duration string) 
 	if !isValidTime(duration) {
 		return "", fmt.Errorf("invalid duration: %s", duration)
 	}
-
-	outputPath := outputPathFor(inputFile, MP4)
-	fmt.Println("outputPath: ", outputPath)
 
 	// Create the directory if it doesn't exist
 	if err := os.MkdirAll(filepath.Dir(outputPath), 0755); err != nil {
