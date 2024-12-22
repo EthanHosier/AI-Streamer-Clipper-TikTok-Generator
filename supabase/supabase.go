@@ -152,6 +152,34 @@ func (s *Supabase) GetStreamEvents(streamID int) ([]StreamEvent, error) {
 	return streamEvents, nil
 }
 
+func (s *Supabase) GetStreamEventsAfter(startSecs int, streamID int) ([]StreamEvent, error) {
+	result := []interface{}{}
+	err := s.client.DB.From("stream_events").Select("*").Eq("stream_id", fmt.Sprintf("%d", streamID)).Gte("start_secs", fmt.Sprintf("%d", startSecs)).Execute(&result)
+
+	if err != nil {
+		return nil, err
+	}
+
+	streamEvents := []StreamEvent{}
+	for _, item := range result {
+		resultMap, ok := item.(map[string]interface{})
+		if !ok {
+			return nil, fmt.Errorf("failed to convert result to map")
+		}
+		retID := int(resultMap["id"].(float64))
+		streamEvents = append(streamEvents, StreamEvent{
+			ID:              &retID,
+			StreamID:        int(resultMap["stream_id"].(float64)),
+			StartSecs:       int(resultMap["start_secs"].(float64)),
+			EndSecs:         int(resultMap["end_secs"].(float64)),
+			Description:     resultMap["description"].(string),
+			StreamContextID: int(resultMap["stream_context_id"].(float64)),
+		})
+	}
+
+	return streamEvents, nil
+}
+
 func (s *Supabase) CreateStreamEvent(streamEvent *StreamEvent) (int, error) {
 	result := []interface{}{}
 	err := s.client.DB.From("stream_events").Insert(streamEvent).Execute(&result)

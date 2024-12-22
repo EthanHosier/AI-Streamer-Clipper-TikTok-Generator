@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 	"log/slog"
-	"time"
 
 	"github.com/ethanhosier/clips/ffmpeg"
 	"github.com/ethanhosier/clips/gemini"
+	"github.com/ethanhosier/clips/openai"
 	"github.com/ethanhosier/clips/stream_recorder"
 	"github.com/ethanhosier/clips/supabase"
 )
@@ -23,12 +23,13 @@ type StreamWatcher struct {
 	streamRecorder stream_recorder.StreamRecorder
 	supabaseClient *supabase.Supabase
 	geminiClient   *gemini.GeminiClient
+	openaiClient   *openai.OpenaiClient
 	ffmpegClient   ffmpeg.FfmpegHandler
 	streamID       int
 }
 
-func NewStreamWatcher(streamRecorder stream_recorder.StreamRecorder, supabaseClient *supabase.Supabase, geminiClient *gemini.GeminiClient, ffmpegClient ffmpeg.FfmpegHandler, streamID int) *StreamWatcher {
-	return &StreamWatcher{streamRecorder: streamRecorder, supabaseClient: supabaseClient, geminiClient: geminiClient, ffmpegClient: ffmpegClient, streamID: streamID}
+func NewStreamWatcher(streamRecorder stream_recorder.StreamRecorder, supabaseClient *supabase.Supabase, geminiClient *gemini.GeminiClient, openaiClient *openai.OpenaiClient, ffmpegClient ffmpeg.FfmpegHandler, streamID int) *StreamWatcher {
+	return &StreamWatcher{streamRecorder: streamRecorder, supabaseClient: supabaseClient, geminiClient: geminiClient, openaiClient: openaiClient, ffmpegClient: ffmpegClient, streamID: streamID}
 }
 
 func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
@@ -93,9 +94,4 @@ func (s *StreamWatcher) handleWatchClipAndStoreSummary(clip string, vidContext s
 	}
 
 	return clipSummary, nil
-}
-
-func (s *StreamWatcher) checkForViralClip(beforeTime time.Time) error {
-	fmt.Println("Checking for viral clip before", beforeTime)
-	return nil
 }

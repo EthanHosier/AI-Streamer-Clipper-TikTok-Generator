@@ -141,3 +141,12 @@ func TestGetStreamContexts(t *testing.T) {
 	}
 	fmt.Printf("%+v\n", streamContexts)
 }
+
+func TestGetStreamEventsAfter(t *testing.T) {
+	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
+	streamEvents, err := supabase.GetStreamEventsAfter(109, 3)
+	if err != nil {
+		t.Fatalf("Error getting stream events: %v", err)
+	}
+	fmt.Printf("%+v\n", streamEvents)
+}

@@ -2,9 +2,11 @@ package openai
 
 import (
 	"context"
+	"fmt"
 	"os"
 
 	"github.com/sashabaranov/go-openai"
+	"github.com/sashabaranov/go-openai/jsonschema"
 )
 
 type OpenaiHandler interface{}
@@ -20,10 +22,11 @@ func NewOpenaiClient() *OpenaiClient {
 }
 
 func (oc *OpenaiClient) CreateChatCompletion(ctx context.Context, prompt string) (*string, error) {
+
 	resp, err := oc.client.CreateChatCompletion(
 		ctx,
 		openai.ChatCompletionRequest{
-			Model: openai.GPT3Dot5Turbo,
+			Model: openai.GPT4o,
 			Messages: []openai.ChatCompletionMessage{
 				{
 					Role:    openai.ChatMessageRoleUser,
@@ -34,7 +37,41 @@ func (oc *OpenaiClient) CreateChatCompletion(ctx context.Context, prompt string)
 	)
 
 	if err != nil {
+		return nil, fmt.Errorf("error creating chat completion: %w", err)
+	}
+
+	return &resp.Choices[0].Message.Content, nil
+}
+
+func (oc *OpenaiClient) CreateChatCompletionWithResponseFormat(ctx context.Context, prompt string, responseFormat interface{}) (*string, error) {
+	schema, err := jsonschema.GenerateSchemaForType(responseFormat)
+	if err != nil {
 		return nil, err
+	}
+
+	resp, err := oc.client.CreateChatCompletion(
+		ctx,
+		openai.ChatCompletionRequest{
+			Model: openai.GPT4o,
+			Messages: []openai.ChatCompletionMessage{
+				{
+					Role:    openai.ChatMessageRoleUser,
+					Content: prompt,
+				},
+			},
+			ResponseFormat: &openai.ChatCompletionResponseFormat{
+				Type: openai.ChatCompletionResponseFormatTypeJSONSchema,
+				JSONSchema: &openai.ChatCompletionResponseFormatJSONSchema{
+					Name:   "response_format",
+					Schema: schema,
+					Strict: true,
+				},
+			},
+		},
+	)
+
+	if err != nil {
+		return nil, fmt.Errorf("error creating chat completion: %w", err)
 	}
 
 	return &resp.Choices[0].Message.Content, nil

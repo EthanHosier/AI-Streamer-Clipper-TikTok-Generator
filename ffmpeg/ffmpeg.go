@@ -68,9 +68,15 @@ func (ff *FfmpegClient) ClipVideo(inputFile string, startTime, duration string) 
 	outputPath := outputPathFor(inputFile, MP4)
 	fmt.Println("outputPath: ", outputPath)
 
+	// Create the directory if it doesn't exist
+	if err := os.MkdirAll(filepath.Dir(outputPath), 0755); err != nil {
+		return "", fmt.Errorf("failed to create output directory: %v", err)
+	}
+
 	cmd := exec.Command("ffmpeg", "-ss", startTime, "-i", inputFile, "-t", duration, "-c", "copy", outputPath)
-	if err := cmd.Run(); err != nil {
-		return "", err
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return "", fmt.Errorf("ffmpeg error: %v\nOutput: %s", err, string(output))
 	}
 	return outputPath, nil
 }
