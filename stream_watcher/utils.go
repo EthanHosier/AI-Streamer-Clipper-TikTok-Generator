@@ -179,16 +179,18 @@ func (s *StreamWatcher) findClips(windowStartSecs int, videoContext string) ([]F
 		return []FoundClip{}, nil
 	}
 
-	prompt := `Here is a list of events from a live stream. I want to find clips from this stream that have the potential to go viral on TikTok. I want to find clips that are funny, high energy, polarizing, interesting, are racy, have a story, or have a unique perspective.
+	prompt := `Here is a list of events from a live stream. I want to find clips from this stream that have the *highest* potential to go viral on TikTok. These clips must be exceptional, either by being highly funny, extremely high-energy, polarizing in a thought-provoking way, deeply interesting, racy but tasteful, telling a complete story, or offering a truly unique perspective. Ordinary or moderately entertaining clips should not be selected.
 
-	Here is the stream of events of which to consider: ` + streamEventsStrFromStreamEvents(streamEvents) + `
+Here is the stream of events to consider: ` + streamEventsStrFromStreamEvents(streamEvents) + `
 
-	Here is some general context about the stream up to this point: ` + videoContext + `
+Here is some general context about the stream up to this point: ` + videoContext + `
 
-	You must only pick clips if it is clear that what is happening in the clip is finished by the end of the clip. For example, if the clip is a conversation, the start of the conversation must be within the clip and it must be clear that the conversation is finished by the end of the clip.
+You must only pick clips if:
+1. It is absolutely clear that what is happening in the clip is fully contained and resolved within the clip. Incomplete events should not be included.
+2. The clip stands out as exceptionally entertaining, engaging, or intriguing compared to the average content in the stream.
+3. The clip has significant potential to go viral on TikTok based on its uniqueness, emotional impact, or relatability.
 
-	Further, only pick clips which have the potential to go viral on TikTok. Be strict about this, there is a lot more livestream which will be covered in the future, so it is fine to not pick any clips if there are no good options. I would rather not pick any clips than pick clips which are not likely to go viral. If there are no viral clips, return an empty array.
-`
+Be extremely strict in your selection process. If there is any doubt about whether a clip has viral potential, do not include it. It is better to return an empty array than to select clips that are unlikely to perform well. Clips must feel shareable and stand out even among high-quality content.`
 
 	type FoundClipResponseFormat struct {
 		FoundClips []FoundClip `json:"found_clips"`
