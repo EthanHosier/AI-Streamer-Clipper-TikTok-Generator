@@ -8,14 +8,18 @@ import (
 	"time"
 )
 
-type StreamRecorder struct {
+type StreamRecorder interface {
+	Record(streamUrl, outputDir string, segmentTime int) (chan string, chan struct{}, chan error)
 }
 
-func NewStreamRecorder() *StreamRecorder {
-	return &StreamRecorder{}
+type StreamlinkRecorder struct {
 }
 
-func (s *StreamRecorder) Record(streamUrl, outputDir string, segmentTime int) (chan string, chan struct{}, chan error) {
+func NewStreamlinkRecorder() *StreamlinkRecorder {
+	return &StreamlinkRecorder{}
+}
+
+func (s *StreamlinkRecorder) Record(streamUrl, outputDir string, segmentTime int) (chan string, chan struct{}, chan error) {
 	clipsCh := make(chan string)
 	doneCh := make(chan struct{})
 	errorCh := make(chan error)
@@ -30,7 +34,7 @@ func (s *StreamRecorder) Record(streamUrl, outputDir string, segmentTime int) (c
 	return clipsCh, doneCh, errorCh
 }
 
-func (s *StreamRecorder) recordStream(streamUrl, outputDir string, clipsCh chan string, doneCh chan struct{}, errorCh chan error, segmentTime int) {
+func (s *StreamlinkRecorder) recordStream(streamUrl, outputDir string, clipsCh chan string, doneCh chan struct{}, errorCh chan error, segmentTime int) {
 	defer close(clipsCh)
 	defer close(doneCh)
 	defer close(errorCh)

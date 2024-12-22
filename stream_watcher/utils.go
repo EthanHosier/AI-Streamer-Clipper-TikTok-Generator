@@ -29,7 +29,7 @@ var responseSchema = &genai.Schema{
 					},
 					"description": {
 						Type:        genai.TypeString,
-						Description: "Make this detailed and specific. Detail on what the streamer is saying and interacting with other people. The people's reactions are important.",
+						Description: "Make this detailed and specific. Detail on what the streamer is saying and interacting with other people. The people's reactions are important. Do not include any timestamps in the description.",
 					},
 				},
 				Required: []string{"start_time", "end_time", "description"},

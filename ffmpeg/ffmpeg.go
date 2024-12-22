@@ -16,6 +16,7 @@ type FfmpegHandler interface {
 	RemoveAudio(inputFile, outputFile string) (string, error)
 	ClipVideo(inputFile, startTime, duration string) (string, error)
 	VideoDuration(inputFile string) (float64, error)
+	SplitVideo(inputFile string, segmentTime int) ([]string, error)
 }
 
 type FfmpegClient struct {
@@ -106,11 +107,12 @@ func (ff *FfmpegClient) SplitVideo(inputPath string, segmentTime int) ([]string,
 	// Check for a reasonable number of expected output files
 	for i := 0; i < 1000; i++ { // Assuming no more than 1000 segments
 		outputFile := fmt.Sprintf("%s_%03d%s", base, i, ext)
-		outputPaths = append(outputPaths, outputFile)
+
 		// Break early if the output file doesn't exist
 		if !fileExists(outputFile) {
 			break
 		}
+		outputPaths = append(outputPaths, outputFile)
 	}
 
 	return outputPaths, nil
@@ -118,7 +120,7 @@ func (ff *FfmpegClient) SplitVideo(inputPath string, segmentTime int) ([]string,
 
 // fileExists checks if a file exists
 func fileExists(path string) bool {
-	_, err := exec.LookPath(path)
+	_, err := os.Stat(path)
 	return err == nil
 }
 

@@ -3,6 +3,7 @@ package stream_watcher
 import (
 	"context"
 	"fmt"
+	"log/slog"
 	"time"
 
 	"github.com/ethanhosier/clips/ffmpeg"
@@ -19,14 +20,14 @@ const (
 )
 
 type StreamWatcher struct {
-	streamRecorder *stream_recorder.StreamRecorder
+	streamRecorder stream_recorder.StreamRecorder
 	supabaseClient *supabase.Supabase
 	geminiClient   *gemini.GeminiClient
 	ffmpegClient   ffmpeg.FfmpegHandler
 	streamID       int
 }
 
-func NewStreamWatcher(streamRecorder *stream_recorder.StreamRecorder, supabaseClient *supabase.Supabase, geminiClient *gemini.GeminiClient, ffmpegClient ffmpeg.FfmpegHandler, streamID int) *StreamWatcher {
+func NewStreamWatcher(streamRecorder stream_recorder.StreamRecorder, supabaseClient *supabase.Supabase, geminiClient *gemini.GeminiClient, ffmpegClient ffmpeg.FfmpegHandler, streamID int) *StreamWatcher {
 	return &StreamWatcher{streamRecorder: streamRecorder, supabaseClient: supabaseClient, geminiClient: geminiClient, ffmpegClient: ffmpegClient, streamID: streamID}
 }
 
@@ -38,11 +39,22 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 	vidContext := defaultContext
 	last20secs := defaultLast20s
 
+	receivedDone := false
 	for {
 		select {
 		case <-ctx.Done():
 			return nil
-		case clip := <-clipsCh:
+		case clip, ok := <-clipsCh:
+			if !ok {
+				slog.Info("clips Channel closed")
+				// Channel is closed and no more clips
+				if receivedDone {
+					slog.Info("All clips processed, exiting")
+					return nil
+				}
+				continue
+			}
+			slog.Info("Watching clip", "clip", clip)
 			clipSummary, err := s.handleWatchClipAndStoreSummary(clip, vidContext, last20secs, vidPositionSecs)
 			if err != nil {
 				return err
@@ -55,12 +67,17 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 				return err
 			}
 			vidPositionSecs += ffmpegDuration
+			slog.Info("Video position", "position", vidPositionSecs)
 
 		case err := <-errorCh:
-			fmt.Println(err)
+			slog.Error("Error while processing stream", "error", err)
+			return err
 		case <-doneCh:
-			fmt.Println("done")
-			return nil
+			receivedDone = true
+			// Don't exit immediately, wait for remaining clips
+
+		default:
+			fmt.Println("yeahhh")
 		}
 	}
 }

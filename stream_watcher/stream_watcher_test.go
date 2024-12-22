@@ -8,6 +8,7 @@ import (
 
 	"github.com/ethanhosier/clips/ffmpeg"
 	"github.com/ethanhosier/clips/gemini"
+	"github.com/ethanhosier/clips/stream_recorder"
 	"github.com/ethanhosier/clips/supabase"
 	"github.com/joho/godotenv"
 )
@@ -76,4 +77,24 @@ func TestStreamWatcherHandleWatchClipWithOffset(t *testing.T) {
 	}
 
 	t.Logf("Clip summary: %+v", *clipSummary)
+}
+
+func TestStreamWatcherWatch(t *testing.T) {
+	var (
+		fileStreamRecorder = stream_recorder.NewFileStreamRecorder(ffmpeg.NewFfmpegClient())
+		supabaseClient     = supabase.NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
+		geminiClient, err  = gemini.NewGeminiClient(context.Background(), os.Getenv("GEMINI_API_KEY"))
+		ffmpegClient       = ffmpeg.NewFfmpegClient()
+		streamID           = 3
+	)
+
+	if err != nil {
+		t.Fatalf("Error creating Gemini client: %v", err)
+	}
+
+	streamWatcher := NewStreamWatcher(fileStreamRecorder, supabaseClient, geminiClient, ffmpegClient, streamID)
+	err = streamWatcher.Watch(context.Background(), "/home/ethanh/Desktop/go/clips/stream_watcher/kc-10-mins.mp4")
+	if err != nil {
+		t.Fatalf("Error watching stream: %v", err)
+	}
 }
