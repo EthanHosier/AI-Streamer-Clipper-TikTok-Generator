@@ -35,7 +35,7 @@ func TestStreamWatcherHandleSummariseClip(t *testing.T) {
 
 	streamWatcher := NewStreamWatcher(nil, nil, geminiClient, nil, nil, 1)
 
-	clipSummary, err := streamWatcher.handleSummariseClip("/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4", vidContext, last20secs, 0.0)
+	clipSummary, err := streamWatcher.handleSummariseClip("/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4", vidContext, last20secs, 0.0, "dakotaz")
 	if err != nil {
 		t.Fatalf("Error summarising clip: %v", err)
 	}
@@ -53,7 +53,7 @@ func TestStreamWatcherHandleWatchClip(t *testing.T) {
 
 	streamWatcher := NewStreamWatcher(nil, supabaseClient, geminiClient, nil, nil, 1)
 
-	clipSummary, err := streamWatcher.handleWatchClipAndStoreSummary("/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4", vidContext, last20secs, 0.0)
+	clipSummary, err := streamWatcher.handleWatchClipAndStoreSummary("/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4", vidContext, last20secs, 0.0, "dakotaz")
 	if err != nil {
 		t.Fatalf("Error watching clip: %v", err)
 	}
@@ -72,7 +72,7 @@ func TestStreamWatcherHandleWatchClipWithOffset(t *testing.T) {
 
 	streamWatcher := NewStreamWatcher(nil, supabaseClient, geminiClient, nil, ffmpegClient, 3)
 
-	clipSummary, err := streamWatcher.handleWatchClipAndStoreSummary("/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4", vidContext, last20secs, 32.5)
+	clipSummary, err := streamWatcher.handleWatchClipAndStoreSummary("/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4", vidContext, last20secs, 32.5, "dakotaz")
 	if err != nil {
 		t.Fatalf("Error watching clip: %v", err)
 	}
@@ -95,7 +95,7 @@ func TestStreamWatcherWatch(t *testing.T) {
 	}
 
 	streamWatcher := NewStreamWatcher(fileStreamRecorder, supabaseClient, geminiClient, openaiClient, ffmpegClient, streamID)
-	err = streamWatcher.Watch(context.Background(), "/home/ethanh/Desktop/go/clips/stream_watcher/kc-10-mins.mp4")
+	err = streamWatcher.Watch(context.Background(), "/home/ethanh/Desktop/go/clips/stream_watcher/sr-stream.mp4", "dakotaz")
 	if err != nil {
 		t.Fatalf("Error watching stream: %v", err)
 	}

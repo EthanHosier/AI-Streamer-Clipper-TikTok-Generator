@@ -20,7 +20,7 @@ func main() {
 	}
 
 	var (
-		streamlinkRecorder = stream_recorder.NewStreamlinkRecorder("angryginge")
+		streamlinkRecorder = stream_recorder.NewStreamlinkRecorder("jasontheween")
 		supabaseClient     = supabase.NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
 		geminiClient, err  = gemini.NewGeminiClient(context.Background(), os.Getenv("GEMINI_API_KEY"))
 		ffmpegClient       = ffmpeg.NewFfmpegClient()
@@ -33,6 +33,6 @@ func main() {
 	}
 
 	streamWatcher := stream_watcher.NewStreamWatcher(streamlinkRecorder, supabaseClient, geminiClient, openaiClient, ffmpegClient, streamID)
-	streamWatcher.Watch(context.Background(), "https://www.twitch.tv/angryginge13")
+	panic(streamWatcher.Watch(context.Background(), "https://www.twitch.tv/jasontheween", "jasontheween"))
 
 }

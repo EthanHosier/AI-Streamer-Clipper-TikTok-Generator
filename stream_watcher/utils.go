@@ -55,9 +55,9 @@ var (
 	}
 )
 
-func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, last20secs string, streamPositionSecs float64) (*ClipSummary, error) {
-	prompt := `Here is a clip from a much longer live stream. Here is the context of what has happened up to this clip: ` + vidContext + `. More specifically, here is what happened just before this video was taken: ` + last20secs + `. 
-	Give a detailed, specific analysis of this video. I will be passing these descriptions to another AI Agent which will determine which parts of the video clip to make viral tiktoks, so make this as detailed as possible. You should specify each event in the video, using this format:
+func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, last20secs string, streamPositionSecs float64, name string) (*ClipSummary, error) {
+	prompt := `Here is a clip from a much longer live stream. The streamer is ` + name + `. Here is the context of what has happened up to this clip: ` + vidContext + `. More specifically, here is what happened just before this video was taken: ` + last20secs + `. 
+	Give a detailed, specific analysis of this video. I will be passing these descriptions to another AI Agent which will determine which parts of the video clip to make viral tiktoks, so make this as detailed but unbiased as possible. You should specify each event in the video, using this format:
 	
 	0:16-0:25 Kai's friend makes fun of how Kai came to him about his new girl
 	0:25-0:27 Kai's friend asks "Oh you telling them you got a girlfriend" to make fun of Kai
@@ -67,9 +67,11 @@ func (s *StreamWatcher) handleSummariseClip(clipUrl string, vidContext string, l
 	1:24-1:30 Kai's friend remembers the day Kai was at Target and looked stiff due to his new girlfriend
 	1:38-1:47 Kai's friends start acting out how he was acting at Target
 	1:58-2:02 Kai's friends look at him like they are annoyed and laughing at him
-	2:06-2:13 Kai's friend mentions Turks to try and understand how he got the girl
+	2:06-2:13 Kai's friend mentions "Turks" to try and understand how he got the girl
 	2:19-2:21 Kai's friends laughing after Kai states he has a girlfriend again
 	
+	For each event, you must explicitly state what is happening generally in the clip, any emotions, and then the exact words which are said in speech marks. If there are multiple people talking, you must state the exact words of each person.
+
 	You must specify what happens in the last ~20 seconds of the video (as it cuts off). You should also update the context so that it is representative of the previous context and the events of this video.`
 
 	resp, err := s.geminiClient.GetChatCompletionWithVideo(context.TODO(), prompt, clipUrl, clipSummaryResponseSchema)
@@ -164,11 +166,11 @@ func ConvertMMSS(timeStr string) (int, error) {
 type FoundClip struct {
 	StartSecs   float64 `json:"start_secs"`
 	EndSecs     float64 `json:"end_secs"`
-	Title       string  `json:"title"`
+	Caption     string  `json:"caption"`
 	Description string  `json:"description"`
 }
 
-func (s *StreamWatcher) findClips(windowStartSecs int, videoContext string) ([]FoundClip, error) {
+func (s *StreamWatcher) findClips(windowStartSecs int, videoContext string, name string) ([]FoundClip, error) {
 	streamEvents, err := s.supabaseClient.GetStreamEventsAfter(windowStartSecs, s.streamID)
 	if err != nil {
 		return nil, err
@@ -179,24 +181,57 @@ func (s *StreamWatcher) findClips(windowStartSecs int, videoContext string) ([]F
 		return []FoundClip{}, nil
 	}
 
-	prompt := `Here is a list of events from a live stream. I want to find clips from this stream that have the *highest* potential to go viral on TikTok. These clips must be exceptional, either by being highly funny, extremely high-energy, polarizing in a thought-provoking way, deeply interesting, racy but tasteful, telling a complete story, or offering a truly unique perspective. Ordinary or moderately entertaining clips should not be selected.
+	prompt := `You are an expert clipper who takes a section of a live stream and finds the best clips from it.
+	You can't see video, instead you are given a list of what happens in the stream at each timestamp.
+	
+	We are looking for clips which follow on of the following criteria. The clip must be:
+	1. A funny moment
+	2. A high energy moment (dancing, screaming, intense emotions etc)
+	3. An interesting conversation, particularly a streamer "giving their thoughts on ..."
+	4. A fail / blunder
+	5. An interesting interaction with the chat
+	6. Extremely relatable content
+	7. The streamer telling a story about something that happened
+	8. References to inside jokes / memes
+	9. Mentions of other streamers
+	10. Iconic quotes or phrases that represent the streamer’s brand or personality.
+	11. Rage moments
+	12. Spontaneous dancing, singing, or any musical moments from the streamer.
+	13. Racy content
+	14. Announcements
+	
+	Ensure that you focus on the STREAMER. Just winning a game or getting a kill is not a good clip, unless the streamer is doing something funny or interesting about it.
 
-Here is the stream of events to consider: ` + streamEventsStrFromStreamEvents(streamEvents) + `
+  Important: If two moments are about the same topic, and the start time of the second moment is less than 60 seconds after the end time of the first moment, they must be combined into a single clip. The combined clip’s start time is the first moment’s start, and its end time is the last moment’s end. Provide a single caption and single description for the combined clip.
 
-Here is some general context about the stream up to this point: ` + videoContext + `
+	Clips must be at least 10 seconds long, and max 3 minutes. If given the choice, longer clips are better, but keep them relevant.
 
-You must only pick clips if:
-1. It is absolutely clear that what is happening in the clip is fully contained and resolved within the clip. Incomplete events should not be included.
-2. The clip stands out as exceptionally entertaining, engaging, or intriguing compared to the average content in the stream.
-3. The clip has significant potential to go viral on TikTok based on its uniqueness, emotional impact, or relatability.
+	Be strict about what is worth making a clip from. False positives are worse than false negatives. It is perfectly fine (and normal) to not find any clips.
 
-Be extremely strict in your selection process. If there is any doubt about whether a clip has viral potential, do not include it. It is better to return an empty array than to select clips that are unlikely to perform well. Clips must feel shareable and stand out even among high-quality content.`
+	---
+Here is the stream of events and timestamps to consider: ` + streamEventsStrFromStreamEvents(streamEvents) + `
+	---
+
+	---
+Here is some general context about the stream up to this point. Use this as a general guide, but don't refer to anything in the context if it isnt specifically in the stream of events: ` + videoContext + `
+  ---
+
+	For each found clip (if there are any), you must include the start secs, the end secs, the caption and the description (of the clip, which category it false under 1-12 and why it is good). 
+
+	The caption of the clip should be a short, clickbaity and engaging caption which references the streamer and something specificabout the clip. This should be whatever the main part of the clip is about. Make it informal and voiced as how a cool 16 year old texting their friend would sound. The caption must mention the streamer's name ("` + name + `").
+	Examples include: 
+	"` + name + ` reacts to the first article about him 🔥"
+	"` + name + ` joins the Power Rangers 😭😭"
+	"` + name + ` meets Breckie Hill for the first time 💀"
+	"` + name + ` reveals his $500,000 production team 🤯"
+	Don't include hashtags or punctuation in the caption.
+`
 
 	type FoundClipResponseFormat struct {
 		FoundClips []FoundClip `json:"found_clips"`
 	}
 
-	response, err := s.openaiClient.CreateChatCompletionWithResponseFormat(context.TODO(), prompt, FoundClipResponseFormat{})
+	response, err := s.openaiClient.CreateChatCompletionWithResponseFormatForO1Mini(context.TODO(), prompt, "If it is clear that there are no clips, return an empty array. Otherwise, return the clips in this format:", FoundClipResponseFormat{})
 	if err != nil {
 		return nil, err
 	}

@@ -48,3 +48,22 @@ func TestOpenaiClient_CreateChatCompletion_WithResponseFormat(t *testing.T) {
 
 	t.Logf("Response: %+v", *response)
 }
+
+func TestOpenaiClient_CreateChatCompletion_WithResponseFormatForO1Mini(t *testing.T) {
+	oc := NewOpenaiClient(os.Getenv("OPENAI_KEY"))
+
+	prompt := "What is the capital of France?"
+
+	type CapitalResponse struct {
+		Capital string `json:"capital"`
+	}
+
+	responseFormat := CapitalResponse{}
+
+	response, err := oc.CreateChatCompletionWithResponseFormat(context.TODO(), prompt, responseFormat)
+	if err != nil {
+		t.Fatalf("Error creating chat completion: %v", err)
+	}
+
+	t.Logf("Response: %+v", *response)
+}

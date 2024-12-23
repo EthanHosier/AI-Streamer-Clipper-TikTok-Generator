@@ -95,16 +95,18 @@ func (ff *FfmpegClient) SplitVideo(inputPath string, segmentTime int, outputFold
 	cmd := exec.Command("ffmpeg",
 		"-i", inputPath,
 		"-c", "copy",
-		"-map", "0",
+		"-map", "0:v:0",
+		"-map", "0:a:0",
 		"-segment_time", strconv.Itoa(segmentTime),
 		"-f", "segment",
 		"-reset_timestamps", "1",
 		outputPattern,
 	)
 
-	// Run the command and capture any errors
-	if err := cmd.Run(); err != nil {
-		return nil, fmt.Errorf("error running ffmpeg: %w", err)
+	// Run the command and capture output
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return nil, fmt.Errorf("error running ffmpeg: %w\nOutput: %s", err, string(output))
 	}
 
 	// Generate the list of output file paths

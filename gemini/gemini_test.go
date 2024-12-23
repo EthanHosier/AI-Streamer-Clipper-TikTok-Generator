@@ -40,7 +40,7 @@ func TestGeminiGetChatCompletionWithVideo(t *testing.T) {
 		t.Fatalf("Error creating Gemini client: %v", err)
 	}
 
-	resp, err := geminiClient.GetChatCompletionWithVideo(context.Background(), "Give a detailed, specific analysis of the video", "/home/ethanh/Desktop/go/clips/clips/angryginge13/output001.mp4", nil)
+	resp, err := geminiClient.GetChatCompletionWithVideo(context.Background(), "you are a twitch clipping bot. Your goal is to find clips from this segment of a kai cenat twitch stream which have the potential to go viral on tiktok. Please give the start and end time stamps for each clip you find, and a description of why it could go viral. Clips should be at least 30 seconds long. Be strict - if there are no viral clips, that is okay.", "/home/ethanh/Desktop/go/clips/ffmpeg/tmp/kc-stream.mp4", nil)
 	if err != nil {
 		t.Fatalf("Error getting chat completion with video: %v", err)
 	}
@@ -114,4 +114,27 @@ You must specify what happens in the last ~20 seconds of the video (as it cuts o
 	}
 
 	fmt.Println(*resp)
+}
+
+func TestGeminiListFiles(t *testing.T) {
+	geminiClient, err := NewGeminiClient(context.Background(), os.Getenv("GEMINI_API_KEY"))
+	if err != nil {
+		t.Fatalf("Error creating Gemini client: %v", err)
+	}
+
+	files, err := geminiClient.ListFiles(context.Background())
+	if err != nil {
+		t.Fatalf("Error listing files: %v", err)
+	}
+
+	fmt.Println(files)
+}
+
+func TestGeminiDeleteAllFiles(t *testing.T) {
+	geminiClient, err := NewGeminiClient(context.Background(), os.Getenv("GEMINI_API_KEY"))
+	if err != nil {
+		t.Fatalf("Error creating Gemini client: %v", err)
+	}
+
+	geminiClient.DeleteAllFiles(context.Background())
 }

@@ -20,8 +20,8 @@ const (
 	defaultContext  = "[This is the first clip of the stream, so no context is available.]"
 	defaultLast20s  = "[This is the first clip of the stream, so no last 20 seconds context is available.]"
 
-	bufferStartSecs = 20
-	bufferEndSecs   = 20
+	bufferStartSecs = 0
+	bufferEndSecs   = 0 // TODO: MAKE THESE CONFIGURABLE
 )
 
 type StreamWatcher struct {
@@ -37,7 +37,7 @@ func NewStreamWatcher(streamRecorder stream_recorder.StreamRecorder, supabaseCli
 	return &StreamWatcher{streamRecorder: streamRecorder, supabaseClient: supabaseClient, geminiClient: geminiClient, openaiClient: openaiClient, ffmpegClient: ffmpegClient, streamID: streamID}
 }
 
-func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
+func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string, name string) error {
 	outputDir := fmt.Sprintf("%s/%d", recordedVidsDir, s.streamID)
 	clipsCh, doneCh, errorCh := s.streamRecorder.Record(streamUrl, outputDir, segmentTime)
 
@@ -70,7 +70,7 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 		case clip, ok := <-clipsCh:
 			if !ok { // Clips channel closed
 				if pendingClip != "" {
-					clipSummary, newStreamPositionSecs, err := s.processClip(pendingClip, vidContext, last20secs, vidPositionSecs)
+					clipSummary, newStreamPositionSecs, err := s.processClip(pendingClip, vidContext, last20secs, vidPositionSecs, name)
 					if err != nil {
 						return err
 					}
@@ -80,7 +80,7 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 					last20secs = clipSummary.Last20Secs
 					pendingClip = ""
 
-					newClips, cws, err := s.createClips(allVideoFiles, vidContext, int(clipWindowStartSecs))
+					newClips, cws, err := s.createClips(allVideoFiles, vidContext, int(clipWindowStartSecs), name)
 					if err != nil {
 						return err
 					}
@@ -113,11 +113,13 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 			allVideoFiles = append(allVideoFiles, clip)
 
 			if pendingClip == "" {
+				slog.Info("Setting pending clip", "clip", clip)
 				pendingClip = clip
 				continue
 			}
 
-			clipSummary, newStreamPositionSecs, err := s.processClip(pendingClip, vidContext, last20secs, vidPositionSecs)
+			slog.Info("Processing pending clip", "clip", pendingClip)
+			clipSummary, newStreamPositionSecs, err := s.processClip(pendingClip, vidContext, last20secs, vidPositionSecs, name)
 			if err != nil {
 				return err
 			}
@@ -128,7 +130,7 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string) error {
 
 			pendingClip = clip
 
-			newClips, cws, err := s.createClips(allVideoFiles, vidContext, int(clipWindowStartSecs))
+			newClips, cws, err := s.createClips(allVideoFiles, vidContext, int(clipWindowStartSecs), name)
 			if err != nil {
 				return err
 			}
@@ -153,9 +155,9 @@ type CreatedClipResult struct {
 	BufferEndSecs   int
 }
 
-func (s *StreamWatcher) createClips(videoFiles []string, vidContext string, startWindowSecs int) ([]CreatedClipResult, int, error) {
+func (s *StreamWatcher) createClips(videoFiles []string, vidContext string, startWindowSecs int, name string) ([]CreatedClipResult, int, error) {
 	slog.Info("Creating clips", "startWindowSecs", startWindowSecs, "videoFiles", videoFiles)
-	clips, err := s.findClips(startWindowSecs, vidContext)
+	clips, err := s.findClips(startWindowSecs, vidContext, name)
 	if err != nil {
 		return nil, 0, err
 	}
@@ -167,7 +169,7 @@ func (s *StreamWatcher) createClips(videoFiles []string, vidContext string, star
 	var createdClips []CreatedClipResult
 
 	for _, clip := range clips {
-		slog.Info("Creating clip", "clip start", clip.StartSecs, "clip end", clip.EndSecs, "clip start buffer", bufferStartSecs, "clip end buffer", bufferEndSecs, "clip title", clip.Title)
+		slog.Info("Creating clip", "clip start", clip.StartSecs, "clip end", clip.EndSecs, "clip start buffer", bufferStartSecs, "clip end buffer", bufferEndSecs, "clip caption", clip.Caption)
 		actualClip, err := s.getActualClipFrom(&clip, videoFiles, bufferStartSecs, bufferEndSecs)
 		if err != nil {
 			return nil, 0, err
@@ -189,8 +191,8 @@ func (s *StreamWatcher) createClips(videoFiles []string, vidContext string, star
 	return createdClips, maxEndTime, nil
 }
 
-func (s *StreamWatcher) processClip(clip string, vidContext string, last20secs string, streamPositionSecs float64) (*ClipSummary, float64, error) {
-	clipSummary, err := s.handleWatchClipAndStoreSummary(clip, vidContext, last20secs, streamPositionSecs)
+func (s *StreamWatcher) processClip(clip string, vidContext string, last20secs string, streamPositionSecs float64, name string) (*ClipSummary, float64, error) {
+	clipSummary, err := s.handleWatchClipAndStoreSummary(clip, vidContext, last20secs, streamPositionSecs, name)
 	if err != nil {
 		return nil, 0, err
 	}
@@ -203,8 +205,8 @@ func (s *StreamWatcher) processClip(clip string, vidContext string, last20secs s
 	return clipSummary, streamPositionSecs + videoDuration, nil
 }
 
-func (s *StreamWatcher) handleWatchClipAndStoreSummary(clip string, vidContext string, last20secs string, streamPositionSecs float64) (*ClipSummary, error) {
-	clipSummary, err := s.handleSummariseClip(clip, vidContext, last20secs, streamPositionSecs)
+func (s *StreamWatcher) handleWatchClipAndStoreSummary(clip string, vidContext string, last20secs string, streamPositionSecs float64, name string) (*ClipSummary, error) {
+	clipSummary, err := s.handleSummariseClip(clip, vidContext, last20secs, streamPositionSecs, name)
 	if err != nil {
 		return nil, err
 	}

@@ -113,3 +113,36 @@ func (gc *GeminiClient) uploadFileToGemini(ctx context.Context, videoPath string
 	}
 	return file, nil
 }
+
+func (gc *GeminiClient) ListFiles(ctx context.Context) ([]*genai.File, error) {
+	var files []*genai.File
+	iter := gc.client.ListFiles(ctx)
+	if iter == nil {
+		return nil, fmt.Errorf("no files found")
+	}
+
+	for {
+		file, err := iter.Next()
+		if err != nil {
+			break
+		}
+		files = append(files, file)
+	}
+
+	return files, nil
+}
+
+func (gc *GeminiClient) DeleteAllFiles(ctx context.Context) error {
+	files, err := gc.ListFiles(ctx)
+	if err != nil {
+		return fmt.Errorf("failed to list files: %v", err)
+	}
+
+	for _, file := range files {
+		if err := gc.client.DeleteFile(ctx, file.Name); err != nil {
+			return fmt.Errorf("failed to delete file %s: %v", file.Name, err)
+		}
+	}
+
+	return nil
+}

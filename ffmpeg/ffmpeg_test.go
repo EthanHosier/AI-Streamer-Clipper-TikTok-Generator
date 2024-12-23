@@ -39,5 +39,14 @@ func TestVideoDuration(t *testing.T) {
 	if err != nil {
 		t.Errorf("VideoDuration() error = %v", err)
 	}
-	t.Logf("Duration: %s", duration)
+	t.Logf("Duration: %v", duration)
+}
+
+func TestClipVideo(t *testing.T) {
+	ffmpeg := NewFfmpegClient()
+	clips, err := ffmpeg.ClipVideo("/home/ethanh/Desktop/go/clips/stream_watcher/kc-10-mins.mp4", "tmp/kc-stream.mp4", "00:02:00", "00:05:00")
+	if err != nil {
+		t.Errorf("ClipVideo() error = %v", err)
+	}
+	t.Logf("Clips: %v", clips)
 }
