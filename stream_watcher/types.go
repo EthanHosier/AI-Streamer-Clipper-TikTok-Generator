@@ -17,3 +17,17 @@ type ClipSummaryResponse struct {
 		EndTime     string `json:"end_time"`
 	} `json:"stream_events"`
 }
+
+type FoundClip struct {
+	StartSecs   float64 `json:"start_secs"`
+	EndSecs     float64 `json:"end_secs"`
+	Caption     string  `json:"caption"`
+	Description string  `json:"description"`
+}
+
+type CreatedClipResult struct {
+	Url             string
+	FoundClip       *FoundClip
+	BufferStartSecs int
+	BufferEndSecs   int
+}

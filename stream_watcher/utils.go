@@ -163,13 +163,6 @@ func ConvertMMSS(timeStr string) (int, error) {
 	return totalSeconds, nil
 }
 
-type FoundClip struct {
-	StartSecs   float64 `json:"start_secs"`
-	EndSecs     float64 `json:"end_secs"`
-	Caption     string  `json:"caption"`
-	Description string  `json:"description"`
-}
-
 func (s *StreamWatcher) findClips(windowStartSecs int, videoContext string, name string) ([]FoundClip, error) {
 	streamEvents, err := s.supabaseClient.GetStreamEventsAfter(windowStartSecs, s.streamID)
 	if err != nil {

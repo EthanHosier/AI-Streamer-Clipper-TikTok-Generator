@@ -95,10 +95,23 @@ func TestStreamWatcherWatch(t *testing.T) {
 	}
 
 	streamWatcher := NewStreamWatcher(fileStreamRecorder, supabaseClient, geminiClient, openaiClient, ffmpegClient, streamID)
-	err = streamWatcher.Watch(context.Background(), "/home/ethanh/Desktop/go/clips/stream_watcher/sr-stream.mp4", "dakotaz")
+	createdClipsCh, doneCh, errCh := streamWatcher.Watch(context.Background(), "/home/ethanh/Desktop/go/clips/stream_watcher/sr-stream.mp4", "dakotaz")
 	if err != nil {
 		t.Fatalf("Error watching stream: %v", err)
 	}
+
+	for {
+		select {
+		case createdClip := <-createdClipsCh:
+			t.Logf("Created clip: %+v", createdClip)
+		case err := <-errCh:
+			t.Fatalf("Error watching stream: %v", err)
+		case <-doneCh:
+			t.Logf("Done watching stream")
+			return
+		}
+	}
+
 }
 
 func TestStreamWatcherCheckForViralClip(t *testing.T) {
@@ -108,7 +121,7 @@ func TestStreamWatcherCheckForViralClip(t *testing.T) {
 
 	vidContext := "Kai Cenat dances and jokes around, and becomes ecstatic as he gains new subscribers. He expresses his excitement by stating that he is glowing. Kai states that he missed his fans and that they have a long night ahead. He also mentions he needs to get his live stream habits back. He then has a moment where he gets confused about a detail on his stream before stating that he is going to be serious."
 
-	foundClips, err := streamWatcher.findClips(0, vidContext)
+	foundClips, err := streamWatcher.findClips(0, vidContext, "kai cenat")
 	if err != nil {
 		t.Fatalf("Error checking for viral clip: %v", err)
 	}

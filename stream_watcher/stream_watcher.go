@@ -37,7 +37,23 @@ func NewStreamWatcher(streamRecorder stream_recorder.StreamRecorder, supabaseCli
 	return &StreamWatcher{streamRecorder: streamRecorder, supabaseClient: supabaseClient, geminiClient: geminiClient, openaiClient: openaiClient, ffmpegClient: ffmpegClient, streamID: streamID}
 }
 
-func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string, name string) error {
+func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string, name string) (chan *CreatedClipResult, chan bool, chan error) {
+	createdClipsCh := make(chan *CreatedClipResult, 99)
+	errorCh := make(chan error)
+	doneCh := make(chan bool)
+
+	go func() {
+		err := s.watchLoop(ctx, streamUrl, name, createdClipsCh)
+		if err != nil {
+			errorCh <- err
+		}
+		doneCh <- true
+	}()
+
+	return createdClipsCh, doneCh, errorCh
+}
+
+func (s *StreamWatcher) watchLoop(ctx context.Context, streamUrl string, name string, createdClipsCh chan *CreatedClipResult) error {
 	outputDir := fmt.Sprintf("%s/%d", recordedVidsDir, s.streamID)
 	clipsCh, doneCh, errorCh := s.streamRecorder.Record(streamUrl, outputDir, segmentTime)
 
@@ -86,6 +102,10 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string, name string
 					}
 
 					createdClips = append(createdClips, newClips...)
+
+					for _, c := range newClips {
+						createdClipsCh <- &c
+					}
 
 					clipWindowStartSecs = cws
 
@@ -137,6 +157,10 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string, name string
 
 			createdClips = append(createdClips, newClips...)
 
+			for _, c := range newClips {
+				createdClipsCh <- &c
+			}
+
 			clipWindowStartSecs = cws
 
 			if len(newClips) == 0 {
@@ -146,13 +170,6 @@ func (s *StreamWatcher) Watch(ctx context.Context, streamUrl string, name string
 			}
 		}
 	}
-}
-
-type CreatedClipResult struct {
-	Url             string
-	FoundClip       *FoundClip
-	BufferStartSecs int
-	BufferEndSecs   int
 }
 
 func (s *StreamWatcher) createClips(videoFiles []string, vidContext string, startWindowSecs int, name string) ([]CreatedClipResult, int, error) {
