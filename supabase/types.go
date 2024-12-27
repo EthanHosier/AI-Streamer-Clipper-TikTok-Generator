@@ -46,3 +46,15 @@ type StreamEvent struct {
 	StreamID        int    `json:"stream_id"`
 	StreamContextID int    `json:"stream_context_id"`
 }
+
+type Clip struct {
+	ID              *int   `json:"id,omitempty"`
+	StreamID        int    `json:"stream_id"`
+	StartSecs       int    `json:"start_secs"`
+	EndSecs         int    `json:"end_secs"`
+	Caption         string `json:"caption"`
+	Description     string `json:"description"`
+	BufferStartSecs int    `json:"buffer_start_secs"`
+	BufferEndSecs   int    `json:"buffer_end_secs"`
+	URL             string `json:"url"`
+}

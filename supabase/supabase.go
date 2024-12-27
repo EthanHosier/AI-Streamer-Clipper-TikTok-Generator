@@ -240,3 +240,43 @@ func (s *Supabase) CreateStreamContext(streamContext *StreamContext) (int, error
 
 	return int(result[0].(map[string]interface{})["id"].(float64)), nil
 }
+
+func (s *Supabase) CreateClip(clip *Clip) (int, error) {
+	result := []interface{}{}
+	err := s.client.DB.From("clips").Insert(clip).Execute(&result)
+	if err != nil {
+		return 0, err
+	}
+
+	return int(result[0].(map[string]interface{})["id"].(float64)), nil
+}
+
+func (s *Supabase) GetClips(streamID int) ([]Clip, error) {
+	result := []interface{}{}
+	err := s.client.DB.From("clips").Select("*").Eq("stream_id", fmt.Sprintf("%d", streamID)).Execute(&result)
+	if err != nil {
+		return nil, err
+	}
+
+	clips := []Clip{}
+	for _, item := range result {
+		resultMap, ok := item.(map[string]interface{})
+		if !ok {
+			return nil, fmt.Errorf("failed to convert result to map")
+		}
+		retID := int(resultMap["id"].(float64))
+		clips = append(clips, Clip{
+			ID:              &retID,
+			StreamID:        int(resultMap["stream_id"].(float64)),
+			StartSecs:       int(resultMap["start_secs"].(float64)),
+			EndSecs:         int(resultMap["end_secs"].(float64)),
+			Caption:         resultMap["caption"].(string),
+			Description:     resultMap["description"].(string),
+			BufferStartSecs: int(resultMap["buffer_start_secs"].(float64)),
+			BufferEndSecs:   int(resultMap["buffer_end_secs"].(float64)),
+			URL:             resultMap["url"].(string),
+		})
+	}
+
+	return clips, nil
+}

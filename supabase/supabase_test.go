@@ -150,3 +150,31 @@ func TestGetStreamEventsAfter(t *testing.T) {
 	}
 	fmt.Printf("%+v\n", streamEvents)
 }
+
+func TestGetClips(t *testing.T) {
+	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
+	clips, err := supabase.GetClips(3)
+	if err != nil {
+		t.Fatalf("Error getting clips: %v", err)
+	}
+	fmt.Printf("%+v\n", clips)
+}
+
+func TestCreateClip(t *testing.T) {
+	supabase := NewSupabase(os.Getenv("SUPABASE_URL"), os.Getenv("SUPABASE_SERVICE_KEY"))
+	clip := &Clip{
+		StreamID:        3,
+		StartSecs:       100,
+		EndSecs:         200,
+		Caption:         "Test Clip",
+		Description:     "Test Clip Description",
+		BufferStartSecs: 90,
+		BufferEndSecs:   210,
+		URL:             "https://www.youtube.com/watch?v=123",
+	}
+	id, err := supabase.CreateClip(clip)
+	if err != nil {
+		t.Fatalf("Error creating clip: %v", err)
+	}
+	t.Logf("Clip created with ID: %d", id)
+}
